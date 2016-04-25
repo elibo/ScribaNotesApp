@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_s110_v6_0_0.hex",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_s110_v6_0_0.hex"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/dfu_mac_3_1.sh",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/dfu_mac_3_1.sh"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_dfu_s110_v8_0_0_sdk_v8_0.zip",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_dfu_s110_v8_0_0_sdk_v8_0.zip"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/blinky_arm_s110_v7_0_0.hex",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/blinky_arm_s110_v7_0_0.hex"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_rscs_s110_v6_0_0.hex",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_rscs_s110_v6_0_0.hex"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_dfu_s110_v8_0_0_sdk_v9_0.zip",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_dfu_s110_v8_0_0_sdk_v9_0.zip"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/readme.txt",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/readme.txt"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_dfu_all_in_one_sdk_v9_0.zip",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_dfu_all_in_one_sdk_v9_0.zip"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_dfu_s110_v7_1_0.hex",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_dfu_s110_v7_1_0.hex"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_rscs_s110_v7_0_0.hex",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_rscs_s110_v7_0_0.hex"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/blinky_s110_v7_1_0_ext_init.dat",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/blinky_s110_v7_1_0_ext_init.dat"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/blinky_s110_v7_1_0.hex",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/blinky_s110_v7_1_0.hex"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_s110_v7_0_0.hex",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_s110_v7_0_0.hex"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/dfu_win_3_1.bat",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/dfu_win_3_1.bat"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_dfu_s110_v7_1_0_ext_init.dat",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_dfu_s110_v7_1_0_ext_init.dat"
+    }
+]

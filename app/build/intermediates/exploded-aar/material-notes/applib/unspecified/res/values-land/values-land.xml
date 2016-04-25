@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin_bottom">26dp</dimen>
+    <dimen name="feature_uart_buttons_pane_height">178dp</dimen>
+    <dimen name="feature_uart_buttons_pane_width">238dp</dimen>
+    <dimen name="feature_vertical_margin_top">40dp</dimen>
+    <dimen name="gls_feature_title_long_margin">-126dp</dimen>
+    <dimen name="hrs_feature_title_long_margin">-16dp</dimen>
+    <string name="gls_feature_title_long">BGM</string>
+    <string name="hrs_feature_title_long">HRM</string>
+</resources>

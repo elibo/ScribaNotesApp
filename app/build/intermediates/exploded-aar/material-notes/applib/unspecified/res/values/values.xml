@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gls_context_carbohydrare">
+        <item>Reserved for future use</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snack</item>
+        <item>Drink</item>
+        <item>Supper</item>
+        <item>Brunch</item>
+    </string-array>
+    <string-array name="gls_context_health">
+        <item>Reserved for future use</item>
+        <item>Minor health issues</item>
+        <item>Major health issues</item>
+        <item>During menses</item>
+        <item>Under stress</item>
+        <item>No health issues</item>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item>Health value not available</item>
+    </string-array>
+    <string-array name="gls_context_meal">
+        <item>Reserved for future use</item>
+        <item>Preprandial (before meal)</item>
+        <item>Postprandial (after meal)</item>
+        <item>Fasting</item>
+        <item>Casual (snacks, drinks, etc.)</item>
+        <item>Bedtime</item>
+    </string-array>
+    <string-array name="gls_context_tester">
+        <item>Reserved for future use</item>
+        <item>Self</item>
+        <item>Health Care Professional</item>
+        <item>Lab test</item>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+        <item>Tester value not available</item>
+    </string-array>
+    <string-array name="gls_location">
+        <item>Reserved for future use</item>
+		<item>Finger</item>
+		<item>Alternate Site Test (AST)</item>
+		<item>Earlobe</item>
+		<item>Control solution</item>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item/>
+		<item>Sample Location value not available</item>
+    </string-array>
+    <string-array name="gls_status_annunciation">
+        <item>Device battery low at time of measurement</item>
+	    <item>Sensor malfunction or faulting at time of measurement</item>
+	    <item>Sample size for blood or control solution insufficient at time of measurement</item>
+	    <item>Strip insertion error</item>
+	    <item>Strip type incorrect for device</item>
+	    <item>Sensor result higher than the device can process</item>
+	    <item>Sensor result lower than the device can process</item>
+	    <item>Sensor temperature too high for valid test/result at time of measurement</item>
+	    <item>Sensor temperature too low for valid test/result at time of measurement</item>
+	    <item>Sensor read interrupted because strip was pulled too soon at time of measurement</item>
+	    <item>General device fault has occurred in the sensor</item>
+	    <item>Time fault has occurred in the sensor and time may be inaccurate</item>
+    </string-array>
+    <string-array name="gls_type">
+        <item>Reserved for future use</item>
+        <item>Capillary Whole blood</item>
+        <item>Capillary Plasma</item>
+        <item>Venous Whole blood</item>
+        <item>Venous Plasma</item>
+        <item>Arterial Whole blood</item>
+        <item>Arterial Plasma</item>
+        <item>Undetermined Whole blood</item>
+        <item>Undetermined Plasma</item>
+        <item>Interstitial Fluid (ISF)</item>
+        <item>Control Solution</item>
+    </string-array>
+    <string-array name="hrs_locations">
+        <item>Other</item>
+        <item>Chest</item>
+        <item>Wrist</item>
+        <item>Finger</item>
+        <item>Hand</item>
+        <item>Ear Lobe</item>
+        <item>Foot</item>
+    </string-array>
+    <color name="actionBarColor">#009CDE</color>
+    <color name="actionBarColorDark">#0081B7</color>
+    <color name="actionBarMenuTextColor">#FFFFFF</color>
+    <color name="backgroundColor">#E6E7E8</color>
+    <color name="btn_bg">#FF222222</color>
+    <color name="btn_fg">#FF555555</color>
+    <color name="btn_pressed_bg">#FFFFCC00</color>
+    <color name="btn_pressed_fg">#FF555555</color>
+    <color name="btn_selected_bg">#FFFFFFFF</color>
+    <color name="btn_selected_fg">#FF000000</color>
+    <color name="darkGray">#AAABAF</color>
+    <color name="dark_orange">#9E3F1E</color>
+    <color name="featureTitleColor">#939597</color>
+    <color name="headerBackgroundColor">#009ada</color>
+    <color name="headerBackgroundColorDark">#0081B7</color>
+    <color name="headerTextColor">#FFFFFF</color>
+    <color name="light_orange">#EFB5A0</color>
+    <color name="orange">#DC582A</color>
+    <declare-styleable name="ForegroundRelativeLayout"><attr format="reference|color" name="foreground"/></declare-styleable>
+    <declare-styleable name="PenToolButton"><attr format="dimension" name="strokeWidthMax"/><attr format="dimension" name="strokeWidthMin"/><attr format="reference" name="interpolator"/></declare-styleable>
+    <declare-styleable name="PenTypeButton"><attr name="penType"><enum name="whiteboard" value="0"/><enum name="feltTip" value="1"/><enum name="airbrush" value="2"/><enum name="fountainpen" value="3"/></attr></declare-styleable>
+    <declare-styleable name="SwatchButton"><attr format="color" name="colour"/></declare-styleable>
+    <dimen name="action_bar_height">48dp</dimen>
+    <dimen name="action_bar_logo_width">48dip</dimen>
+    <dimen name="action_button_padding_v">4dp</dimen>
+    <dimen name="action_button_width">48dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_bottom">32dp</dimen>
+    <dimen name="alert_dialog_padding">24dp</dimen>
+    <dimen name="alert_dialog_padding_bottom">0dp</dimen>
+    <dimen name="alert_dialog_padding_top">18dp</dimen>
+    <dimen name="default_pen_size_max">24dp</dimen>
+    <dimen name="default_pen_size_min">4dp</dimen>
+    <dimen name="feature_device_name_margin_top">8dp</dimen>
+    <dimen name="feature_grid_margin_top">0dp</dimen>
+    <dimen name="feature_horizontal_margin">50dp</dimen>
+    <dimen name="feature_section_padding">8dp</dimen>
+    <dimen name="feature_uart_buttons_pane_height">256dp</dimen>
+    <dimen name="feature_uart_buttons_pane_width">256dp</dimen>
+    <dimen name="feature_vertical_margin_top">50dp</dimen>
+    <dimen name="gls_feature_title_long_margin">-126dp</dimen>
+    <dimen name="hrs_feature_title_long_margin">-152dp</dimen>
+    <dimen name="navdrawer_padding_horiz">16dp</dimen>
+    <dimen name="navdrawer_padding_top">30dp</dimen>
+    <dimen name="navdrawer_width">260dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="tool_palette_gutter">6dp</dimen>
+    <dimen name="tools_margin_top">@dimen/action_bar_height</dimen>
+    <dimen name="ui_font_size">18sp</dimen>
+    <drawable name="actionbar_button_bg">#00000000</drawable>
+    <drawable name="actionbar_button_pressed_bg">#60FFFFFF</drawable>
+    <drawable name="actionbar_button_selected_bg">#CCFFCC00</drawable>
+    <string name="about_text">The nRF Toolbox is a container application that stores your Nordic Semiconductor apps in one location.</string>
+    <string name="about_title">About</string>
+    <string name="about_version">\n\nVersion: %s</string>
+    <string name="action_about">About</string>
+    <string name="action_connect">CONNECT</string>
+    <string name="action_disconnect">DISCONNECT</string>
+    <string name="action_select">SELECT DEVICE</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Scriba</string>
+    <string name="battery">%d%%</string>
+    <string name="cancel">Cancel</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_plugin_mcp">nRF Master Control Panel</string>
+    <string name="drawer_plugins">PLUGINS</string>
+    <string name="font_path">fonts/trebucbd.ttf</string>
+    <string name="gls_about_text">GLUCOSE SERVICE profile allows you to connect to your Glucose sensor. 
+        You can read the last and historical glucose measurement readings from the device. The current implementation partially supports also the
+        Glucose Measurement Context characteristic which is not supported by the GLS sample in the NRF51 SDK,
+         therefore when connecting to this sample application some parameters are not displayed.</string>
+    <string name="gls_action_abort">Abort</string>
+    <string name="gls_action_all">All</string>
+    <string name="gls_action_clear">Clear</string>
+    <string name="gls_action_delete_all">Delete all</string>
+    <string name="gls_action_first">First</string>
+    <string name="gls_action_last">Last</string>
+    <string name="gls_action_more">More</string>
+    <string name="gls_action_refresh">Refresh</string>
+    <string name="gls_context_carbohydrare_title">Carbohydrate</string>
+    <string name="gls_context_health_title">Health</string>
+    <string name="gls_context_meal_title">Meal</string>
+    <string name="gls_context_tester_title">Tester</string>
+    <string name="gls_default_name">DEFAULT BGM</string>
+    <string name="gls_feature_title">BGM</string>
+    <string name="gls_feature_title_long">GLUCOSE MONITOR</string>
+    <string name="gls_location_title">Sample Location</string>
+    <string name="gls_no_data">No values to display</string>
+    <string name="gls_operation_failed">Operation failed</string>
+    <string name="gls_operation_not_supported">Operation not supported by the device</string>
+    <string name="gls_progress">Downloading %d records</string>
+    <string name="gls_section_actions">CONTROL</string>
+    <string name="gls_section_data">READINGS</string>
+    <string name="gls_status_annunciation_title">Sensor Status Annunciation</string>
+    <string name="gls_timestamp">%1$te %1$tb %1$tY at %1$tT</string>
+    <string name="gls_unit_mgpdl">mg/dl</string>
+    <string name="gls_unit_mmolpl">mmol/l</string>
+    <string name="gls_value">%.1f</string>
+    <string name="hrs_about_text">HRM (Heart Rate Monitor) profile allows you to connect to your Heart Rate sensor (f.e. a belt). 
+        It shows you the current rate, location of the sensor and a historic data on the graph.</string>
+    <string name="hrs_default_name">DEFAULT SCRIBA</string>
+    <string name="hrs_feature_title">Scriba</string>
+    <string name="hrs_feature_title_long">HEART RATE MONITOR</string>
+    <string name="hrs_location_other">Reserved</string>
+    <string name="hrs_position_label">sensor position</string>
+    <string name="hrs_value_unit">bpm</string>
+    <string formatted="false" name="log">%1$tR:%1$tS.%1$tL</string>
+    <string name="no">No</string>
+    <string name="no_application">Web Browser application is not available.</string>
+    <string name="no_application_play">Google Play not installed.</string>
+    <string name="no_apps">No profiles found.</string>
+    <string name="no_ble">Device doesn\'t have BLE support!</string>
+    <string name="no_required_permission">Permission denied.</string>
+    <string name="no_uri_application">There is no application that can open this URI.</string>
+    <string name="normal_font_path">fonts/trebuc.ttf</string>
+    <string name="not_available">n/a</string>
+    <string name="not_available_value">" - "</string>
+    <string name="not_supported">The device does not have required services.</string>
+    <string name="ok">OK</string>
+    <string name="orientation">portrait</string>
+    <string name="permission_sd_text">nRF Toolbox would like to copy some sample applications, that may be uploaded onto your nRF51 device using the DFU (Device Firmware Update), to the memory of this device. If you agree, you will be asked to give the application permission to access files on your device.</string>
+    <string name="permission_title">Permission required</string>
+    <string name="scanner_action_cancel">Cancel</string>
+    <string name="scanner_action_scan">Scan</string>
+    <string name="scanner_empty">No device found</string>
+    <string name="scanner_permission_rationale">Since Android 6.0 Marshmallow system requires granting access to device\'s location in order to scan for Bluetooth Smart devices. Bluetooth beacons may be used to determine the phone\'s and user\'s location.</string>
+    <string name="scanner_subtitle_bonded">BONDED DEVICES:</string>
+    <string name="scanner_subtitle_not_bonded">AVAILABLE DEVICES:</string>
+    <string name="scanner_title">Select device:</string>
+    <string name="yes">Yes</string>
+    <style name="ActionBar">
+		<item name="android:textSize">@dimen/ui_font_size</item>
+		<item name="android:textColor">#FFFFFFFF</item>
+	</style>
+    <style name="ActionBar.Bar">
+		<item name="android:background">#000</item>
+	</style>
+    <style name="ActionBar.Button" parent="@android:style/Widget.Button.Small">
+		<item name="android:textColor">#FFFFFFFF</item>
+		<item name="android:textSize">@dimen/ui_font_size</item>
+		<item name="android:layout_margin">2dp</item>
+		<item name="android:paddingLeft">8dp</item>
+		<item name="android:paddingRight">8dp</item>
+	</style>
+    <style name="ActionBar.Icon">
+		<item name="android:background">@drawable/action_button_bg</item>
+		<item name="android:scaleType">centerInside</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_width">@dimen/action_button_width</item>
+		<item name="android:paddingTop">@dimen/action_button_padding_v</item>
+		<item name="android:paddingBottom">@dimen/action_button_padding_v</item>
+	</style>
+    <style name="ActionBar.Menu">
+		<item name="android:background">#000</item>
+		<item name="android:gravity">right|top</item>
+	</style>
+    <style name="ActionBar.MenuItem">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:textSize">@dimen/ui_font_size</item>
+		<item name="android:minHeight">0dp</item>
+		<item name="android:background">@drawable/action_button_bg</item>
+		<item name="android:paddingTop">8dp</item>
+		<item name="android:paddingBottom">8dp</item>
+		<item name="android:paddingLeft">16dp</item>
+		<item name="android:paddingRight">16dp</item>
+		<item name="android:gravity">left</item>
+	</style>
+    <style name="ActionBar.SpinnerTitle" parent="@style/Widget.AppCompat.TextView.SpinnerItem">
+		<item name="android:textColor">#fff</item>
+	</style>
+    <style name="ActionBar.Text">
+		<item name="android:background">@null</item>
+		<item name="android:textSize">@dimen/title_size</item>
+	</style>
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+		<item name="android:textColor">#fff</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light">
+		<item name="colorControlNormal">@color/actionBarColorDark</item>
+	</style>
+    <style name="ActionBarThemeOverlay" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+		<item name="android:textColorPrimary">#000</item>
+		<item name="android:textColorSecondary">#8fff</item>
+		<item name="colorControlNormal">#fff</item>
+		<item name="colorControlHighlight">#3fff</item>
+	</style>
+    <style name="AppTheme" parent="@style/AppThemeBase">
+		<item name="android:selectableItemBackground">@drawable/abc_item_background_holo_light
+		</item>
+	</style>
+    <style name="AppTheme.DialogTheme" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorPrimary">#d3d3d3</item>
+		<item name="colorPrimaryDark">@color/actionBarColorDark</item>
+		<item name="colorAccent">@color/actionBarColorDark</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+	</style>
+    <style name="AppTheme.Fullscreen" parent="@android:style/Theme.Holo.NoActionBar">
+		<item name="android:windowBackground">@drawable/background_image</item>
+	</style>
+    <style name="AppTheme.Translucent">
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+	</style>
+    <style name="AppTheme.TranslucentStatusBar">
+		<!-- Empty -->
+	</style>
+    <style name="AppThemeBase" parent="@style/Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowBackground">@drawable/background_image</item>
+		<item name="android:spinnerItemStyle">@style/ActionBar.SpinnerTitle</item>
+		<item name="actionMenuTextColor">@color/actionBarMenuTextColor</item>
+		<item name="alertDialogTheme">@style/AppTheme.DialogTheme</item>
+		<item name="colorPrimary">#d3d3d3</item><!-- ******This determines the color of the action bar****** -->
+		<item name="colorPrimaryDark">@color/actionBarColorDark</item>
+		<item name="colorAccent">@color/actionBarColorDark</item>
+		<item name="buttonStyle">@style/Widget.Button</item>
+		<item name="android:spinnerStyle">@style/Widget.AppCompat.Spinner</item> <!-- Required on pre-Lollipop to draw new spinner. -->
+	</style>
+    <style name="DrawerDivider">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1dp</item>
+		<item name="android:background">#E5E5E5</item>
+		<item name="android:layout_marginTop">8dp</item>
+		<item name="android:layout_marginBottom">8dp</item>
+	</style>
+    <style name="DrawerItem">
+		<item name="android:textColor">@color/menu_text</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:fontFamily">sans-serif-medium</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+    <style name="HeaderBar">
+		<item name="android:background">?colorPrimary</item>
+	</style>
+    <style name="HeaderShadow">
+		<item name="android:foreground">@drawable/action_bar_shadow</item>
+		<item name="foreground">@drawable/action_bar_shadow</item>
+	</style>
+    <style name="TextAppearanceTitle" parent="@style/TextAppearance.AppCompat.Caption">
+		<item name="android:textColor">?attr/colorAccent</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+    <style name="Widget"/>
+    <style name="Widget.Button" parent="@style/Widget.AppCompat.Button">
+		<item name="android:minWidth">160dip</item>
+	</style>
+    <style name="Widget.Connect" parent="@android:style/Widget.Holo.Light.Button">
+		<item name="android:background">@drawable/button</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:paddingLeft">40dp</item>
+		<item name="android:paddingRight">40dp</item>
+	</style>
+    <style name="Widget.IconButton">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:focusable">false</item>
+		<item name="android:focusableInTouchMode">false</item>
+		<item name="android:clickable">true</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:background">@null</item>
+	</style>
+    <style name="Widget.IconButton.Add">
+		<item name="android:src">@drawable/ic_action_add</item>
+	</style>
+    <style name="Widget.IconButton.Clear">
+		<item name="android:src">@drawable/ic_action_clear</item>
+	</style>
+    <style name="Widget.IconButton.Download">
+		<item name="android:src">@drawable/ic_action_download</item>
+	</style>
+    <style name="Widget.List">
+		<item name="android:background">@color/backgroundColor</item>
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+    <style name="Widget.ListTitle">
+		<item name="android:background">@color/headerBackgroundColor</item>
+		<item name="android:textColor">@color/headerTextColor</item>
+		<item name="android:gravity">center</item>
+	</style>
+    <style name="Widget.ScannerSubtitle">
+		<item name="android:textColor">?attr/colorAccent</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+</resources>

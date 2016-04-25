@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin_bottom">40dp</dimen>
+    <dimen name="feature_device_name_margin_top">16dp</dimen>
+    <dimen name="feature_grid_margin_top">20dp</dimen>
+    <dimen name="feature_horizontal_margin">80dp</dimen>
+    <dimen name="feature_uart_buttons_pane_height">256dp</dimen>
+    <dimen name="feature_uart_buttons_pane_width">256dp</dimen>
+    <dimen name="feature_vertical_margin_top">80dp</dimen>
+    <dimen name="gls_feature_title_long_margin">-126dp</dimen>
+    <dimen name="hrs_feature_title_long_margin">-152dp</dimen>
+    <dimen name="navdrawer_padding_horiz">24dp</dimen>
+    <dimen name="navdrawer_width">300dp</dimen>
+    <string name="gls_feature_title_long">GLUCOSE MONITOR</string>
+    <string name="hrs_feature_title_long">HEART RATE MONITOR</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+    <dimen name="activity_vertical_margin_bottom">60dp</dimen>
+    <dimen name="feature_device_name_margin_top">20dp</dimen>
+    <dimen name="feature_grid_margin_top">40dp</dimen>
+    <dimen name="feature_horizontal_margin">128dp</dimen>
+    <dimen name="feature_vertical_margin_top">100dp</dimen>
+</resources>

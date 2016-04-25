@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.materialnotes"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="no.nordicsemi.android.LOG" />
+
+    <supports-screens android:anyDensity="true" /> <!-- Support any Android device with a pointer -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.NotepadApp" >
+        <meta-data
+            android:name="roboguice.modules"
+            android:value="com.materialnotes.config.ConfigModule" />
+
+        <activity
+            android:name="com.materialnotes.activity.MainActivity"
+            android:label="@string/title_activity_notes_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.materialnotes.activity.EditNoteActivity"
+            android:label="@string/title_activity_edit_note" />
+        <activity
+            android:name="com.materialnotes.activity.ViewNoteActivity"
+            android:label="@string/title_activity_view_note" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- Template plugin activities -->
+        <!-- Remember to add your plug-in Activities to the Android Manifest file. -->
+        <!-- Plug-in activities -->
+        <activity
+            android:name="no.nordicsemi.android.scriba.hrs.HRSActivity"
+            android:icon="@drawable/scriba_launcher"
+            android:label="Scriba"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.DialogTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

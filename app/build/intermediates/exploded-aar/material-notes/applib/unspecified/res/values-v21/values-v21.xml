@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headerbar_elevation">6dp</dimen>
+    <dimen name="navdrawer_padding_top">54dp</dimen>
+    <style name="AppTheme" parent="@style/AppThemeBase">        
+        <!-- Empty -->
+        <item name="android:statusBarColor">#000</item>
+    </style>
+    <style name="AppTheme.TranslucentStatusBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="HeaderBar">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:elevation">@dimen/headerbar_elevation</item>
+    </style>
+    <style name="HeaderShadow">
+    </style>
+    <style name="Widget.Connect" parent="@android:style/Widget.Material.Light.Button">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:stateListAnimator">@animator/click_animator</item>
+    </style>
+    <style name="Widget.IconButton">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:focusable">false</item>
+		<item name="android:focusableInTouchMode">false</item>
+		<item name="android:clickable">true</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:background">@drawable/ic_icon_button_background</item>
+	</style>
+    <style name="Widget.IconButton.Add">
+		<item name="android:src">@drawable/ic_action_add_normal</item>
+	</style>
+    <style name="Widget.IconButton.Clear">
+		<item name="android:src">@drawable/ic_action_clear_normal</item>
+	</style>
+    <style name="Widget.IconButton.Download">
+		<item name="android:src">@drawable/ic_action_download_normal</item>
+	</style>
+    <style name="Widget.List">
+        <item name="android:background">@color/backgroundColor</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+    <style name="Widget.ListTitle">
+        <item name="android:background">@color/headerBackgroundColor</item>
+        <item name="android:textColor">@color/headerTextColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+</resources>

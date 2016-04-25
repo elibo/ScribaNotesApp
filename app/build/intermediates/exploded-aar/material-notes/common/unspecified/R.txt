@@ -1,0 +1,2 @@
+int string bonded 0x7f020000
+int string bonding 0x7f020001
