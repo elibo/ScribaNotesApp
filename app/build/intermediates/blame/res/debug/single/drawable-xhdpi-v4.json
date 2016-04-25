@@ -32,12 +32,12 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/app_file_manager.png"
     },
     {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/scribble.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/scribble.png"
-    },
-    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_uart_6.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/ic_uart_6.png"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/scribble.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/scribble.png"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_stat_notify_uart.png",
@@ -70,6 +70,10 @@
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_format_clear.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-xhdpi/ic_format_clear.png"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png",

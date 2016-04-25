@@ -36,6 +36,10 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-xxxhdpi/ic_action_font_faces.png"
     },
     {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_format_clear.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-xxxhdpi/ic_format_clear.png"
+    },
+    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-xxxhdpi/abc_btn_radio_to_on_mtrl_000.png"
     },

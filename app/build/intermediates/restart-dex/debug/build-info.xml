@@ -4,43 +4,31 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="6730190490280" >
+    timestamp="19939359053009" >
 
     <task
         name="javac"
-        duration="1953" />
+        duration="1954" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="110" />
+        duration="32" />
     <task
         name="verifier"
-        duration="3" />
+        duration="2" />
 
-    <artifact
-        location="/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-        type="DEX" />
     <artifact
         location="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
         type="DEX" />
 
-    <build timestamp="6419283270083" >
+    <build timestamp="18894423828577" >
         <artifact
             location="/Users/Elibo/Desktop/material-notes/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="6730190490280" >
-        <artifact
-            location="/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
+    <build timestamp="19939359053009" >
         <artifact
             location="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
             type="DEX" />

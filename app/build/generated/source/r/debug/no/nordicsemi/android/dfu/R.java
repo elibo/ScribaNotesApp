@@ -9,7 +9,7 @@ package no.nordicsemi.android.dfu;
 public final class R {
 	public static final class drawable {
 		public static final int ic_action_notify_cancel = 0x7f02009c;
-		public static final int ic_stat_notify_dfu = 0x7f0200ba;
+		public static final int ic_stat_notify_dfu = 0x7f0200bb;
 	}
 	public static final class string {
 		public static final int dfu_action_abort = 0x7f08004f;

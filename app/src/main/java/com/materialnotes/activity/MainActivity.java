@@ -243,8 +243,9 @@ public class MainActivity extends RoboActionBarActivity {
 
     @Override
     protected void onDestroy() {
-        HRSActivity.fa.finish();
         super.onDestroy();
+        HRSActivity.fa.finish();
+
     }
 
     /**

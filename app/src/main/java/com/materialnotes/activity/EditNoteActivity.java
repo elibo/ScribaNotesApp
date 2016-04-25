@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.Spannable;
 import android.text.SpannableStringBuilder;
+import android.text.style.CharacterStyle;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
 import android.view.Menu;
@@ -18,6 +20,8 @@ import android.widget.Toast;
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.util.Strings;
+
+import org.w3c.dom.Text;
 
 import java.util.Date;
 
@@ -39,6 +43,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     private Note note;
     private SpannableStringBuilder ssbtitle,ssbcontent;
+    private boolean x=true;
 
 
 
@@ -107,6 +112,20 @@ public class EditNoteActivity extends RoboActionBarActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
+                return true;
+            case R.id.clear:
+
+                StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(), StyleSpan.class);
+
+                for (int i = 0; i < ss.length; i++) {
+                    if (ss[i].getStyle() == Typeface.BOLD ||
+                            ss[i].getStyle() == Typeface.ITALIC ||
+                            ss[i].getStyle() == Typeface.BOLD_ITALIC ){
+                        ssbcontent.removeSpan(ss[i]);
+                    }
+                }
+                noteContentText.setText(ssbcontent);
+
                 return true;
             case R.id.action_save:
                 if (isNoteFormOk()) {
@@ -193,6 +212,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         ssbcontent=(SpannableStringBuilder)noteContentText.getText();
         ssbcontent.setSpan(new StyleSpan(Typeface.BOLD),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
 
+
     }
 
     public void boldtitle(){
@@ -211,6 +231,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         ssbcontent=(SpannableStringBuilder)noteContentText.getText();
         ssbcontent.setSpan(new StyleSpan(Typeface.ITALIC),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
 
+
  }
     public void underlinecontent(){
 
@@ -223,6 +244,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
         ssbtitle.setSpan(new UnderlineSpan(),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
+
 
     }
 

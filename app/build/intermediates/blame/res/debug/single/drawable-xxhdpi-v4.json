@@ -340,6 +340,10 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable-xxhdpi/common_plus_signin_btn_icon_light_pressed.9.png"
     },
     {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_format_clear.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-xxhdpi/ic_format_clear.png"
+    },
+    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_action_font_faces.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-xxhdpi/ic_action_font_faces.png"
     },

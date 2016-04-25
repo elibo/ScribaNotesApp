@@ -2,16 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:NotepadApp="http://schemas.android.com/apk/res-auto" >
 
-
+    <item
+        android:id="@+id/clear"
+        NotepadApp:showAsAction="always"
+        android:title="Clear"
+        android:icon="@drawable/ic_format_clear"/>
     <item
         android:id="@+id/format"
-        NotepadApp:showAsAction="ifRoom"
+        NotepadApp:showAsAction="always"
         android:icon="@drawable/ic_action_font_faces"
         android:title="format" />
 
     <item
         android:id="@+id/action_save"
-        NotepadApp:showAsAction="ifRoom"
+        NotepadApp:showAsAction="always"
         android:icon="@drawable/ic_action_save"
         android:title="@string/action_save"/>
 

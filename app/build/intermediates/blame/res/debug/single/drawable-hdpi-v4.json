@@ -100,6 +100,10 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-hdpi-v4/ic_stat_notify_csc.png"
     },
     {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_format_clear.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-hdpi/ic_format_clear.png"
+    },
+    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/proximity_lock_open.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-hdpi-v4/proximity_lock_open.png"
     },
