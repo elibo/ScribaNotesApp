@@ -22,7 +22,6 @@
                 android:layout_marginBottom="8dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#ff000000"
-                android:textStyle="bold"
                 android:layout_margin="8dp" />
 
             <TextView

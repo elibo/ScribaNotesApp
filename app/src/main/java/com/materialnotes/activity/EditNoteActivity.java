@@ -2,12 +2,15 @@ package com.materialnotes.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
+import android.text.style.BackgroundColorSpan;
 import android.text.style.CharacterStyle;
+import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
 import android.view.Menu;
@@ -43,7 +46,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     private Note note;
     private SpannableStringBuilder ssbtitle,ssbcontent;
-    private boolean x=true;
 
 
 
@@ -114,20 +116,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 onBackPressed();
                 return true;
             case R.id.clear:
-
-                StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(), StyleSpan.class);
-                UnderlineSpan[] us=ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),UnderlineSpan.class);
-
-                for (int i = 0; i < ss.length; i++) {
-                    if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ){
-                        ssbcontent.removeSpan(ss[i]);
-                    }
-                }
-
-                for (int i=0; i<us.length;i++){
-                    ssbcontent.removeSpan(us[i]);
-                }
-                noteContentText.setText(ssbcontent);
+                clearFormat();
                 return true;
             case R.id.action_save:
                 if (isNoteFormOk()) {
@@ -136,31 +125,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 } else validateNoteForm();
                 return true;
             case R.id.format:
-                if (HRSActivity.mHrmValue > 600){
-                    if(noteTitleText.hasFocus()){
-                        boldtitle();
-                    }
-                    else {
-                        boldcontent();
-                    }
-                }
-                else if (HRSActivity.mHrmValue >300 && HRSActivity.mHrmValue<600){
-                    if(noteTitleText.hasFocus()){
-                        italictitle();
-                    }
-                    else {
-                        italiccontent();
-                    }
-                } else if (HRSActivity.mHrmValue< 300){
-                    if(noteTitleText.hasFocus()){
-                        underlinetitle();
-                    }
-                    else {
-                        underlinecontent();
-                    }
-
-                }
-
+                formatText();
                 return true;
             default: return super.onOptionsItemSelected(item);
         }
@@ -210,46 +175,97 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
-    public void boldcontent(){
-        ssbcontent=(SpannableStringBuilder)noteContentText.getText();
-        ssbcontent.setSpan(new StyleSpan(Typeface.BOLD),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
+    public void bold(){
 
+        if (noteTitleText.hasFocus()){
+
+            ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
+            ssbtitle.setSpan(new StyleSpan(Typeface.BOLD),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
+
+        } else {
+
+            ssbcontent=(SpannableStringBuilder)noteContentText.getText();
+            ssbcontent.setSpan(new StyleSpan(Typeface.BOLD),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
+        }
+    }
+
+    public void italic(){
+
+        if (noteTitleText.hasFocus()) {
+
+            ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
+            ssbtitle.setSpan(new StyleSpan(Typeface.ITALIC), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
+
+        } else {
+
+            ssbcontent=(SpannableStringBuilder)noteContentText.getText();
+            ssbcontent.setSpan(new StyleSpan(Typeface.ITALIC),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
+        }
+    }
+
+    public void underline(){
+
+        if (noteTitleText.hasFocus()){
+
+            ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
+            ssbtitle.setSpan(new UnderlineSpan(),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
+
+        } else {
+
+            ssbcontent = (SpannableStringBuilder) noteContentText.getText();
+            ssbcontent.setSpan(new UnderlineSpan(), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
+        }
+    }
+
+    public void highlight(){
+
+        if (noteTitleText.hasFocus()){
+
+            ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
+            ssbtitle.setSpan(new ForegroundColorSpan(Color.YELLOW),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
+
+        } else {
+
+            ssbtitle=(SpannableStringBuilder)noteContentText.getText();
+            ssbtitle.setSpan(new ForegroundColorSpan(Color.YELLOW),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
+        }
 
     }
 
-    public void boldtitle(){
-        ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
-        ssbtitle.setSpan(new StyleSpan(Typeface.BOLD),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
-    }
+    public void clearFormat(){
 
-    public void italictitle(){
-        ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
-        ssbtitle.setSpan(new StyleSpan(Typeface.ITALIC),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
+        StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(), StyleSpan.class);
+        UnderlineSpan[] us=ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),UnderlineSpan.class);
 
-    }
+        for (int i = 0; i < ss.length; i++) {
+            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ){
+                ssbcontent.removeSpan(ss[i]);
+            }
+        }
 
-    public void italiccontent(){
-
-        ssbcontent=(SpannableStringBuilder)noteContentText.getText();
-        ssbcontent.setSpan(new StyleSpan(Typeface.ITALIC),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
-
-
- }
-    public void underlinecontent(){
-
-        ssbcontent=(SpannableStringBuilder)noteContentText.getText();
-        ssbcontent.setSpan(new UnderlineSpan(),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
+        for (int i=0; i<us.length;i++){
+            ssbcontent.removeSpan(us[i]);
+        }
+        noteContentText.setText(ssbcontent);
 
     }
 
-    public void underlinetitle(){
+    public void formatText(){
 
-        ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
-        ssbtitle.setSpan(new UnderlineSpan(),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
-
+        if (HRSActivity.mHrmValue > 600){
+            bold();
+        }
+        else if (HRSActivity.mHrmValue >300 && HRSActivity.mHrmValue<600){
+            italic();
+        }
+        else if (HRSActivity.mHrmValue< 300 && HRSActivity.mHrmValue>50) {
+            underline();
+        }
+        else if (HRSActivity.mHrmValue>= 0 && HRSActivity.mHrmValue <50){
+            highlight();
+        }
 
     }
-
 
 
 }
