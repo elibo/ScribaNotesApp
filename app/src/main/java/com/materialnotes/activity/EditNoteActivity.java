@@ -116,16 +116,18 @@ public class EditNoteActivity extends RoboActionBarActivity {
             case R.id.clear:
 
                 StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(), StyleSpan.class);
+                UnderlineSpan[] us=ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),UnderlineSpan.class);
 
                 for (int i = 0; i < ss.length; i++) {
-                    if (ss[i].getStyle() == Typeface.BOLD ||
-                            ss[i].getStyle() == Typeface.ITALIC ||
-                            ss[i].getStyle() == Typeface.BOLD_ITALIC ){
+                    if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ){
                         ssbcontent.removeSpan(ss[i]);
                     }
                 }
-                noteContentText.setText(ssbcontent);
 
+                for (int i=0; i<us.length;i++){
+                    ssbcontent.removeSpan(us[i]);
+                }
+                noteContentText.setText(ssbcontent);
                 return true;
             case R.id.action_save:
                 if (isNoteFormOk()) {

@@ -1,2 +1,0 @@
-CHANGED,/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/materialnotes/activity/EditNoteActivity$override.class

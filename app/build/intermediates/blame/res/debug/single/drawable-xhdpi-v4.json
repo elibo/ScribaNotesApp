@@ -28,16 +28,16 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/undo_icon.png"
     },
     {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/app_file_manager.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/app_file_manager.png"
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/scribble.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/scribble.png"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_uart_6.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/ic_uart_6.png"
     },
     {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/scribble.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/scribble.png"
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/app_file_manager.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/app_file_manager.png"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_stat_notify_uart.png",
