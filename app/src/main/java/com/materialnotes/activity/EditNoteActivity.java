@@ -232,6 +232,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void clearFormat() {
 
+        ssbcontent=(SpannableStringBuilder)noteContentText.getText();
+
         StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), StyleSpan.class);
         UnderlineSpan[] us = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), UnderlineSpan.class);
 

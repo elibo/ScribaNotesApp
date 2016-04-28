@@ -18,7 +18,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity.class" />
@@ -35,13 +34,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applib/applib.iml" afterPath="$PROJECT_DIR$/applib/applib.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/wear.iml" afterPath="$PROJECT_DIR$/wear/wear.iml" />
     </list>
     <ignored path="material-notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,12 +71,10 @@
       <file leaf-file-name="EditNoteActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6456693">
-              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33070865">
+              <caret line="202" column="5" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
               <folding>
                 <element signature="method#onCreate#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="e#5060#5094#0" expanded="true" />
                 <element signature="e#5268#5304#0" expanded="true" />
@@ -4720,7 +4714,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -4762,8 +4756,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#onCreate#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="e#5060#5094#0" expanded="true" />
             <element signature="e#5268#5304#0" expanded="true" />
@@ -4813,8 +4805,6 @@
           <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
           <folding>
             <element signature="method#onCreate#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="e#5060#5094#0" expanded="true" />
             <element signature="e#5268#5304#0" expanded="true" />
@@ -4843,8 +4833,6 @@
           <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
           <folding>
             <element signature="method#onCreate#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="e#5060#5094#0" expanded="true" />
             <element signature="e#5268#5304#0" expanded="true" />
@@ -5134,12 +5122,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6456693">
-          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33070865">
+          <caret line="202" column="5" selection-start-line="202" selection-start-column="5" selection-end-line="202" selection-end-column="5" />
           <folding>
             <element signature="method#onCreate#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="e#5060#5094#0" expanded="true" />
             <element signature="e#5268#5304#0" expanded="true" />
