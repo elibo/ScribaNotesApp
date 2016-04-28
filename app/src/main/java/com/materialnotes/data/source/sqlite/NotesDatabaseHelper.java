@@ -10,7 +10,7 @@ import java.io.InputStream;
 
 /**
  * Helper for the use of sqlLite databases
- ** @see <a href="http://bit.ly/1s5nUI5">Create a Database Using a SQL Helper</a>
+ * * @see <a href="http://bit.ly/1s5nUI5">Create a Database Using a SQL Helper</a>
  */
 public class NotesDatabaseHelper extends SQLiteOpenHelper {
 
@@ -31,7 +31,9 @@ public class NotesDatabaseHelper extends SQLiteOpenHelper {
         this.context = context;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onCreate(SQLiteDatabase db) {
         Log.v(TAG, "Creating database version " + DATABASE_VERSION + "...");
@@ -58,7 +60,9 @@ public class NotesDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         Log.w(TAG, "Upgrading database from version " + oldVersion + " to " + newVersion + ", which will destroy all old data");

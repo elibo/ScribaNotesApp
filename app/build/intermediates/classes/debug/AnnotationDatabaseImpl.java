@@ -1,15 +1,16 @@
+import com.google.inject.AnnotationDatabase;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import com.google.inject.AnnotationDatabase;
+
 import roboguice.fragment.FragmentUtil;
 
 public class AnnotationDatabaseImpl extends AnnotationDatabase {
 
     public void fillAnnotationClassesAndFieldsNames(HashMap<String, Map<String, Set<String>>> mapAnnotationToMapClassWithInjectionNameToFieldSet) {
-    
+
         String annotationClassName = null;
         Map<String, Set<String>> mapClassWithInjectionNameToFieldSet = null;
         Set<String> fieldNameSet = null;
@@ -17,7 +18,7 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
 
         annotationClassName = "com.google.inject.Inject";
         mapClassWithInjectionNameToFieldSet = mapAnnotationToMapClassWithInjectionNameToFieldSet.get(annotationClassName);
-        if( mapClassWithInjectionNameToFieldSet == null ) {
+        if (mapClassWithInjectionNameToFieldSet == null) {
             mapClassWithInjectionNameToFieldSet = new HashMap<String, Set<String>>();
             mapAnnotationToMapClassWithInjectionNameToFieldSet.put(annotationClassName, mapClassWithInjectionNameToFieldSet);
         }
@@ -29,7 +30,7 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
 
         annotationClassName = "roboguice.inject.InjectView";
         mapClassWithInjectionNameToFieldSet = mapAnnotationToMapClassWithInjectionNameToFieldSet.get(annotationClassName);
-        if( mapClassWithInjectionNameToFieldSet == null ) {
+        if (mapClassWithInjectionNameToFieldSet == null) {
             mapClassWithInjectionNameToFieldSet = new HashMap<String, Set<String>>();
             mapAnnotationToMapClassWithInjectionNameToFieldSet.put(annotationClassName, mapClassWithInjectionNameToFieldSet);
         }
@@ -59,10 +60,10 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
         mapClassWithInjectionNameToFieldSet.put("com.materialnotes.activity.ViewNoteActivity", fieldNameSet);
 
     }
-    
+
     public void fillAnnotationClassesAndMethods(HashMap<String, Map<String, Set<String>>> mapAnnotationToMapClassWithInjectionNameToMethodsSet) {
     }
-    
+
     public void fillAnnotationClassesAndConstructors(HashMap<String, Map<String, Set<String>>> mapAnnotationToMapClassWithInjectionNameToConstructorsSet) {
 
         String annotationClassName = null;
@@ -72,7 +73,7 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
 
         annotationClassName = "com.google.inject.Inject";
         mapClassWithInjectionNameToConstructorSet = mapAnnotationToMapClassWithInjectionNameToConstructorsSet.get(annotationClassName);
-        if( mapClassWithInjectionNameToConstructorSet == null ) {
+        if (mapClassWithInjectionNameToConstructorSet == null) {
             mapClassWithInjectionNameToConstructorSet = new HashMap<String, Set<String>>();
             mapAnnotationToMapClassWithInjectionNameToConstructorsSet.put(annotationClassName, mapClassWithInjectionNameToConstructorSet);
         }
@@ -82,7 +83,7 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
         mapClassWithInjectionNameToConstructorSet.put("com.materialnotes.data.dao.impl.sqlite.NoteSQLiteDAO", constructorSet);
 
     }
-    
+
     public void fillClassesContainingInjectionPointSet(HashSet<String> classesContainingInjectionPointsSet) {
         classesContainingInjectionPointsSet.add("com.materialnotes.widget.AboutNoticeDialog");
         classesContainingInjectionPointsSet.add("com.materialnotes.activity.MainActivity");
@@ -90,7 +91,7 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
         classesContainingInjectionPointsSet.add("com.materialnotes.activity.EditNoteActivity");
         classesContainingInjectionPointsSet.add("com.materialnotes.activity.ViewNoteActivity");
     }
-    
+
 
     public void fillBindableClasses(HashSet<String> injectedClasses) {
         injectedClasses.add("android.widget.TextView");
@@ -101,11 +102,11 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
         injectedClasses.add("com.shamanland.fab.FloatingActionButton");
         injectedClasses.add("android.widget.EditText");
 
-        if(FragmentUtil.hasNative) {
+        if (FragmentUtil.hasNative) {
             injectedClasses.add("android.app.FragmentManager");
         }
 
-        if(FragmentUtil.hasSupport) {
+        if (FragmentUtil.hasSupport) {
             injectedClasses.add("android.support.v4.app.FragmentManager");
         }
     }

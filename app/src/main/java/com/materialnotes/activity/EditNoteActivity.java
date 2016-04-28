@@ -5,26 +5,22 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.Html;
-import android.text.Spannable;
 import android.text.SpannableStringBuilder;
-import android.text.style.BackgroundColorSpan;
-import android.text.style.CharacterStyle;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.util.Strings;
 
-import org.w3c.dom.Text;
+import org.xml.sax.XMLReader;
 
 import java.util.Date;
 
@@ -41,19 +37,20 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
 
-    @InjectView(R.id.note_title)   private EditText noteTitleText;
-    @InjectView(R.id.note_content) private EditText noteContentText;
+    @InjectView(R.id.note_title)
+    private EditText noteTitleText;
+    @InjectView(R.id.note_content)
+    private EditText noteContentText;
 
     private Note note;
-    private SpannableStringBuilder ssbtitle,ssbcontent;
-
+    private SpannableStringBuilder ssbtitle, ssbcontent;
 
 
     /**
      * Makes the intent to call the activity with an existing note
      *
      * @param context the context
-     * @param note the note to edit
+     * @param note    the note to edit
      * @return the Intent.
      */
     public static Intent buildIntent(Context context, Note note) {
@@ -62,7 +59,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
         return intent;
     }
 
-    /** Makes the intent to call the activity for creating a note
+    /**
+     * Makes the intent to call the activity for creating a note
      *
      * @param context the context that calls the activity
      * @return the Intent.
@@ -81,13 +79,15 @@ public class EditNoteActivity extends RoboActionBarActivity {
         return (Note) intent.getExtras().get(EXTRA_NOTE);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
-        ssbcontent=(SpannableStringBuilder)noteContentText.getText();
-		// Starts the components //////////////////////////////////////////////////////////////
+        ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
+        ssbcontent = (SpannableStringBuilder) noteContentText.getText();
+        // Starts the components //////////////////////////////////////////////////////////////
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Shows the go back arrow
         note = (Note) getIntent().getSerializableExtra(EXTRA_NOTE); // gets the note from the intent
         if (note != null) { // Edit existing note
@@ -101,14 +101,18 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.edit_note, menu);
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -122,16 +126,20 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 if (isNoteFormOk()) {
                     setNoteResult();
                     finish();
-                } else validateNoteForm();
+                } else
+                    validateNoteForm();
                 return true;
             case R.id.format:
                 formatText();
                 return true;
-            default: return super.onOptionsItemSelected(item);
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
-    /** @return {@code true} is the note has title and content; {@code false} every other case */
+    /**
+     * @return {@code true} is the note has title and content; {@code false} every other case
+     */
     private boolean isNoteFormOk() {
         return !Strings.isNullOrBlank(noteTitleText.getText().toString()) && !Strings.isNullOrBlank(noteContentText.getText().toString());
     }
@@ -148,14 +156,17 @@ public class EditNoteActivity extends RoboActionBarActivity {
         setResult(RESULT_OK, resultIntent);
     }
 
-    /** Shows validating messages  */
+    /**
+     * Shows validating messages
+     */
     private void validateNoteForm() {
         StringBuilder message = null;
         if (Strings.isNullOrBlank(noteTitleText.getText().toString())) {
             message = new StringBuilder().append(getString(R.string.title_required));
         }
         if (Strings.isNullOrBlank(noteContentText.getText().toString())) {
-            if (message == null) message = new StringBuilder().append(getString(R.string.content_required));
+            if (message == null)
+                message = new StringBuilder().append(getString(R.string.content_required));
             else message.append("\n").append(getString(R.string.content_required));
         }
         if (message != null) {
@@ -166,7 +177,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onBackPressed() {
         // Note not created or updated
@@ -175,21 +188,21 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
-    public void bold(){
+    public void boldFormat() {
 
-        if (noteTitleText.hasFocus()){
+        if (noteTitleText.hasFocus()) {
 
-            ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
-            ssbtitle.setSpan(new StyleSpan(Typeface.BOLD),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
+            ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
+            ssbtitle.setSpan(new StyleSpan(Typeface.BOLD), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
 
         } else {
 
-            ssbcontent=(SpannableStringBuilder)noteContentText.getText();
-            ssbcontent.setSpan(new StyleSpan(Typeface.BOLD),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
+            ssbcontent = (SpannableStringBuilder) noteContentText.getText();
+            ssbcontent.setSpan(new StyleSpan(Typeface.BOLD), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
         }
     }
 
-    public void italic(){
+    public void italicFormat() {
 
         if (noteTitleText.hasFocus()) {
 
@@ -198,17 +211,17 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         } else {
 
-            ssbcontent=(SpannableStringBuilder)noteContentText.getText();
-            ssbcontent.setSpan(new StyleSpan(Typeface.ITALIC),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
+            ssbcontent = (SpannableStringBuilder) noteContentText.getText();
+            ssbcontent.setSpan(new StyleSpan(Typeface.ITALIC), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
         }
     }
 
-    public void underline(){
+    public void underlineFormat() {
 
-        if (noteTitleText.hasFocus()){
+        if (noteTitleText.hasFocus()) {
 
-            ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
-            ssbtitle.setSpan(new UnderlineSpan(),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
+            ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
+            ssbtitle.setSpan(new UnderlineSpan(), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
 
         } else {
 
@@ -217,52 +230,50 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
     }
 
-    public void highlight(){
+    public void highlightForeground() {
 
-        if (noteTitleText.hasFocus()){
+        if (noteTitleText.hasFocus()) {
 
-            ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
-            ssbtitle.setSpan(new ForegroundColorSpan(Color.YELLOW),noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),0);
+            ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
+            ssbtitle.setSpan(new ForegroundColorSpan(Color.YELLOW), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
 
         } else {
 
-            ssbtitle=(SpannableStringBuilder)noteContentText.getText();
-            ssbtitle.setSpan(new ForegroundColorSpan(Color.YELLOW),noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),0);
+            ssbcontent = (SpannableStringBuilder) noteContentText.getText();
+            ssbcontent.setSpan(new ForegroundColorSpan(Color.YELLOW), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
+
         }
 
     }
 
-    public void clearFormat(){
+    public void clearFormat() {
 
-        StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(), StyleSpan.class);
-        UnderlineSpan[] us=ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),UnderlineSpan.class);
+        StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), StyleSpan.class);
+        UnderlineSpan[] us = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), UnderlineSpan.class);
 
         for (int i = 0; i < ss.length; i++) {
-            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ){
+            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC) {
                 ssbcontent.removeSpan(ss[i]);
             }
         }
 
-        for (int i=0; i<us.length;i++){
+        for (int i = 0; i < us.length; i++) {
             ssbcontent.removeSpan(us[i]);
         }
         noteContentText.setText(ssbcontent);
 
     }
 
-    public void formatText(){
+    public void formatText() {
 
-        if (HRSActivity.mHrmValue > 600){
-            bold();
-        }
-        else if (HRSActivity.mHrmValue >300 && HRSActivity.mHrmValue<600){
-            italic();
-        }
-        else if (HRSActivity.mHrmValue< 300 && HRSActivity.mHrmValue>50) {
-            underline();
-        }
-        else if (HRSActivity.mHrmValue>= 0 && HRSActivity.mHrmValue <50){
-            highlight();
+        if (HRSActivity.mHrmValue > 600) {
+            boldFormat();
+        } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 600) {
+            italicFormat();
+        } else if (HRSActivity.mHrmValue < 300 && HRSActivity.mHrmValue > 50) {
+            underlineFormat();
+        } else if (HRSActivity.mHrmValue >= 0 && HRSActivity.mHrmValue < 50) {
+            highlightForeground();
         }
 
     }

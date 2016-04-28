@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2012 The Android Open Source Project
  
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,44 +13,19 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FF000000"
-    android:paddingLeft="@dimen/tool_palette_gutter"
-    android:paddingBottom="@dimen/tool_palette_gutter"
-    android:orientation="vertical" >
-          <Button
-            android:id="@+id/share" 
-            style="@style/ActionBar.MenuItem"
-            android:src="@drawable/share"
-            android:text="Share"
-            android:contentDescription="share drawing"
-            android:onClick="clickShare"
-            />
-          <Button
-            android:id="@+id/load"
-            style="@style/ActionBar.MenuItem"
-            android:src="@drawable/load"
-            android:text="Load"
-            android:contentDescription="load image"
-            android:onClick="clickLoad"
-            />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FF000000" android:paddingLeft="@dimen/tool_palette_gutter"
+    android:paddingBottom="@dimen/tool_palette_gutter" android:orientation="vertical">
+    <Button android:id="@+id/share" style="@style/ActionBar.MenuItem" android:src="@drawable/share"
+        android:text="Share" android:contentDescription="share drawing"
+        android:onClick="clickShare" />
+    <Button android:id="@+id/load" style="@style/ActionBar.MenuItem" android:src="@drawable/load"
+        android:text="Load" android:contentDescription="load image" android:onClick="clickLoad" />
 
-    <Button
-        android:id="@+id/save"
-        style="@style/ActionBar.MenuItem"
-        android:text="Save"
-        android:contentDescription="save drawing"
-        android:onClick="clickSave"
-        />
+    <Button android:id="@+id/save" style="@style/ActionBar.MenuItem" android:text="Save"
+        android:contentDescription="save drawing" android:onClick="clickSave" />
 
-          <Button
-            android:id="@+id/about" 
-            style="@style/ActionBar.MenuItem"
-            android:text="About"
-            android:contentDescription="about markers"
-            android:onClick="clickAbout"
-            />
+    <Button android:id="@+id/about" style="@style/ActionBar.MenuItem" android:text="About"
+        android:contentDescription="about markers" android:onClick="clickAbout" />
 </LinearLayout>

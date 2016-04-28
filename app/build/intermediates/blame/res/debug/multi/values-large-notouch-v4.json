@@ -1,26 +1,26 @@
 [
-    {
-        "outputFile": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/values-large-notouch-v4/values-large-notouch-v4.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 49,
-                    "endOffset": 100
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-large-notouch-v4/values-large-notouch-v4.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 49,
-                        "endOffset": 100
-                    }
-                }
-            }
-        ]
-    }
+  {
+    "outputFile": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/values-large-notouch-v4/values-large-notouch-v4.xml",
+    "map": [
+      {
+        "to": {
+          "startLine": 2,
+          "startColumn": 4,
+          "startOffset": 55,
+          "endColumn": 49,
+          "endOffset": 100
+        },
+        "from": {
+          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-large-notouch-v4/values-large-notouch-v4.xml",
+          "position": {
+            "startLine": 2,
+            "startColumn": 4,
+            "startOffset": 55,
+            "endColumn": 49,
+            "endOffset": 100
+          }
+        }
+      }
+    ]
+  }
 ]

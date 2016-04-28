@@ -20,18 +20,12 @@
   ~ USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="99"
-        app:showAsAction="never"
-        android:title="@string/action_settings"/>
-    
-    <item
-        android:id="@+id/action_about"
-        android:orderInCategory="100"
-        app:showAsAction="never"
-        android:title="@string/action_about"/>    
-    
+    <item android:id="@+id/action_settings" android:orderInCategory="99" app:showAsAction="never"
+        android:title="@string/action_settings" />
+
+    <item android:id="@+id/action_about" android:orderInCategory="100" app:showAsAction="never"
+        android:title="@string/action_about" />
+
 </menu>

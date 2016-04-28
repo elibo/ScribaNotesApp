@@ -1,10 +1,10 @@
 [
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/layout-v21/fragment_device_selection.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/layout-v21/fragment_device_selection.xml"
-    },
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/layout-v21/feature_icon.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/layout-v21/feature_icon.xml"
-    }
+  {
+    "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/layout-v21/fragment_device_selection.xml",
+    "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/layout-v21/fragment_device_selection.xml"
+  },
+  {
+    "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/layout-v21/feature_icon.xml",
+    "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/layout-v21/feature_icon.xml"
+  }
 ]

@@ -6,15 +6,14 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 import com.materialnotes.R;
-
 import com.shamanland.fab.FloatingActionButton;
 import com.shamanland.fab.ScrollDetector;
 
 /**
  * Hides and shows a FloatingActionButton and ActionBar when you scroll up or down
- **
+ * *
  */
-public class ShowHideOnScroll extends ScrollDetector implements Animation.AnimationListener  {
+public class ShowHideOnScroll extends ScrollDetector implements Animation.AnimationListener {
 
     private final FloatingActionButton fab;
     private final ActionBar actionBar;
@@ -22,8 +21,8 @@ public class ShowHideOnScroll extends ScrollDetector implements Animation.Animat
     /**
      * Constructor.
      *
-     * @param fab  FloatingActionButton
-     * @param actionBar  ActionBar
+     * @param fab       FloatingActionButton
+     * @param actionBar ActionBar
      */
     public ShowHideOnScroll(FloatingActionButton fab, ActionBar actionBar) {
         super(fab.getContext());
@@ -31,7 +30,9 @@ public class ShowHideOnScroll extends ScrollDetector implements Animation.Animat
         this.actionBar = actionBar;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onScrollDown() {
         if (!areViewsVisible()) {
@@ -41,7 +42,9 @@ public class ShowHideOnScroll extends ScrollDetector implements Animation.Animat
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onScrollUp() {
         if (areViewsVisible()) {
@@ -51,7 +54,9 @@ public class ShowHideOnScroll extends ScrollDetector implements Animation.Animat
         }
     }
 
-    /** @return {@code true} if the FAB and the ActionBar are visible; {@code false} if not. */
+    /**
+     * @return {@code true} if the FAB and the ActionBar are visible; {@code false} if not.
+     */
     private boolean areViewsVisible() {
         return fab.getVisibility() == View.VISIBLE && actionBar.isShowing();
     }
@@ -68,19 +73,25 @@ public class ShowHideOnScroll extends ScrollDetector implements Animation.Animat
         setIgnore(true);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onAnimationStart(Animation animation) {
         // Nada
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onAnimationEnd(Animation animation) {
         setIgnore(false);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onAnimationRepeat(Animation animation) {
         // Nada

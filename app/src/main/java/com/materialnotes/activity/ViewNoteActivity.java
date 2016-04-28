@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
-
 import com.materialnotes.view.ShowHideOnScroll;
 import com.shamanland.fab.FloatingActionButton;
 
@@ -32,12 +31,18 @@ public class ViewNoteActivity extends RoboActionBarActivity {
     private static final String EXTRA_UPDATED_NOTE = "EXTRA_UPDATED_NOTE";
     private static final DateFormat DATETIME_FORMAT = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.MEDIUM);
 
-    @InjectView(R.id.scroll_view)          private ScrollView scrollView;
-    @InjectView(R.id.edit_note_button)     private FloatingActionButton editNoteButton;
-    @InjectView(R.id.note_title)           private TextView noteTitleText;
-    @InjectView(R.id.note_content)         private TextView noteContentText;
-    @InjectView(R.id.note_created_at_date) private TextView noteCreatedAtDateText;
-    @InjectView(R.id.note_updated_at_date) private TextView noteUpdatedAtDateText;
+    @InjectView(R.id.scroll_view)
+    private ScrollView scrollView;
+    @InjectView(R.id.edit_note_button)
+    private FloatingActionButton editNoteButton;
+    @InjectView(R.id.note_title)
+    private TextView noteTitleText;
+    @InjectView(R.id.note_content)
+    private TextView noteContentText;
+    @InjectView(R.id.note_created_at_date)
+    private TextView noteCreatedAtDateText;
+    @InjectView(R.id.note_updated_at_date)
+    private TextView noteUpdatedAtDateText;
 
     private Note note;
 
@@ -45,7 +50,7 @@ public class ViewNoteActivity extends RoboActionBarActivity {
      * Creates the intent to call the activity
      *
      * @param context the context you're gonna use
-     * @param note the note you're gonna see
+     * @param note    the note you're gonna see
      * @return an intent
      */
     public static Intent buildIntent(Context context, Note note) {
@@ -64,12 +69,14 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         return (Note) intent.getExtras().get(EXTRA_UPDATED_NOTE);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Starts the components //////////////////////////////////////////////////////////////
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Muestra la flecha hacia atrás
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Shows the arrow to go back
         scrollView.setOnTouchListener(new ShowHideOnScroll(editNoteButton, getSupportActionBar())); // Hides or shows the FAB and the Action Bar
         editNoteButton.setOnClickListener(new View.OnClickListener() {
 
@@ -87,18 +94,25 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         noteUpdatedAtDateText.setText(DATETIME_FORMAT.format(note.getUpdatedAt()));
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+
             case android.R.id.home:
                 onBackPressed(); // Closes the activity
                 return true;
-            default: return super.onOptionsItemSelected(item);
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == EDIT_NOTE_RESULT_CODE) {
@@ -115,7 +129,9 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void onBackPressed() {
         // The note wasn't edited

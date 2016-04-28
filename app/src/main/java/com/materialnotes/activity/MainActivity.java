@@ -1,59 +1,36 @@
 package com.materialnotes.activity;
 
 import android.app.AlertDialog;
-import android.bluetooth.BluetoothClass;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothGatt;
-import android.bluetooth.le.BluetoothLeScanner;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.provider.CalendarContract;
 import android.support.v7.view.ActionMode;
-import android.text.Html;
-import android.text.Spannable;
-import android.text.SpannableStringBuilder;
-import android.text.style.StyleSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.bea.xml.stream.samples.Parse;
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.data.dao.NoteDAO;
 import com.materialnotes.view.ShowHideOnScroll;
 import com.materialnotes.widget.AboutNoticeDialog;
 import com.materialnotes.widget.NotesAdapter;
-
 import com.shamanland.fab.FloatingActionButton;
 
-import org.simpleframework.xml.convert.Convert;
-
 import java.util.ArrayList;
-import java.util.UUID;
 
 import javax.inject.Inject;
 
 import no.nordicsemi.android.scriba.hrs.HRSActivity;
-import no.nordicsemi.android.scriba.hrs.HRSManager;
-import no.nordicsemi.android.scriba.profile.BleManager;
-import no.nordicsemi.android.scriba.profile.BleManagerCallbacks;
-import no.nordicsemi.android.scriba.profile.BleProfileActivity;
-import no.nordicsemi.android.scriba.profile.BleProfileService;
 import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
 
 /**
  * Main activity that shows a list of notes.
- *
  */
 @ContentView(R.layout.activity_main)
 public class MainActivity extends RoboActionBarActivity {
@@ -61,11 +38,15 @@ public class MainActivity extends RoboActionBarActivity {
     private static final int NEW_NOTE_RESULT_CODE = 4;
     private static final int EDIT_NOTE_RESULT_CODE = 5;
 
-    @InjectView(android.R.id.empty)   private TextView emptyListTextView;
-    @InjectView(android.R.id.list)    private ListView listView;
-    @InjectView(R.id.add_note_button) private FloatingActionButton addNoteButton;
+    @InjectView(android.R.id.empty)
+    private TextView emptyListTextView;
+    @InjectView(android.R.id.list)
+    private ListView listView;
+    @InjectView(R.id.add_note_button)
+    private FloatingActionButton addNoteButton;
 
-    @Inject private NoteDAO noteDAO;
+    @Inject
+    private NoteDAO noteDAO;
 
     private ArrayList<Integer> selectedPositions;
     private ArrayList<NotesAdapter.NoteViewWrapper> notesData;
@@ -73,7 +54,9 @@ public class MainActivity extends RoboActionBarActivity {
     private ActionMode.Callback actionModeCallback;
     private ActionMode actionMode;
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,14 +79,18 @@ public class MainActivity extends RoboActionBarActivity {
 
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -113,11 +100,14 @@ public class MainActivity extends RoboActionBarActivity {
                 return true;
             case R.id.bluetooth:
                 return true;
-            default: return super.onOptionsItemSelected(item);
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == NEW_NOTE_RESULT_CODE) {
@@ -130,7 +120,9 @@ public class MainActivity extends RoboActionBarActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /** Make the call to the contextual mode. */
+    /**
+     * Make the call to the contextual mode.
+     */
     private void setupActionModeCallback() {
         actionModeCallback = new ActionMode.Callback() {
 
@@ -186,7 +178,9 @@ public class MainActivity extends RoboActionBarActivity {
         };
     }
 
-    /** Starts notes adaptor. */
+    /**
+     * Starts notes adaptor.
+     */
     private void setupNotesAdapter() {
         notesData = new ArrayList<>();
         for (Note note : noteDAO.fetchAll()) { // Convert to wrapper
@@ -236,7 +230,8 @@ public class MainActivity extends RoboActionBarActivity {
             noteDAO.delete(noteViewWrapper.getNote());
         }
         // then deletes from the view (not at the same time)
-        for (NotesAdapter.NoteViewWrapper noteToRemove : toRemoveList) notesData.remove(noteToRemove);
+        for (NotesAdapter.NoteViewWrapper noteToRemove : toRemoveList)
+            notesData.remove(noteToRemove);
         updateView();
         listAdapter.notifyDataSetChanged();
     }
@@ -259,22 +254,27 @@ public class MainActivity extends RoboActionBarActivity {
         for (NotesAdapter.NoteViewWrapper noteViewWrapper : notesData) {
             // Gets the old note to update it in the view
             if (noteViewWrapper.getNote().getId().equals(updatedNote.getId())) {
-                    noteViewWrapper.getNote().setTitle(updatedNote.getTitle());
-                    noteViewWrapper.getNote().setContent(updatedNote.getContent());
-                    noteViewWrapper.getNote().setUpdatedAt(updatedNote.getUpdatedAt());
+                noteViewWrapper.getNote().setTitle(updatedNote.getTitle());
+                noteViewWrapper.getNote().setContent(updatedNote.getContent());
+                noteViewWrapper.getNote().setUpdatedAt(updatedNote.getUpdatedAt());
             }
         }
         listAdapter.notifyDataSetChanged();
     }
-    /**restarts the selected notes to not selected and clean the selected list*/
+
+    /**
+     * restarts the selected notes to not selected and clean the selected list
+     */
 
     private void resetSelectedListItems() {
-        for (NotesAdapter.NoteViewWrapper noteViewWrapper : notesData) noteViewWrapper.setSelected(false);
+        for (NotesAdapter.NoteViewWrapper noteViewWrapper : notesData)
+            noteViewWrapper.setSelected(false);
         selectedPositions.clear();
         listAdapter.notifyDataSetChanged();
     }
 
-    /** Starts the actions in the list when clicking on its items while the contextual mode is not active
+    /**
+     * Starts the actions in the list when clicking on its items while the contextual mode is not active
      */
     private void setListOnItemClickListenersWhenNoActionMode() {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -300,7 +300,8 @@ public class MainActivity extends RoboActionBarActivity {
         });
     }
 
-    /** Starts the list' actions when we click on its items while the contextual menu is on
+    /**
+     * Starts the list' actions when we click on its items while the contextual menu is on
      */
     private void setListOnItemClickListenersWhenActionMode() {
         listView.setOnItemLongClickListener(null);
@@ -311,7 +312,7 @@ public class MainActivity extends RoboActionBarActivity {
                 // Adds items to the selected list and changes the background
                 // When we don't have any selected the contextual mode ends
                 if (selectedPositions.contains(position)) {
-                    selectedPositions.remove((Object)position); // no quiero el índice sino el objeto
+                    selectedPositions.remove((Object) position); // no quiero el índice sino el objeto
                     if (selectedPositions.isEmpty()) actionMode.finish();
                     else {
                         actionMode.setTitle(String.valueOf(selectedPositions.size()));
@@ -329,11 +330,10 @@ public class MainActivity extends RoboActionBarActivity {
     }
 
     public void bluetooth(MenuItem item) {
-        Intent intent= new Intent(this, HRSActivity.class);
+        Intent intent = new Intent(this, HRSActivity.class);
         startActivity(intent);
 
     }
-
 
 
 }

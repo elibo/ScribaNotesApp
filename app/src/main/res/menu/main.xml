@@ -11,7 +11,7 @@
         android:id="@+id/bluetooth"
         NotepadApp:showAsAction="never"
         android:title="@string/bluetooth"
-        android:onClick="bluetooth"/>
+        android:onClick="bluetooth" />
 
 
 </menu>

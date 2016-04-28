@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2015 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,8 +15,7 @@
 -->
 
 <view xmlns:android="http://schemas.android.com/apk/res/android"
-      class="android.support.design.widget.Snackbar$SnackbarLayout"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_gravity="bottom|center_horizontal"
-      style="@style/Widget.Design.Snackbar" /><!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/design/res/layout-sw600dp/design_layout_snackbar.xml -->
+    class="android.support.design.widget.Snackbar$SnackbarLayout"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+    style="@style/Widget.Design.Snackbar" /><!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/design/res/layout-sw600dp/design_layout_snackbar.xml -->

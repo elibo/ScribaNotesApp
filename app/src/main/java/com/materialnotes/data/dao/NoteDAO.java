@@ -1,7 +1,6 @@
 package com.materialnotes.data.dao;
 
 import com.google.inject.ImplementedBy;
-
 import com.materialnotes.data.Note;
 import com.materialnotes.data.dao.impl.sqlite.NoteSQLiteDAO;
 
@@ -11,7 +10,9 @@ import java.util.List;
 @ImplementedBy(NoteSQLiteDAO.class)
 public interface NoteDAO {
 
-    /** @return all notes from the database*/
+    /**
+     * @return all notes from the database
+     */
     List<Note> fetchAll();
 
     /**

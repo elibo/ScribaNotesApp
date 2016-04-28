@@ -1,14 +1,14 @@
 [
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-land-xhdpi-v4/scriba_logo.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-land-xhdpi-v4/scriba_logo.png"
-    },
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-land-xhdpi-v4/nordic_logo.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-land-xhdpi-v4/nordic_logo.png"
-    },
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-land-xhdpi-v4/background_image.jpg",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-land-xhdpi-v4/background_image.jpg"
-    }
+  {
+    "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-land-xhdpi-v4/scriba_logo.png",
+    "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-land-xhdpi-v4/scriba_logo.png"
+  },
+  {
+    "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-land-xhdpi-v4/nordic_logo.png",
+    "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-land-xhdpi-v4/nordic_logo.png"
+  },
+  {
+    "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-land-xhdpi-v4/background_image.jpg",
+    "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-land-xhdpi-v4/background_image.jpg"
+  }
 ]

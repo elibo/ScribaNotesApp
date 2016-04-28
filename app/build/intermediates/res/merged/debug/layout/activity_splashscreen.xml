@@ -20,24 +20,15 @@
   ~ USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	tools:context=".SplashscreenActivity">
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".SplashscreenActivity">
 
-	<ImageView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center"
-		android:layout_marginBottom="70dp"
-		android:scaleType="center"
-		android:src="@drawable/scriba_logo"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:layout_marginBottom="70dp"
+        android:scaleType="center" android:src="@drawable/scriba_logo" />
 
-	<ImageView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="bottom|center"
-		android:layout_marginBottom="6dp"
-		android:src="@drawable/stylus"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center" android:layout_marginBottom="6dp"
+        android:src="@drawable/stylus" />
 
 </merge>

@@ -15,19 +15,20 @@ import roboguice.fragment.RoboDialogFragment;
 import roboguice.inject.InjectView;
 
 /**
- *Dialog showing the app info
+ * Dialog showing the app info
  **/
 public class AboutNoticeDialog extends RoboDialogFragment {
 
     private static final String TAG = AboutNoticeDialog.class.getSimpleName();
 
-    @InjectView(R.id.version_text) private TextView versionText;
+    @InjectView(R.id.version_text)
+    private TextView versionText;
 
     /**
      * Creates the view for this dialog
      *
-     * @param inflater the inflater.
-     * @param container the container.
+     * @param inflater           the inflater.
+     * @param container          the container.
      * @param savedInstanceState the bundle.
      * @return the view
      */
@@ -39,7 +40,7 @@ public class AboutNoticeDialog extends RoboDialogFragment {
     /**
      * Iniciates the created view
      *
-     * @param view the created view
+     * @param view               the created view
      * @param savedInstanceState the bundle.
      */
     @Override

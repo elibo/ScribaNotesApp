@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.materialnotes"
     xmlns:tools="http://schemas.android.com/tools"
-    >
-<uses-sdk tools:overrideLibrary="no.nordicsemi.android.scriba,
-com.google.android.gms.wearable,com.google.android.gms.base,
-com.google.android.gms,no.nordicsemi.android.support.v18.scanner,no.nordicsemi.android.log,
-no.nordicsemi.android.scriba.common,no.nordicsemi.android.dfu"/>
+    package="com.materialnotes">
+
+    <uses-sdk tools:overrideLibrary="no.nordicsemi.android.scriba,
+    com.google.android.gms.wearable,com.google.android.gms.base,
+    com.google.android.gms,no.nordicsemi.android.support.v18.scanner,no.nordicsemi.android.log,
+    no.nordicsemi.android.scriba.common,no.nordicsemi.android.dfu" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"

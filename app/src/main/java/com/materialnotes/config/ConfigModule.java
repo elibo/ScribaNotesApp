@@ -5,7 +5,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
-
 import com.materialnotes.data.source.sqlite.NotesDatabaseHelper;
 
 /**

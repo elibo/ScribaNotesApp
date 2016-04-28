@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:NotepadApp="http://schemas.android.com/apk/res-auto" >
+    xmlns:NotepadApp="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/clear"
         NotepadApp:showAsAction="always"
         android:title="Clear"
-        android:icon="@drawable/ic_format_clear"/>
+        android:icon="@drawable/ic_format_clear" />
     <item
         android:id="@+id/format"
         NotepadApp:showAsAction="always"
@@ -17,9 +17,7 @@
         android:id="@+id/action_save"
         NotepadApp:showAsAction="always"
         android:icon="@drawable/ic_action_save"
-        android:title="@string/action_save"/>
-
-
+        android:title="@string/action_save" />
 
 
 </menu>

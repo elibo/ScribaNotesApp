@@ -9,23 +9,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_note_title"
-        android:singleLine="true"
-        android:maxLength="50"/>
+        android:maxLength="50"
+        android:singleLine="true" />
 
 
     <EditText
         android:id="@+id/note_content"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="match_parent"
         android:gravity="start"
+        android:hint="@string/hint_note_content"
         android:inputType="textMultiLine"
-        android:longClickable="true"
-        android:hint="@string/hint_note_content" />
-
-
-
-
-
+        android:longClickable="true" />
 
 
 </LinearLayout>

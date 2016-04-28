@@ -15,36 +15,10 @@ import java.util.List;
 
 /**
  * Notes adapter. Acts between the view and the data
- *
  */
 public class NotesAdapter extends BaseAdapter {
 
-    /** Wrapper for notes . Changes the background of the selected items. */
-    public static class NoteViewWrapper {
-
-        private final Note note;
-        private boolean isSelected;
-
-        /**
-         * Creates a new NoteWrapper with the given note
-         *
-         * @param note the note.
-         */
-        public NoteViewWrapper(Note note) {
-            this.note = note;
-        }
-
-        public Note getNote() {
-            return note;
-        }
-
-        public void setSelected(boolean isSelected) {
-            this.isSelected = isSelected;
-        }
-    }
-
     private static final DateFormat DATETIME_FORMAT = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.MEDIUM);
-
     private final List<NoteViewWrapper> data;
 
     /**
@@ -56,7 +30,9 @@ public class NotesAdapter extends BaseAdapter {
         this.data = data;
     }
 
-    /** @return gets the number of notes in the notes list */
+    /**
+     * @return gets the number of notes in the notes list
+     */
     @Override
     public int getCount() {
         return data.size();
@@ -83,11 +59,11 @@ public class NotesAdapter extends BaseAdapter {
     /**
      * Shows the data of the chosen note
      *
-     * @see <a href="http://bit.ly/MJqzXb">Hold View Objects in a View Holder</a>
-     * @param position the actual note position
+     * @param position    the actual note position
      * @param convertView the visual component to use
-     * @param parent the visual component parent
+     * @param parent      the visual component parent
      * @return the data view
+     * @see <a href="http://bit.ly/MJqzXb">Hold View Objects in a View Holder</a>
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -105,12 +81,39 @@ public class NotesAdapter extends BaseAdapter {
         holder.noteContentText.setText(Html.fromHtml(noteViewWrapper.note.getContent().length() >= 80 ? noteViewWrapper.note.getContent().substring(0, 80).concat("...") : noteViewWrapper.note.getContent()));
         holder.noteDateText.setText(DATETIME_FORMAT.format(noteViewWrapper.note.getUpdatedAt()));
         // Change the background if you select it
-        if (noteViewWrapper.isSelected) holder.parent.setBackgroundColor(parent.getContext().getResources().getColor(R.color.selected_note));
-        // if not it goes back to being transparent
-        else holder.parent.setBackgroundColor(parent.getContext().getResources().getColor(android.R.color.transparent));
+        if (noteViewWrapper.isSelected)
+            holder.parent.setBackgroundColor(parent.getContext().getResources().getColor(R.color.selected_note));
+            // if not it goes back to being transparent
+        else
+            holder.parent.setBackgroundColor(parent.getContext().getResources().getColor(android.R.color.transparent));
         return convertView;
     }
 
+    /**
+     * Wrapper for notes . Changes the background of the selected items.
+     */
+    public static class NoteViewWrapper {
+
+        private final Note note;
+        private boolean isSelected;
+
+        /**
+         * Creates a new NoteWrapper with the given note
+         *
+         * @param note the note.
+         */
+        public NoteViewWrapper(Note note) {
+            this.note = note;
+        }
+
+        public Note getNote() {
+            return note;
+        }
+
+        public void setSelected(boolean isSelected) {
+            this.isSelected = isSelected;
+        }
+    }
 
     private static class ViewHolder {
 

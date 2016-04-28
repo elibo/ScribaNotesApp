@@ -1,10 +1,10 @@
 [
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-sw600dp-xhdpi-v13/nordic_logo.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-sw600dp-xhdpi-v13/nordic_logo.png"
-    },
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-sw600dp-xhdpi-v13/scriba_logo.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-sw600dp-xhdpi-v13/scriba_logo.png"
-    }
+  {
+    "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-sw600dp-xhdpi-v13/nordic_logo.png",
+    "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-sw600dp-xhdpi-v13/nordic_logo.png"
+  },
+  {
+    "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-sw600dp-xhdpi-v13/scriba_logo.png",
+    "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-sw600dp-xhdpi-v13/scriba_logo.png"
+  }
 ]

@@ -20,156 +20,98 @@
   ~ USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical"
-	tools:context=".hrs.HRSActivity">
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context=".hrs.HRSActivity">
 
-	<!--<include
-		android:id="@+id/toolbar_actionbar"
-		layout="@layout/toolbar"/>-->
+    <!--<include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar"/>-->
 
-	<ImageButton
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:id="@+id/closeButton"
-		android:layout_gravity="right"
-		android:src="@drawable/ic_action_clear"
-		android:onClick="closeConnectScriba"/>
+    <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/closeButton" android:layout_gravity="right"
+        android:src="@drawable/ic_action_clear" android:onClick="closeConnectScriba" />
 
-	<no.nordicsemi.android.scriba.widget.ForegroundRelativeLayout
-		style="@style/HeaderShadow"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent">
+    <no.nordicsemi.android.scriba.widget.ForegroundRelativeLayout style="@style/HeaderShadow"
+        android:layout_width="match_parent" android:layout_height="match_parent">
 
-		<!-- The size of text below must be fixed, therefore dp are used instead of sp -->
+        <!-- The size of text below must be fixed, therefore dp are used instead of sp -->
 
-		<no.nordicsemi.android.scriba.widget.TrebuchetBoldTextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:visibility="invisible"
-			android:layout_centerVertical="true"
-			android:layout_marginLeft="@dimen/hrs_feature_title_long_margin"
-			android:rotation="270"
-			android:text="@string/hrs_feature_title_long"
-			android:textColor="@color/darkGray"
-			android:textSize="32dp"
-			android:textStyle="bold"/>
+        <no.nordicsemi.android.scriba.widget.TrebuchetBoldTextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:visibility="invisible" android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/hrs_feature_title_long_margin" android:rotation="270"
+            android:text="@string/hrs_feature_title_long" android:textColor="@color/darkGray"
+            android:textSize="32dp" android:textStyle="bold" />
 
-		<TextView
-			android:id="@+id/battery"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentLeft="true"
-			android:layout_marginLeft="@dimen/feature_horizontal_margin"
-			android:layout_marginTop="@dimen/feature_device_name_margin_top"
-			android:background="@drawable/battery"
-			android:freezesText="true"
-			android:gravity="center"
-			android:text="@string/not_available"
-			android:textColor="#FFFFFF"
-			android:textSize="12sp"/>
+        <TextView android:id="@+id/battery" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/feature_horizontal_margin"
+            android:layout_marginTop="@dimen/feature_device_name_margin_top"
+            android:background="@drawable/battery" android:freezesText="true"
+            android:gravity="center" android:text="@string/not_available"
+            android:textColor="#FFFFFF" android:textSize="12sp" />
 
-		<no.nordicsemi.android.scriba.widget.TrebuchetTextView
-			android:id="@+id/device_name"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginLeft="10dp"
-			android:layout_marginTop="@dimen/feature_device_name_margin_top"
-			android:layout_toRightOf="@+id/battery"
-			android:ellipsize="end"
-			android:freezesText="true"
-			android:maxLines="1"
-			android:text="@string/hrs_default_name"
-			android:textAllCaps="true"
-			android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <no.nordicsemi.android.scriba.widget.TrebuchetTextView android:id="@+id/device_name"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/feature_device_name_margin_top"
+            android:layout_toRightOf="@+id/battery" android:ellipsize="end"
+            android:freezesText="true" android:maxLines="1" android:text="@string/hrs_default_name"
+            android:textAllCaps="true" android:textAppearance="?android:attr/textAppearanceLarge" />
 
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:layout_above="@+id/action_connect"
-			android:layout_marginLeft="@dimen/feature_horizontal_margin"
-			android:layout_marginRight="@dimen/feature_horizontal_margin"
-			android:layout_marginTop="@dimen/feature_vertical_margin_top"
-			android:baselineAligned="false"
-			android:orientation="horizontal">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_above="@+id/action_connect"
+            android:layout_marginLeft="@dimen/feature_horizontal_margin"
+            android:layout_marginRight="@dimen/feature_horizontal_margin"
+            android:layout_marginTop="@dimen/feature_vertical_margin_top"
+            android:baselineAligned="false" android:orientation="horizontal">
 
-			<!-- Application section -->
+            <!-- Application section -->
 
-			<LinearLayout
-				android:layout_width="180dp"
-				android:layout_height="wrap_content"
-				android:gravity="right"
-				android:orientation="vertical">
+            <LinearLayout android:layout_width="180dp" android:layout_height="wrap_content"
+                android:gravity="right" android:orientation="vertical">
 
-				<no.nordicsemi.android.scriba.widget.TrebuchetTextView
-					android:id="@+id/text_hrs_value"
-					android:visibility="invisible"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:ellipsize="end"
-					android:freezesText="true"
-					android:maxLines="1"
-					android:text="@string/not_available_value"
-					android:textSize="45sp"/>
+                <no.nordicsemi.android.scriba.widget.TrebuchetTextView
+                    android:id="@+id/text_hrs_value" android:visibility="invisible"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:ellipsize="end" android:freezesText="true" android:maxLines="1"
+                    android:text="@string/not_available_value" android:textSize="45sp" />
 
-				<no.nordicsemi.android.scriba.widget.TrebuchetTextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:visibility="invisible"
-					android:text="@string/hrs_value_unit"
-					android:textSize="16sp"/>
+                <no.nordicsemi.android.scriba.widget.TrebuchetTextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:visibility="invisible" android:text="@string/hrs_value_unit"
+                    android:textSize="16sp" />
 
-				<no.nordicsemi.android.scriba.widget.TrebuchetTextView
-					android:id="@+id/text_hrs_position"
-					android:visibility="invisible"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:ellipsize="end"
-					android:freezesText="true"
-					android:maxLines="1"
-					android:text="@string/not_available"
-					android:textSize="35sp"/>
+                <no.nordicsemi.android.scriba.widget.TrebuchetTextView
+                    android:id="@+id/text_hrs_position" android:visibility="invisible"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:ellipsize="end" android:freezesText="true" android:maxLines="1"
+                    android:text="@string/not_available" android:textSize="35sp" />
 
-				<no.nordicsemi.android.scriba.widget.TrebuchetTextView
-					android:id="@+id/text_hrs_position_label"
-					android:visibility="invisible"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="@string/hrs_position_label"
-					android:textSize="16sp"/>
-			</LinearLayout>
+                <no.nordicsemi.android.scriba.widget.TrebuchetTextView
+                    android:id="@+id/text_hrs_position_label" android:visibility="invisible"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/hrs_position_label" android:textSize="16sp" />
+            </LinearLayout>
 
-			<!-- GRAPH section -->
+            <!-- GRAPH section -->
 
-			<FrameLayout
-				android:id="@+id/graph_hrs"
-				android:layout_width="0dp"
-				android:layout_height="match_parent"
-				android:layout_marginLeft="40dp"
-				android:layout_weight="1"/>
-		</LinearLayout>
+            <FrameLayout android:id="@+id/graph_hrs" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_marginLeft="40dp"
+                android:layout_weight="1" />
+        </LinearLayout>
 
-		<Button
-			android:id="@+id/action_connect"
-			style="@style/Widget.Connect"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentBottom="true"
-			android:layout_centerHorizontal="true"
-			android:layout_marginBottom="@dimen/activity_vertical_margin_bottom"
-			android:onClick="onConnectClicked"
-			android:text="@string/action_connect"/>
+        <Button android:id="@+id/action_connect" style="@style/Widget.Connect"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_bottom"
+            android:onClick="onConnectClicked" android:text="@string/action_connect" />
 
-		<ImageView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:visibility="invisible"
-			android:layout_alignParentBottom="true"
-			android:layout_centerHorizontal="true"
-			android:layout_marginBottom="6dp"
-			android:src="@drawable/background_title"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:visibility="invisible" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:layout_marginBottom="6dp"
+            android:src="@drawable/background_title" />
 
-	</no.nordicsemi.android.scriba.widget.ForegroundRelativeLayout>
+    </no.nordicsemi.android.scriba.widget.ForegroundRelativeLayout>
 </LinearLayout>

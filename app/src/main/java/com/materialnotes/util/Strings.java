@@ -5,10 +5,14 @@ package com.materialnotes.util;
  **/
 public final class Strings {
 
-    /** Empty string "". */
+    /**
+     * Empty string "".
+     */
     public static final String EMPTY = "";
 
-    /** Constructor. not invoke. */
+    /**
+     * Constructor. not invoke.
+     */
     private Strings() {
         throw new IllegalAccessError("This class cannot be instantiated nor extended");
     }

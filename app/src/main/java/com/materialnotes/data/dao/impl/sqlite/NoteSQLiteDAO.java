@@ -27,9 +27,9 @@ public class NoteSQLiteDAO implements NoteDAO {
     private final SQLiteOpenHelper databaseHelper;
 
     /**
-     *  NoteSQLiteDAO using  SQLiteOpenHelper.
+     * NoteSQLiteDAO using  SQLiteOpenHelper.
      *
-     * @param databaseHelper  SQLiteOpenHelper.
+     * @param databaseHelper SQLiteOpenHelper.
      */
     @Inject
     public NoteSQLiteDAO(@Named("NotesDbHelper") SQLiteOpenHelper databaseHelper) {
@@ -37,8 +37,8 @@ public class NoteSQLiteDAO implements NoteDAO {
     }
 
     /**
-     * @see <a href="http://bit.ly/1whYCa6">Read Information from a Database</a>
      * @return gets all the notes from the database table {@link NoteEntry#TABLE_NAME}
+     * @see <a href="http://bit.ly/1whYCa6">Read Information from a Database</a>
      */
     @Override
     public ArrayList<Note> fetchAll() {
@@ -80,8 +80,8 @@ public class NoteSQLiteDAO implements NoteDAO {
     /**
      * Inserts a note in the table{@link NoteEntry#TABLE_NAME}.
      *
-     * @see <a href="http://bit.ly/1D3oTNG">Put Information into a Database</a>
      * @param note the note to insert.
+     * @see <a href="http://bit.ly/1D3oTNG">Put Information into a Database</a>
      */
     @Override
     public void insert(Note note) {
@@ -107,8 +107,8 @@ public class NoteSQLiteDAO implements NoteDAO {
     /**
      * Updates a note from the table {@link NoteEntry#TABLE_NAME}.
      *
-     * @see <a href="http://bit.ly/1tOS68i">Update a Database</a>
      * @param note the note to update
+     * @see <a href="http://bit.ly/1tOS68i">Update a Database</a>
      */
     @Override
     public void update(Note note) {
@@ -133,8 +133,8 @@ public class NoteSQLiteDAO implements NoteDAO {
     /**
      * Deletes a note from the table{@link NoteEntry#TABLE_NAME}.
      *
-     * @see <a href="http://bit.ly/1syEh1A">Delete Information from a Database</a>
      * @param note the note to delete
+     * @see <a href="http://bit.ly/1syEh1A">Delete Information from a Database</a>
      */
     @Override
     public void delete(Note note) {
@@ -152,7 +152,9 @@ public class NoteSQLiteDAO implements NoteDAO {
         }
     }
 
-    /** Constants from the notes table */
+    /**
+     * Constants from the notes table
+     */
     private static class NoteEntry implements BaseColumns {
         private static final String TABLE_NAME = "note";
         private static final String TITLE = "title";
