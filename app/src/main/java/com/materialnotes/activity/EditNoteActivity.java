@@ -230,29 +230,14 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
     }
 
-    public void highlightForeground() {
-
-        if (noteTitleText.hasFocus()) {
-
-            ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
-            ssbtitle.setSpan(new ForegroundColorSpan(Color.YELLOW), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
-
-        } else {
-
-            ssbcontent = (SpannableStringBuilder) noteContentText.getText();
-            ssbcontent.setSpan(new ForegroundColorSpan(Color.YELLOW), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
-
-        }
-
-    }
-
     public void clearFormat() {
 
         StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), StyleSpan.class);
         UnderlineSpan[] us = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), UnderlineSpan.class);
 
+
         for (int i = 0; i < ss.length; i++) {
-            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC) {
+            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ) {
                 ssbcontent.removeSpan(ss[i]);
             }
         }
@@ -260,6 +245,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         for (int i = 0; i < us.length; i++) {
             ssbcontent.removeSpan(us[i]);
         }
+
         noteContentText.setText(ssbcontent);
 
     }
@@ -270,10 +256,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
             boldFormat();
         } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 600) {
             italicFormat();
-        } else if (HRSActivity.mHrmValue < 300 && HRSActivity.mHrmValue > 50) {
+        } else if (HRSActivity.mHrmValue < 300) {
             underlineFormat();
-        } else if (HRSActivity.mHrmValue >= 0 && HRSActivity.mHrmValue < 50) {
-            highlightForeground();
         }
 
     }
