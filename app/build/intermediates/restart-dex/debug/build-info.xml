@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<instant-run abi="arm64-v8a,armeabi-v7a,armeabi" api-level="22" density="xxhdpi" format="7"
-    timestamp="2871104088753">
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="22"
+    density="xxhdpi"
+    format="7"
+    timestamp="2211867576000" >
 
-    <task name="javac" duration="8871" />
-    <task name="instant-run-dex" duration="0" />
-    <task name="instant-run-transform" duration="1847" />
-    <task name="verifier" duration="530" />
+    <task
+        name="javac"
+        duration="2319" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="859" />
+    <task
+        name="verifier"
+        duration="115" />
 
-    <artifact location="/Users/Elibo/Desktop/material-notes/app/build/outputs/apk/app-debug.apk"
+    <artifact
+        location="/Users/Elibo/Desktop/material-notes/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="2871104088753">
-        <artifact location="/Users/Elibo/Desktop/material-notes/app/build/outputs/apk/app-debug.apk"
+    <build timestamp="2211867576000" >
+        <artifact
+            location="/Users/Elibo/Desktop/material-notes/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 

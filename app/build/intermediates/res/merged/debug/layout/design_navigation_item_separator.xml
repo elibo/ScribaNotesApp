@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
   ~ Copyright (C) 2015 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,9 +15,12 @@
   ~ limitations under the License.
 -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
 
-    <View android:layout_width="match_parent" android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="?android:attr/listDivider"/>
 
-</FrameLayout><!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/design/res/layout/design_navigation_item_separator.xml -->
+</FrameLayout>
+<!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/design/res/layout/design_navigation_item_separator.xml -->

@@ -1,294 +1,294 @@
 [
-  {
-    "outputFile": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/values-land/values-land.xml",
-    "map": [
-      {
-        "to": {
-          "startLine": 2,
-          "startColumn": 4,
-          "startOffset": 55,
-          "endColumn": 61,
-          "endOffset": 112
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 4,
-            "startColumn": 4,
-            "startOffset": 229,
-            "endColumn": 61,
-            "endOffset": 286
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 3,
-          "startColumn": 4,
-          "startOffset": 117,
-          "endColumn": 71,
-          "endOffset": 184
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 7,
-            "startColumn": 4,
-            "startOffset": 466,
-            "endColumn": 71,
-            "endOffset": 533
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 4,
-          "startColumn": 4,
-          "startOffset": 189,
-          "endColumn": 69,
-          "endOffset": 254
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 10,
-            "startColumn": 4,
-            "startOffset": 722,
-            "endColumn": 69,
-            "endOffset": 787
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 5,
-          "startColumn": 4,
-          "startOffset": 259,
-          "endColumn": 63,
-          "endOffset": 318
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 13,
-            "startColumn": 4,
-            "startOffset": 967,
-            "endColumn": 63,
-            "endOffset": 1026
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 6,
-          "startColumn": 4,
-          "startOffset": 323,
-          "endColumn": 70,
-          "endOffset": 389
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 16,
-            "startColumn": 4,
-            "startOffset": 1215,
-            "endColumn": 70,
-            "endOffset": 1281
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 7,
-          "startColumn": 4,
-          "startOffset": 394,
-          "endColumn": 67,
-          "endOffset": 457
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 17,
-            "startColumn": 4,
-            "startOffset": 1286,
-            "endColumn": 67,
-            "endOffset": 1349
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 8,
-          "startColumn": 4,
-          "startOffset": 462,
-          "endColumn": 62,
-          "endOffset": 520
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 2,
-            "startColumn": 4,
-            "startOffset": 55,
-            "endColumn": 62,
-            "endOffset": 113
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 9,
-          "startColumn": 4,
-          "startOffset": 525,
-          "endColumn": 64,
-          "endOffset": 585
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 3,
-            "startColumn": 4,
-            "startOffset": 118,
-            "endColumn": 64,
-            "endOffset": 178
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 10,
-          "startColumn": 4,
-          "startOffset": 590,
-          "endColumn": 63,
-          "endOffset": 649
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 4,
-            "startColumn": 4,
-            "startOffset": 183,
-            "endColumn": 63,
-            "endOffset": 242
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 11,
-          "startColumn": 4,
-          "startOffset": 654,
-          "endColumn": 58,
-          "endOffset": 708
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 5,
-            "startColumn": 4,
-            "startOffset": 247,
-            "endColumn": 58,
-            "endOffset": 301
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 12,
-          "startColumn": 4,
-          "startOffset": 713,
-          "endColumn": 62,
-          "endOffset": 771
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 6,
-            "startColumn": 4,
-            "startOffset": 306,
-            "endColumn": 62,
-            "endOffset": 364
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 13,
-          "startColumn": 4,
-          "startOffset": 776,
-          "endColumn": 61,
-          "endOffset": 833
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 7,
-            "startColumn": 4,
-            "startOffset": 369,
-            "endColumn": 61,
-            "endOffset": 426
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 14,
-          "startColumn": 4,
-          "startOffset": 838,
-          "endColumn": 54,
-          "endOffset": 888
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 8,
-            "startColumn": 4,
-            "startOffset": 431,
-            "endColumn": 54,
-            "endOffset": 481
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 15,
-          "startColumn": 4,
-          "startOffset": 893,
-          "endColumn": 54,
-          "endOffset": 943
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 9,
-            "startColumn": 4,
-            "startOffset": 486,
-            "endColumn": 54,
-            "endOffset": 536
-          }
-        }
-      },
-      {
-        "to": {
-          "startLine": 16,
-          "startColumn": 4,
-          "startOffset": 948,
-          "endLine": 19,
-          "endColumn": 12,
-          "endOffset": 1125
-        },
-        "from": {
-          "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values-land/values-land.xml",
-          "position": {
-            "startLine": 4,
-            "startColumn": 4,
-            "startOffset": 224,
-            "endLine": 7,
-            "endColumn": 12,
-            "endOffset": 401
-          }
-        }
-      }
-    ]
-  }
+    {
+        "outputFile": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/values-land/values-land.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 61,
+                        "endOffset": 286
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 117,
+                    "endColumn": 71,
+                    "endOffset": 184
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 466,
+                        "endColumn": 71,
+                        "endOffset": 533
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 189,
+                    "endColumn": 69,
+                    "endOffset": 254
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 722,
+                        "endColumn": 69,
+                        "endOffset": 787
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 259,
+                    "endColumn": 63,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 967,
+                        "endColumn": 63,
+                        "endOffset": 1026
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 323,
+                    "endColumn": 70,
+                    "endOffset": 389
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1215,
+                        "endColumn": 70,
+                        "endOffset": 1281
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 394,
+                    "endColumn": 67,
+                    "endOffset": 457
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1286,
+                        "endColumn": 67,
+                        "endOffset": 1349
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 462,
+                    "endColumn": 62,
+                    "endOffset": 520
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 62,
+                        "endOffset": 113
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 525,
+                    "endColumn": 64,
+                    "endOffset": 585
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 118,
+                        "endColumn": 64,
+                        "endOffset": 178
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 590,
+                    "endColumn": 63,
+                    "endOffset": 649
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 183,
+                        "endColumn": 63,
+                        "endOffset": 242
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 654,
+                    "endColumn": 58,
+                    "endOffset": 708
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 247,
+                        "endColumn": 58,
+                        "endOffset": 301
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 713,
+                    "endColumn": 62,
+                    "endOffset": 771
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 306,
+                        "endColumn": 62,
+                        "endOffset": 364
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 776,
+                    "endColumn": 61,
+                    "endOffset": 833
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 369,
+                        "endColumn": 61,
+                        "endOffset": 426
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 838,
+                    "endColumn": 54,
+                    "endOffset": 888
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 431,
+                        "endColumn": 54,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 893,
+                    "endColumn": 54,
+                    "endOffset": 943
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 486,
+                        "endColumn": 54,
+                        "endOffset": 536
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 948,
+                    "endLine": 19,
+                    "endColumn": 12,
+                    "endOffset": 1125
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 224,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 401
+                    }
+                }
+            }
+        ]
+    }
 ]

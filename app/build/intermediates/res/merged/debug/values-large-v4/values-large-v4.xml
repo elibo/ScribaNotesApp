@@ -19,8 +19,6 @@
     <dimen name="ui_font_size">20sp</dimen>
     <integer name="abc_max_action_buttons">4</integer>
     <string name="orientation">portrait</string>
-    <style name="Base.Theme.AppCompat.DialogWhenLarge"
-        parent="Base.Theme.AppCompat.Dialog.FixedSize" />
-    <style name="Base.Theme.AppCompat.Light.DialogWhenLarge"
-        parent="Base.Theme.AppCompat.Light.Dialog.FixedSize" />
+    <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="Base.Theme.AppCompat.Dialog.FixedSize"/>
+    <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize"/>
 </resources>
