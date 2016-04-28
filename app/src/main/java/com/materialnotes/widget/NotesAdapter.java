@@ -63,7 +63,7 @@ public class NotesAdapter extends BaseAdapter {
      * @param convertView the visual component to use
      * @param parent      the visual component parent
      * @return the data view
-     * @see <a href="http://bit.ly/MJqzXb">Hold View Objects in a View Holder</a>
+     *
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {

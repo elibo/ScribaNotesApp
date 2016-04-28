@@ -232,23 +232,46 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void clearFormat() {
 
-        ssbcontent=(SpannableStringBuilder)noteContentText.getText();
+        if (noteContentText.hasFocus()){
+            ssbcontent=(SpannableStringBuilder)noteContentText.getText();
 
-        StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), StyleSpan.class);
-        UnderlineSpan[] us = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), UnderlineSpan.class);
+            StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), StyleSpan.class);
+            UnderlineSpan[] us = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), UnderlineSpan.class);
 
 
-        for (int i = 0; i < ss.length; i++) {
-            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ) {
-                ssbcontent.removeSpan(ss[i]);
+            for (int i = 0; i < ss.length; i++) {
+                if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ) {
+                    ssbcontent.removeSpan(ss[i]);
+                }
             }
+
+            for (int i = 0; i < us.length; i++) {
+                ssbcontent.removeSpan(us[i]);
+            }
+
+            noteContentText.setText(ssbcontent);
+
+        } else {
+            ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
+
+            StyleSpan[] ss = ssbtitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), StyleSpan.class);
+            UnderlineSpan[] us = ssbtitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), UnderlineSpan.class);
+
+
+            for (int i = 0; i < ss.length; i++) {
+                if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ) {
+                    ssbtitle.removeSpan(ss[i]);
+                }
+            }
+
+            for (int i = 0; i < us.length; i++) {
+                ssbtitle.removeSpan(us[i]);
+            }
+
+            noteTitleText.setText(ssbtitle);
+
         }
 
-        for (int i = 0; i < us.length; i++) {
-            ssbcontent.removeSpan(us[i]);
-        }
-
-        noteContentText.setText(ssbcontent);
 
     }
 
