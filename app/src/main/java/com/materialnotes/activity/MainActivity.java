@@ -60,7 +60,8 @@ public class MainActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addNoteButton.setColor(Color.RED);
+        int bcolor=Color.parseColor("#00cc66");
+        addNoteButton.setColor(bcolor);
         addNoteButton.initBackground();
         // Start the components //////////////////////////////////////////////////////////////
         listView.setOnTouchListener(new ShowHideOnScroll(addNoteButton, getSupportActionBar())); // Hides or shows the FAB and the ActionBar

@@ -26,9 +26,9 @@ public final class R {
 		public static final int floating_action_button_size_normal = 0x7f0a0086;
 	}
 	public static final class drawable {
-		public static final int com_shamanland_fab_circle_mini = 0x7f02005b;
-		public static final int com_shamanland_fab_circle_normal = 0x7f02005c;
-		public static final int com_shamanland_fab_shadow = 0x7f02005d;
+		public static final int com_shamanland_fab_circle_mini = 0x7f02005c;
+		public static final int com_shamanland_fab_circle_normal = 0x7f02005d;
+		public static final int com_shamanland_fab_shadow = 0x7f02005e;
 	}
 	public static final class id {
 		public static final int mini = 0x7f0f002f;

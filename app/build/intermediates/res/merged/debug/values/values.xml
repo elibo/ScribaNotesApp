@@ -223,7 +223,7 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <color name="selected_note">#99d6eb</color>
+    <color name="selected_note">#1aff8c</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
@@ -1979,10 +1979,10 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.NotepadApp" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">#08617c</item>
-        <item name="colorPrimaryDark">#053e50</item>
-        <item name="colorAccent">#a9deff</item>
-        <item name="actionModeBackground">@drawable/cab_background_top</item>
+        <item name="colorPrimary">#999999</item>
+        <item name="colorPrimaryDark">#666666</item>
+        <item name="colorAccent">#00cc66</item>
+        <item name="actionModeBackground">@drawable/cab_background_top1</item>
         <item name="floatingActionButtonStyle">@style/Notes.Fab</item>
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>

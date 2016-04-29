@@ -2,20 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/Elibo/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/dd91fb744c2ff921407475cb29a1e3fee397d411/simple-xml-2.7.1.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
-        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/simple-xml-2.7.1_e800ec7091e32782b879f3ccb4ee8cef4a1a506f/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Elibo/.gradle/caches/modules-2/files-2.1/stax/stax/1.2.0/c434800de5e4bbe1822805be5fb1c32d6834f830/stax-1.2.0.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="c434800de5e4bbe1822805be5fb1c32d6834f830">
-        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/stax-1.2.0_85b8bcacdc2fb9c272542317ae5a1329bca911ed/classes.dex" />
-    </item>
-    <item
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
         jumboMode="true"
         revision="23.0.2"
@@ -37,20 +23,6 @@
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.3.0_f814bafc8d06b030e1463686ba8c419afee3da30/classes.dex" />
     </item>
     <item
-        jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/no.nordicsemi.android/dfu/0.6.1/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="6487f1efd2409eb8995fe25e3bbe1933b1fca2d6">
-        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/no.nordicsemi.android-dfu-0.6.1_b4247b536c64a98d324be80959c77b8ad3eb6158/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Elibo/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/3.0/9e1de0dd617a1b1abcb71404c2d058b629cbf414/roboguice-3.0.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="9e1de0dd617a1b1abcb71404c2d058b629cbf414">
-        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/roboguice-3.0_bd52da234346de07c179492a6b40ff140740b2c8/classes.dex" />
-    </item>
-    <item
         jar="/Users/Elibo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
         jumboMode="true"
         revision="23.0.2"
@@ -63,13 +35,6 @@
         revision="23.0.2"
         sha1="564665effcb7a36a56bf71ddf048c350d4dee4ea">
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/no.nordicsemi.android.support.v18-scanner-0.1.1_451461ea87efe52230560983336abc7a0cc8d1f8/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_77a7a601a5309b126c576766ed7902c08b899f5d/classes.dex" />
     </item>
     <item
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/no.nordicsemi.android/log/2.0.0/jars/classes.jar"
@@ -107,6 +72,62 @@
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.0.0_34d5dc40e64ea0d156637507e2b9fdd855f73618/classes.dex" />
     </item>
     <item
+        jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3e85acf986c8e6e78899605121330f14d5c409c8">
+        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_36a07399a33081b3686651209c9182e346788a8b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Elibo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_8606733a1108bfb4362e784c96c75a0f22dcd774/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="af9ff49b15872f27cad84df086d0121e97d74546">
+        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cb8cb799693ede8eb8ee0f8209cadfd3b6d6205b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Elibo/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/dd91fb744c2ff921407475cb29a1e3fee397d411/simple-xml-2.7.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="dd91fb744c2ff921407475cb29a1e3fee397d411">
+        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/simple-xml-2.7.1_e800ec7091e32782b879f3ccb4ee8cef4a1a506f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Elibo/.gradle/caches/modules-2/files-2.1/stax/stax/1.2.0/c434800de5e4bbe1822805be5fb1c32d6834f830/stax-1.2.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c434800de5e4bbe1822805be5fb1c32d6834f830">
+        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/stax-1.2.0_85b8bcacdc2fb9c272542317ae5a1329bca911ed/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/no.nordicsemi.android/dfu/0.6.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6487f1efd2409eb8995fe25e3bbe1933b1fca2d6">
+        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/no.nordicsemi.android-dfu-0.6.1_b4247b536c64a98d324be80959c77b8ad3eb6158/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Elibo/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/3.0/9e1de0dd617a1b1abcb71404c2d058b629cbf414/roboguice-3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9e1de0dd617a1b1abcb71404c2d058b629cbf414">
+        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/roboguice-3.0_bd52da234346de07c179492a6b40ff140740b2c8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_77a7a601a5309b126c576766ed7902c08b899f5d/classes.dex" />
+    </item>
+    <item
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
         jumboMode="true"
         revision="23.0.2"
@@ -121,31 +142,10 @@
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.3.0_042a29b519cafcf4b54d6b69bbdca62a676fd105/classes.dex" />
     </item>
     <item
-        jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="83da05997e53b077dadf6b37f0253343fab56163">
-        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_36a07399a33081b3686651209c9182e346788a8b/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Elibo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_8606733a1108bfb4362e784c96c75a0f22dcd774/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="66fd6dc5f338fe5f0569a8179afae6a08b80aecc">
-        <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cb8cb799693ede8eb8ee0f8209cadfd3b6d6205b/classes.dex" />
-    </item>
-    <item
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/jars/libs/achartengine-1.1.0.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="feb759d9ba8ff74a7575bc5c26ee6efc602f6d96">
+        sha1="ea0a50e1462f3d9c8413dd915d7ba0934290d283">
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/8/achartengine-1.1.0_3be60798566ae992c303b34c8d2b989c30101f03/classes.dex" />
     </item>
 
