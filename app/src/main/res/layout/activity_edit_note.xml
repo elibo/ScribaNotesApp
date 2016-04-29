@@ -14,7 +14,6 @@
         android:paddingBottom="20dp"
         android:singleLine="true" />
 
-
     <EditText
         android:id="@+id/note_content"
         android:layout_width="match_parent"
@@ -23,6 +22,5 @@
         android:hint="@string/hint_note_content"
         android:inputType="textNoSuggestions"
         android:longClickable="true" />
-
 
 </LinearLayout>

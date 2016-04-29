@@ -3,6 +3,7 @@ package com.materialnotes.activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.view.ActionMode;
 import android.view.Menu;
@@ -19,7 +20,6 @@ import com.materialnotes.view.ShowHideOnScroll;
 import com.materialnotes.widget.AboutNoticeDialog;
 import com.materialnotes.widget.NotesAdapter;
 import com.shamanland.fab.FloatingActionButton;
-
 import java.util.ArrayList;
 
 import javax.inject.Inject;
@@ -60,6 +60,8 @@ public class MainActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        addNoteButton.setColor(Color.RED);
+        addNoteButton.initBackground();
         // Start the components //////////////////////////////////////////////////////////////
         listView.setOnTouchListener(new ShowHideOnScroll(addNoteButton, getSupportActionBar())); // Hides or shows the FAB and the ActionBar
         addNoteButton.setOnClickListener(new View.OnClickListener() {

@@ -1536,7 +1536,7 @@ int style FloatingActionButton_Light_Mini 0x7f0b00d2
 int style FloatingActionButton_Mini 0x7f0b00d3
 int style HeaderBar 0x7f0b0077
 int style HeaderShadow 0x7f0b0078
-int style NotepadApp_Fab 0x7f0b00d4
+int style Notes_Fab 0x7f0b00d4
 int style Platform_AppCompat 0x7f0b0011
 int style Platform_AppCompat_Light 0x7f0b0012
 int style Platform_ThemeOverlay_AppCompat 0x7f0b0079

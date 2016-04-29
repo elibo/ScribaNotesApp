@@ -1716,7 +1716,7 @@
 		<item name="android:foreground">@drawable/action_bar_shadow</item>
 		<item name="foreground">@drawable/action_bar_shadow</item>
 	</style>
-    <style name="NotepadApp.Fab" parent="FloatingActionButton">
+    <style name="Notes.Fab" parent="FloatingActionButton">
         <item name="floatingActionButtonColor">#e91e63</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
@@ -1983,7 +1983,7 @@
         <item name="colorPrimaryDark">#053e50</item>
         <item name="colorAccent">#a9deff</item>
         <item name="actionModeBackground">@drawable/cab_background_top</item>
-        <item name="floatingActionButtonStyle">@style/NotepadApp.Fab</item>
+        <item name="floatingActionButtonStyle">@style/Notes.Fab</item>
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>

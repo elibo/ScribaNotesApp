@@ -6,10 +6,10 @@
         <item name="colorPrimaryDark">#053e50</item>
         <item name="colorAccent">#a9deff</item>
         <item name="actionModeBackground">@drawable/cab_background_top</item>
-        <item name="floatingActionButtonStyle">@style/NotepadApp.Fab</item>
+        <item name="floatingActionButtonStyle">@style/Notes.Fab</item>
     </style>
 
-    <style name="NotepadApp.Fab" parent="FloatingActionButton">
+    <style name="Notes.Fab" parent="FloatingActionButton">
         <item name="floatingActionButtonColor">#e91e63</item>
     </style>
 

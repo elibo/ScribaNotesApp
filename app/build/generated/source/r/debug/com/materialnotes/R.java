@@ -3417,7 +3417,7 @@ containing a value of this type.
         public static final int FloatingActionButton_Mini=0x7f0b00d3;
         public static final int HeaderBar=0x7f0b0077;
         public static final int HeaderShadow=0x7f0b0078;
-        public static final int NotepadApp_Fab=0x7f0b00d4;
+        public static final int Notes_Fab=0x7f0b00d4;
         public static final int Platform_AppCompat=0x7f0b0011;
         public static final int Platform_AppCompat_Light=0x7f0b0012;
         public static final int Platform_ThemeOverlay_AppCompat=0x7f0b0079;
