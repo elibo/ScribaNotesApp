@@ -9,7 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_note_title"
+        android:inputType="textNoSuggestions"
         android:maxLength="50"
+        android:paddingBottom="20dp"
         android:singleLine="true" />
 
 
@@ -19,7 +21,7 @@
         android:layout_height="match_parent"
         android:gravity="start"
         android:hint="@string/hint_note_content"
-        android:inputType="textMultiLine"
+        android:inputType="textNoSuggestions"
         android:longClickable="true" />
 
 
