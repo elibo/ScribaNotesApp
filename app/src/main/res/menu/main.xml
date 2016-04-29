@@ -9,7 +9,8 @@
 
     <item
         android:id="@+id/bluetooth"
-        NotepadApp:showAsAction="never"
+        android:icon="@drawable/scriba_launcher"
+        NotepadApp:showAsAction="always"
         android:title="@string/bluetooth"
         android:onClick="bluetooth" />
 
