@@ -48,12 +48,12 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/blinky_s110_v7_1_0.hex"
     },
     {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_s110_v7_0_0.hex",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_s110_v7_0_0.hex"
-    },
-    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/dfu_win_3_1.bat",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/dfu_win_3_1.bat"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_s110_v7_0_0.hex",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/raw/ble_app_hrs_s110_v7_0_0.hex"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/raw/ble_app_hrs_dfu_s110_v7_1_0_ext_init.dat",

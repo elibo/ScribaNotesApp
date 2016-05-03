@@ -4,7 +4,8 @@
 
     <item
         android:id="@+id/format"
-        NotepadApp:showAsAction="never"
+        NotepadApp:showAsAction="always"
+        android:icon="@drawable/ic_action_font_faces"
         android:title="Format" />
 
     <item
