@@ -9,6 +9,11 @@
         android:title="Format" />
 
     <item
+        android:id="@+id/color"
+        NotepadApp:showAsAction="ifRoom"
+        android:title="Text color" />
+
+    <item
         android:id="@+id/clear"
         NotepadApp:showAsAction="always"
         android:title="Clear"

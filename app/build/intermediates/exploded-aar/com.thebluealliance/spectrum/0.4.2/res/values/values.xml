@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="spectrum_colors"/>
+    <attr format="integer" name="spectrum_columnCount"/>
+    <attr format="dimension" name="spectrum_outlineWidth"/>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="SpectrumPalette"><attr name="spectrum_colors"/><attr name="spectrum_outlineWidth"/><attr name="spectrum_columnCount"/><attr format="boolean" name="spectrum_autoPadding"/></declare-styleable>
+    <declare-styleable name="SpectrumPreference"><attr name="spectrum_colors"/><attr name="spectrum_outlineWidth"/><attr name="spectrum_columnCount"/><attr format="boolean" name="spectrum_closeOnSelected"/></declare-styleable>
+    <dimen name="color_item_large">64dp</dimen>
+    <dimen name="color_item_margins_large">8dp</dimen>
+    <dimen name="color_item_margins_small">4dp</dimen>
+    <dimen name="color_item_selected_check_margins">8dp</dimen>
+    <dimen name="color_item_small">48dp</dimen>
+    <dimen name="color_preference_color_view_size">32dp</dimen>
+    <dimen name="color_preference_disabled_outline_size">2dp</dimen>
+    <string name="app_name">Spectrum</string>
+    <string name="default_dialog_title">Select a color</string>
+</resources>

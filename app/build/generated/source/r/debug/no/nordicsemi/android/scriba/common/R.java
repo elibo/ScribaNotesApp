@@ -8,7 +8,7 @@ package no.nordicsemi.android.scriba.common;
 
 public final class R {
 	public static final class string {
-		public static final int bonded = 0x7f080048;
-		public static final int bonding = 0x7f080049;
+		public static final int bonded = 0x7f080049;
+		public static final int bonding = 0x7f08004a;
 	}
 }

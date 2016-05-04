@@ -1,28 +1,31 @@
 package com.materialnotes.activity;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
-import android.text.Editable;
+import android.support.annotation.ColorInt;
+
 import android.text.Html;
 import android.text.SpannableStringBuilder;
-import android.text.TextUtils;
-import android.text.style.BackgroundColorSpan;
+
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+
 import android.widget.Toast;
+
 
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.util.Strings;
-
-import org.xml.sax.XMLReader;
+import com.thebluealliance.spectrum.SpectrumDialog;
 
 import java.util.Date;
 
@@ -46,6 +49,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     private Note note;
     private SpannableStringBuilder ssbtitle, ssbcontent;
+    private int mSelectedColor;
+
 
 
     /**
@@ -87,6 +92,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbcontent = (SpannableStringBuilder) noteContentText.getText();
         // Starts the components //////////////////////////////////////////////////////////////
@@ -133,6 +139,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 return true;
             case R.id.format:
                 formatText();
+                return true;
+            case R.id.color:
+                colorpicker();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -234,16 +243,18 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void foregroundColor(){
 
-        if (noteTitleText.hasFocus()) {
 
-            ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
-            ssbtitle.setSpan(new ForegroundColorSpan(Color.RED), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
+            if (noteTitleText.hasFocus()) {
 
-        } else {
+                ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
+                ssbtitle.setSpan(new ForegroundColorSpan(mSelectedColor), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
 
-            ssbcontent = (SpannableStringBuilder) noteContentText.getText();
-            ssbcontent.setSpan(new ForegroundColorSpan(Color.RED), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
-        }
+            } else {
+
+                ssbcontent = (SpannableStringBuilder) noteContentText.getText();
+                ssbcontent.setSpan(new ForegroundColorSpan(mSelectedColor), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
+            }
+
 
     }
 
@@ -314,5 +325,22 @@ public class EditNoteActivity extends RoboActionBarActivity {
             foregroundColor();
 
     }
+
+    public void colorpicker(){
+        new SpectrumDialog.Builder(this)
+                .setColors(R.array.demo_colors)
+              //  .setSelectedColorRes(R.color.selected_note)
+                .setDismissOnColorSelected(true)
+                .setOutlineWidth(2)
+                .setOnColorSelectedListener(new SpectrumDialog.OnColorSelectedListener() {
+                    @Override public void onColorSelected(boolean positiveResult, @ColorInt int color) {
+                        if (positiveResult) {
+                            mSelectedColor=color;
+                        }
+                    }
+                }).build().show(getSupportFragmentManager(), "format");
+
+    }
+
 
 }

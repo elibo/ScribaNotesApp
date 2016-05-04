@@ -110,13 +110,13 @@
                     "endOffset": 683
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 239,
+                        "startOffset": 55,
                         "endColumn": 90,
-                        "endOffset": 325
+                        "endOffset": 141
                     }
                 }
             },
@@ -129,13 +129,13 @@
                     "endOffset": 786
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 330,
+                        "startOffset": 146,
                         "endColumn": 102,
-                        "endOffset": 428
+                        "endOffset": 244
                     }
                 }
             },
@@ -148,13 +148,13 @@
                     "endOffset": 889
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 433,
+                        "startOffset": 249,
                         "endColumn": 102,
-                        "endOffset": 531
+                        "endOffset": 347
                     }
                 }
             },
@@ -167,13 +167,13 @@
                     "endOffset": 994
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 536,
+                        "startOffset": 352,
                         "endColumn": 104,
-                        "endOffset": 636
+                        "endOffset": 452
                     }
                 }
             },
@@ -186,13 +186,13 @@
                     "endOffset": 1101
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 641,
+                        "startOffset": 457,
                         "endColumn": 106,
-                        "endOffset": 743
+                        "endOffset": 559
                     }
                 }
             },
@@ -205,13 +205,13 @@
                     "endOffset": 1210
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 748,
+                        "startOffset": 564,
                         "endColumn": 108,
-                        "endOffset": 852
+                        "endOffset": 668
                     }
                 }
             },
@@ -224,13 +224,13 @@
                     "endOffset": 1319
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 857,
+                        "startOffset": 673,
                         "endColumn": 108,
-                        "endOffset": 961
+                        "endOffset": 777
                     }
                 }
             },
@@ -243,13 +243,13 @@
                     "endOffset": 1428
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 966,
+                        "startOffset": 782,
                         "endColumn": 108,
-                        "endOffset": 1070
+                        "endOffset": 886
                     }
                 }
             },
@@ -262,13 +262,13 @@
                     "endOffset": 1537
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1075,
+                        "startOffset": 891,
                         "endColumn": 108,
-                        "endOffset": 1179
+                        "endOffset": 995
                     }
                 }
             },
@@ -281,13 +281,13 @@
                     "endOffset": 1646
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1184,
+                        "startOffset": 1000,
                         "endColumn": 108,
-                        "endOffset": 1288
+                        "endOffset": 1104
                     }
                 }
             },
@@ -300,13 +300,13 @@
                     "endOffset": 1753
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1293,
+                        "startOffset": 1109,
                         "endColumn": 106,
-                        "endOffset": 1395
+                        "endOffset": 1211
                     }
                 }
             },
@@ -319,13 +319,13 @@
                     "endOffset": 1856
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1400,
+                        "startOffset": 1216,
                         "endColumn": 102,
-                        "endOffset": 1498
+                        "endOffset": 1314
                     }
                 }
             },
@@ -338,13 +338,13 @@
                     "endOffset": 1975
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1503,
+                        "startOffset": 1319,
                         "endColumn": 118,
-                        "endOffset": 1617
+                        "endOffset": 1433
                     }
                 }
             },
@@ -358,14 +358,14 @@
                     "endOffset": 2130
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1801,
-                        "endLine": 20,
+                        "startOffset": 1438,
+                        "endLine": 16,
                         "endColumn": 12,
-                        "endOffset": 1951
+                        "endOffset": 1588
                     }
                 }
             },
@@ -379,14 +379,14 @@
                     "endOffset": 2285
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1956,
-                        "endLine": 22,
+                        "startOffset": 1593,
+                        "endLine": 18,
                         "endColumn": 12,
-                        "endOffset": 2106
+                        "endOffset": 1743
                     }
                 }
             },
@@ -399,13 +399,13 @@
                     "endOffset": 2390
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 2295,
+                        "startOffset": 1748,
                         "endColumn": 104,
-                        "endOffset": 2395
+                        "endOffset": 1848
                     }
                 }
             },
@@ -418,13 +418,13 @@
                     "endOffset": 2511
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 2400,
+                        "startOffset": 1853,
                         "endColumn": 120,
-                        "endOffset": 2516
+                        "endOffset": 1969
                     }
                 }
             },
@@ -437,13 +437,13 @@
                     "endOffset": 2612
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2521,
+                        "startOffset": 1974,
                         "endColumn": 100,
-                        "endOffset": 2617
+                        "endOffset": 2070
                     }
                 }
             },
@@ -457,14 +457,14 @@
                     "endOffset": 2759
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2801,
-                        "endLine": 31,
+                        "startOffset": 2075,
+                        "endLine": 23,
                         "endColumn": 12,
-                        "endOffset": 2943
+                        "endOffset": 2217
                     }
                 }
             },
@@ -478,14 +478,14 @@
                     "endOffset": 2900
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 2948,
-                        "endLine": 33,
+                        "startOffset": 2222,
+                        "endLine": 25,
                         "endColumn": 12,
-                        "endOffset": 3084
+                        "endOffset": 2358
                     }
                 }
             },
@@ -498,13 +498,13 @@
                     "endOffset": 3003
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 36,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 3273,
+                        "startOffset": 2363,
                         "endColumn": 102,
-                        "endOffset": 3371
+                        "endOffset": 2461
                     }
                 }
             },
@@ -517,13 +517,13 @@
                     "endOffset": 3122
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 37,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 3376,
+                        "startOffset": 2466,
                         "endColumn": 118,
-                        "endOffset": 3490
+                        "endOffset": 2580
                     }
                 }
             },
@@ -536,13 +536,13 @@
                     "endOffset": 3229
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 38,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 3495,
+                        "startOffset": 2585,
                         "endColumn": 106,
-                        "endOffset": 3597
+                        "endOffset": 2687
                     }
                 }
             },
@@ -555,13 +555,13 @@
                     "endOffset": 3332
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 39,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 3602,
+                        "startOffset": 2692,
                         "endColumn": 102,
-                        "endOffset": 3700
+                        "endOffset": 2790
                     }
                 }
             },
@@ -572,17 +572,17 @@
                     "startOffset": 3337,
                     "endLine": 42,
                     "endColumn": 12,
-                    "endOffset": 3479
+                    "endOffset": 3487
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 42,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 3884,
-                        "endLine": 43,
+                        "startOffset": 2795,
+                        "endLine": 31,
                         "endColumn": 12,
-                        "endOffset": 4026
+                        "endOffset": 2945
                     }
                 }
             },
@@ -590,20 +590,20 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 3484,
+                    "startOffset": 3492,
                     "endLine": 44,
                     "endColumn": 12,
-                    "endOffset": 3634
+                    "endOffset": 3658
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 44,
+                        "startLine": 32,
                         "startColumn": 4,
-                        "startOffset": 4031,
-                        "endLine": 45,
+                        "startOffset": 2950,
+                        "endLine": 33,
                         "endColumn": 12,
-                        "endOffset": 4181
+                        "endOffset": 3116
                     }
                 }
             },
@@ -611,20 +611,20 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3639,
+                    "startOffset": 3663,
                     "endLine": 46,
                     "endColumn": 12,
-                    "endOffset": 3805
+                    "endOffset": 3807
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 46,
+                        "startLine": 34,
                         "startColumn": 4,
-                        "startOffset": 4186,
-                        "endLine": 47,
+                        "startOffset": 3121,
+                        "endLine": 35,
                         "endColumn": 12,
-                        "endOffset": 4352
+                        "endOffset": 3265
                     }
                 }
             },
@@ -632,20 +632,20 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3810,
+                    "startOffset": 3812,
                     "endLine": 48,
                     "endColumn": 12,
-                    "endOffset": 3954
+                    "endOffset": 3972
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 48,
+                        "startLine": 36,
                         "startColumn": 4,
-                        "startOffset": 4357,
-                        "endLine": 49,
+                        "startOffset": 3270,
+                        "endLine": 37,
                         "endColumn": 12,
-                        "endOffset": 4501
+                        "endOffset": 3430
                     }
                 }
             },
@@ -653,20 +653,20 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 3959,
+                    "startOffset": 3977,
                     "endLine": 50,
                     "endColumn": 12,
-                    "endOffset": 4119
+                    "endOffset": 4129
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 50,
+                        "startLine": 38,
                         "startColumn": 4,
-                        "startOffset": 4506,
-                        "endLine": 51,
+                        "startOffset": 3435,
+                        "endLine": 39,
                         "endColumn": 12,
-                        "endOffset": 4666
+                        "endOffset": 3587
                     }
                 }
             },
@@ -674,20 +674,20 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 4124,
+                    "startOffset": 4134,
                     "endLine": 52,
                     "endColumn": 12,
-                    "endOffset": 4276
+                    "endOffset": 4280
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 52,
+                        "startLine": 40,
                         "startColumn": 4,
-                        "startOffset": 4671,
-                        "endLine": 53,
+                        "startOffset": 3592,
+                        "endLine": 41,
                         "endColumn": 12,
-                        "endOffset": 4823
+                        "endOffset": 3738
                     }
                 }
             },
@@ -695,39 +695,39 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4281,
-                    "endLine": 54,
-                    "endColumn": 12,
-                    "endOffset": 4427
+                    "startOffset": 4285,
+                    "endColumn": 118,
+                    "endOffset": 4399
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 54,
+                        "startLine": 42,
                         "startColumn": 4,
-                        "startOffset": 4828,
-                        "endLine": 55,
-                        "endColumn": 12,
-                        "endOffset": 4974
+                        "startOffset": 3743,
+                        "endColumn": 118,
+                        "endOffset": 3857
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 55,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4432,
-                    "endColumn": 118,
-                    "endOffset": 4546
+                    "startOffset": 4404,
+                    "endLine": 55,
+                    "endColumn": 12,
+                    "endOffset": 4548
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 58,
+                        "startLine": 43,
                         "startColumn": 4,
-                        "startOffset": 5163,
-                        "endColumn": 118,
-                        "endOffset": 5277
+                        "startOffset": 3862,
+                        "endLine": 44,
+                        "endColumn": 12,
+                        "endOffset": 4006
                     }
                 }
             },
@@ -735,20 +735,20 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 4551,
+                    "startOffset": 4553,
                     "endLine": 57,
                     "endColumn": 12,
-                    "endOffset": 4695
+                    "endOffset": 4697
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 61,
+                        "startLine": 45,
                         "startColumn": 4,
-                        "startOffset": 5461,
-                        "endLine": 62,
+                        "startOffset": 4011,
+                        "endLine": 46,
                         "endColumn": 12,
-                        "endOffset": 5605
+                        "endOffset": 4155
                     }
                 }
             },
@@ -756,20 +756,37 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 4700,
-                    "endLine": 59,
-                    "endColumn": 12,
-                    "endOffset": 4844
+                    "startOffset": 4702,
+                    "endColumn": 111,
+                    "endOffset": 4809
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 63,
+                        "startLine": 47,
                         "startColumn": 4,
-                        "startOffset": 5610,
-                        "endLine": 64,
-                        "endColumn": 12,
-                        "endOffset": 5754
+                        "startOffset": 4160,
+                        "endColumn": 111,
+                        "endOffset": 4267
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 4814,
+                    "endColumn": 146,
+                    "endOffset": 4956
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 4272,
+                        "endColumn": 146,
+                        "endOffset": 4414
                     }
                 }
             },
@@ -777,37 +794,20 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 4849,
-                    "endColumn": 111,
-                    "endOffset": 4956
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 67,
-                        "startColumn": 4,
-                        "startOffset": 5943,
-                        "endColumn": 111,
-                        "endOffset": 6050
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 61,
-                    "startColumn": 4,
                     "startOffset": 4961,
-                    "endColumn": 146,
-                    "endOffset": 5103
+                    "endLine": 61,
+                    "endColumn": 12,
+                    "endOffset": 5109
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 70,
+                        "startLine": 49,
                         "startColumn": 4,
-                        "startOffset": 6234,
-                        "endColumn": 146,
-                        "endOffset": 6376
+                        "startOffset": 4419,
+                        "endLine": 50,
+                        "endColumn": 12,
+                        "endOffset": 4567
                     }
                 }
             },
@@ -815,20 +815,20 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 5108,
+                    "startOffset": 5114,
                     "endLine": 63,
                     "endColumn": 12,
                     "endOffset": 5256
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 71,
+                        "startLine": 51,
                         "startColumn": 4,
-                        "startOffset": 6381,
-                        "endLine": 72,
+                        "startOffset": 4572,
+                        "endLine": 52,
                         "endColumn": 12,
-                        "endOffset": 6529
+                        "endOffset": 4714
                     }
                 }
             },
@@ -837,19 +837,36 @@
                     "startLine": 64,
                     "startColumn": 4,
                     "startOffset": 5261,
-                    "endLine": 65,
-                    "endColumn": 12,
-                    "endOffset": 5403
+                    "endColumn": 74,
+                    "endOffset": 5331
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 73,
+                        "startLine": 53,
                         "startColumn": 4,
-                        "startOffset": 6534,
-                        "endLine": 74,
-                        "endColumn": 12,
-                        "endOffset": 6676
+                        "startOffset": 4719,
+                        "endColumn": 74,
+                        "endOffset": 4789
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 5336,
+                    "endColumn": 88,
+                    "endOffset": 5420
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 4794,
+                        "endColumn": 88,
+                        "endOffset": 4878
                     }
                 }
             },
@@ -857,18 +874,18 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 5408,
-                    "endColumn": 74,
-                    "endOffset": 5478
+                    "startOffset": 5425,
+                    "endColumn": 86,
+                    "endOffset": 5507
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 77,
+                        "startLine": 55,
                         "startColumn": 4,
-                        "startOffset": 6860,
-                        "endColumn": 74,
-                        "endOffset": 6930
+                        "startOffset": 4883,
+                        "endColumn": 86,
+                        "endOffset": 4965
                     }
                 }
             },
@@ -876,18 +893,18 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 5483,
-                    "endColumn": 88,
-                    "endOffset": 5567
+                    "startOffset": 5512,
+                    "endColumn": 100,
+                    "endOffset": 5608
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 78,
+                        "startLine": 56,
                         "startColumn": 4,
-                        "startOffset": 6935,
-                        "endColumn": 88,
-                        "endOffset": 7019
+                        "startOffset": 4970,
+                        "endColumn": 100,
+                        "endOffset": 5066
                     }
                 }
             },
@@ -895,121 +912,104 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 5572,
-                    "endColumn": 86,
-                    "endOffset": 5654
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 79,
-                        "startColumn": 4,
-                        "startOffset": 7024,
-                        "endColumn": 86,
-                        "endOffset": 7106
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 69,
-                    "startColumn": 4,
-                    "startOffset": 5659,
-                    "endColumn": 100,
-                    "endOffset": 5755
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 80,
-                        "startColumn": 4,
-                        "startOffset": 7111,
-                        "endColumn": 100,
-                        "endOffset": 7207
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 70,
-                    "startColumn": 4,
-                    "startOffset": 5760,
-                    "endLine": 113,
+                    "startOffset": 5613,
+                    "endLine": 111,
                     "endColumn": 12,
-                    "endOffset": 8823
+                    "endOffset": 8676
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 81,
+                        "startLine": 57,
                         "startColumn": 4,
-                        "startOffset": 7212,
-                        "endLine": 124,
+                        "startOffset": 5071,
+                        "endLine": 100,
                         "endColumn": 12,
-                        "endOffset": 10275
+                        "endOffset": 8134
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 114,
+                    "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 8828,
-                    "endLine": 116,
+                    "startOffset": 8681,
+                    "endLine": 114,
                     "endColumn": 12,
-                    "endOffset": 9009
+                    "endOffset": 8862
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 125,
+                        "startLine": 101,
                         "startColumn": 4,
-                        "startOffset": 10280,
-                        "endLine": 127,
+                        "startOffset": 8139,
+                        "endLine": 103,
                         "endColumn": 12,
-                        "endOffset": 10461
+                        "endOffset": 8320
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 117,
+                    "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 9014,
-                    "endLine": 160,
+                    "startOffset": 8867,
+                    "endLine": 158,
                     "endColumn": 12,
-                    "endOffset": 12089
+                    "endOffset": 11942
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 128,
+                        "startLine": 104,
                         "startColumn": 4,
-                        "startOffset": 10466,
-                        "endLine": 171,
+                        "startOffset": 8325,
+                        "endLine": 147,
                         "endColumn": 12,
-                        "endOffset": 13541
+                        "endOffset": 11400
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 161,
+                    "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 12094,
+                    "startOffset": 11947,
+                    "endLine": 161,
+                    "endColumn": 12,
+                    "endOffset": 12140
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 148,
+                        "startColumn": 4,
+                        "startOffset": 11405,
+                        "endLine": 150,
+                        "endColumn": 12,
+                        "endOffset": 11598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 162,
+                    "startColumn": 4,
+                    "startOffset": 12145,
                     "endLine": 163,
                     "endColumn": 12,
-                    "endOffset": 12287
+                    "endOffset": 12263
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 172,
+                        "startLine": 151,
                         "startColumn": 4,
-                        "startOffset": 13546,
-                        "endLine": 174,
+                        "startOffset": 11603,
+                        "endLine": 152,
                         "endColumn": 12,
-                        "endOffset": 13739
+                        "endOffset": 11721
                     }
                 }
             },
@@ -1017,20 +1017,20 @@
                 "to": {
                     "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 12292,
+                    "startOffset": 12268,
                     "endLine": 165,
                     "endColumn": 12,
-                    "endOffset": 12410
+                    "endOffset": 12386
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 177,
+                        "startLine": 153,
                         "startColumn": 4,
-                        "startOffset": 13923,
-                        "endLine": 178,
+                        "startOffset": 11726,
+                        "endLine": 154,
                         "endColumn": 12,
-                        "endOffset": 14041
+                        "endOffset": 11844
                     }
                 }
             },
@@ -1038,20 +1038,20 @@
                 "to": {
                     "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 12415,
+                    "startOffset": 12391,
                     "endLine": 167,
                     "endColumn": 12,
-                    "endOffset": 12533
+                    "endOffset": 12499
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 179,
+                        "startLine": 155,
                         "startColumn": 4,
-                        "startOffset": 14046,
-                        "endLine": 180,
+                        "startOffset": 11849,
+                        "endLine": 156,
                         "endColumn": 12,
-                        "endOffset": 14164
+                        "endOffset": 11957
                     }
                 }
             },
@@ -1059,41 +1059,41 @@
                 "to": {
                     "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 12538,
-                    "endLine": 169,
+                    "startOffset": 12504,
+                    "endLine": 170,
                     "endColumn": 12,
-                    "endOffset": 12646
+                    "endOffset": 12682
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 181,
+                        "startLine": 157,
                         "startColumn": 4,
-                        "startOffset": 14169,
-                        "endLine": 182,
+                        "startOffset": 11962,
+                        "endLine": 159,
                         "endColumn": 12,
-                        "endOffset": 14277
+                        "endOffset": 12140
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 170,
+                    "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 12651,
+                    "startOffset": 12687,
                     "endLine": 172,
                     "endColumn": 12,
-                    "endOffset": 12829
+                    "endOffset": 12813
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 183,
+                        "startLine": 160,
                         "startColumn": 4,
-                        "startOffset": 14282,
-                        "endLine": 185,
+                        "startOffset": 12145,
+                        "endLine": 161,
                         "endColumn": 12,
-                        "endOffset": 14460
+                        "endOffset": 12271
                     }
                 }
             },
@@ -1101,41 +1101,58 @@
                 "to": {
                     "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 12834,
-                    "endLine": 174,
+                    "startOffset": 12818,
+                    "endLine": 175,
                     "endColumn": 12,
-                    "endOffset": 12960
+                    "endOffset": 13014
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 186,
+                        "startLine": 162,
                         "startColumn": 4,
-                        "startOffset": 14465,
-                        "endLine": 187,
+                        "startOffset": 12276,
+                        "endLine": 164,
                         "endColumn": 12,
-                        "endOffset": 14591
+                        "endOffset": 12472
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 175,
+                    "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 12965,
-                    "endLine": 177,
-                    "endColumn": 12,
-                    "endOffset": 13161
+                    "startOffset": 13019,
+                    "endColumn": 88,
+                    "endOffset": 13103
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 188,
+                        "startLine": 165,
                         "startColumn": 4,
-                        "startOffset": 14596,
-                        "endLine": 190,
-                        "endColumn": 12,
-                        "endOffset": 14792
+                        "startOffset": 12477,
+                        "endColumn": 88,
+                        "endOffset": 12561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 177,
+                    "startColumn": 4,
+                    "startOffset": 13108,
+                    "endColumn": 110,
+                    "endOffset": 13214
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 166,
+                        "startColumn": 4,
+                        "startOffset": 12566,
+                        "endColumn": 110,
+                        "endOffset": 12672
                     }
                 }
             },
@@ -1143,18 +1160,18 @@
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 13166,
-                    "endColumn": 88,
-                    "endOffset": 13250
+                    "startOffset": 13219,
+                    "endColumn": 126,
+                    "endOffset": 13341
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 191,
+                        "startLine": 167,
                         "startColumn": 4,
-                        "startOffset": 14797,
-                        "endColumn": 88,
-                        "endOffset": 14881
+                        "startOffset": 12677,
+                        "endColumn": 126,
+                        "endOffset": 12799
                     }
                 }
             },
@@ -1162,18 +1179,18 @@
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13255,
-                    "endColumn": 110,
-                    "endOffset": 13361
+                    "startOffset": 13346,
+                    "endColumn": 100,
+                    "endOffset": 13442
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 192,
+                        "startLine": 168,
                         "startColumn": 4,
-                        "startOffset": 14886,
-                        "endColumn": 110,
-                        "endOffset": 14992
+                        "startOffset": 12804,
+                        "endColumn": 100,
+                        "endOffset": 12900
                     }
                 }
             },
@@ -1181,18 +1198,18 @@
                 "to": {
                     "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 13366,
-                    "endColumn": 126,
-                    "endOffset": 13488
+                    "startOffset": 13447,
+                    "endColumn": 94,
+                    "endOffset": 13537
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 193,
+                        "startLine": 169,
                         "startColumn": 4,
-                        "startOffset": 14997,
-                        "endColumn": 126,
-                        "endOffset": 15119
+                        "startOffset": 12905,
+                        "endColumn": 94,
+                        "endOffset": 12995
                     }
                 }
             },
@@ -1200,18 +1217,18 @@
                 "to": {
                     "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 13493,
-                    "endColumn": 100,
-                    "endOffset": 13589
+                    "startOffset": 13542,
+                    "endColumn": 122,
+                    "endOffset": 13660
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 194,
+                        "startLine": 170,
                         "startColumn": 4,
-                        "startOffset": 15124,
-                        "endColumn": 100,
-                        "endOffset": 15220
+                        "startOffset": 13000,
+                        "endColumn": 122,
+                        "endOffset": 13118
                     }
                 }
             },
@@ -1219,18 +1236,18 @@
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13594,
-                    "endColumn": 94,
-                    "endOffset": 13684
+                    "startOffset": 13665,
+                    "endColumn": 128,
+                    "endOffset": 13789
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 195,
+                        "startLine": 171,
                         "startColumn": 4,
-                        "startOffset": 15225,
-                        "endColumn": 94,
-                        "endOffset": 15315
+                        "startOffset": 13123,
+                        "endColumn": 128,
+                        "endOffset": 13247
                     }
                 }
             },
@@ -1238,18 +1255,18 @@
                 "to": {
                     "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 13689,
-                    "endColumn": 122,
-                    "endOffset": 13807
+                    "startOffset": 13794,
+                    "endColumn": 116,
+                    "endOffset": 13906
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 196,
+                        "startLine": 172,
                         "startColumn": 4,
-                        "startOffset": 15320,
-                        "endColumn": 122,
-                        "endOffset": 15438
+                        "startOffset": 13252,
+                        "endColumn": 116,
+                        "endOffset": 13364
                     }
                 }
             },
@@ -1257,77 +1274,60 @@
                 "to": {
                     "startLine": 184,
                     "startColumn": 4,
-                    "startOffset": 13812,
-                    "endColumn": 128,
-                    "endOffset": 13936
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 197,
-                        "startColumn": 4,
-                        "startOffset": 15443,
-                        "endColumn": 128,
-                        "endOffset": 15567
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 185,
-                    "startColumn": 4,
-                    "startOffset": 13941,
-                    "endColumn": 116,
-                    "endOffset": 14053
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 198,
-                        "startColumn": 4,
-                        "startOffset": 15572,
-                        "endColumn": 116,
-                        "endOffset": 15684
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 186,
-                    "startColumn": 4,
-                    "startOffset": 14058,
-                    "endLine": 188,
+                    "startOffset": 13911,
+                    "endLine": 186,
                     "endColumn": 12,
-                    "endOffset": 14230
+                    "endOffset": 14083
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 199,
+                        "startLine": 173,
                         "startColumn": 4,
-                        "startOffset": 15689,
-                        "endLine": 201,
+                        "startOffset": 13369,
+                        "endLine": 175,
                         "endColumn": 12,
-                        "endOffset": 15861
+                        "endOffset": 13541
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 189,
+                    "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14235,
+                    "startOffset": 14088,
                     "endColumn": 98,
-                    "endOffset": 14329
+                    "endOffset": 14182
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 202,
+                        "startLine": 176,
                         "startColumn": 4,
-                        "startOffset": 15866,
+                        "startOffset": 13546,
                         "endColumn": 98,
-                        "endOffset": 15960
+                        "endOffset": 13640
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 188,
+                    "startColumn": 4,
+                    "startOffset": 14187,
+                    "endLine": 189,
+                    "endColumn": 12,
+                    "endOffset": 14317
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 177,
+                        "startColumn": 4,
+                        "startOffset": 13645,
+                        "endLine": 178,
+                        "endColumn": 12,
+                        "endOffset": 13775
                     }
                 }
             },
@@ -1335,20 +1335,20 @@
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 14334,
+                    "startOffset": 14322,
                     "endLine": 191,
                     "endColumn": 12,
-                    "endOffset": 14464
+                    "endOffset": 14460
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 203,
+                        "startLine": 179,
                         "startColumn": 4,
-                        "startOffset": 15965,
-                        "endLine": 204,
+                        "startOffset": 13780,
+                        "endLine": 180,
                         "endColumn": 12,
-                        "endOffset": 16095
+                        "endOffset": 13918
                     }
                 }
             },
@@ -1356,20 +1356,20 @@
                 "to": {
                     "startLine": 192,
                     "startColumn": 4,
-                    "startOffset": 14469,
+                    "startOffset": 14465,
                     "endLine": 193,
                     "endColumn": 12,
-                    "endOffset": 14607
+                    "endOffset": 14595
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 205,
+                        "startLine": 181,
                         "startColumn": 4,
-                        "startOffset": 16100,
-                        "endLine": 206,
+                        "startOffset": 13923,
+                        "endLine": 182,
                         "endColumn": 12,
-                        "endOffset": 16238
+                        "endOffset": 14053
                     }
                 }
             },
@@ -1377,20 +1377,20 @@
                 "to": {
                     "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 14612,
+                    "startOffset": 14600,
                     "endLine": 195,
                     "endColumn": 12,
-                    "endOffset": 14742
+                    "endOffset": 14714
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 207,
+                        "startLine": 183,
                         "startColumn": 4,
-                        "startOffset": 16243,
-                        "endLine": 208,
+                        "startOffset": 14058,
+                        "endLine": 184,
                         "endColumn": 12,
-                        "endOffset": 16373
+                        "endOffset": 14172
                     }
                 }
             },
@@ -1398,41 +1398,41 @@
                 "to": {
                     "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 14747,
-                    "endLine": 197,
+                    "startOffset": 14719,
+                    "endLine": 199,
                     "endColumn": 12,
-                    "endOffset": 14861
+                    "endOffset": 14915
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 209,
+                        "startLine": 185,
                         "startColumn": 4,
-                        "startOffset": 16378,
-                        "endLine": 210,
+                        "startOffset": 14177,
+                        "endLine": 188,
                         "endColumn": 12,
-                        "endOffset": 16492
+                        "endOffset": 14373
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 198,
+                    "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 14866,
+                    "startOffset": 14920,
                     "endLine": 201,
                     "endColumn": 12,
-                    "endOffset": 15062
+                    "endOffset": 15034
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 211,
+                        "startLine": 189,
                         "startColumn": 4,
-                        "startOffset": 16497,
-                        "endLine": 214,
+                        "startOffset": 14378,
+                        "endLine": 190,
                         "endColumn": 12,
-                        "endOffset": 16693
+                        "endOffset": 14492
                     }
                 }
             },
@@ -1440,20 +1440,37 @@
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15067,
-                    "endLine": 203,
-                    "endColumn": 12,
-                    "endOffset": 15181
+                    "startOffset": 15039,
+                    "endColumn": 92,
+                    "endOffset": 15127
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 215,
+                        "startLine": 191,
                         "startColumn": 4,
-                        "startOffset": 16698,
-                        "endLine": 216,
-                        "endColumn": 12,
-                        "endOffset": 16812
+                        "startOffset": 14497,
+                        "endColumn": 92,
+                        "endOffset": 14585
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 203,
+                    "startColumn": 4,
+                    "startOffset": 15132,
+                    "endColumn": 110,
+                    "endOffset": 15238
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 192,
+                        "startColumn": 4,
+                        "startOffset": 14590,
+                        "endColumn": 110,
+                        "endOffset": 14696
                     }
                 }
             },
@@ -1461,18 +1478,18 @@
                 "to": {
                     "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 15186,
-                    "endColumn": 92,
-                    "endOffset": 15274
+                    "startOffset": 15243,
+                    "endColumn": 55,
+                    "endOffset": 15294
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 217,
+                        "startLine": 193,
                         "startColumn": 4,
-                        "startOffset": 16817,
-                        "endColumn": 92,
-                        "endOffset": 16905
+                        "startOffset": 14701,
+                        "endColumn": 55,
+                        "endOffset": 14752
                     }
                 }
             },
@@ -1480,37 +1497,20 @@
                 "to": {
                     "startLine": 205,
                     "startColumn": 4,
-                    "startOffset": 15279,
-                    "endColumn": 110,
-                    "endOffset": 15385
+                    "startOffset": 15299,
+                    "endLine": 206,
+                    "endColumn": 12,
+                    "endOffset": 15401
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 218,
+                        "startLine": 194,
                         "startColumn": 4,
-                        "startOffset": 16910,
-                        "endColumn": 110,
-                        "endOffset": 17016
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 206,
-                    "startColumn": 4,
-                    "startOffset": 15390,
-                    "endColumn": 55,
-                    "endOffset": 15441
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 219,
-                        "startColumn": 4,
-                        "startOffset": 17021,
-                        "endColumn": 55,
-                        "endOffset": 17072
+                        "startOffset": 14757,
+                        "endLine": 195,
+                        "endColumn": 12,
+                        "endOffset": 14859
                     }
                 }
             },
@@ -1518,41 +1518,41 @@
                 "to": {
                     "startLine": 207,
                     "startColumn": 4,
-                    "startOffset": 15446,
-                    "endLine": 208,
+                    "startOffset": 15406,
+                    "endLine": 210,
                     "endColumn": 12,
-                    "endOffset": 15548
+                    "endOffset": 15596
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 220,
+                        "startLine": 196,
                         "startColumn": 4,
-                        "startOffset": 17077,
-                        "endLine": 221,
+                        "startOffset": 14864,
+                        "endLine": 199,
                         "endColumn": 12,
-                        "endOffset": 17179
+                        "endOffset": 15054
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 209,
+                    "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 15553,
+                    "startOffset": 15601,
                     "endLine": 212,
                     "endColumn": 12,
-                    "endOffset": 15743
+                    "endOffset": 15707
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 222,
+                        "startLine": 200,
                         "startColumn": 4,
-                        "startOffset": 17184,
-                        "endLine": 225,
+                        "startOffset": 15059,
+                        "endLine": 201,
                         "endColumn": 12,
-                        "endOffset": 17374
+                        "endOffset": 15165
                     }
                 }
             },
@@ -1560,20 +1560,20 @@
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 15748,
+                    "startOffset": 15712,
                     "endLine": 214,
                     "endColumn": 12,
-                    "endOffset": 15854
+                    "endOffset": 15840
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 226,
+                        "startLine": 202,
                         "startColumn": 4,
-                        "startOffset": 17379,
-                        "endLine": 227,
+                        "startOffset": 15170,
+                        "endLine": 203,
                         "endColumn": 12,
-                        "endOffset": 17485
+                        "endOffset": 15298
                     }
                 }
             },
@@ -1581,20 +1581,37 @@
                 "to": {
                     "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 15859,
-                    "endLine": 216,
-                    "endColumn": 12,
-                    "endOffset": 15987
+                    "startOffset": 15845,
+                    "endColumn": 94,
+                    "endOffset": 15935
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 228,
+                        "startLine": 204,
                         "startColumn": 4,
-                        "startOffset": 17490,
-                        "endLine": 229,
-                        "endColumn": 12,
-                        "endOffset": 17618
+                        "startOffset": 15303,
+                        "endColumn": 94,
+                        "endOffset": 15393
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 216,
+                    "startColumn": 4,
+                    "startOffset": 15940,
+                    "endColumn": 90,
+                    "endOffset": 16026
+                },
+                "from": {
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 205,
+                        "startColumn": 4,
+                        "startOffset": 15398,
+                        "endColumn": 90,
+                        "endOffset": 15484
                     }
                 }
             },
@@ -1602,18 +1619,18 @@
                 "to": {
                     "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 15992,
-                    "endColumn": 94,
-                    "endOffset": 16082
+                    "startOffset": 16031,
+                    "endColumn": 90,
+                    "endOffset": 16117
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 230,
+                        "startLine": 206,
                         "startColumn": 4,
-                        "startOffset": 17623,
-                        "endColumn": 94,
-                        "endOffset": 17713
+                        "startOffset": 15489,
+                        "endColumn": 90,
+                        "endOffset": 15575
                     }
                 }
             },
@@ -1621,18 +1638,18 @@
                 "to": {
                     "startLine": 218,
                     "startColumn": 4,
-                    "startOffset": 16087,
-                    "endColumn": 90,
-                    "endOffset": 16173
+                    "startOffset": 16122,
+                    "endColumn": 116,
+                    "endOffset": 16234
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 231,
+                        "startLine": 207,
                         "startColumn": 4,
-                        "startOffset": 17718,
-                        "endColumn": 90,
-                        "endOffset": 17804
+                        "startOffset": 15580,
+                        "endColumn": 116,
+                        "endOffset": 15692
                     }
                 }
             },
@@ -1640,37 +1657,20 @@
                 "to": {
                     "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 16178,
-                    "endColumn": 90,
-                    "endOffset": 16264
+                    "startOffset": 16239,
+                    "endLine": 220,
+                    "endColumn": 12,
+                    "endOffset": 16373
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 232,
+                        "startLine": 208,
                         "startColumn": 4,
-                        "startOffset": 17809,
-                        "endColumn": 90,
-                        "endOffset": 17895
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 220,
-                    "startColumn": 4,
-                    "startOffset": 16269,
-                    "endColumn": 116,
-                    "endOffset": 16381
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 233,
-                        "startColumn": 4,
-                        "startOffset": 17900,
-                        "endColumn": 116,
-                        "endOffset": 18012
+                        "startOffset": 15697,
+                        "endLine": 209,
+                        "endColumn": 12,
+                        "endOffset": 15831
                     }
                 }
             },
@@ -1678,31 +1678,10 @@
                 "to": {
                     "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 16386,
-                    "endLine": 222,
+                    "startOffset": 16378,
+                    "endLine": 224,
                     "endColumn": 12,
-                    "endOffset": 16520
-                },
-                "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 234,
-                        "startColumn": 4,
-                        "startOffset": 18017,
-                        "endLine": 235,
-                        "endColumn": 12,
-                        "endOffset": 18151
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 223,
-                    "startColumn": 4,
-                    "startOffset": 16525,
-                    "endLine": 226,
-                    "endColumn": 12,
-                    "endOffset": 16696
+                    "endOffset": 16549
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",
@@ -1718,12 +1697,12 @@
             },
             {
                 "to": {
-                    "startLine": 227,
+                    "startLine": 225,
                     "startColumn": 4,
-                    "startOffset": 16701,
-                    "endLine": 228,
+                    "startOffset": 16554,
+                    "endLine": 226,
                     "endColumn": 12,
-                    "endOffset": 16741
+                    "endOffset": 16594
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",
@@ -1739,113 +1718,113 @@
             },
             {
                 "to": {
-                    "startLine": 229,
+                    "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 16746,
-                    "endLine": 235,
+                    "startOffset": 16599,
+                    "endLine": 236,
                     "endColumn": 12,
-                    "endOffset": 17094
+                    "endOffset": 17107
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 238,
+                        "startLine": 210,
                         "startColumn": 4,
-                        "startOffset": 18335,
-                        "endLine": 244,
+                        "startOffset": 15836,
+                        "endLine": 219,
                         "endColumn": 12,
-                        "endOffset": 18683
+                        "endOffset": 16344
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 236,
+                    "startLine": 237,
                     "startColumn": 4,
-                    "startOffset": 17099,
-                    "endLine": 242,
+                    "startOffset": 17112,
+                    "endLine": 246,
                     "endColumn": 12,
-                    "endOffset": 17459
+                    "endOffset": 17632
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 245,
+                        "startLine": 220,
                         "startColumn": 4,
-                        "startOffset": 18688,
-                        "endLine": 251,
+                        "startOffset": 16349,
+                        "endLine": 229,
                         "endColumn": 12,
-                        "endOffset": 19048
+                        "endOffset": 16869
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 243,
+                    "startLine": 247,
                     "startColumn": 4,
-                    "startOffset": 17464,
-                    "endLine": 252,
+                    "startOffset": 17637,
+                    "endLine": 256,
                     "endColumn": 12,
-                    "endOffset": 18139
+                    "endOffset": 18312
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 252,
+                        "startLine": 230,
                         "startColumn": 4,
-                        "startOffset": 19053,
-                        "endLine": 261,
+                        "startOffset": 16874,
+                        "endLine": 239,
                         "endColumn": 12,
-                        "endOffset": 19728
+                        "endOffset": 17549
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 253,
+                    "startLine": 257,
                     "startColumn": 4,
-                    "startOffset": 18144,
+                    "startOffset": 18317,
                     "endColumn": 56,
-                    "endOffset": 18196
+                    "endOffset": 18369
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 262,
+                        "startLine": 240,
                         "startColumn": 4,
-                        "startOffset": 19733,
+                        "startOffset": 17554,
                         "endColumn": 56,
-                        "endOffset": 19785
+                        "endOffset": 17606
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 254,
+                    "startLine": 258,
                     "startColumn": 4,
-                    "startOffset": 18201,
+                    "startOffset": 18374,
                     "endColumn": 57,
-                    "endOffset": 18254
+                    "endOffset": 18427
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 263,
+                        "startLine": 241,
                         "startColumn": 4,
-                        "startOffset": 19790,
+                        "startOffset": 17611,
                         "endColumn": 57,
-                        "endOffset": 19843
+                        "endOffset": 17664
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 255,
+                    "startLine": 259,
                     "startColumn": 4,
-                    "startOffset": 18259,
-                    "endLine": 262,
+                    "startOffset": 18432,
+                    "endLine": 266,
                     "endColumn": 12,
-                    "endOffset": 18708
+                    "endOffset": 18881
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",
@@ -1861,12 +1840,12 @@
             },
             {
                 "to": {
-                    "startLine": 263,
+                    "startLine": 267,
                     "startColumn": 4,
-                    "startOffset": 18713,
-                    "endLine": 271,
+                    "startOffset": 18886,
+                    "endLine": 275,
                     "endColumn": 9,
-                    "endOffset": 19154
+                    "endOffset": 19327
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",
@@ -1882,12 +1861,12 @@
             },
             {
                 "to": {
-                    "startLine": 272,
+                    "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 19159,
-                    "endLine": 274,
+                    "startOffset": 19332,
+                    "endLine": 278,
                     "endColumn": 9,
-                    "endOffset": 19270
+                    "endOffset": 19443
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",
@@ -1903,12 +1882,12 @@
             },
             {
                 "to": {
-                    "startLine": 275,
+                    "startLine": 279,
                     "startColumn": 4,
-                    "startOffset": 19275,
-                    "endLine": 277,
+                    "startOffset": 19448,
+                    "endLine": 281,
                     "endColumn": 9,
-                    "endOffset": 19390
+                    "endOffset": 19563
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",
@@ -1924,12 +1903,12 @@
             },
             {
                 "to": {
-                    "startLine": 278,
+                    "startLine": 282,
                     "startColumn": 4,
-                    "startOffset": 19395,
-                    "endLine": 280,
+                    "startOffset": 19568,
+                    "endLine": 284,
                     "endColumn": 9,
-                    "endOffset": 19516
+                    "endOffset": 19689
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",
@@ -1945,12 +1924,12 @@
             },
             {
                 "to": {
-                    "startLine": 281,
+                    "startLine": 285,
                     "startColumn": 4,
-                    "startOffset": 19521,
-                    "endLine": 285,
+                    "startOffset": 19694,
+                    "endLine": 289,
                     "endColumn": 12,
-                    "endOffset": 19742
+                    "endOffset": 19915
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",
@@ -1966,12 +1945,12 @@
             },
             {
                 "to": {
-                    "startLine": 286,
+                    "startLine": 290,
                     "startColumn": 4,
-                    "startOffset": 19747,
-                    "endLine": 291,
+                    "startOffset": 19920,
+                    "endLine": 295,
                     "endColumn": 12,
-                    "endOffset": 20037
+                    "endOffset": 20210
                 },
                 "from": {
                     "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/values-v21/values-v21.xml",

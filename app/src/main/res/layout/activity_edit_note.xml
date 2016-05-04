@@ -20,7 +20,9 @@
         android:layout_height="match_parent"
         android:gravity="start"
         android:hint="@string/hint_note_content"
-        android:inputType="textNoSuggestions"
+        android:inputType="textNoSuggestions|textMultiLine"
         android:longClickable="true" />
+    
+
 
 </LinearLayout>

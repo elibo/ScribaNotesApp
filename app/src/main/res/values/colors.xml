@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="selected_note">#1aff8c</color>
+
+    <array name="demo_colors">
+       <item name="blue">#0000ff </item>
+        <item name="green">#1aff8c </item>
+        <item name="red">#ff0000 </item>
+        <item name="yellow">#ffff33 </item>
+        <item name="orange">#ff9900 </item>
+        <item name="pink">#ff80d5 </item>
+
+    </array>
 </resources>
