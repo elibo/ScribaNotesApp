@@ -12,9 +12,6 @@
     <string name="delete_notes_alert">Delete %s note(s)?</string>
     <string name="bluetooth">Connect Scriba</string>
 
-    <!-- Licenses dialog -->
-
-
     <!-- About dialog -->
     <string name="version_format">Version %s</string>
     <string name="copyright_info">Scriba 2016</string>

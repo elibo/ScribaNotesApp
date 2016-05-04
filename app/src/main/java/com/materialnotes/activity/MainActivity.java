@@ -32,6 +32,7 @@ import roboguice.inject.InjectView;
 /**
  * Main activity that shows a list of notes.
  */
+
 @ContentView(R.layout.activity_main)
 public class MainActivity extends RoboActionBarActivity {
 
@@ -315,7 +316,7 @@ public class MainActivity extends RoboActionBarActivity {
                 // Adds items to the selected list and changes the background
                 // When we don't have any selected the contextual mode ends
                 if (selectedPositions.contains(position)) {
-                    selectedPositions.remove((Object) position); // no quiero el índice sino el objeto
+                    selectedPositions.remove((Object) position);
                     if (selectedPositions.isEmpty()) actionMode.finish();
                     else {
                         actionMode.setTitle(String.valueOf(selectedPositions.size()));

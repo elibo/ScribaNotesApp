@@ -37,6 +37,7 @@ import roboguice.inject.InjectView;
 /**
  * Edit notes activity
  **/
+
 @ContentView(R.layout.activity_edit_note)
 public class EditNoteActivity extends RoboActionBarActivity {
 
@@ -141,7 +142,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 formatText();
                 return true;
             case R.id.color:
-                colorpicker();
+                colorPicker();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -260,56 +261,10 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void clearFormat() {
 
-        if (noteContentText.hasFocus()){
-            ssbcontent=(SpannableStringBuilder)noteContentText.getText();
-
-            StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), StyleSpan.class);
-            UnderlineSpan[] us = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), UnderlineSpan.class);
-            ForegroundColorSpan[] fcs= ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),ForegroundColorSpan.class);
-
-
-            for (int i = 0; i < ss.length; i++) {
-                if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ) {
-                    ssbcontent.removeSpan(ss[i]);
-                }
-            }
-
-            for (int i = 0; i < us.length; i++) {
-                ssbcontent.removeSpan(us[i]);
-            }
-
-            for (int i = 0; i < fcs.length; i++) {
-                ssbcontent.removeSpan(fcs[i]);
-            }
-
-            noteContentText.setText(ssbcontent);
-
-        } else {
-            ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
-
-            StyleSpan[] ss = ssbtitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), StyleSpan.class);
-            UnderlineSpan[] us = ssbtitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), UnderlineSpan.class);
-            ForegroundColorSpan[] fcs= ssbtitle.getSpans(noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),ForegroundColorSpan.class);
-
-
-            for (int i = 0; i < ss.length; i++) {
-                if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ) {
-                    ssbtitle.removeSpan(ss[i]);
-                }
-            }
-
-            for (int i = 0; i < us.length; i++) {
-                ssbtitle.removeSpan(us[i]);
-            }
-
-            for (int i = 0; i < fcs.length; i++) {
-                ssbtitle.removeSpan(fcs[i]);
-            }
-
-            noteTitleText.setText(ssbtitle);
-
-        }
-
+        if (noteContentText.hasFocus())
+            clearContent();
+        else
+            clearTitle();
 
     }
 
@@ -326,7 +281,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
-    public void colorpicker(){
+    public void colorPicker(){
         new SpectrumDialog.Builder(this)
                 .setColors(R.array.demo_colors)
               //  .setSelectedColorRes(R.color.selected_note)
@@ -342,5 +297,54 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
+    public void clearTitle(){
+        ssbtitle=(SpannableStringBuilder)noteTitleText.getText();
+
+        StyleSpan[] ss = ssbtitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), StyleSpan.class);
+        UnderlineSpan[] us = ssbtitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), UnderlineSpan.class);
+        ForegroundColorSpan[] fcs= ssbtitle.getSpans(noteTitleText.getSelectionStart(),noteTitleText.getSelectionEnd(),ForegroundColorSpan.class);
+
+
+        for (int i = 0; i < ss.length; i++) {
+            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ) {
+                ssbtitle.removeSpan(ss[i]);
+            }
+        }
+
+        for (int i = 0; i < us.length; i++) {
+            ssbtitle.removeSpan(us[i]);
+        }
+
+        for (int i = 0; i < fcs.length; i++) {
+            ssbtitle.removeSpan(fcs[i]);
+        }
+
+        noteTitleText.setText(ssbtitle);
+    }
+
+    public void clearContent(){
+        ssbcontent=(SpannableStringBuilder)noteContentText.getText();
+
+        StyleSpan[] ss = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), StyleSpan.class);
+        UnderlineSpan[] us = ssbcontent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), UnderlineSpan.class);
+        ForegroundColorSpan[] fcs= ssbcontent.getSpans(noteContentText.getSelectionStart(),noteContentText.getSelectionEnd(),ForegroundColorSpan.class);
+
+
+        for (int i = 0; i < ss.length; i++) {
+            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC ) {
+                ssbcontent.removeSpan(ss[i]);
+            }
+        }
+
+        for (int i = 0; i < us.length; i++) {
+            ssbcontent.removeSpan(us[i]);
+        }
+
+        for (int i = 0; i < fcs.length; i++) {
+            ssbcontent.removeSpan(fcs[i]);
+        }
+
+        noteContentText.setText(ssbcontent);
+    }
 
 }
