@@ -30,7 +30,6 @@ dependencies {
     compile 'com.android.support:cardview-v7:23.0.0'
     compile 'com.shamanland:fab:0.0.5'
     compile 'org.roboguice:roboguice:3.0'
-    compile 'com.thebluealliance:spectrum:0.4.2'
     compile project(':applib')
     provided 'org.roboguice:roboblender:3.0'
 }

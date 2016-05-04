@@ -9,7 +9,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_item_background_holo_light.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_light.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/uart_dialog_button_background.xml",
@@ -41,11 +41,11 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_switch_thumb_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_switch_thumb_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_text_cursor_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_text_cursor_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
@@ -61,7 +61,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_seekbar_thumb_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
@@ -73,11 +73,11 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_radio_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_radio_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_textfield_search_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_textfield_search_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/uart_button.xml",
@@ -89,27 +89,27 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_cab_background_internal_bg.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_dialog_material_background_light.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_holo_light.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_holo_dark.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_colored_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_colored_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/ic_action_add.xml",
@@ -117,11 +117,11 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_seekbar_track_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_cab_background_top_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
@@ -149,7 +149,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/com_shamanland_fab_circle_mini.xml",
@@ -161,7 +161,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_tab_indicator_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_tab_indicator_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
@@ -169,7 +169,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_spinner_textfield_background_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/ic_rssi_bar.xml",
@@ -197,15 +197,15 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_dialog_material_background_dark.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_dark.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_item_background_holo_dark.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
@@ -213,7 +213,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_edit_text_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_edit_text_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/ic_feature_bg_p.xml",
@@ -233,7 +233,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_borderless_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_borderless_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
@@ -241,7 +241,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_ratingbar_full_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/ic_action_clear.xml",
@@ -249,7 +249,7 @@
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_check_material.xml"
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_check_material.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable/pentool_bg.xml",

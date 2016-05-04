@@ -8,10 +8,6 @@
         android:icon="@drawable/ic_action_font_faces"
         android:title="Format" />
 
-    <item
-        android:id="@+id/color"
-        NotepadApp:showAsAction="ifRoom"
-        android:title="Text color" />
 
     <item
         android:id="@+id/clear"
