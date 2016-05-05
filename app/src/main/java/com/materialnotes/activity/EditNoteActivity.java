@@ -254,24 +254,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
-    /*public void colorPicker() {
-        new SpectrumDialog.Builder(this)
-                .setColors(R.array.demo_colors)
-                .setSelectedColorRes(R.color.red)
-                .setDismissOnColorSelected(true)
-                .setOutlineWidth(2)
-                .setOnColorSelectedListener(new SpectrumDialog.OnColorSelectedListener() {
-                    @Override
-                    public void onColorSelected(boolean positiveResult, @ColorInt int color) {
-                        if (positiveResult) {
-                            mSelectedColor = color;
-                        }
-                    }
-                }).build().show(getSupportFragmentManager(), "format");
-
-
-    }*/
-
     public void clearTitle() {
         ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
 

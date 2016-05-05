@@ -377,14 +377,14 @@ public final class R {
 		public static final int abc_text_size_subtitle_material_toolbar = 0x7f0a0003;
 		public static final int abc_text_size_title_material = 0x7f0a0060;
 		public static final int abc_text_size_title_material_toolbar = 0x7f0a0004;
-		public static final int disabled_alpha_material_dark = 0x7f0a007d;
-		public static final int disabled_alpha_material_light = 0x7f0a007e;
-		public static final int highlight_alpha_material_colored = 0x7f0a0087;
-		public static final int highlight_alpha_material_dark = 0x7f0a0088;
-		public static final int highlight_alpha_material_light = 0x7f0a0089;
-		public static final int notification_large_icon_height = 0x7f0a008b;
-		public static final int notification_large_icon_width = 0x7f0a008c;
-		public static final int notification_subtext_size = 0x7f0a008d;
+		public static final int disabled_alpha_material_dark = 0x7f0a007e;
+		public static final int disabled_alpha_material_light = 0x7f0a007f;
+		public static final int highlight_alpha_material_colored = 0x7f0a0088;
+		public static final int highlight_alpha_material_dark = 0x7f0a0089;
+		public static final int highlight_alpha_material_light = 0x7f0a008a;
+		public static final int notification_large_icon_height = 0x7f0a008c;
+		public static final int notification_large_icon_width = 0x7f0a008d;
+		public static final int notification_subtext_size = 0x7f0a008e;
 	}
 	public static final class drawable {
 		public static final int abc_ab_share_pack_mtrl_alpha = 0x7f020000;
@@ -597,7 +597,7 @@ public final class R {
 		public static final int select_dialog_item_material = 0x7f040045;
 		public static final int select_dialog_multichoice_material = 0x7f040046;
 		public static final int select_dialog_singlechoice_material = 0x7f040047;
-		public static final int support_simple_spinner_dropdown_item = 0x7f040048;
+		public static final int support_simple_spinner_dropdown_item = 0x7f040049;
 	}
 	public static final class string {
 		public static final int abc_action_bar_home_description = 0x7f080000;

@@ -34,13 +34,17 @@
             android:value="com.materialnotes.config.ConfigModule" />
 
         <activity
-            android:name="com.materialnotes.activity.MainActivity"
-            android:label="@string/title_activity_notes_list" >
+            android:name="com.materialnotes.activity.SplashActivity"
+            android:label="Scriba" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.materialnotes.activity.MainActivity"
+            android:label="@string/title_activity_notes_list" >
         </activity>
         <activity
             android:name="com.materialnotes.activity.EditNoteActivity"
