@@ -89,7 +89,7 @@ ADDED from /Users/Elibo/Desktop/material-notes/app/src/main/AndroidManifest.xml:
 activity#com.materialnotes.activity.SplashActivity
 ADDED from /Users/Elibo/Desktop/material-notes/app/src/main/AndroidManifest.xml:17:9-24:20
 	android:label
-		ADDED from /Users/Elibo/Desktop/material-notes/app/src/main/AndroidManifest.xml:18:13-35
+		ADDED from /Users/Elibo/Desktop/material-notes/app/src/main/AndroidManifest.xml:18:13-45
 	android:name
 		ADDED from /Users/Elibo/Desktop/material-notes/app/src/main/AndroidManifest.xml:17:19-58
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER

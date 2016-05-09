@@ -140,6 +140,10 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable-hdpi/common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/scribanotes.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-hdpi/scribanotes.png"
+    },
+    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_list_divider_mtrl_alpha.9.png"
     },
@@ -442,10 +446,6 @@
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_csc_feature.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-hdpi-v4/ic_csc_feature.png"
-    },
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-hdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",

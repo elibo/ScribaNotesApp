@@ -5,12 +5,12 @@
         <item name="colorPrimary">#999999</item>
         <item name="colorPrimaryDark">#666666</item>
         <item name="colorAccent">#00cc66</item>
-        <item name="actionModeBackground">@drawable/cab_background_top1</item>
+        <item name="actionModeBackground">@drawable/cab_background_top</item>
         <item name="floatingActionButtonStyle">@style/Notes.Fab</item>
     </style>
 
     <style name="Notes.Fab" parent="FloatingActionButton">
-        <item name="floatingActionButtonColor">#e91e63</item>
+        <item name="floatingActionButtonColor">#00cc66</item>
     </style>
 
 </resources>

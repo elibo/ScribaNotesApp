@@ -20,6 +20,7 @@ import com.materialnotes.view.ShowHideOnScroll;
 import com.materialnotes.widget.AboutNoticeDialog;
 import com.materialnotes.widget.NotesAdapter;
 import com.shamanland.fab.FloatingActionButton;
+
 import java.util.ArrayList;
 
 import javax.inject.Inject;
@@ -61,7 +62,7 @@ public class MainActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int bcolor=Color.parseColor("#00cc66");
+        int bcolor = Color.parseColor("#00cc66");
         addNoteButton.setColor(bcolor);
         addNoteButton.initBackground();
         // Start the components //////////////////////////////////////////////////////////////
@@ -79,8 +80,6 @@ public class MainActivity extends RoboActionBarActivity {
         setupActionModeCallback();
         setListOnItemClickListenersWhenNoActionMode();
         updateView();
-
-
 
     }
 

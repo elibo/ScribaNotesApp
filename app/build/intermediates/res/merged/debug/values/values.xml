@@ -223,7 +223,7 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <color name="selected_note">#666666</color>
+    <color name="selected_note">#999999</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
@@ -1718,7 +1718,7 @@
 		<item name="foreground">@drawable/action_bar_shadow</item>
 	</style>
     <style name="Notes.Fab" parent="FloatingActionButton">
-        <item name="floatingActionButtonColor">#e91e63</item>
+        <item name="floatingActionButtonColor">#00cc66</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1983,7 +1983,7 @@
         <item name="colorPrimary">#999999</item>
         <item name="colorPrimaryDark">#666666</item>
         <item name="colorAccent">#00cc66</item>
-        <item name="actionModeBackground">@drawable/cab_background_top1</item>
+        <item name="actionModeBackground">@drawable/cab_background_top</item>
         <item name="floatingActionButtonStyle">@style/Notes.Fab</item>
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>

@@ -108,6 +108,10 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/drawer_shadow.9.png"
     },
     {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/scribanotes.png",
+        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-xhdpi/scribanotes.png"
+    },
+    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_focused.9.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable-xhdpi/common_google_signin_btn_icon_light_focused.9.png"
     },
@@ -314,10 +318,6 @@
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_uart_down_small.png",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/drawable-xhdpi-v4/ic_uart_down_small.png"
-    },
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_uart_rewind.png",

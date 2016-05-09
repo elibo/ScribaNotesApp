@@ -2,6 +2,7 @@ package com.materialnotes.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.ColorInt;
@@ -84,7 +85,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mSelectedColor=R.color.selected_note;
+        mSelectedColor= Color.RED;
 
         ssbtitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbcontent = (SpannableStringBuilder) noteContentText.getText();

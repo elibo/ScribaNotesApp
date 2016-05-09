@@ -25,7 +25,7 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/scribanotes"
         android:label="@string/app_name"
         android:theme="@style/Theme.NotepadApp" >
         <meta-data
@@ -34,7 +34,7 @@
 
         <activity
             android:name="com.materialnotes.activity.SplashActivity"
-            android:label="Scriba" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
