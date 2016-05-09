@@ -901,7 +901,7 @@ int id action_mode_bar 0x7f0f0063
 int id action_mode_bar_stub 0x7f0f0062
 int id action_mode_close_button 0x7f0f0048
 int id action_save 0x7f0f00ca
-int id action_settings 0x7f0f00cd
+int id action_settings 0x7f0f00ce
 int id actionbar 0x7f0f0077
 int id actionbar_contents 0x7f0f0078
 int id activity_chooser_view_content 0x7f0f0049
@@ -932,6 +932,7 @@ int id clip_vertical 0x7f0f002c
 int id closeButton 0x7f0f0084
 int id collapseActionView 0x7f0f0035
 int id colors 0x7f0f0093
+int id connect_ble 0x7f0f00cd
 int id content 0x7f0f008e
 int id contentPanel 0x7f0f0056
 int id copyright 0x7f0f00a0

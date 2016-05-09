@@ -55,6 +55,7 @@ public class MainActivity extends RoboActionBarActivity {
     private NotesAdapter listAdapter;
     private ActionMode.Callback actionModeCallback;
     private ActionMode actionMode;
+    private int buttonColor;
 
     /**
      * {@inheritDoc}
@@ -62,8 +63,8 @@ public class MainActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int bcolor = Color.parseColor("#00cc66");
-        addNoteButton.setColor(bcolor);
+        buttonColor = Color.parseColor("#00cc66");
+        addNoteButton.setColor(buttonColor);
         addNoteButton.initBackground();
         // Start the components //////////////////////////////////////////////////////////////
         listView.setOnTouchListener(new ShowHideOnScroll(addNoteButton, getSupportActionBar())); // Hides or shows the FAB and the ActionBar
@@ -101,8 +102,6 @@ public class MainActivity extends RoboActionBarActivity {
             case R.id.action_about_info:
                 new AboutNoticeDialog()
                         .show(getSupportFragmentManager(), "dialog_about_notice");
-                return true;
-            case R.id.bluetooth:
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -333,7 +332,7 @@ public class MainActivity extends RoboActionBarActivity {
         });
     }
 
-    public void bluetooth(MenuItem item) {
+    public void connectBle(MenuItem item) {
         Intent intent = new Intent(this, HRSActivity.class);
         startActivity(intent);
 

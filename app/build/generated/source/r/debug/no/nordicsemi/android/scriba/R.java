@@ -881,7 +881,7 @@ public final class R {
 		public static final int action_mode_bar = 0x7f0f0063;
 		public static final int action_mode_bar_stub = 0x7f0f0062;
 		public static final int action_mode_close_button = 0x7f0f0048;
-		public static final int action_settings = 0x7f0f00cd;
+		public static final int action_settings = 0x7f0f00ce;
 		public static final int actionbar = 0x7f0f0077;
 		public static final int actionbar_contents = 0x7f0f0078;
 		public static final int activity_chooser_view_content = 0x7f0f0049;
