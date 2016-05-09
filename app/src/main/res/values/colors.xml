@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="selected_note">#999999</color>
+    <color name="green">#00cc66</color>
 
 </resources>

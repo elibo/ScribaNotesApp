@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.net.Uri;
 
 import com.materialnotes.R;
 import com.materialnotes.data.Note;

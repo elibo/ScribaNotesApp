@@ -188,6 +188,7 @@
     <color name="featureTitleColor">#939597</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="green">#00cc66</color>
     <color name="headerBackgroundColor">#009ada</color>
     <color name="headerBackgroundColorDark">#0081B7</color>
     <color name="headerTextColor">#FFFFFF</color>
@@ -516,7 +517,6 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="content_required">The note must have content</string>
-    <string name="copyright_info">Scriba 2016</string>
     <string name="delete_notes_alert">Delete %s note(s)?</string>
     <string name="dfu_action_abort">Abort</string>
     <string name="dfu_status_aborted">Aborted</string>
@@ -620,6 +620,7 @@
     <string name="title_activity_view_note">Note</string>
     <string name="title_required">The note must have a title</string>
     <string name="version_format">Version %s</string>
+    <string name="weblink">getscriba.com</string>
     <string name="yes">Yes</string>
     <style name="ActionBar">
 		<item name="android:textSize">@dimen/ui_font_size</item>
