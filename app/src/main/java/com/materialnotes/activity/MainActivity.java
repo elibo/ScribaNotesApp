@@ -340,4 +340,19 @@ public class MainActivity extends RoboActionBarActivity {
     }
 
 
+    public void contactUs(MenuItem item) {
+        String[] TO = {"sketch@getscriba.com"};
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+
+        try {
+            startActivity(Intent.createChooser(emailIntent, "Send mail with ..."));
+            finish();
+        }
+        catch (android.content.ActivityNotFoundException ex) {
+        }
+    }
 }

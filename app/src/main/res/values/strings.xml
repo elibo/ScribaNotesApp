@@ -11,6 +11,7 @@
 
     <string name="delete_notes_alert">Delete %s note(s)?</string>
     <string name="bluetooth">Connect Scriba</string>
+    <string name="contact">Contact Us</string>
 
     <!-- About dialog -->
     <string name="version_format">Version %s</string>

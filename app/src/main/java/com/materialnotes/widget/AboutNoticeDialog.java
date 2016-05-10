@@ -38,7 +38,7 @@ public class AboutNoticeDialog extends RoboDialogFragment {
     }
 
     /**
-     * Iniciates the created view
+     * Initiates the created view
      *
      * @param view               the created view
      * @param savedInstanceState the bundle.

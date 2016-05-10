@@ -516,6 +516,7 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="contact">Contact Us</string>
     <string name="content_required">The note must have content</string>
     <string name="delete_notes_alert">Delete %s note(s)?</string>
     <string name="dfu_action_abort">Abort</string>

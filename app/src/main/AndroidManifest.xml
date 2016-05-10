@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.materialnotes">
 
-    <uses-sdk tools:overrideLibrary="no.nordicsemi.android.scriba,     com.google.android.gms.wearable,com.google.android.gms.base,     com.google.android.gms,no.nordicsemi.android.support.v18.scanner,no.nordicsemi.android.log,     no.nordicsemi.android.scriba.common,no.nordicsemi.android.dfu" />
+    <uses-sdk tools:overrideLibrary="no.nordicsemi.android.scriba,
+    com.google.android.gms.wearable,com.google.android.gms.base,
+    com.google.android.gms,no.nordicsemi.android.support.v18.scanner,no.nordicsemi.android.log,
+    no.nordicsemi.android.scriba.common,no.nordicsemi.android.dfu" />
 
     <application
         android:allowBackup="true"
