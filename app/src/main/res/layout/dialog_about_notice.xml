@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/version_text"
+            android:textStyle="italic"
             android:layout_below="@+id/app_name"
             android:layout_marginLeft="8dp" />
 
@@ -42,6 +43,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/weblink"
+            android:textStyle="bold"
             android:autoLink="web"
             android:textColorLink="@color/green"
             android:id="@+id/link"

@@ -621,7 +621,7 @@
     <string name="title_activity_view_note">Note</string>
     <string name="title_required">The note must have a title</string>
     <string name="version_format">Version %s</string>
-    <string name="weblink">getscriba.com</string>
+    <string name="weblink"><u>getscriba.com</u></string>
     <string name="yes">Yes</string>
     <style name="ActionBar">
 		<item name="android:textSize">@dimen/ui_font_size</item>
@@ -1983,7 +1983,7 @@
     </style>
     <style name="Theme.NotepadApp" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#999999</item>
-        <item name="colorPrimaryDark">#666666</item>
+        <item name="colorPrimaryDark">#404040</item>
         <item name="colorAccent">#00cc66</item>
         <item name="actionModeBackground">@drawable/cab_background_top</item>
         <item name="floatingActionButtonStyle">@style/Notes.Fab</item>
