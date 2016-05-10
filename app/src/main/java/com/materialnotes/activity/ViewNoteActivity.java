@@ -2,6 +2,7 @@ package com.materialnotes.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.MenuItem;
@@ -44,6 +45,8 @@ public class ViewNoteActivity extends RoboActionBarActivity {
     @InjectView(R.id.note_updated_at_date)
     private TextView noteUpdatedAtDateText;
 
+    private int buttonColor;
+
     private Note note;
 
     /**
@@ -75,6 +78,9 @@ public class ViewNoteActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        buttonColor = Color.parseColor("#00cc66");
+        editNoteButton.setColor(buttonColor);
+        editNoteButton.initBackground();
         // Starts the components //////////////////////////////////////////////////////////////
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Shows the arrow to go back
         scrollView.setOnTouchListener(new ShowHideOnScroll(editNoteButton, getSupportActionBar())); // Hides or shows the FAB and the Action Bar

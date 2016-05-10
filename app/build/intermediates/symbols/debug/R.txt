@@ -883,7 +883,7 @@ int drawable zoomin 0x7f020113
 int id about 0x7f0f00ba
 int id action0 0x7f0f00ae
 int id action_about 0x7f0f00cb
-int id action_about_info 0x7f0f00cc
+int id action_about_info 0x7f0f00cd
 int id action_bar 0x7f0f0066
 int id action_bar_activity_content 0x7f0f0000
 int id action_bar_container 0x7f0f0065
@@ -933,7 +933,7 @@ int id clip_vertical 0x7f0f002c
 int id closeButton 0x7f0f0084
 int id collapseActionView 0x7f0f0035
 int id colors 0x7f0f0093
-int id connect_ble 0x7f0f00cd
+int id connect_ble 0x7f0f00cc
 int id content 0x7f0f008e
 int id contentPanel 0x7f0f0056
 int id custom 0x7f0f005c

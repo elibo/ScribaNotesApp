@@ -2746,7 +2746,7 @@ containing a value of this type.
         public static final int about=0x7f0f00ba;
         public static final int action0=0x7f0f00ae;
         public static final int action_about=0x7f0f00cb;
-        public static final int action_about_info=0x7f0f00cc;
+        public static final int action_about_info=0x7f0f00cd;
         public static final int action_bar=0x7f0f0066;
         public static final int action_bar_activity_content=0x7f0f0000;
         public static final int action_bar_container=0x7f0f0065;
@@ -2796,7 +2796,7 @@ containing a value of this type.
         public static final int closeButton=0x7f0f0084;
         public static final int collapseActionView=0x7f0f0035;
         public static final int colors=0x7f0f0093;
-        public static final int connect_ble=0x7f0f00cd;
+        public static final int connect_ble=0x7f0f00cc;
         public static final int content=0x7f0f008e;
         public static final int contentPanel=0x7f0f0056;
         public static final int custom=0x7f0f005c;

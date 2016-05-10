@@ -12,7 +12,7 @@
         android:background="@drawable/scriba_logo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="79dp" />
+        android:layout_marginTop="120dp" />
 
     <TextView
         android:layout_width="wrap_content"
