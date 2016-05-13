@@ -882,8 +882,8 @@ int drawable zoom 0x7f020112
 int drawable zoomin 0x7f020113
 int id about 0x7f0f00ba
 int id action0 0x7f0f00ae
-int id action_about 0x7f0f00cb
-int id action_about_info 0x7f0f00cd
+int id action_about 0x7f0f00ca
+int id action_about_info 0x7f0f00cc
 int id action_bar 0x7f0f0066
 int id action_bar_activity_content 0x7f0f0000
 int id action_bar_container 0x7f0f0065
@@ -901,8 +901,8 @@ int id action_menu_presenter 0x7f0f0003
 int id action_mode_bar 0x7f0f0063
 int id action_mode_bar_stub 0x7f0f0062
 int id action_mode_close_button 0x7f0f0048
-int id action_save 0x7f0f00ca
-int id action_settings 0x7f0f00cf
+int id action_save 0x7f0f00c9
+int id action_settings 0x7f0f00ce
 int id actionbar 0x7f0f0077
 int id actionbar_contents 0x7f0f0078
 int id activity_chooser_view_content 0x7f0f0049
@@ -933,8 +933,8 @@ int id clip_vertical 0x7f0f002c
 int id closeButton 0x7f0f0084
 int id collapseActionView 0x7f0f0035
 int id colors 0x7f0f0093
-int id connect_ble 0x7f0f00cc
-int id contact 0x7f0f00ce
+int id connect_ble 0x7f0f00cb
+int id contact 0x7f0f00cd
 int id content 0x7f0f008e
 int id contentPanel 0x7f0f0056
 int id custom 0x7f0f005c
@@ -967,7 +967,6 @@ int id fill 0x7f0f002d
 int id fill_horizontal 0x7f0f002e
 int id fill_vertical 0x7f0f0021
 int id fixed 0x7f0f0043
-int id format 0x7f0f00c9
 int id fountainpen 0x7f0f003b
 int id fountainpen_marker 0x7f0f00c7
 int id graph_hrs 0x7f0f008a

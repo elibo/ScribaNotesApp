@@ -2745,8 +2745,8 @@ containing a value of this type.
     public static final class id {
         public static final int about=0x7f0f00ba;
         public static final int action0=0x7f0f00ae;
-        public static final int action_about=0x7f0f00cb;
-        public static final int action_about_info=0x7f0f00cd;
+        public static final int action_about=0x7f0f00ca;
+        public static final int action_about_info=0x7f0f00cc;
         public static final int action_bar=0x7f0f0066;
         public static final int action_bar_activity_content=0x7f0f0000;
         public static final int action_bar_container=0x7f0f0065;
@@ -2764,8 +2764,8 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0f0063;
         public static final int action_mode_bar_stub=0x7f0f0062;
         public static final int action_mode_close_button=0x7f0f0048;
-        public static final int action_save=0x7f0f00ca;
-        public static final int action_settings=0x7f0f00cf;
+        public static final int action_save=0x7f0f00c9;
+        public static final int action_settings=0x7f0f00ce;
         public static final int actionbar=0x7f0f0077;
         public static final int actionbar_contents=0x7f0f0078;
         public static final int activity_chooser_view_content=0x7f0f0049;
@@ -2796,8 +2796,8 @@ containing a value of this type.
         public static final int closeButton=0x7f0f0084;
         public static final int collapseActionView=0x7f0f0035;
         public static final int colors=0x7f0f0093;
-        public static final int connect_ble=0x7f0f00cc;
-        public static final int contact=0x7f0f00ce;
+        public static final int connect_ble=0x7f0f00cb;
+        public static final int contact=0x7f0f00cd;
         public static final int content=0x7f0f008e;
         public static final int contentPanel=0x7f0f0056;
         public static final int custom=0x7f0f005c;
@@ -2830,7 +2830,6 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0f002e;
         public static final int fill_vertical=0x7f0f0021;
         public static final int fixed=0x7f0f0043;
-        public static final int format=0x7f0f00c9;
         public static final int fountainpen=0x7f0f003b;
         public static final int fountainpen_marker=0x7f0f00c7;
         public static final int graph_hrs=0x7f0f008a;

@@ -4,26 +4,26 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="3130389992008" >
+    timestamp="11302116436131" >
 
     <task
         name="javac"
-        duration="2335" />
+        duration="2577" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="706" />
+        duration="618" />
     <task
         name="verifier"
-        duration="199" />
+        duration="137" />
 
     <artifact
         location="/Users/Elibo/Desktop/material-notes/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="3130389992008" >
+    <build timestamp="11302116436131" >
         <artifact
             location="/Users/Elibo/Desktop/material-notes/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
