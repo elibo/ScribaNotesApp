@@ -1,0 +1,2 @@
+CHANGED,/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1.class
+CHANGED,/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/AnnotationDatabaseImpl.class

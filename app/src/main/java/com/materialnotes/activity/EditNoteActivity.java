@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.materialnotes.R;
@@ -49,6 +50,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     private Note note;
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
+    TextView tv;
 
     /**
      * Makes the intent to call the activity with an existing note
@@ -90,6 +92,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        tv=(TextView)findViewById(R.id.value);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         // Starts the components //////////////////////////////////////////////////////////////
@@ -109,13 +112,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(1000);
+                        Thread.sleep(1500);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                // update TextView here!
-                                //valTv.setText(String.valueOf(HRSActivity.mHrmValue));
-                                // tv.setText(String.valueOf(HRSActivity.mHrmValue));
+                                tv.setText(String.valueOf(HRSActivity.mHrmValue));
                                 formatText();
                             }
                         });
@@ -295,12 +296,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
     public void formatText() {
 
         if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue < 900) {
-            
+
             boldFormat();
         } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
 
             underlineFormat();
-        } else if (HRSActivity.mHrmValue > 0 && HRSActivity.mHrmValue < 300){
+        } else if (HRSActivity.mHrmValue >= 0 && HRSActivity.mHrmValue < 300){
 
             highlightText();
         }

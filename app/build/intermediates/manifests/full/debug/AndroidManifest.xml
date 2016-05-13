@@ -47,7 +47,8 @@
         </activity>
         <activity
             android:name="com.materialnotes.activity.EditNoteActivity"
-            android:label="@string/title_activity_edit_note" />
+            android:label="@string/title_activity_edit_note"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.materialnotes.activity.ViewNoteActivity"
             android:label="@string/title_activity_view_note" />
