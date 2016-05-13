@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.annotation.ColorInt;
 import android.text.Html;
 import android.text.SpannableStringBuilder;
+import android.text.style.BackgroundColorSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
@@ -148,8 +149,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
      * Updates the note content with the layout texts and it makes the object as a result of the activity
      */
     private void setNoteResult() {
-        note.setTitle(Html.toHtml(noteTitleText.getText()));
-        note.setContent(Html.toHtml(noteContentText.getText()));
+        note.setTitle(com.materialnotes.activity.Html.toHtml(noteTitleText.getText()));
+        note.setContent(com.materialnotes.activity.Html.toHtml(noteContentText.getText()));
         note.setUpdatedAt(new Date());
         Intent resultIntent = new Intent();
         resultIntent.putExtra(EXTRA_NOTE, note);
@@ -233,6 +234,30 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
+    public void highlightText(){
+        if (noteContentText.hasFocus()) {
+            ssbContent = (SpannableStringBuilder) noteContentText.getText();
+
+            BackgroundColorSpan[] bgSpan = ssbContent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), BackgroundColorSpan.class);
+            for (int i = 0; i < bgSpan.length; i++) {
+                ssbContent.removeSpan(bgSpan[i]);
+            }
+            ssbContent = (SpannableStringBuilder) noteContentText.getText();
+            ssbContent.setSpan(new BackgroundColorSpan(Color.YELLOW), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
+        } else
+        {
+            ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
+
+            BackgroundColorSpan[] bgSpan = ssbTitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), BackgroundColorSpan.class);
+            for (int i = 0; i < bgSpan.length; i++) {
+                ssbTitle.removeSpan(bgSpan[i]);
+            }
+            ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
+            ssbTitle.setSpan(new BackgroundColorSpan(Color.YELLOW), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
+        }
+
+    }
+
     public void clearFormat() {
 
         if (noteContentText.hasFocus())
@@ -249,7 +274,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue > 300) {
             underlineFormat();
         } else if (HRSActivity.mHrmValue < 300)
-            foregroundColor();
+            highlightText();
 
     }
 
@@ -303,4 +328,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setText(ssbContent);
     }
 
+
 }
+

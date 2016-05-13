@@ -94,8 +94,8 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         });
         note = (Note) getIntent().getSerializableExtra(EXTRA_NOTE); // Gets the note from the intent
         // Shows the note info in the layout
-        noteTitleText.setText(Html.fromHtml(note.getTitle()));
-        noteContentText.setText(Html.fromHtml(note.getContent()));
+        noteTitleText.setText(com.materialnotes.activity.Html.fromHtml(note.getTitle()));
+        noteContentText.setText(com.materialnotes.activity.Html.fromHtml(note.getContent()));
         noteCreatedAtDateText.setText(DATETIME_FORMAT.format(note.getCreatedAt()));
         noteUpdatedAtDateText.setText(DATETIME_FORMAT.format(note.getUpdatedAt()));
     }
