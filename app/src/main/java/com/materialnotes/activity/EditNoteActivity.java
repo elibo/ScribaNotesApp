@@ -50,8 +50,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
     private Note note;
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
-    //TextView tv;
-    private String mode="SELECTION MODE";
+    TextView tv;
+    private String mode="";
 
     /**
      * Makes the intent to call the activity with an existing note
@@ -93,12 +93,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (noteTitleText.hasFocus() || noteContentText.hasFocus())
-        {
-            Snackbar.make(getCurrentFocus(),mode,Snackbar.LENGTH_INDEFINITE);
-
-        }
-       // tv=(TextView)findViewById(R.id.value);
+        tv=(TextView)findViewById(R.id.value);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         // Starts the components //////////////////////////////////////////////////////////////
@@ -120,11 +115,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(1500);
+                        Thread.sleep(150);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                               // tv.setText(String.valueOf(HRSActivity.mHrmValue));
+                                tv.setText(String.valueOf(HRSActivity.mHrmValue));
                                 formatText();
                             }
                         });
@@ -134,7 +129,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
             }
         };
         t.start();
-
     }
 
     /**
@@ -203,9 +197,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
             else message.append("\n").append(getString(R.string.content_required));
         }
         if (message != null) {
-            Toast.makeText(getApplicationContext(),
+            Snackbar.make(getCurrentFocus(),
                     message,
-                    Toast.LENGTH_LONG)
+                    Snackbar.LENGTH_LONG)
                     .show();
         }
     }
@@ -225,9 +219,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void boldFormat() {
 
-        if (!mode.equals("BOLD")){
+        if (!mode.equals("bold")){
         Snackbar.make(getCurrentFocus(),"BOLD MODE",Snackbar.LENGTH_INDEFINITE).show();
-        mode= "BOLD";
+        mode= "bold";
         }
 
         if (noteTitleText.hasFocus()) {
@@ -244,9 +238,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void underlineFormat() {
 
-       if (!mode.equals("UNDERLINE")){
+       if (!mode.equals("underline")){
             Snackbar.make(getCurrentFocus(),"UNDERLINE MODE",Snackbar.LENGTH_INDEFINITE).show();
-            mode= "UNDERLINE";
+            mode= "underline";
         }
         if (noteTitleText.hasFocus()) {
 
@@ -278,9 +272,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void highlightText(){
-        if (!mode.equals("HL")){
+        if (!mode.equals("hl")){
             Snackbar.make(getCurrentFocus(),"HIGHLIGHT MODE",Snackbar.LENGTH_INDEFINITE).show();
-            mode= "HL";
+            mode= "hl";
         }
         if (noteContentText.hasFocus()) {
 
@@ -305,7 +299,13 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void formatText() {
 
-        if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue < 900) {
+        if (HRSActivity.mHrmValue > 900){
+            if(!mode.equals("selection")){
+                Snackbar.make(getCurrentFocus(),"SELECTION MODE",Snackbar.LENGTH_INDEFINITE).show();
+                mode="selection";
+            }
+
+        } else if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue < 900) {
             boldFormat();
         } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
             underlineFormat();
