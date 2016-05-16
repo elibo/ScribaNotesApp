@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import javax.inject.Inject;
 
 import no.nordicsemi.android.scriba.hrs.HRSActivity;
+import no.nordicsemi.android.scriba.profile.BleProfileActivity;
 import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
@@ -242,8 +243,10 @@ public class MainActivity extends RoboActionBarActivity {
 
     @Override
     protected void onDestroy() {
+        if (BleProfileActivity.mDeviceConnected==true){
+            HRSActivity.fa.finish();
+        }
         super.onDestroy();
-        HRSActivity.fa.finish();
 
     }
 

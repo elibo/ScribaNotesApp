@@ -35,6 +35,10 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
         }
 
         fieldNameSet = new HashSet<String>();
+        fieldNameSet.add("versionText");
+        mapClassWithInjectionNameToFieldSet.put("com.materialnotes.widget.AboutNoticeDialog", fieldNameSet);
+
+        fieldNameSet = new HashSet<String>();
         fieldNameSet.add("emptyListTextView");
         fieldNameSet.add("addNoteButton");
         fieldNameSet.add("listView");
@@ -60,10 +64,29 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
     }
     
     public void fillAnnotationClassesAndConstructors(HashMap<String, Map<String, Set<String>>> mapAnnotationToMapClassWithInjectionNameToConstructorsSet) {
+
+        String annotationClassName = null;
+        Map<String, Set<String>> mapClassWithInjectionNameToConstructorSet = null;
+        Set<String> constructorSet = null;
+
+
+        annotationClassName = "com.google.inject.Inject";
+        mapClassWithInjectionNameToConstructorSet = mapAnnotationToMapClassWithInjectionNameToConstructorsSet.get(annotationClassName);
+        if( mapClassWithInjectionNameToConstructorSet == null ) {
+            mapClassWithInjectionNameToConstructorSet = new HashMap<String, Set<String>>();
+            mapAnnotationToMapClassWithInjectionNameToConstructorsSet.put(annotationClassName, mapClassWithInjectionNameToConstructorSet);
+        }
+
+        constructorSet = new HashSet<String>();
+        constructorSet.add("<init>:android.database.sqlite.SQLiteOpenHelper");
+        mapClassWithInjectionNameToConstructorSet.put("com.materialnotes.data.dao.impl.sqlite.NoteSQLiteDAO", constructorSet);
+
     }
     
     public void fillClassesContainingInjectionPointSet(HashSet<String> classesContainingInjectionPointsSet) {
+        classesContainingInjectionPointsSet.add("com.materialnotes.widget.AboutNoticeDialog");
         classesContainingInjectionPointsSet.add("com.materialnotes.activity.MainActivity");
+        classesContainingInjectionPointsSet.add("com.materialnotes.data.dao.impl.sqlite.NoteSQLiteDAO");
         classesContainingInjectionPointsSet.add("com.materialnotes.activity.EditNoteActivity");
         classesContainingInjectionPointsSet.add("com.materialnotes.activity.ViewNoteActivity");
     }
@@ -72,6 +95,7 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
     public void fillBindableClasses(HashSet<String> injectedClasses) {
         injectedClasses.add("android.widget.TextView");
         injectedClasses.add("android.widget.ScrollView");
+        injectedClasses.add("android.database.sqlite.SQLiteOpenHelper");
         injectedClasses.add("com.materialnotes.data.dao.NoteDAO");
         injectedClasses.add("android.widget.ListView");
         injectedClasses.add("com.shamanland.fab.FloatingActionButton");

@@ -63,7 +63,7 @@ public abstract class BleProfileActivity extends AppCompatActivity implements Bl
 	private Button mConnectButton;
 	private ILogSession mLogSession;
 
-	private boolean mDeviceConnected = false;
+	public static boolean mDeviceConnected = false;
 	private String mDeviceName;
 
 	@Override
