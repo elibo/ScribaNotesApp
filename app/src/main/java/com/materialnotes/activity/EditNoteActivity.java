@@ -51,7 +51,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
     //TextView tv;
-    private String mode;
+    private String mode="SELECTION MODE";
 
     /**
      * Makes the intent to call the activity with an existing note
@@ -93,7 +93,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mode="SELECTION MODE";
+        if (noteTitleText.hasFocus() || noteContentText.hasFocus())
+        {
+            Snackbar.make(getCurrentFocus(),mode,Snackbar.LENGTH_INDEFINITE);
+
+        }
        // tv=(TextView)findViewById(R.id.value);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
@@ -279,22 +283,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
             mode= "HL";
         }
         if (noteContentText.hasFocus()) {
-           /* ssbContent = (SpannableStringBuilder) noteContentText.getText();
 
-            BackgroundColorSpan[] bgSpan = ssbContent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), BackgroundColorSpan.class);
-            for (int i = 0; i < bgSpan.length; i++) {
-                ssbContent.removeSpan(bgSpan[i]);
-            }*/
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
             ssbContent.setSpan(new BackgroundColorSpan(Color.YELLOW), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
         } else
         {
-            ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
-/*
-            BackgroundColorSpan[] bgSpan = ssbTitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), BackgroundColorSpan.class);
-            for (int i = 0; i < bgSpan.length; i++) {
-                ssbTitle.removeSpan(bgSpan[i]);
-            }*/
             ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
             ssbTitle.setSpan(new BackgroundColorSpan(Color.YELLOW), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
         }
