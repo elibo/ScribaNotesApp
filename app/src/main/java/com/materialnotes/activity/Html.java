@@ -30,17 +30,11 @@ import android.text.style.AbsoluteSizeSpan;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.CharacterStyle;
 import android.text.style.ForegroundColorSpan;
-import android.text.style.ImageSpan;
 import android.text.style.ParagraphStyle;
 import android.text.style.QuoteSpan;
-import android.text.style.RelativeSizeSpan;
-import android.text.style.StrikethroughSpan;
 import android.text.style.StyleSpan;
-import android.text.style.SubscriptSpan;
-import android.text.style.SuperscriptSpan;
 import android.text.style.TextAppearanceSpan;
 import android.text.style.TypefaceSpan;
-import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
 
 import com.materialnotes.R;
@@ -88,8 +82,7 @@ public class Html{
          * This method will be called whenn the HTML parser encounters
          * a tag that it does not know how to interpret.
          */
-        public void handleTag(boolean opening, String tag,
-                              Editable output, XMLReader xmlReader);
+        public void handleTag(boolean opening, String tag, Editable output, XMLReader xmlReader);
     }
 
     private Html() { }
@@ -103,7 +96,7 @@ public class Html{
      * <p>This uses TagSoup to handle real HTML, including all of the brokenness found in the wild.
      */
     public static Spanned fromHtml(String source) {
-        return fromHtml(source, null, null);
+        return fromHtml(source, null);
     }
 
     /**
@@ -124,8 +117,7 @@ public class Html{
      *
      * <p>This uses TagSoup to handle real HTML, including all of the brokenness found in the wild.
      */
-    public static Spanned fromHtml(String source, ImageGetter imageGetter,
-                                   TagHandler tagHandler) {
+    public static Spanned fromHtml(String source, TagHandler tagHandler) {
         Parser parser = new Parser();
         try {
             parser.setProperty(Parser.schemaProperty, HtmlParser.schema);
@@ -154,22 +146,22 @@ public class Html{
             next = text.nextSpanTransition(i, len, QuoteSpan.class);
             QuoteSpan[] quotes = text.getSpans(i, next, QuoteSpan.class);
 
-            for (QuoteSpan quote: quotes) {
-                out.append("<blockquote>");
-            }
+         //   for (QuoteSpan quote: quotes) {
+               // out.append("<blockquote>");
+           // }
 
             withinBlockquote(out, text, i, next);
 
-            for (QuoteSpan quote: quotes) {
-                out.append("</blockquote>\n");
-            }
+          //  for (QuoteSpan quote: quotes) {
+             //   out.append("</blockquote>\n");
+           // }
         }
 
         return out.toString();
     }
 
     private static void withinBlockquote(StringBuilder out, Spanned text, int start, int end) {
-        out.append("<p>");
+       // out.append("<p>");
 
         int next;
         for (int i = start; i < end; i = next) {
@@ -188,14 +180,14 @@ public class Html{
             withinParagraph(out, text, i, next - nl, nl, next == end);
         }
 
-        out.append("</p>\n");
+       // out.append("</p>\n");
     }
 
     private static void withinParagraph(StringBuilder out, Spanned text, int start, int end, int nl, boolean last) {
         int next;
-        for (int i = start; i < end; i = next) {
-            next = text.nextSpanTransition(i, end, CharacterStyle.class);
-            CharacterStyle[] style = text.getSpans(i, next,
+       for (int i = start; i < end; i = next) {
+           next = text.nextSpanTransition(i, end, CharacterStyle.class);
+           CharacterStyle[] style = text.getSpans(i, next,
                     CharacterStyle.class);
 
             for (int j = 0; j < style.length; j++) {

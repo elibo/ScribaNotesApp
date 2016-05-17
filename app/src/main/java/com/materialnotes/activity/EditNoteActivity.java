@@ -225,7 +225,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         mode= "bold";
         }
 
-        if (noteTitleText.hasFocus()) {
+        if (noteTitleText.hasSelection()) {
 
             ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
             ssbTitle.setSpan(new StyleSpan(Typeface.BOLD), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
@@ -243,7 +243,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             Snackbar.make(getCurrentFocus(),"UNDERLINE MODE",Snackbar.LENGTH_INDEFINITE).show();
             mode= "underline";
         }
-        if (noteTitleText.hasFocus()) {
+        if (noteTitleText.hasSelection()) {
 
             ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
             ssbTitle.setSpan(new UnderlineSpan(), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
@@ -255,29 +255,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
     }
 
-    public void foregroundColor() {
-
-
-        if (noteTitleText.hasFocus()) {
-
-            ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
-            ssbTitle.setSpan(new ForegroundColorSpan(Color.RED), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
-
-        } else {
-
-            ssbContent = (SpannableStringBuilder) noteContentText.getText();
-            ssbContent.setSpan(new ForegroundColorSpan(Color.RED), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
-        }
-
-
-    }
-
     public void highlightText(){
         if (!mode.equals("hl")){
             Snackbar.make(getCurrentFocus(),"HIGHLIGHT MODE",Snackbar.LENGTH_INDEFINITE).show();
             mode= "hl";
         }
-        if (noteContentText.hasFocus()) {
+        if (noteContentText.hasSelection()) {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
             ssbContent.setSpan(new BackgroundColorSpan(Color.YELLOW), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
@@ -291,7 +274,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void clearFormat() {
 
-        if (noteContentText.hasFocus())
+        if (noteContentText.hasSelection())
             clearContent();
         else
             clearTitle();
@@ -311,7 +294,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
             underlineFormat();
         } else if (HRSActivity.mHrmValue >= 0 && HRSActivity.mHrmValue < 300){
-            boldFormat();
+            highlightText();
         }
 
 
