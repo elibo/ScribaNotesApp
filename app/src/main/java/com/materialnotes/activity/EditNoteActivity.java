@@ -51,7 +51,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
     TextView tv;
-    private String mode="";
+    private String mode;
 
     /**
      * Makes the intent to call the activity with an existing note
@@ -93,6 +93,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        mode="";
         tv=(TextView)findViewById(R.id.value);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
@@ -197,9 +198,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
             else message.append("\n").append(getString(R.string.content_required));
         }
         if (message != null) {
-            Snackbar.make(getCurrentFocus(),
+            Toast.makeText(getBaseContext(),
                     message,
-                    Snackbar.LENGTH_LONG)
+                    Toast.LENGTH_LONG)
                     .show();
         }
     }
@@ -310,7 +311,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
             underlineFormat();
         } else if (HRSActivity.mHrmValue >= 0 && HRSActivity.mHrmValue < 300){
-            highlightText();
+            boldFormat();
         }
 
 
