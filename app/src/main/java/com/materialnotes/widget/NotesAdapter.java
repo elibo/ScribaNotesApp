@@ -76,8 +76,6 @@ public class NotesAdapter extends BaseAdapter {
         // Starts the view with the note data
         NoteViewWrapper noteViewWrapper = data.get(position);
         holder.noteIdText.setText(String.valueOf(noteViewWrapper.note.getId()));
-       // holder.noteTitleText.setText(noteViewWrapper.note.getTitle());
-        //holder.noteContentText.setText(noteViewWrapper.note.getContent());
         holder.noteTitleText.setText(com.materialnotes.activity.Html.fromHtml(noteViewWrapper.note.getTitle()));
         // cuts the string to 80 characters and appends "..."
         holder.noteContentText.setText(com.materialnotes.activity.Html.fromHtml(noteViewWrapper.note.getContent().length() < 80 ? noteViewWrapper.note.getContent() : noteViewWrapper.note.getContent().substring(0, 80).concat("...")));

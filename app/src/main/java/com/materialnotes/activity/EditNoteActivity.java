@@ -230,7 +230,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
             ssbTitle.setSpan(new StyleSpan(Typeface.BOLD), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
 
-        } else {
+        } else if (noteContentText.hasSelection()){
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
             ssbContent.setSpan(new StyleSpan(Typeface.BOLD), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
@@ -248,7 +248,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
             ssbTitle.setSpan(new UnderlineSpan(), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
 
-        } else {
+        } else if (noteContentText.hasSelection()) {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
             ssbContent.setSpan(new UnderlineSpan(), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
@@ -264,7 +264,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
             ssbContent.setSpan(new BackgroundColorSpan(Color.YELLOW), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
-        } else
+        } else if (noteTitleText.hasSelection())
         {
             ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
             ssbTitle.setSpan(new BackgroundColorSpan(Color.YELLOW), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
