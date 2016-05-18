@@ -29,7 +29,6 @@ import android.text.style.AbsoluteSizeSpan;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.CharacterStyle;
 import android.text.style.ForegroundColorSpan;
-import android.text.style.ImageSpan;
 import android.text.style.ParagraphStyle;
 import android.text.style.QuoteSpan;
 import android.text.style.RelativeSizeSpan;
@@ -41,8 +40,6 @@ import android.text.style.TextAppearanceSpan;
 import android.text.style.TypefaceSpan;
 import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
-
-import com.materialnotes.R;
 
 import org.ccil.cowan.tagsoup.HTMLSchema;
 import org.ccil.cowan.tagsoup.Parser;
@@ -61,42 +58,21 @@ import java.nio.CharBuffer;
  * This class processes HTML strings into displayable styled text.
  * Not all HTML tags are supported.
  */
-public class Html{
+public class Html {
 
-    /**
-     * Is notified when HTML tags are encountered that the parser does
-     * not know how to interpret.
-     */
-    public static interface TagHandler {
-        /**
-         * This method will be called whenn the HTML parser encounters
-         * a tag that it does not know how to interpret.
-         */
-        public void handleTag(boolean opening, String tag,
-                              Editable output, XMLReader xmlReader);
+    private Html() {
     }
-
-    private Html() { }
 
     /**
      * Returns displayable styled text from the provided HTML string.
      * Any &lt;img&gt; tags in the HTML will display as a generic
      * replacement image which your program can then go through and
      * replace with real images.
-     *
+     * <p/>
      * <p>This uses TagSoup to handle real HTML, including all of the brokenness found in the wild.
      */
     public static Spanned fromHtml(String source) {
         return fromHtml(source, null);
-    }
-
-    /**
-     * Lazy initialization holder for HTML parser. This class will
-     * a) be preloaded by the zygote, or b) not loaded until absolutely
-     * necessary.
-     */
-    private static class HtmlParser {
-        private static final HTMLSchema schema = new HTMLSchema();
     }
 
     /**
@@ -105,7 +81,7 @@ public class Html{
      * to request a representation of the image (use null if you don't
      * want this) and the specified TagHandler to handle unknown tags
      * (specify null if you don't want this).
-     *
+     * <p/>
      * <p>This uses TagSoup to handle real HTML, including all of the brokenness found in the wild.
      */
     public static Spanned fromHtml(String source, TagHandler tagHandler) {
@@ -137,13 +113,13 @@ public class Html{
             next = text.nextSpanTransition(i, len, QuoteSpan.class);
             QuoteSpan[] quotes = text.getSpans(i, next, QuoteSpan.class);
 
-            for (QuoteSpan quote: quotes) {
+            for (QuoteSpan quote : quotes) {
                 out.append("<blockquote>");
             }
 
             withinBlockquote(out, text, i, next);
 
-            for (QuoteSpan quote: quotes) {
+            for (QuoteSpan quote : quotes) {
                 out.append("</blockquote>\n");
             }
         }
@@ -202,12 +178,6 @@ public class Html{
                         out.append("<tt>");
                     }
                 }
-                if (style[j] instanceof SuperscriptSpan) {
-                    out.append("<sup>");
-                }
-                if (style[j] instanceof SubscriptSpan) {
-                    out.append("<sub>");
-                }
                 if (style[j] instanceof UnderlineSpan) {
                     out.append("<u>");
                 }
@@ -222,22 +192,7 @@ public class Html{
                     out.append(color);
                     out.append("\">");
                 }
-                if (style[j] instanceof StrikethroughSpan) {
-                    out.append("<strike>");
-                }
-                if (style[j] instanceof URLSpan) {
-                    out.append("<a href=\"");
-                    out.append(((URLSpan) style[j]).getURL());
-                    out.append("\">");
-                }
-                if (style[j] instanceof ImageSpan) {
-                    out.append("<img src=\"");
-                    out.append(((ImageSpan) style[j]).getSource());
-                    out.append("\">");
 
-                    // Don't output the dummy character underlying the image.
-                    i = next;
-                }
             }
 
             withinStyle(out, text, i, next);
@@ -321,13 +276,31 @@ public class Html{
             }
         }
     }
+
+    /**
+     * Is notified when HTML tags are encountered that the parser does
+     * not know how to interpret.
+     */
+    public static interface TagHandler {
+        /**
+         * This method will be called whenn the HTML parser encounters
+         * a tag that it does not know how to interpret.
+         */
+        public void handleTag(boolean opening, String tag,
+                              Editable output, XMLReader xmlReader);
+    }
+
+    /**
+     * Lazy initialization holder for HTML parser. This class will
+     * a) be preloaded by the zygote, or b) not loaded until absolutely
+     * necessary.
+     */
+    private static class HtmlParser {
+        private static final HTMLSchema schema = new HTMLSchema();
+    }
 }
 
 class HtmlToSpannedConverter implements ContentHandler {
-
-    private static final float[] HEADER_SIZES = {
-            1.5f, 1.4f, 1.3f, 1.2f, 1.1f, 1f,
-    };
 
     private String mSource;
     private XMLReader mReader;
@@ -339,137 +312,6 @@ class HtmlToSpannedConverter implements ContentHandler {
         mSpannableStringBuilder = new SpannableStringBuilder();
         mTagHandler = tagHandler;
         mReader = parser;
-    }
-
-    public Spanned convert() {
-
-        mReader.setContentHandler(this);
-        try {
-            mReader.parse(new InputSource(new StringReader(mSource)));
-        } catch (IOException e) {
-            // We are reading from a string. There should not be IO problems.
-            throw new RuntimeException(e);
-        } catch (SAXException e) {
-            // TagSoup doesn't throw parse exceptions.
-            throw new RuntimeException(e);
-        }
-
-        // Fix flags and range for paragraph-type markup.
-        Object[] obj = mSpannableStringBuilder.getSpans(0, mSpannableStringBuilder.length(), ParagraphStyle.class);
-        for (int i = 0; i < obj.length; i++) {
-            int start = mSpannableStringBuilder.getSpanStart(obj[i]);
-            int end = mSpannableStringBuilder.getSpanEnd(obj[i]);
-
-            // If the last line of the range is blank, back off by one.
-            if (end - 2 >= 0) {
-                if (mSpannableStringBuilder.charAt(end - 1) == '\n' &&
-                        mSpannableStringBuilder.charAt(end - 2) == '\n') {
-                    end--;
-                }
-            }
-
-            if (end == start) {
-                mSpannableStringBuilder.removeSpan(obj[i]);
-            } else {
-                mSpannableStringBuilder.setSpan(obj[i], start, end, Spannable.SPAN_PARAGRAPH);
-            }
-        }
-
-        return mSpannableStringBuilder;
-    }
-
-    private void handleStartTag(String tag, Attributes attributes) {
-        if (tag.equalsIgnoreCase("br")) {
-            // We don't need to handle this. TagSoup will ensure that there's a </br> for each <br>
-            // so we can safely emite the linebreaks when we handle the close tag.
-        } else if (tag.equalsIgnoreCase("p")) {
-            handleP(mSpannableStringBuilder);
-        } else if (tag.equalsIgnoreCase("div")) {
-            handleP(mSpannableStringBuilder);
-        } else if (tag.equalsIgnoreCase("em")) {
-            start(mSpannableStringBuilder, new Bold());
-        } else if (tag.equalsIgnoreCase("b")) {
-            start(mSpannableStringBuilder, new Bold());
-        } else if (tag.equalsIgnoreCase("strong")) {
-            start(mSpannableStringBuilder, new Italic());
-        } else if (tag.equalsIgnoreCase("cite")) {
-            start(mSpannableStringBuilder, new Italic());
-        } else if (tag.equalsIgnoreCase("dfn")) {
-            start(mSpannableStringBuilder, new Italic());
-        } else if (tag.equalsIgnoreCase("i")) {
-            start(mSpannableStringBuilder, new Italic());
-        } else if (tag.equalsIgnoreCase("big")) {
-            start(mSpannableStringBuilder, new Big());
-        } else if (tag.equalsIgnoreCase("small")) {
-            start(mSpannableStringBuilder, new Small());
-        } else if (tag.equalsIgnoreCase("font")) {
-            startFont(mSpannableStringBuilder, attributes);
-        } else if (tag.equalsIgnoreCase("blockquote")) {
-            handleP(mSpannableStringBuilder);
-            start(mSpannableStringBuilder, new Blockquote());
-        } else if (tag.equalsIgnoreCase("tt")) {
-            start(mSpannableStringBuilder, new Monospace());
-        } else if (tag.equalsIgnoreCase("u")) {
-            start(mSpannableStringBuilder, new Underline());
-        } else if (tag.equalsIgnoreCase("sup")) {
-            start(mSpannableStringBuilder, new Super());
-        } else if (tag.equalsIgnoreCase("sub")) {
-            start(mSpannableStringBuilder, new Sub());
-        } else if (tag.length() == 2 &&
-                Character.toLowerCase(tag.charAt(0)) == 'h' &&
-                tag.charAt(1) >= '1' && tag.charAt(1) <= '6') {
-            handleP(mSpannableStringBuilder);
-            start(mSpannableStringBuilder, new Header(tag.charAt(1) - '1'));
-        } else if (mTagHandler != null) {
-            mTagHandler.handleTag(true, tag, mSpannableStringBuilder, mReader);
-        }
-    }
-
-    private void handleEndTag(String tag) {
-        if (tag.equalsIgnoreCase("br")) {
-            handleBr(mSpannableStringBuilder);
-        } else if (tag.equalsIgnoreCase("p")) {
-            handleP(mSpannableStringBuilder);
-        } else if (tag.equalsIgnoreCase("div")) {
-            handleP(mSpannableStringBuilder);
-        } else if (tag.equalsIgnoreCase("em")) {
-            end(mSpannableStringBuilder, Bold.class, new StyleSpan(Typeface.BOLD));
-        } else if (tag.equalsIgnoreCase("b")) {
-            end(mSpannableStringBuilder, Bold.class, new StyleSpan(Typeface.BOLD));
-        } else if (tag.equalsIgnoreCase("strong")) {
-            end(mSpannableStringBuilder, Italic.class, new StyleSpan(Typeface.ITALIC));
-        } else if (tag.equalsIgnoreCase("cite")) {
-            end(mSpannableStringBuilder, Italic.class, new StyleSpan(Typeface.ITALIC));
-        } else if (tag.equalsIgnoreCase("dfn")) {
-            end(mSpannableStringBuilder, Italic.class, new StyleSpan(Typeface.ITALIC));
-        } else if (tag.equalsIgnoreCase("i")) {
-            end(mSpannableStringBuilder, Italic.class, new StyleSpan(Typeface.ITALIC));
-        } else if (tag.equalsIgnoreCase("big")) {
-            end(mSpannableStringBuilder, Big.class, new RelativeSizeSpan(1.25f));
-        } else if (tag.equalsIgnoreCase("small")) {
-            end(mSpannableStringBuilder, Small.class, new RelativeSizeSpan(0.8f));
-        } else if (tag.equalsIgnoreCase("font")) {
-            endFont(mSpannableStringBuilder);
-        } else if (tag.equalsIgnoreCase("blockquote")) {
-            handleP(mSpannableStringBuilder);
-            end(mSpannableStringBuilder, Blockquote.class, new QuoteSpan());
-        } else if (tag.equalsIgnoreCase("tt")) {
-            end(mSpannableStringBuilder, Monospace.class,
-                    new TypefaceSpan("monospace"));
-        } else if (tag.equalsIgnoreCase("u")) {
-            end(mSpannableStringBuilder, Underline.class, new UnderlineSpan());
-        } else if (tag.equalsIgnoreCase("sup")) {
-            end(mSpannableStringBuilder, Super.class, new SuperscriptSpan());
-        } else if (tag.equalsIgnoreCase("sub")) {
-            end(mSpannableStringBuilder, Sub.class, new SubscriptSpan());
-        } else if (tag.length() == 2 &&
-                Character.toLowerCase(tag.charAt(0)) == 'h' &&
-                tag.charAt(1) >= '1' && tag.charAt(1) <= '6') {
-            handleP(mSpannableStringBuilder);
-            endHeader(mSpannableStringBuilder);
-        } else if (mTagHandler != null) {
-            mTagHandler.handleTag(false, tag, mSpannableStringBuilder, mReader);
-        }
     }
 
     private static void handleP(SpannableStringBuilder text) {
@@ -525,7 +367,6 @@ class HtmlToSpannedConverter implements ContentHandler {
 
         return;
     }
-
 
     private static void startFont(SpannableStringBuilder text,
                                   Attributes attributes) {
@@ -627,26 +468,88 @@ class HtmlToSpannedConverter implements ContentHandler {
     }
 
 
-    private static void endHeader(SpannableStringBuilder text) {
-        int len = text.length();
-        Object obj = getLast(text, Header.class);
+    public Spanned convert() {
 
-        int where = text.getSpanStart(obj);
-
-        text.removeSpan(obj);
-
-        // Back off not to change only the text, not the blank line.
-        while (len > where && text.charAt(len - 1) == '\n') {
-            len--;
+        mReader.setContentHandler(this);
+        try {
+            mReader.parse(new InputSource(new StringReader(mSource)));
+        } catch (IOException e) {
+            // We are reading from a string. There should not be IO problems.
+            throw new RuntimeException(e);
+        } catch (SAXException e) {
+            // TagSoup doesn't throw parse exceptions.
+            throw new RuntimeException(e);
         }
 
-        if (where != len) {
-            Header h = (Header) obj;
+        // Fix flags and range for paragraph-type markup.
+        Object[] obj = mSpannableStringBuilder.getSpans(0, mSpannableStringBuilder.length(), ParagraphStyle.class);
+        for (int i = 0; i < obj.length; i++) {
+            int start = mSpannableStringBuilder.getSpanStart(obj[i]);
+            int end = mSpannableStringBuilder.getSpanEnd(obj[i]);
 
-            text.setSpan(new RelativeSizeSpan(HEADER_SIZES[h.mLevel]),
-                    where, len, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-            text.setSpan(new StyleSpan(Typeface.BOLD),
-                    where, len, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            // If the last line of the range is blank, back off by one.
+            if (end - 2 >= 0) {
+                if (mSpannableStringBuilder.charAt(end - 1) == '\n' &&
+                        mSpannableStringBuilder.charAt(end - 2) == '\n') {
+                    end--;
+                }
+            }
+
+            if (end == start) {
+                mSpannableStringBuilder.removeSpan(obj[i]);
+            } else {
+                mSpannableStringBuilder.setSpan(obj[i], start, end, Spannable.SPAN_PARAGRAPH);
+            }
+        }
+
+        return mSpannableStringBuilder;
+    }
+
+    private void handleStartTag(String tag, Attributes attributes) {
+        if (tag.equalsIgnoreCase("br")) {
+            // We don't need to handle this. TagSoup will ensure that there's a </br> for each <br>
+            // so we can safely emite the linebreaks when we handle the close tag.
+        } else if (tag.equalsIgnoreCase("p")) {
+            handleP(mSpannableStringBuilder);
+        } else if (tag.equalsIgnoreCase("b")) {
+            start(mSpannableStringBuilder, new Bold());
+        } else if (tag.equalsIgnoreCase("i")) {
+            start(mSpannableStringBuilder, new Italic());
+        } else if (tag.equalsIgnoreCase("font")) {
+            startFont(mSpannableStringBuilder, attributes);
+        } else if (tag.equalsIgnoreCase("blockquote")) {
+            handleP(mSpannableStringBuilder);
+            start(mSpannableStringBuilder, new Blockquote());
+        } else if (tag.equalsIgnoreCase("tt")) {
+            start(mSpannableStringBuilder, new Monospace());
+        } else if (tag.equalsIgnoreCase("u")) {
+            start(mSpannableStringBuilder, new Underline());
+        } else if (mTagHandler != null) {
+            mTagHandler.handleTag(true, tag, mSpannableStringBuilder, mReader);
+        }
+    }
+
+    private void handleEndTag(String tag) {
+        if (tag.equalsIgnoreCase("br")) {
+            handleBr(mSpannableStringBuilder);
+        } else if (tag.equalsIgnoreCase("p")) {
+            handleP(mSpannableStringBuilder);
+        } else if (tag.equalsIgnoreCase("b")) {
+            end(mSpannableStringBuilder, Bold.class, new StyleSpan(Typeface.BOLD));
+        } else if (tag.equalsIgnoreCase("i")) {
+            end(mSpannableStringBuilder, Italic.class, new StyleSpan(Typeface.ITALIC));
+        } else if (tag.equalsIgnoreCase("font")) {
+            endFont(mSpannableStringBuilder);
+        } else if (tag.equalsIgnoreCase("blockquote")) {
+            handleP(mSpannableStringBuilder);
+            end(mSpannableStringBuilder, Blockquote.class, new QuoteSpan());
+        } else if (tag.equalsIgnoreCase("tt")) {
+            end(mSpannableStringBuilder, Monospace.class,
+                    new TypefaceSpan("monospace"));
+        } else if (tag.equalsIgnoreCase("u")) {
+            end(mSpannableStringBuilder, Underline.class, new UnderlineSpan());
+        } else if (mTagHandler != null) {
+            mTagHandler.handleTag(false, tag, mSpannableStringBuilder, mReader);
         }
     }
 
@@ -687,15 +590,21 @@ class HtmlToSpannedConverter implements ContentHandler {
     public void skippedEntity(String name) throws SAXException {
     }
 
-    private static class Bold { }
-    private static class Italic { }
-    private static class Underline { }
-    private static class Big { }
-    private static class Small { }
-    private static class Monospace { }
-    private static class Blockquote { }
-    private static class Super { }
-    private static class Sub { }
+    private static class Bold {
+    }
+
+    private static class Italic {
+    }
+
+    private static class Underline {
+    }
+
+    private static class Monospace {
+    }
+
+    private static class Blockquote {
+    }
+
 
     private static class Font {
         public String mColor;
@@ -708,15 +617,6 @@ class HtmlToSpannedConverter implements ContentHandler {
             mFace = face;
             mbgColor = bgColor;
             mSize = size;
-        }
-    }
-
-
-    private static class Header {
-        private int mLevel;
-
-        public Header(int level) {
-            mLevel = level;
         }
     }
 }

@@ -77,7 +77,10 @@ public class NotesAdapter extends BaseAdapter {
         holder.noteIdText.setText(String.valueOf(noteViewWrapper.note.getId()));
         holder.noteTitleText.setText(com.materialnotes.activity.Html.fromHtml(noteViewWrapper.note.getTitle()));
         // cuts the string to 80 characters and appends "..."
-        holder.noteContentText.setText(com.materialnotes.activity.Html.fromHtml(noteViewWrapper.note.getContent().length() < 80 ? noteViewWrapper.note.getContent() : noteViewWrapper.note.getContent().substring(0, 80).concat("...")));
+        if (noteViewWrapper.note.getContent().length() < 80)
+            holder.noteContentText.setText(com.materialnotes.activity.Html.fromHtml(noteViewWrapper.note.getContent()));
+        else
+            holder.noteContentText.setText(com.materialnotes.activity.Html.fromHtml(noteViewWrapper.note.getContent().substring(0, 80).concat("...")));
         holder.noteDateText.setText(DATETIME_FORMAT.format(noteViewWrapper.note.getUpdatedAt()));
         // Change the background if you select it
         if (noteViewWrapper.isSelected)
