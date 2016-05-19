@@ -10,6 +10,7 @@ import android.text.SpannableStringBuilder;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
+import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -103,7 +104,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note.setCreatedAt(new Date());
         }
 
-
         Thread t = new Thread() {
 
             @Override
@@ -124,6 +124,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             }
         };
         t.start();
+
     }
 
     /**
@@ -210,54 +211,43 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
-    public void boldFormat() {
 
-        if (!mode.equals("bold")){
-        Snackbar.make(getCurrentFocus(),"BOLD MODE",Snackbar.LENGTH_INDEFINITE).show();
-        mode= "bold";
+    public void changeText() {
+
+       if (!mode.equals("modify")){
+            Snackbar.make(getCurrentFocus(),"MODIFY MODE",Snackbar.LENGTH_INDEFINITE).show();
+            mode= "modify";
         }
 
-        if (noteTitleText.hasSelection()) {
-
-            ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
-            ssbTitle.setSpan(new StyleSpan(Typeface.BOLD), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
-
-        } else if (noteContentText.hasSelection()){
-
-            ssbContent = (SpannableStringBuilder) noteContentText.getText();
-            ssbContent.setSpan(new StyleSpan(Typeface.BOLD), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
-        }
-    }
-
-    public void underlineFormat() {
-
-       if (!mode.equals("underline")){
-            Snackbar.make(getCurrentFocus(),"UNDERLINE MODE",Snackbar.LENGTH_INDEFINITE).show();
-            mode= "underline";
-        }
-        if (noteTitleText.hasSelection()) {
-
-            ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
-            ssbTitle.setSpan(new UnderlineSpan(), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
-
-        } else if (noteContentText.hasSelection()) {
+        if (noteContentText.hasSelection()) {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
             ssbContent.setSpan(new UnderlineSpan(), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
+            ssbContent.setSpan(new StyleSpan(Typeface.BOLD_ITALIC), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
+
+        } else if (noteTitleText.hasSelection()) {
+
+            ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
+            ssbTitle.setSpan(new UnderlineSpan(), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
+            ssbTitle.setSpan(new StyleSpan(Typeface.BOLD_ITALIC), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
+
         }
     }
 
     public void highlightText(){
+
         if (!mode.equals("hl")){
             Snackbar.make(getCurrentFocus(),"HIGHLIGHT MODE",Snackbar.LENGTH_INDEFINITE).show();
             mode= "hl";
         }
+
         if (noteContentText.hasSelection()) {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
             ssbContent.setSpan(new BackgroundColorSpan(Color.YELLOW), noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), 0);
-        } else if (noteTitleText.hasSelection())
-        {
+
+        } else if (noteTitleText.hasSelection()) {
+
             ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
             ssbTitle.setSpan(new BackgroundColorSpan(Color.YELLOW), noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), 0);
         }
@@ -265,6 +255,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void clearFormat() {
+
         if (noteContentText.hasSelection())
             clearContent();
         else if (noteTitleText.hasSelection())
@@ -272,21 +263,27 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void formatText() {
+
         if (HRSActivity.mHrmValue > 900){
+            enableTags();
             if(!mode.equals("selection")){
                 Snackbar.make(getCurrentFocus(),"SELECTION MODE",Snackbar.LENGTH_INDEFINITE).show();
                 mode="selection";
             }
         } else if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue < 900) {
-            boldFormat();
-        } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
-            underlineFormat();
-        } else if (HRSActivity.mHrmValue >= 0 && HRSActivity.mHrmValue < 300){
+            disableTags();
             highlightText();
+        } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
+            disableTags();
+            changeText();
+        } else if (HRSActivity.mHrmValue >=0 && HRSActivity.mHrmValue < 300){
+            disableTags();
+            deleteText();
         }
     }
 
     public void clearTitle() {
+
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         StyleSpan[] ss = ssbTitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), StyleSpan.class);
         UnderlineSpan[] us = ssbTitle.getSpans(noteTitleText.getSelectionStart(), noteTitleText.getSelectionEnd(), UnderlineSpan.class);
@@ -310,6 +307,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void clearContent() {
+
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         StyleSpan[] ss = ssbContent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), StyleSpan.class);
         UnderlineSpan[] us = ssbContent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), UnderlineSpan.class);
@@ -332,5 +330,117 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setText(ssbContent);
     }
 
+    public void disableTags(){
+
+            noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
+
+                public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                    return false;
+                }
+
+                public void onDestroyActionMode(ActionMode mode) {
+                }
+
+                public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                    return false;
+                }
+
+                public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                    return false;
+                }
+            });
+
+            noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
+
+                public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                    return false;
+                }
+
+                public void onDestroyActionMode(ActionMode mode) {
+                }
+
+                public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                    return false;
+                }
+
+                public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                    return false;
+                }
+            });
+
+
+    }
+
+    public void enableTags(){
+        noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
+
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                return true;
+            }
+
+            public void onDestroyActionMode(ActionMode mode) {
+            }
+
+            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                return true;
+            }
+
+            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                return true;
+            }
+        });
+
+        noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
+
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                return true;
+            }
+
+            public void onDestroyActionMode(ActionMode mode) {
+            }
+
+            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                return true;
+            }
+
+            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                return true;
+            }
+        });
+    }
+
+    public void deleteText(){
+
+        if (!mode.equals("delete")){
+            Snackbar.make(getCurrentFocus(),"DELETE MODE",Snackbar.LENGTH_INDEFINITE).show();
+            mode= "delete";
+        }
+
+        if (noteContentText.hasSelection()) {
+
+            String conText=noteContentText.getText().toString();
+            int start=noteContentText.getSelectionStart();
+            int end=noteContentText.getSelectionEnd();
+            String selected=conText.substring(start,end);
+            if(!selected.isEmpty()){
+                String selectionDeletedString=conText.replace(selected,"");
+                noteContentText.setText(selectionDeletedString);
+            }
+
+        } else if (noteTitleText.hasSelection()) {
+
+            String tiText=noteTitleText.getText().toString();
+            int start=noteTitleText.getSelectionStart();
+            int end=noteTitleText.getSelectionEnd();
+            String selected=tiText.substring(start,end);
+
+            if(!selected.isEmpty()){
+                String selectionDeletedString=tiText.replace(selected,"");
+                noteContentText.setText(selectionDeletedString);
+            }
+        }
+
+
+    }
 }
 
