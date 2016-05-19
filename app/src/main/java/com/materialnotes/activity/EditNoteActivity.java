@@ -81,13 +81,13 @@ public class EditNoteActivity extends RoboActionBarActivity {
         return (Note) intent.getExtras().get(EXTRA_NOTE);
     }
 
+
     /**
      * {@inheritDoc}
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         mode="";
         tv=(TextView)findViewById(R.id.value);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
@@ -110,7 +110,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(150);
+                        Thread.sleep(250);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -126,6 +126,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         t.start();
 
     }
+
 
     /**
      * {@inheritDoc}
@@ -418,29 +419,21 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         if (noteContentText.hasSelection()) {
 
-            String conText=noteContentText.getText().toString();
+            ssbContent=(SpannableStringBuilder) noteContentText.getText();
             int start=noteContentText.getSelectionStart();
             int end=noteContentText.getSelectionEnd();
-            String selected=conText.substring(start,end);
-            if(!selected.isEmpty()){
-                String selectionDeletedString=conText.replace(selected,"");
-                noteContentText.setText(selectionDeletedString);
-            }
+            ssbContent.delete(start,end);
 
         } else if (noteTitleText.hasSelection()) {
 
-            String tiText=noteTitleText.getText().toString();
+            ssbTitle=(SpannableStringBuilder) noteTitleText.getText();
             int start=noteTitleText.getSelectionStart();
             int end=noteTitleText.getSelectionEnd();
-            String selected=tiText.substring(start,end);
-
-            if(!selected.isEmpty()){
-                String selectionDeletedString=tiText.replace(selected,"");
-                noteContentText.setText(selectionDeletedString);
-            }
+            ssbTitle.delete(start,end);
         }
 
-
     }
+
+
 }
 

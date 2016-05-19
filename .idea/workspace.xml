@@ -37,43 +37,49 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/widget/NotesAdapter$NoteViewWrapper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/widget/NotesAdapter$NoteViewWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/widget/NotesAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/widget/NotesAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/widget/NotesAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/widget/NotesAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/widget/NotesAdapter$NoteViewWrapper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/widget/NotesAdapter$NoteViewWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/widget/NotesAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/widget/NotesAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/widget/NotesAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/widget/NotesAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/classes.zip" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/classes.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/resources.zip" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/resources.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/widget/NotesAdapter$NoteViewWrapper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/widget/NotesAdapter$NoteViewWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/widget/NotesAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/widget/NotesAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/widget/NotesAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/widget/NotesAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/materialnotes/widget/NotesAdapter$NoteViewWrapper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/materialnotes/widget/NotesAdapter$NoteViewWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/materialnotes/widget/NotesAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/materialnotes/widget/NotesAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/materialnotes/widget/NotesAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/materialnotes/widget/NotesAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/NotesAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/NotesAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/wear.iml" afterPath="$PROJECT_DIR$/wear/wear.iml" />
     </list>
     <ignored path="material-notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,47 +113,47 @@
       <file leaf-file-name="EditNoteActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8402204">
-              <caret line="278" column="43" selection-start-line="278" selection-start-column="43" selection-end-line="278" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.20661157">
+              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
               <folding>
-                <element signature="e#3347#3971#0" expanded="true" />
                 <element signature="e#3567#3854#0" expanded="true" />
                 <element signature="e#3853#3854#0" expanded="true" />
                 <element signature="e#3970#3971#0" expanded="true" />
-                <element signature="e#5910#5944#0" expanded="true" />
-                <element signature="e#6118#6154#0" expanded="true" />
-                <element signature="e#6202#6238#0" expanded="true" />
+                <element signature="e#5911#5945#0" expanded="true" />
+                <element signature="e#6119#6155#0" expanded="true" />
+                <element signature="e#6203#6239#0" expanded="true" />
                 <element signature="method#changeText#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#highlightText#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
+                <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#clearContent#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#disableTags#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#11575#11576#0" expanded="true" />
-                <element signature="e#11627#11628#0" expanded="true" />
-                <element signature="e#11794#11795#0" expanded="true" />
-                <element signature="e#11846#11847#0" expanded="true" />
-                <element signature="e#11932#11933#0" expanded="true" />
-                <element signature="e#11984#11985#0" expanded="true" />
-                <element signature="e#12176#12177#0" expanded="true" />
-                <element signature="e#12228#12229#0" expanded="true" />
-                <element signature="e#12395#12396#0" expanded="true" />
-                <element signature="e#12447#12448#0" expanded="true" />
-                <element signature="e#12533#12534#0" expanded="true" />
-                <element signature="e#12585#12586#0" expanded="true" />
+                <element signature="e#11576#11577#0" expanded="true" />
+                <element signature="e#11628#11629#0" expanded="true" />
+                <element signature="e#11795#11796#0" expanded="true" />
+                <element signature="e#11847#11848#0" expanded="true" />
+                <element signature="e#11933#11934#0" expanded="true" />
+                <element signature="e#11985#11986#0" expanded="true" />
+                <element signature="e#12177#12178#0" expanded="true" />
+                <element signature="e#12229#12230#0" expanded="true" />
+                <element signature="e#12396#12397#0" expanded="true" />
+                <element signature="e#12448#12449#0" expanded="true" />
+                <element signature="e#12534#12535#0" expanded="true" />
+                <element signature="e#12586#12587#0" expanded="true" />
                 <element signature="method#enableTags#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#12805#12806#0" expanded="true" />
-                <element signature="e#12848#12849#0" expanded="true" />
-                <element signature="e#13003#13004#0" expanded="true" />
-                <element signature="e#13046#13047#0" expanded="true" />
-                <element signature="e#13128#13129#0" expanded="true" />
-                <element signature="e#13171#13172#0" expanded="true" />
-                <element signature="e#13351#13352#0" expanded="true" />
-                <element signature="e#13394#13395#0" expanded="true" />
-                <element signature="e#13549#13550#0" expanded="true" />
-                <element signature="e#13592#13593#0" expanded="true" />
-                <element signature="e#13674#13675#0" expanded="true" />
-                <element signature="e#13717#13718#0" expanded="true" />
+                <element signature="e#12806#12807#0" expanded="true" />
+                <element signature="e#12849#12850#0" expanded="true" />
+                <element signature="e#13004#13005#0" expanded="true" />
+                <element signature="e#13047#13048#0" expanded="true" />
+                <element signature="e#13129#13130#0" expanded="true" />
+                <element signature="e#13172#13173#0" expanded="true" />
+                <element signature="e#13352#13353#0" expanded="true" />
+                <element signature="e#13395#13396#0" expanded="true" />
+                <element signature="e#13550#13551#0" expanded="true" />
+                <element signature="e#13593#13594#0" expanded="true" />
+                <element signature="e#13675#13676#0" expanded="true" />
+                <element signature="e#13718#13719#0" expanded="true" />
                 <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
               </folding>
             </state>
@@ -4847,7 +4853,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3590164" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3590164" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -5298,47 +5304,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8402204">
-          <caret line="278" column="43" selection-start-line="278" selection-start-column="43" selection-end-line="278" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.20661157">
+          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding>
-            <element signature="e#3347#3971#0" expanded="true" />
             <element signature="e#3567#3854#0" expanded="true" />
             <element signature="e#3853#3854#0" expanded="true" />
             <element signature="e#3970#3971#0" expanded="true" />
-            <element signature="e#5910#5944#0" expanded="true" />
-            <element signature="e#6118#6154#0" expanded="true" />
-            <element signature="e#6202#6238#0" expanded="true" />
+            <element signature="e#5911#5945#0" expanded="true" />
+            <element signature="e#6119#6155#0" expanded="true" />
+            <element signature="e#6203#6239#0" expanded="true" />
             <element signature="method#changeText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#highlightText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
+            <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearContent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#disableTags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#11575#11576#0" expanded="true" />
-            <element signature="e#11627#11628#0" expanded="true" />
-            <element signature="e#11794#11795#0" expanded="true" />
-            <element signature="e#11846#11847#0" expanded="true" />
-            <element signature="e#11932#11933#0" expanded="true" />
-            <element signature="e#11984#11985#0" expanded="true" />
-            <element signature="e#12176#12177#0" expanded="true" />
-            <element signature="e#12228#12229#0" expanded="true" />
-            <element signature="e#12395#12396#0" expanded="true" />
-            <element signature="e#12447#12448#0" expanded="true" />
-            <element signature="e#12533#12534#0" expanded="true" />
-            <element signature="e#12585#12586#0" expanded="true" />
+            <element signature="e#11576#11577#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#11795#11796#0" expanded="true" />
+            <element signature="e#11847#11848#0" expanded="true" />
+            <element signature="e#11933#11934#0" expanded="true" />
+            <element signature="e#11985#11986#0" expanded="true" />
+            <element signature="e#12177#12178#0" expanded="true" />
+            <element signature="e#12229#12230#0" expanded="true" />
+            <element signature="e#12396#12397#0" expanded="true" />
+            <element signature="e#12448#12449#0" expanded="true" />
+            <element signature="e#12534#12535#0" expanded="true" />
+            <element signature="e#12586#12587#0" expanded="true" />
             <element signature="method#enableTags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#12805#12806#0" expanded="true" />
-            <element signature="e#12848#12849#0" expanded="true" />
-            <element signature="e#13003#13004#0" expanded="true" />
-            <element signature="e#13046#13047#0" expanded="true" />
-            <element signature="e#13128#13129#0" expanded="true" />
-            <element signature="e#13171#13172#0" expanded="true" />
-            <element signature="e#13351#13352#0" expanded="true" />
-            <element signature="e#13394#13395#0" expanded="true" />
-            <element signature="e#13549#13550#0" expanded="true" />
-            <element signature="e#13592#13593#0" expanded="true" />
-            <element signature="e#13674#13675#0" expanded="true" />
-            <element signature="e#13717#13718#0" expanded="true" />
+            <element signature="e#12806#12807#0" expanded="true" />
+            <element signature="e#12849#12850#0" expanded="true" />
+            <element signature="e#13004#13005#0" expanded="true" />
+            <element signature="e#13047#13048#0" expanded="true" />
+            <element signature="e#13129#13130#0" expanded="true" />
+            <element signature="e#13172#13173#0" expanded="true" />
+            <element signature="e#13352#13353#0" expanded="true" />
+            <element signature="e#13395#13396#0" expanded="true" />
+            <element signature="e#13550#13551#0" expanded="true" />
+            <element signature="e#13593#13594#0" expanded="true" />
+            <element signature="e#13675#13676#0" expanded="true" />
+            <element signature="e#13718#13719#0" expanded="true" />
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>
         </state>
