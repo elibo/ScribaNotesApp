@@ -36,17 +36,16 @@ import roboguice.inject.InjectView;
 public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
-
+    TextView tv;
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
     @InjectView(R.id.note_content)
     private EditText noteContentText;
-
     private Note note;
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
-    TextView tv;
     private String mode;
+
 
     /**
      * Makes the intent to call the activity with an existing note
@@ -88,8 +87,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mode="";
-        tv=(TextView)findViewById(R.id.value);
+        mode = "selection";
+        tv = (TextView) findViewById(R.id.value);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         // Starts the components //////////////////////////////////////////////////////////////
@@ -110,7 +109,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(250);
+                        Thread.sleep(500);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -215,9 +214,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void changeText() {
 
-       if (!mode.equals("modify")){
-            Snackbar.make(getCurrentFocus(),"MODIFY MODE",Snackbar.LENGTH_INDEFINITE).show();
-            mode= "modify";
+        if (!mode.equals("modify")) {
+            Snackbar.make(getCurrentFocus(), "MODIFY MODE", Snackbar.LENGTH_INDEFINITE).show();
+            mode = "modify";
         }
 
         if (noteContentText.hasSelection()) {
@@ -235,11 +234,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
     }
 
-    public void highlightText(){
+    public void highlightText() {
 
-        if (!mode.equals("hl")){
-            Snackbar.make(getCurrentFocus(),"HIGHLIGHT MODE",Snackbar.LENGTH_INDEFINITE).show();
-            mode= "hl";
+        if (!mode.equals("hl")) {
+            Snackbar.make(getCurrentFocus(), "HIGHLIGHT MODE", Snackbar.LENGTH_INDEFINITE).show();
+            mode = "hl";
         }
 
         if (noteContentText.hasSelection()) {
@@ -265,11 +264,10 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void formatText() {
 
-        if (HRSActivity.mHrmValue > 900){
-            enableTags();
-            if(!mode.equals("selection")){
-                Snackbar.make(getCurrentFocus(),"SELECTION MODE",Snackbar.LENGTH_INDEFINITE).show();
-                mode="selection";
+        if (HRSActivity.mHrmValue >= 900) {
+            if (!mode.equals("selection")) {
+                Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
+                mode = "selection";
             }
         } else if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue < 900) {
             disableTags();
@@ -277,7 +275,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
             disableTags();
             changeText();
-        } else if (HRSActivity.mHrmValue >=0 && HRSActivity.mHrmValue < 300){
+        } else if (HRSActivity.mHrmValue > 0 && HRSActivity.mHrmValue < 300) {
             disableTags();
             deleteText();
         }
@@ -331,52 +329,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setText(ssbContent);
     }
 
-    public void disableTags(){
+    public void disableTags() {
 
-            noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
-
-                public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                    return false;
-                }
-
-                public void onDestroyActionMode(ActionMode mode) {
-                }
-
-                public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-                    return false;
-                }
-
-                public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-                    return false;
-                }
-            });
-
-            noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
-
-                public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                    return false;
-                }
-
-                public void onDestroyActionMode(ActionMode mode) {
-                }
-
-                public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-                    return false;
-                }
-
-                public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-                    return false;
-                }
-            });
-
-
-    }
-
-    public void enableTags(){
         noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
 
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return true;
+                return false;
             }
 
             public void onDestroyActionMode(ActionMode mode) {
@@ -387,14 +345,16 @@ public class EditNoteActivity extends RoboActionBarActivity {
             }
 
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-                return true;
+                return false;
             }
+
         });
+
 
         noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
 
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return true;
+                return false;
             }
 
             public void onDestroyActionMode(ActionMode mode) {
@@ -405,31 +365,34 @@ public class EditNoteActivity extends RoboActionBarActivity {
             }
 
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-                return true;
+                return false;
             }
         });
+
+        noteContentText.setLongClickable(false);
+        noteTitleText.setLongClickable(false);
     }
 
-    public void deleteText(){
+    public void deleteText() {
 
-        if (!mode.equals("delete")){
-            Snackbar.make(getCurrentFocus(),"DELETE MODE",Snackbar.LENGTH_INDEFINITE).show();
-            mode= "delete";
+        if (!mode.equals("delete")) {
+            Snackbar.make(getCurrentFocus(), "DELETE MODE", Snackbar.LENGTH_INDEFINITE).show();
+            mode = "delete";
         }
 
         if (noteContentText.hasSelection()) {
 
-            ssbContent=(SpannableStringBuilder) noteContentText.getText();
-            int start=noteContentText.getSelectionStart();
-            int end=noteContentText.getSelectionEnd();
-            ssbContent.delete(start,end);
+            ssbContent = (SpannableStringBuilder) noteContentText.getText();
+            int start = noteContentText.getSelectionStart();
+            int end = noteContentText.getSelectionEnd();
+            ssbContent.delete(start, end);
 
         } else if (noteTitleText.hasSelection()) {
 
-            ssbTitle=(SpannableStringBuilder) noteTitleText.getText();
-            int start=noteTitleText.getSelectionStart();
-            int end=noteTitleText.getSelectionEnd();
-            ssbTitle.delete(start,end);
+            ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
+            int start = noteTitleText.getSelectionStart();
+            int end = noteTitleText.getSelectionEnd();
+            ssbTitle.delete(start, end);
         }
 
     }
