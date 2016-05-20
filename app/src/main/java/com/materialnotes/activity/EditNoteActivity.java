@@ -264,19 +264,20 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void formatText() {
 
-        if (HRSActivity.mHrmValue >= 900) {
+        if (HRSActivity.mHrmValue > 900) {
+            Tags(true);
             if (!mode.equals("selection")) {
                 Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
                 mode = "selection";
             }
         } else if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue < 900) {
-            disableTags();
+            Tags(false);
             highlightText();
         } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
-            disableTags();
+            Tags(false);
             changeText();
         } else if (HRSActivity.mHrmValue > 0 && HRSActivity.mHrmValue < 300) {
-            disableTags();
+            Tags(false);
             deleteText();
         }
     }
@@ -329,19 +330,19 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setText(ssbContent);
     }
 
-    public void disableTags() {
+    public void Tags(final boolean tag) {
 
         noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
 
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return false;
+                return tag;
             }
 
             public void onDestroyActionMode(ActionMode mode) {
             }
 
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-                return true;
+                return tag;
             }
 
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
@@ -354,14 +355,14 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
 
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return false;
+                return tag;
             }
 
             public void onDestroyActionMode(ActionMode mode) {
             }
 
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-                return true;
+                return tag;
             }
 
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
@@ -369,8 +370,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
             }
         });
 
-        noteContentText.setLongClickable(false);
-        noteTitleText.setLongClickable(false);
+        noteContentText.setLongClickable(tag);
+        noteTitleText.setLongClickable(tag);
     }
 
     public void deleteText() {
