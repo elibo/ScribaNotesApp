@@ -268,23 +268,27 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void formatText() {
 
-        if (HRSActivity.mHrmValue > 900) {
-            Tags(true);
-            clearFormat();
-            if (!mode.equals("select")) {
-                Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
-                mode = "select";
-            }
-        } else if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue < 900) {
+        if (HRSActivity.mHrmValue > 800) {
+            selectText();
+        } else if (HRSActivity.mHrmValue >= 500 && HRSActivity.mHrmValue < 800) {
             Tags(false);
             highlightText();
-        } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
+        } else if (HRSActivity.mHrmValue < 500 && HRSActivity.mHrmValue >= 250) {
             Tags(false);
             boldItalicText();
-        } else if (HRSActivity.mHrmValue > 0 && HRSActivity.mHrmValue < 300) {
+        } else if (HRSActivity.mHrmValue > 0 && HRSActivity.mHrmValue < 250) {
             Tags(false);
             deleteText();
         }
+    }
+
+    public void selectText(){
+        if (!mode.equals("select")) {
+            Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
+            mode = "select";
+        }
+        Tags(true);
+        clearFormat();
     }
 
     public void clearTitle() {
