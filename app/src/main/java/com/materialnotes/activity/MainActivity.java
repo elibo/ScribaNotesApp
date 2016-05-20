@@ -32,9 +32,6 @@ import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
 
-/**
- * Main activity that shows a list of notes.
- */
 
 @ContentView(R.layout.activity_main)
 public class MainActivity extends RoboActionBarActivity {
@@ -59,9 +56,7 @@ public class MainActivity extends RoboActionBarActivity {
     private ActionMode actionMode;
     private int buttonColor;
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,18 +81,14 @@ public class MainActivity extends RoboActionBarActivity {
 
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -110,9 +101,7 @@ public class MainActivity extends RoboActionBarActivity {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == NEW_NOTE_RESULT_CODE) {
@@ -131,7 +120,7 @@ public class MainActivity extends RoboActionBarActivity {
     private void setupActionModeCallback() {
         actionModeCallback = new ActionMode.Callback() {
 
-            /** {@inheritDoc} */
+
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 setListOnItemClickListenersWhenActionMode();
@@ -140,14 +129,14 @@ public class MainActivity extends RoboActionBarActivity {
                 return true;
             }
 
-            /** {@inheritDoc} */
+
             @Override
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
                 // Nothing
                 return false;
             }
 
-            /** {@inheritDoc} */
+
             @Override
             public boolean onActionItemClicked(final ActionMode mode, MenuItem item) {
                 switch (item.getItemId()) {
@@ -173,7 +162,7 @@ public class MainActivity extends RoboActionBarActivity {
                 }
             }
 
-            /** {@inheritDoc} */
+
             @Override
             public void onDestroyActionMode(ActionMode mode) {
                 // Go back to normal mode
@@ -207,11 +196,6 @@ public class MainActivity extends RoboActionBarActivity {
         }
     }
 
-    /**
-     * Adds a note to the list and to the data source
-     *
-     * @param data the data of the edit notes activity
-     */
     private void addNote(Intent data) {
         Note note = EditNoteActivity.getExtraNote(data);
         noteDAO.insert(note);
@@ -221,11 +205,7 @@ public class MainActivity extends RoboActionBarActivity {
         listAdapter.notifyDataSetChanged();
     }
 
-    /**
-     * Deletes notes from the list and from the data source
-     *
-     * @param selectedPositions the notes positions in the list
-     */
+
     private void deleteNotes(ArrayList<Integer> selectedPositions) {
         ArrayList<NotesAdapter.NoteViewWrapper> toRemoveList = new ArrayList<>(selectedPositions.size());
         // first deletes from the database
@@ -250,11 +230,7 @@ public class MainActivity extends RoboActionBarActivity {
 
     }
 
-    /**
-     * Updates a note in the list and in the data source
-     *
-     * @param data the data of the edit note activity
-     */
+
     private void updateNote(Intent data) {
         Note updatedNote = ViewNoteActivity.getExtraUpdatedNote(data);
         noteDAO.update(updatedNote);
@@ -269,9 +245,6 @@ public class MainActivity extends RoboActionBarActivity {
         listAdapter.notifyDataSetChanged();
     }
 
-    /**
-     * restarts the selected notes to not selected and clean the selected list
-     */
 
     private void resetSelectedListItems() {
         for (NotesAdapter.NoteViewWrapper noteViewWrapper : notesData)

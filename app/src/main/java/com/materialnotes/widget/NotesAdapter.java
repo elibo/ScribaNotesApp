@@ -12,58 +12,35 @@ import com.materialnotes.data.Note;
 import java.text.DateFormat;
 import java.util.List;
 
-/**
- * Notes adapter. Acts between the view and the data
- */
+
 public class NotesAdapter extends BaseAdapter {
 
     private static final DateFormat DATETIME_FORMAT = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.MEDIUM);
     private final List<NoteViewWrapper> data;
 
-    /**
-     * Constructor.
-     *
-     * @param data the notes list we use as data source for this adaptor.
-     */
+
     public NotesAdapter(List<NoteViewWrapper> data) {
         this.data = data;
     }
 
-    /**
-     * @return gets the number of notes in the notes list
-     */
+
     @Override
     public int getCount() {
         return data.size();
     }
 
-    /**
-     * @param position the position of the wanted note
-     * @return the note in the wanted position
-     */
+
     @Override
     public NoteViewWrapper getItem(int position) {
         return data.get(position);
     }
 
-    /**
-     * @param position the position
-     * @return the same position
-     */
+
     @Override
     public long getItemId(int position) {
         return position;
     }
 
-    /**
-     * Shows the data of the chosen note
-     *
-     * @param position    the actual note position
-     * @param convertView the visual component to use
-     * @param parent      the visual component parent
-     * @return the data view
-     *
-     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
@@ -89,19 +66,13 @@ public class NotesAdapter extends BaseAdapter {
         return convertView;
     }
 
-    /**
-     * Wrapper for notes . Changes the background of the selected items.
-     */
+
     public static class NoteViewWrapper {
 
         private final Note note;
         private boolean isSelected;
 
-        /**
-         * Creates a new NoteWrapper with the given note
-         *
-         * @param note the note.
-         */
+
         public NoteViewWrapper(Note note) {
             this.note = note;
         }
@@ -124,11 +95,7 @@ public class NotesAdapter extends BaseAdapter {
 
         private View parent;
 
-        /**
-         * Constructor. Find the visual components in the parent.
-         *
-         * @param parent a visual component.
-         */
+
         private ViewHolder(View parent) {
             this.parent = parent;
             noteIdText = (TextView) parent.findViewById(R.id.note_id);

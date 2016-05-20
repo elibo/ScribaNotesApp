@@ -21,9 +21,7 @@ import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
 
-/**
- * Activity to visualize a note. You can edit the note in other activity
- */
+
 @ContentView(R.layout.activity_view_note)
 public class ViewNoteActivity extends RoboActionBarActivity {
 
@@ -49,32 +47,18 @@ public class ViewNoteActivity extends RoboActionBarActivity {
 
     private Note note;
 
-    /**
-     * Creates the intent to call the activity
-     *
-     * @param context the context you're gonna use
-     * @param note    the note you're gonna see
-     * @return an intent
-     */
+
     public static Intent buildIntent(Context context, Note note) {
         Intent intent = new Intent(context, ViewNoteActivity.class);
         intent.putExtra(EXTRA_NOTE, note);
         return intent;
     }
 
-    /**
-     * Gets the updated note in the edit note activity
-     *
-     * @param intent the intent from onActivityResult
-     * @return the updated note
-     */
     public static Note getExtraUpdatedNote(Intent intent) {
         return (Note) intent.getExtras().get(EXTRA_UPDATED_NOTE);
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,9 +84,7 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         noteUpdatedAtDateText.setText(DATETIME_FORMAT.format(note.getUpdatedAt()));
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -116,9 +98,7 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == EDIT_NOTE_RESULT_CODE) {
@@ -135,9 +115,7 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public void onBackPressed() {
         // The note wasn't edited
