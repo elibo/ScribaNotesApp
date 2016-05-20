@@ -34,7 +34,7 @@ import roboguice.inject.InjectView;
 public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
-    TextView tv;
+    TextView tv,tv2;
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
     @InjectView(R.id.note_content)
@@ -90,6 +90,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                             public void run() {
                                 tv.setText(String.valueOf(HRSActivity.mHrmValue));
                                 formatText();
+
                             }
                         });
                     }
@@ -97,9 +98,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 }
             }
         };
+
         t.start();
 
     }
+
 
 
     @Override

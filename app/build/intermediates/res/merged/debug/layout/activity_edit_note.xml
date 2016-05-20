@@ -20,7 +20,7 @@
         android:id="@+id/note_content"
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
-        android:layout_height="190dp"
+        android:layout_height="150dp"
         android:gravity="start"
         android:hint="@string/hint_note_content"
         android:paddingBottom="20dp"
@@ -32,7 +32,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/value"
         />
-    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/value2"
+        android:layout_gravity="right" />
 
 
 </LinearLayout>
