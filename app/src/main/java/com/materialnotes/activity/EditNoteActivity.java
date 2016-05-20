@@ -149,9 +149,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
             case android.R.id.home:
                 onBackPressed();
                 return true;
-          /*  case R.id.clear:
-                clearFormat();
-                return true;*/
+            case R.id.clear:
+                clearAllFormats();
+                return true;
             case R.id.action_save:
                 if (isNoteFormOk()) {
                     setNoteResult();
@@ -303,7 +303,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
 
         for (int i = 0; i < ss.length; i++) {
-            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC) {
+            if (ss[i].getStyle() == Typeface.BOLD_ITALIC) {
                 ssbTitle.removeSpan(ss[i]);
             }
         }
@@ -313,6 +313,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
 
         noteTitleText.setText(ssbTitle);
+
     }
 
     public void clearContent() {
@@ -323,7 +324,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         BackgroundColorSpan[] bgSpan = ssbContent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), BackgroundColorSpan.class);
 
         for (int i = 0; i < ss.length; i++) {
-            if (ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC || ss[i].getStyle() == Typeface.BOLD_ITALIC) {
+            if (ss[i].getStyle() == Typeface.BOLD_ITALIC) {
                 ssbContent.removeSpan(ss[i]);
             }
         }
@@ -407,6 +408,15 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
+    public void clearAllFormats(){
+
+        String nfTitle=noteTitleText.getText().toString();
+        String nfContent=noteContentText.getText().toString();
+        noteTitleText.setText(nfTitle);
+        noteContentText.setText(nfContent);
+
+
+    }
 
 }
 
