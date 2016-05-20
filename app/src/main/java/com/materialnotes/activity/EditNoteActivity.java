@@ -212,11 +212,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
 
-    public void changeText() {
+    public void boldItalicText() {
 
-        if (!mode.equals("modify")) {
-            Snackbar.make(getCurrentFocus(), "MODIFY MODE", Snackbar.LENGTH_INDEFINITE).show();
-            mode = "modify";
+        if (!mode.equals("bi")) {
+            Snackbar.make(getCurrentFocus(), "BOLD_ITALIC MODE", Snackbar.LENGTH_INDEFINITE).show();
+            mode = "bi";
         }
 
         if (noteContentText.hasSelection()) {
@@ -266,16 +266,16 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         if (HRSActivity.mHrmValue > 900) {
             Tags(true);
-            if (!mode.equals("selection")) {
+            if (!mode.equals("select")) {
                 Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
-                mode = "selection";
+                mode = "select";
             }
         } else if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue < 900) {
             Tags(false);
             highlightText();
         } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
             Tags(false);
-            changeText();
+            boldItalicText();
         } else if (HRSActivity.mHrmValue > 0 && HRSActivity.mHrmValue < 300) {
             Tags(false);
             deleteText();
