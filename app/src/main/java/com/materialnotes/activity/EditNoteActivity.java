@@ -13,6 +13,7 @@ import android.text.style.UnderlineSpan;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,6 +46,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
     private String mode;
+
 
 
     /**
@@ -87,7 +89,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mode = "selection";
+        mode = "select";
         tv = (TextView) findViewById(R.id.value);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
@@ -124,6 +126,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
         };
         t.start();
 
+
+
     }
 
 
@@ -145,9 +149,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
             case android.R.id.home:
                 onBackPressed();
                 return true;
-            case R.id.clear:
+          /*  case R.id.clear:
                 clearFormat();
-                return true;
+                return true;*/
             case R.id.action_save:
                 if (isNoteFormOk()) {
                     setNoteResult();
@@ -266,6 +270,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         if (HRSActivity.mHrmValue > 900) {
             Tags(true);
+            clearFormat();
             if (!mode.equals("select")) {
                 Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
                 mode = "select";
