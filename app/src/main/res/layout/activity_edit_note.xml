@@ -12,18 +12,15 @@
         android:hint="@string/hint_note_title"
         android:inputType="textNoSuggestions"
         android:maxLength="50"
-        android:layout_marginTop="10dp"
         android:paddingBottom="20dp"
         android:singleLine="true" />
 
     <EditText
         android:id="@+id/note_content"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="150dp"
+        android:layout_height="match_parent"
         android:gravity="start"
         android:hint="@string/hint_note_content"
-        android:paddingBottom="20dp"
         android:inputType="textNoSuggestions|textMultiLine"
         android:longClickable="true" />
 
@@ -33,11 +30,6 @@
         android:id="@+id/value"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/value2"
-        android:layout_gravity="right" />
 
 
 </LinearLayout>

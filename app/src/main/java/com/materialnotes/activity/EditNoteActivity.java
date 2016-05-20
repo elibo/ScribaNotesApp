@@ -261,11 +261,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void selectText(){
+        tags(true);
         if (!mode.equals("select")) {
             Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "select";
         }
-        tags(true);
         clearFormat();
     }
 
