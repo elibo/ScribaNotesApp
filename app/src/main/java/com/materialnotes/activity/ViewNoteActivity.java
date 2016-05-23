@@ -105,7 +105,7 @@ public class ViewNoteActivity extends RoboActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == EDIT_NOTE_RESULT_CODE) {
             if (resultCode == RESULT_OK) {
-                //The note was successfuly edited and the activity finish with a result
+                //The note was successfully edited and the activity finish with a result
                 Intent resultIntent = new Intent();
                 Note note = EditNoteActivity.getExtraNote(data);
                 resultIntent.putExtra(EXTRA_UPDATED_NOTE, note);
