@@ -47,7 +47,6 @@ public class MainActivity extends RoboActionBarActivity {
 
     @Inject
     private NoteDAO noteDAO;
-
     private ArrayList<Integer> selectedPositions;
     private ArrayList<NotesAdapter.NoteViewWrapper> notesData;
     private NotesAdapter listAdapter;
@@ -80,13 +79,11 @@ public class MainActivity extends RoboActionBarActivity {
 
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -107,7 +104,6 @@ public class MainActivity extends RoboActionBarActivity {
         }
     }
 
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == NEW_NOTE_RESULT_CODE) {
@@ -123,7 +119,6 @@ public class MainActivity extends RoboActionBarActivity {
     private void setupActionModeCallback() {
         actionModeCallback = new ActionMode.Callback() {
 
-
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 setListOnItemClickListenersWhenActionMode();
@@ -132,13 +127,11 @@ public class MainActivity extends RoboActionBarActivity {
                 return true;
             }
 
-
             @Override
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
                 // Nothing
                 return false;
             }
-
 
             @Override
             public boolean onActionItemClicked(final ActionMode mode, MenuItem item) {
@@ -165,7 +158,6 @@ public class MainActivity extends RoboActionBarActivity {
                 }
             }
 
-
             @Override
             public void onDestroyActionMode(ActionMode mode) {
                 // Go back to normal mode
@@ -174,7 +166,6 @@ public class MainActivity extends RoboActionBarActivity {
             }
         };
     }
-
 
     private void setupNotesAdapter() {
         notesData = new ArrayList<>();
@@ -185,7 +176,6 @@ public class MainActivity extends RoboActionBarActivity {
         listAdapter = new NotesAdapter(notesData);
         listView.setAdapter(listAdapter);
     }
-
 
     private void updateView() {
         if (notesData.isEmpty()) { // Show message
@@ -205,7 +195,6 @@ public class MainActivity extends RoboActionBarActivity {
         updateView();
         listAdapter.notifyDataSetChanged();
     }
-
 
     private void deleteNotes(ArrayList<Integer> selectedPositions) {
         ArrayList<NotesAdapter.NoteViewWrapper> toRemoveList = new ArrayList<>(selectedPositions.size());
@@ -228,9 +217,7 @@ public class MainActivity extends RoboActionBarActivity {
             HRSActivity.fa.finish();
         }
         super.onDestroy();
-
     }
-
 
     private void updateNote(Intent data) {
         Note updatedNote = ViewNoteActivity.getExtraUpdatedNote(data);
@@ -246,14 +233,12 @@ public class MainActivity extends RoboActionBarActivity {
         listAdapter.notifyDataSetChanged();
     }
 
-
     private void resetSelectedListItems() {
         for (NotesAdapter.NoteViewWrapper noteViewWrapper : notesData)
             noteViewWrapper.setSelected(false);
         selectedPositions.clear();
         listAdapter.notifyDataSetChanged();
     }
-
 
     private void setListOnItemClickListenersWhenNoActionMode() {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -278,7 +263,6 @@ public class MainActivity extends RoboActionBarActivity {
             }
         });
     }
-
 
     private void setListOnItemClickListenersWhenActionMode() {
         listView.setOnItemLongClickListener(null);
@@ -309,18 +293,14 @@ public class MainActivity extends RoboActionBarActivity {
     public void connectBle(MenuItem item) {
         Intent intent = new Intent(this, HRSActivity.class);
         startActivity(intent);
-
     }
-
 
     public void contactUs() {
         String[] TO = {"sketch@getscriba.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
-
         emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-
         try {
             startActivity(Intent.createChooser(emailIntent, "Send mail with ..."));
             finish();

@@ -99,19 +99,14 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 }
             }
         };
-
         t.start();
-
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.edit_note, menu);
         return true;
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -134,11 +129,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
     }
 
-
     private boolean isNoteFormOk() {
         return !Strings.isNullOrBlank(noteTitleText.getText().toString()) && !Strings.isNullOrBlank(noteContentText.getText().toString());
     }
-
 
     private void setNoteResult() {
         note.setTitle(com.materialnotes.activity.Html.toHtml(noteTitleText.getText()));
@@ -148,7 +141,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
         resultIntent.putExtra(EXTRA_NOTE, note);
         setResult(RESULT_OK, resultIntent);
     }
-
 
     private void validateNoteForm() {
         StringBuilder message = null;
@@ -168,7 +160,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
     }
 
-
     @Override
     public void onBackPressed() {
         // Note not created or updated
@@ -176,7 +167,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
         finish();
 
     }
-
 
     public void clearFormat() {
 
