@@ -73,10 +73,7 @@ public class MainActivity extends RoboActionBarActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
+    public boolean onCreateOptionsMenu(Menu menu) {getMenuInflater().inflate(R.menu.main, menu);return true;}
 
 
     @Override
@@ -101,9 +98,7 @@ public class MainActivity extends RoboActionBarActivity {
             }
 
             @Override
-            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return false;
-            }
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {return false;}
 
             @Override
             public boolean onActionItemClicked(final ActionMode mode, MenuItem item) {
@@ -234,8 +229,6 @@ public class MainActivity extends RoboActionBarActivity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Adds items to the selected list and changes the background
-                // When we don't have any selected the contextual mode ends
                 if (selectedPositions.contains(position)) {
                     selectedPositions.remove((Object) position);
                     if (selectedPositions.isEmpty()) actionMode.finish();

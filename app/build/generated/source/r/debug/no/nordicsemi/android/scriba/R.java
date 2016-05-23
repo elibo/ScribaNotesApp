@@ -864,7 +864,7 @@ public final class R {
 	public static final class id {
 		public static final int about = 0x7f0f00b7;
 		public static final int action0 = 0x7f0f00ab;
-		public static final int action_about = 0x7f0f00c7;
+		public static final int action_about = 0x7f0f00c8;
 		public static final int action_bar = 0x7f0f0066;
 		public static final int action_bar_activity_content = 0x7f0f0000;
 		public static final int action_bar_container = 0x7f0f0065;
@@ -881,7 +881,7 @@ public final class R {
 		public static final int action_mode_bar = 0x7f0f0063;
 		public static final int action_mode_bar_stub = 0x7f0f0062;
 		public static final int action_mode_close_button = 0x7f0f0048;
-		public static final int action_settings = 0x7f0f00c9;
+		public static final int action_settings = 0x7f0f00ca;
 		public static final int actionbar = 0x7f0f0077;
 		public static final int actionbar_contents = 0x7f0f0078;
 		public static final int activity_chooser_view_content = 0x7f0f0049;

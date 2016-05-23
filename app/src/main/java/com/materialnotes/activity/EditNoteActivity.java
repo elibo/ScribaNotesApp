@@ -15,13 +15,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.util.Strings;
-
 import java.util.Date;
-
 import no.nordicsemi.android.scriba.hrs.HRSActivity;
 import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
@@ -52,9 +49,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         return buildIntent(context, null);
     }
 
-    public static Note getExtraNote(Intent intent) {
-        return (Note) intent.getExtras().get(EXTRA_NOTE);
-    }
+    public static Note getExtraNote(Intent intent) {return (Note) intent.getExtras().get(EXTRA_NOTE);}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,7 +102,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 return true;
             case R.id.clear:
                 clearFormat();
-                //clearAllFormats();
+                return true;
+            case R.id.clearAll:
+                clearAllFormats();
                 return true;
             case R.id.action_save:
                 if (isNoteFormOk()) {
@@ -121,8 +118,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
     }
 
-    private boolean isNoteFormOk() {
-        return !Strings.isNullOrBlank(noteTitleText.getText().toString()) && !Strings.isNullOrBlank(noteContentText.getText().toString());
+    private boolean isNoteFormOk() {return !Strings.isNullOrBlank(noteTitleText.getText().toString()) &&
+            !Strings.isNullOrBlank(noteContentText.getText().toString());
     }
 
     private void setNoteResult() {
@@ -154,10 +151,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     @Override
     public void onBackPressed() {
-        // Note not created or updated
         setResult(RESULT_CANCELED, new Intent());
         finish();
-
     }
 
     public void clearFormat() {
@@ -217,12 +212,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setText(ssbContent);
     }
 
-   /* public void clearAllFormats(){
+    public void clearAllFormats(){
         String nfTitle=noteTitleText.getText().toString();
         String nfContent=noteContentText.getText().toString();
         noteTitleText.setText(nfTitle);
         noteContentText.setText(nfContent);
-    }*/
+    }
 
     public void formatText() {
 
@@ -241,7 +236,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void selectText(){
-       // clearFormat();
         tags(true);
         if (!mode.equals("select")) {
             Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
