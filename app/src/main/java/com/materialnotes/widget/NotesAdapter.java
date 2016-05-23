@@ -72,7 +72,6 @@ public class NotesAdapter extends BaseAdapter {
         private final Note note;
         private boolean isSelected;
 
-
         public NoteViewWrapper(Note note) {
             this.note = note;
         }
@@ -92,9 +91,7 @@ public class NotesAdapter extends BaseAdapter {
         private TextView noteTitleText;
         private TextView noteContentText;
         private TextView noteDateText;
-
         private View parent;
-
 
         private ViewHolder(View parent) {
             this.parent = parent;

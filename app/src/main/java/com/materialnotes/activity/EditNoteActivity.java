@@ -13,7 +13,6 @@ import android.text.style.UnderlineSpan;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;

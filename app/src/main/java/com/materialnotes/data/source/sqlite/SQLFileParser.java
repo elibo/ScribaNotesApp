@@ -10,20 +10,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 
-/**
- * Class to parse  *.sql
- */
+
 class SQLFileParser {
 
     private static final String TAG = SQLFileParser.class.getSimpleName();
     private static final Pattern COMMENT_PATTERN = Pattern.compile("(?:/\\*[^;]*?\\*/)|(?:--[^;]*?$)", Pattern.DOTALL | Pattern.MULTILINE);
 
-    /**
-     * Gets all the statements in a sql file
-     *
-     * @param stream sql stream
-     * @return SQL statements
-     */
     static String[] getSQLStatements(InputStream stream) {
         BufferedReader reader = null;
         try {

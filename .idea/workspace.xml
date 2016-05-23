@@ -38,7 +38,18 @@
   <component name="ChangeListManager">
     <list default="true" id="ad1ef849-9b19-4ad8-a521-7855f0b87661" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/Html.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/Html.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/ViewNoteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/ViewNoteActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/config/ConfigModule.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/config/ConfigModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/Note.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/Note.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/NoteDAO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/NoteDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/impl/sqlite/NoteSQLiteDAO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/impl/sqlite/NoteSQLiteDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/NotesDatabaseHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/NotesDatabaseHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/SQLFileParser.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/SQLFileParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/util/Strings.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/util/Strings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/view/ShowHideOnScroll.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/view/ShowHideOnScroll.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/AboutNoticeDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/AboutNoticeDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/NotesAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/NotesAdapter.java" />
     </list>
     <ignored path="material-notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EditNoteActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EditNoteActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.07713499">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
@@ -81,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35714287">
+            <state vertical-scroll-proportion="-4.4444447">
               <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
               <folding>
                 <element signature="e#5326#5728#0" expanded="true" />
@@ -4252,14 +4263,6 @@
       <list>
         <option value="$PROJECT_DIR$/applib/src/main/java/no/nordicsemi/android/scriba/profile/BleManager.java" />
         <option value="$PROJECT_DIR$/applib/src/main/java/no/nordicsemi/android/scriba/hrs/HRSActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/NoteDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/NotesDatabaseHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/util/Strings.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/view/ShowHideOnScroll.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/config/ConfigModule.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/SQLFileParser.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/impl/sqlite/NoteSQLiteDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/Note.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/util/MyHtmlTagHadler.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_view_note.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
@@ -4267,7 +4270,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/splash.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/SplashActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/AboutNoticeDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_about_notice.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/myListener.java" />
@@ -4277,17 +4279,26 @@
         <option value="$PROJECT_DIR$/applib/src/main/java/no/nordicsemi/android/scriba/profile/BleProfileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/notes_row.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/edit_note.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/Html.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/NotesAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_note.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-v15/notes_row.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/ViewNoteActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/InfoDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-v15/dialog_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/Html.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/ViewNoteActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/config/ConfigModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/Note.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/impl/sqlite/NoteSQLiteDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/NoteDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/SQLFileParser.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/NotesDatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/util/Strings.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/view/ShowHideOnScroll.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/NotesAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/AboutNoticeDialog.java" />
       </list>
     </option>
   </component>
@@ -4445,28 +4456,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="materialnotes" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="material-notes" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="materialnotes" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -4812,7 +4801,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="726" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -4833,7 +4822,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20516963" sideWeight="0.7432763" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20516963" sideWeight="0.7432763" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -4927,34 +4916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/SQLFileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.22047244">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/NoteDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6456693">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/NotesDatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5905512">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/impl/sqlite/NoteSQLiteDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9212598">
-          <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -5020,27 +4981,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/util/Strings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/config/ConfigModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25240386">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/Note.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="64" selection-start-line="78" selection-start-column="64" selection-end-line="78" selection-end-column="64" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/context_note.xml">
@@ -5124,13 +5064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/view/ShowHideOnScroll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_view_note.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2795031">
@@ -5159,14 +5092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/NotesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38016528">
-          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_note.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.792453">
@@ -5187,35 +5112,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/Html.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
-          <folding>
-            <element signature="method#toHtml#0;class#Html#0" expanded="false" />
-            <element signature="method#withinBlockquote#0;class#Html#0" expanded="false" />
-            <element signature="method#withinParagraph#0;class#Html#0" expanded="false" />
-            <element signature="method#withinStyle#0;class#Html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5785124">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/ViewNoteActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/notes_schema-v1.sql">
@@ -5245,14 +5141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/AboutNoticeDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1487603">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-v15/dialog_info.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.8679245">
@@ -5268,10 +5156,148 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40707964">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4444447">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="e#5326#5728#0" expanded="true" />
+            <element signature="e#5727#5728#0" expanded="true" />
+            <element signature="method#connectBle#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#contactUs#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/ViewNoteActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08264463">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08264463">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/Html.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08264463">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="method#toHtml#0;class#Html#0" expanded="false" />
+            <element signature="method#withinBlockquote#0;class#Html#0" expanded="false" />
+            <element signature="method#withinParagraph#0;class#Html#0" expanded="false" />
+            <element signature="method#withinStyle#0;class#Html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/config/ConfigModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16528925">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/impl/sqlite/NoteSQLiteDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.6694217">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/dao/NoteDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2892562">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/Note.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16528925">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/SQLFileParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37190083">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/data/source/sqlite/NotesDatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8181819">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/util/Strings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41322315">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/view/ShowHideOnScroll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2699726">
+          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/NotesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2727273">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/InfoDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41322315">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/AboutNoticeDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6198347">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.07713499">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
@@ -5284,35 +5310,6 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onDestroy#0;class#EditNoteActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/widget/InfoDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41322315">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40707964">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35714287">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding>
-            <element signature="e#5326#5728#0" expanded="true" />
-            <element signature="e#5727#5728#0" expanded="true" />
-            <element signature="method#connectBle#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#contactUs#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>

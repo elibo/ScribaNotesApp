@@ -16,9 +16,7 @@ import java.util.Date;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-/**
- * Class that gets notes from a SQLite database.
- **/
+
 public class NoteSQLiteDAO implements NoteDAO {
 
     private static final String TAG = NoteSQLiteDAO.class.getSimpleName();
@@ -26,20 +24,11 @@ public class NoteSQLiteDAO implements NoteDAO {
 
     private final SQLiteOpenHelper databaseHelper;
 
-    /**
-     * NoteSQLiteDAO using  SQLiteOpenHelper.
-     *
-     * @param databaseHelper SQLiteOpenHelper.
-     */
     @Inject
     public NoteSQLiteDAO(@Named("NotesDbHelper") SQLiteOpenHelper databaseHelper) {
         this.databaseHelper = databaseHelper;
     }
 
-    /**
-     * @return gets all the notes from the database table {@link NoteEntry#TABLE_NAME}
-     * @see <a href="http://bit.ly/1whYCa6">Read Information from a Database</a>
-     */
     @Override
     public ArrayList<Note> fetchAll() {
         ArrayList<Note> result = null;
@@ -77,12 +66,7 @@ public class NoteSQLiteDAO implements NoteDAO {
         return result;
     }
 
-    /**
-     * Inserts a note in the table{@link NoteEntry#TABLE_NAME}.
-     *
-     * @param note the note to insert.
-     * @see <a href="http://bit.ly/1D3oTNG">Put Information into a Database</a>
-     */
+
     @Override
     public void insert(Note note) {
         SQLiteDatabase database = databaseHelper.getWritableDatabase();
@@ -104,12 +88,7 @@ public class NoteSQLiteDAO implements NoteDAO {
         }
     }
 
-    /**
-     * Updates a note from the table {@link NoteEntry#TABLE_NAME}.
-     *
-     * @param note the note to update
-     * @see <a href="http://bit.ly/1tOS68i">Update a Database</a>
-     */
+
     @Override
     public void update(Note note) {
         SQLiteDatabase database = databaseHelper.getWritableDatabase();
@@ -130,12 +109,7 @@ public class NoteSQLiteDAO implements NoteDAO {
         }
     }
 
-    /**
-     * Deletes a note from the table{@link NoteEntry#TABLE_NAME}.
-     *
-     * @param note the note to delete
-     * @see <a href="http://bit.ly/1syEh1A">Delete Information from a Database</a>
-     */
+
     @Override
     public void delete(Note note) {
         SQLiteDatabase database = databaseHelper.getWritableDatabase();
@@ -152,9 +126,6 @@ public class NoteSQLiteDAO implements NoteDAO {
         }
     }
 
-    /**
-     * Constants from the notes table
-     */
     private static class NoteEntry implements BaseColumns {
         private static final String TABLE_NAME = "note";
         private static final String TITLE = "title";

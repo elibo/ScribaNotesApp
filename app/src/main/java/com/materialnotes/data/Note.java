@@ -3,9 +3,6 @@ package com.materialnotes.data;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Class that represents a note of the app
- **/
 public class Note implements Serializable {
 
     private static final long serialVersionUID = -831930284387787342L;

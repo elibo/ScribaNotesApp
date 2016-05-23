@@ -14,9 +14,6 @@ import com.materialnotes.R;
 import roboguice.fragment.RoboDialogFragment;
 import roboguice.inject.InjectView;
 
-/**
- * Dialog showing the app info
- **/
 public class AboutNoticeDialog extends RoboDialogFragment {
 
     private static final String TAG = AboutNoticeDialog.class.getSimpleName();
@@ -24,25 +21,11 @@ public class AboutNoticeDialog extends RoboDialogFragment {
     @InjectView(R.id.version_text)
     private TextView versionText;
 
-    /**
-     * Creates the view for this dialog
-     *
-     * @param inflater           the inflater.
-     * @param container          the container.
-     * @param savedInstanceState the bundle.
-     * @return the view
-     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.dialog_about_notice, container, false);
     }
 
-    /**
-     * Initiates the created view
-     *
-     * @param view               the created view
-     * @param savedInstanceState the bundle.
-     */
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

@@ -8,10 +8,6 @@ import android.util.Log;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * Helper for the use of sqlLite databases
- * * @see <a href="http://bit.ly/1s5nUI5">Create a Database Using a SQL Helper</a>
- */
 public class NotesDatabaseHelper extends SQLiteOpenHelper {
 
     private static final String TAG = NotesDatabaseHelper.class.getSimpleName();
@@ -21,19 +17,11 @@ public class NotesDatabaseHelper extends SQLiteOpenHelper {
 
     private final Context context;
 
-    /**
-     * Creates a  NotesDatabaseHelper.
-     *
-     * @param context the context where NotesDatabaseHelper is created.
-     */
     public NotesDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void onCreate(SQLiteDatabase db) {
         Log.v(TAG, "Creating database version " + DATABASE_VERSION + "...");
@@ -60,9 +48,7 @@ public class NotesDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         Log.w(TAG, "Upgrading database from version " + oldVersion + " to " + newVersion + ", which will destroy all old data");
