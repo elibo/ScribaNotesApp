@@ -25,6 +25,7 @@ import com.materialnotes.util.Strings;
 import java.util.Date;
 
 import no.nordicsemi.android.scriba.hrs.HRSActivity;
+import no.nordicsemi.android.scriba.profile.BleProfileActivity;
 import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
@@ -34,7 +35,7 @@ import roboguice.inject.InjectView;
 public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
-    TextView tv,tv2;
+    TextView tv;
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
     @InjectView(R.id.note_content)
@@ -382,7 +383,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteTitleText.setLongClickable(tag);
     }
 
-
-
+    @Override
+    protected void onDestroy() {
+        if (BleProfileActivity.mDeviceConnected==true){
+            HRSActivity.fa.finish();
+        }
+        super.onDestroy();
+    }
 }
 
