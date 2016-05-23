@@ -115,14 +115,7 @@ public class ViewNoteActivity extends RoboActionBarActivity {
 
         super.onActivityResult(requestCode, resultCode, data);
     }
-
-    @Override
-    protected void onDestroy() {
-        if (BleProfileActivity.mDeviceConnected==true){
-            HRSActivity.fa.finish();
-        }
-        super.onDestroy();
-    }
+    
 
     @Override
     public void onBackPressed() {

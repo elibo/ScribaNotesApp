@@ -114,7 +114,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 onBackPressed();
                 return true;
             case R.id.clear:
-                clearAllFormats();
+                clearFormat();
+                //clearAllFormats();
                 return true;
             case R.id.action_save:
                 if (isNoteFormOk()) {
@@ -187,7 +188,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
 
         for (int i = 0; i < ss.length; i++) {
-            if (ss[i].getStyle() == Typeface.BOLD_ITALIC) {
+            if (ss[i].getStyle() == Typeface.BOLD_ITALIC || ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC) {
                 ssbTitle.removeSpan(ss[i]);
             }
         }
@@ -208,7 +209,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         BackgroundColorSpan[] bgSpan = ssbContent.getSpans(noteContentText.getSelectionStart(), noteContentText.getSelectionEnd(), BackgroundColorSpan.class);
 
         for (int i = 0; i < ss.length; i++) {
-            if (ss[i].getStyle() == Typeface.BOLD_ITALIC) {
+            if (ss[i].getStyle() == Typeface.BOLD_ITALIC || ss[i].getStyle() == Typeface.BOLD || ss[i].getStyle() == Typeface.ITALIC) {
                 ssbContent.removeSpan(ss[i]);
             }
         }
@@ -256,7 +257,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "select";
         }
-        clearFormat();
+        //clearFormat();
     }
 
     public void boldItalicText() {
@@ -372,12 +373,5 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteTitleText.setLongClickable(tag);
     }
 
-    @Override
-    protected void onDestroy() {
-        if (BleProfileActivity.mDeviceConnected==true){
-            HRSActivity.fa.finish();
-        }
-        super.onDestroy();
-    }
 }
 
