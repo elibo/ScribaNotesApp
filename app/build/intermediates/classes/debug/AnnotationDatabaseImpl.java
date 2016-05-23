@@ -35,10 +35,6 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
         }
 
         fieldNameSet = new HashSet<String>();
-        fieldNameSet.add("versionText");
-        mapClassWithInjectionNameToFieldSet.put("com.materialnotes.widget.AboutNoticeDialog", fieldNameSet);
-
-        fieldNameSet = new HashSet<String>();
         fieldNameSet.add("emptyListTextView");
         fieldNameSet.add("addNoteButton");
         fieldNameSet.add("listView");
@@ -84,7 +80,6 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
     }
     
     public void fillClassesContainingInjectionPointSet(HashSet<String> classesContainingInjectionPointsSet) {
-        classesContainingInjectionPointsSet.add("com.materialnotes.widget.AboutNoticeDialog");
         classesContainingInjectionPointsSet.add("com.materialnotes.activity.MainActivity");
         classesContainingInjectionPointsSet.add("com.materialnotes.data.dao.impl.sqlite.NoteSQLiteDAO");
         classesContainingInjectionPointsSet.add("com.materialnotes.activity.EditNoteActivity");

@@ -12,14 +12,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.net.Uri;
 
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.data.dao.NoteDAO;
 import com.materialnotes.view.ShowHideOnScroll;
-import com.materialnotes.widget.AboutNoticeDialog;
-import com.materialnotes.widget.InfoDialog;
 import com.materialnotes.widget.NotesAdapter;
 import com.shamanland.fab.FloatingActionButton;
 
@@ -44,7 +41,6 @@ public class MainActivity extends RoboActionBarActivity {
     private ListView listView;
     @InjectView(R.id.add_note_button)
     private FloatingActionButton addNoteButton;
-
     @Inject
     private NoteDAO noteDAO;
     private ArrayList<Integer> selectedPositions;
@@ -61,13 +57,11 @@ public class MainActivity extends RoboActionBarActivity {
         buttonColor = Color.parseColor("#00cc66");
         addNoteButton.setColor(buttonColor);
         addNoteButton.initBackground();
-        // Start the components //////////////////////////////////////////////////////////////
-        listView.setOnTouchListener(new ShowHideOnScroll(addNoteButton, getSupportActionBar())); // Hides or shows the FAB and the ActionBar
+        listView.setOnTouchListener(new ShowHideOnScroll(addNoteButton, getSupportActionBar()));
         addNoteButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                // Make a new note
                 startActivityForResult(EditNoteActivity.buildIntent(MainActivity.this), NEW_NOTE_RESULT_CODE);
             }
         });
@@ -76,7 +70,6 @@ public class MainActivity extends RoboActionBarActivity {
         setupActionModeCallback();
         setListOnItemClickListenersWhenNoActionMode();
         updateView();
-
     }
 
     @Override
@@ -85,24 +78,6 @@ public class MainActivity extends RoboActionBarActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_about:
-                new AboutNoticeDialog()
-                        .show(getSupportFragmentManager(), "dialog_about_notice");
-                return true;
-            case R.id.info:
-                new InfoDialog()
-                        .show(getSupportFragmentManager(), "dialog_info");
-                return true;
-            case R.id.contact:
-                contactUs();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -112,7 +87,6 @@ public class MainActivity extends RoboActionBarActivity {
         if (requestCode == EDIT_NOTE_RESULT_CODE) {
             if (resultCode == RESULT_OK) updateNote(data);
         }
-
         super.onActivityResult(requestCode, resultCode, data);
     }
 
@@ -122,28 +96,24 @@ public class MainActivity extends RoboActionBarActivity {
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 setListOnItemClickListenersWhenActionMode();
-                // inflate contextual menu
                 mode.getMenuInflater().inflate(R.menu.context_note, menu);
                 return true;
             }
 
             @Override
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                // Nothing
                 return false;
             }
 
             @Override
             public boolean onActionItemClicked(final ActionMode mode, MenuItem item) {
                 switch (item.getItemId()) {
-                    // deletes notes if they are notes to erase; otherwise the contextual mode ends
                     case R.id.action_delete:
                         if (!selectedPositions.isEmpty()) {
                             new AlertDialog.Builder(MainActivity.this)
                                     .setMessage(getString(R.string.delete_notes_alert, selectedPositions.size()))
                                     .setNegativeButton(android.R.string.no, null)
                                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
                                             deleteNotes(selectedPositions);
@@ -160,7 +130,6 @@ public class MainActivity extends RoboActionBarActivity {
 
             @Override
             public void onDestroyActionMode(ActionMode mode) {
-                // Go back to normal mode
                 setListOnItemClickListenersWhenNoActionMode();
                 resetSelectedListItems();
             }
@@ -169,7 +138,7 @@ public class MainActivity extends RoboActionBarActivity {
 
     private void setupNotesAdapter() {
         notesData = new ArrayList<>();
-        for (Note note : noteDAO.fetchAll()) { // Convert to wrapper
+        for (Note note : noteDAO.fetchAll()) {
             NotesAdapter.NoteViewWrapper noteViewWrapper = new NotesAdapter.NoteViewWrapper(note);
             notesData.add(noteViewWrapper);
         }
@@ -178,10 +147,10 @@ public class MainActivity extends RoboActionBarActivity {
     }
 
     private void updateView() {
-        if (notesData.isEmpty()) { // Show message
+        if (notesData.isEmpty()) {
             listView.setVisibility(View.GONE);
             emptyListTextView.setVisibility(View.VISIBLE);
-        } else { // Show list
+        } else {
             listView.setVisibility(View.VISIBLE);
             emptyListTextView.setVisibility(View.GONE);
         }
@@ -198,13 +167,11 @@ public class MainActivity extends RoboActionBarActivity {
 
     private void deleteNotes(ArrayList<Integer> selectedPositions) {
         ArrayList<NotesAdapter.NoteViewWrapper> toRemoveList = new ArrayList<>(selectedPositions.size());
-        // first deletes from the database
         for (int position : selectedPositions) {
             NotesAdapter.NoteViewWrapper noteViewWrapper = notesData.get(position);
             toRemoveList.add(noteViewWrapper);
             noteDAO.delete(noteViewWrapper.getNote());
         }
-        // then deletes from the view (not at the same time)
         for (NotesAdapter.NoteViewWrapper noteToRemove : toRemoveList)
             notesData.remove(noteToRemove);
         updateView();
@@ -223,7 +190,6 @@ public class MainActivity extends RoboActionBarActivity {
         Note updatedNote = ViewNoteActivity.getExtraUpdatedNote(data);
         noteDAO.update(updatedNote);
         for (NotesAdapter.NoteViewWrapper noteViewWrapper : notesData) {
-            // Gets the old note to update it in the view
             if (noteViewWrapper.getNote().getId().equals(updatedNote.getId())) {
                 noteViewWrapper.getNote().setTitle(updatedNote.getTitle());
                 noteViewWrapper.getNote().setContent(updatedNote.getContent());
@@ -245,7 +211,6 @@ public class MainActivity extends RoboActionBarActivity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // See the note when we click on it
                 startActivityForResult(ViewNoteActivity.buildIntent(MainActivity.this, notesData.get(position).getNote()), EDIT_NOTE_RESULT_CODE);
             }
         });
@@ -253,7 +218,6 @@ public class MainActivity extends RoboActionBarActivity {
 
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                // Starts contextual mode to select the items
                 notesData.get(position).setSelected(true);
                 listAdapter.notifyDataSetChanged();
                 selectedPositions.add(position);
@@ -295,18 +259,5 @@ public class MainActivity extends RoboActionBarActivity {
         startActivity(intent);
     }
 
-    public void contactUs() {
-        String[] TO = {"sketch@getscriba.com"};
-        Intent emailIntent = new Intent(Intent.ACTION_SEND);
-        emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-        try {
-            startActivity(Intent.createChooser(emailIntent, "Send mail with ..."));
-            finish();
-        }
-        catch (android.content.ActivityNotFoundException ex) {
-        }
-    }
 
 }

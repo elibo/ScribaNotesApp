@@ -302,9 +302,5 @@
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/layout/activity_settings.xml",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/layout/activity_settings.xml"
-    },
-    {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/layout/dialog_about_notice.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/layout/dialog_about_notice.xml"
     }
 ]

@@ -14,7 +14,6 @@ import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.materialnotes.R;
@@ -24,7 +23,6 @@ import com.materialnotes.util.Strings;
 import java.util.Date;
 
 import no.nordicsemi.android.scriba.hrs.HRSActivity;
-import no.nordicsemi.android.scriba.profile.BleProfileActivity;
 import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
@@ -34,7 +32,6 @@ import roboguice.inject.InjectView;
 public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
-    TextView tv;
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
     @InjectView(R.id.note_content)
@@ -63,17 +60,14 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mode = "select";
-        tv = (TextView) findViewById(R.id.value);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
-        // Starts the components //////////////////////////////////////////////////////////////
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Shows the go back arrow
-        note = (Note) getIntent().getSerializableExtra(EXTRA_NOTE); // gets the note from the intent
-        if (note != null) { // Edit existing note
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        note = (Note) getIntent().getSerializableExtra(EXTRA_NOTE);
+        if (note != null) {
             noteTitleText.setText(com.materialnotes.activity.Html.fromHtml(note.getTitle()));
             noteContentText.setText(com.materialnotes.activity.Html.fromHtml(note.getContent()));
         } else { // New note
-
             note = new Note();
             note.setCreatedAt(new Date());
         }
@@ -88,9 +82,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                tv.setText(String.valueOf(HRSActivity.mHrmValue));
                                 formatText();
-
                             }
                         });
                     }
@@ -225,15 +217,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setText(ssbContent);
     }
 
-    public void clearAllFormats(){
-
+   /* public void clearAllFormats(){
         String nfTitle=noteTitleText.getText().toString();
         String nfContent=noteContentText.getText().toString();
         noteTitleText.setText(nfTitle);
         noteContentText.setText(nfContent);
-
-
-    }
+    }*/
 
     public void formatText() {
 
@@ -252,12 +241,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void selectText(){
+       // clearFormat();
         tags(true);
         if (!mode.equals("select")) {
             Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "select";
         }
-        //clearFormat();
     }
 
     public void boldItalicText() {
@@ -327,7 +316,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     /**
-     * Shows or hides the copy/paste tags when text is selected
+     * Shows or hides the copy/paste tags when text is selected, onActionItemClicked must be always false if you want the
+     * copy/paste functions to work even if they don't show. If it's true then the app won't be able to copy/paste and you'll
+     * have to implement it manually to the app yourself.
      */
     public void tags(final boolean tag) {
 
@@ -337,8 +328,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 return tag;
             }
 
-            public void onDestroyActionMode(ActionMode mode) {
-            }
+            public void onDestroyActionMode(ActionMode mode) {}
 
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 return tag;
@@ -357,8 +347,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 return tag;
             }
 
-            public void onDestroyActionMode(ActionMode mode) {
-            }
+            public void onDestroyActionMode(ActionMode mode) {}
 
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 return tag;

@@ -115,7 +115,7 @@ public class ViewNoteActivity extends RoboActionBarActivity {
 
         super.onActivityResult(requestCode, resultCode, data);
     }
-    
+
 
     @Override
     public void onBackPressed() {

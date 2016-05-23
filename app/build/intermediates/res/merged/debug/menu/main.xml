@@ -8,21 +8,4 @@
         android:title="@string/bluetooth"
         android:onClick="connectBle" />
 
-    <item
-        android:id="@+id/action_about"
-        NotepadApp:showAsAction="never"
-        android:title="@string/action_about_notice" />
-
-    <item
-        android:id="@+id/contact"
-        NotepadApp:showAsAction="never"
-        android:title="@string/contact"
-        />
-
-    <item
-        android:id="@+id/info"
-        NotepadApp:showAsAction="never"
-        android:title="@string/info"
-
-        />
 </menu>
