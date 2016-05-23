@@ -17,7 +17,6 @@
         android:id="@+id/contact"
         NotepadApp:showAsAction="never"
         android:title="@string/contact"
-        android:onClick="contactUs"
         />
 
     <item

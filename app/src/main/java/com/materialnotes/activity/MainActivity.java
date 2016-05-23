@@ -24,9 +24,7 @@ import com.materialnotes.widget.NotesAdapter;
 import com.shamanland.fab.FloatingActionButton;
 
 import java.util.ArrayList;
-
 import javax.inject.Inject;
-
 import no.nordicsemi.android.scriba.hrs.HRSActivity;
 import no.nordicsemi.android.scriba.profile.BleProfileActivity;
 import roboguice.activity.RoboActionBarActivity;
@@ -100,6 +98,9 @@ public class MainActivity extends RoboActionBarActivity {
             case R.id.info:
                 new InfoDialog()
                         .show(getSupportFragmentManager(), "dialog_info");
+                return true;
+            case R.id.contact:
+                contactUs();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -312,7 +313,7 @@ public class MainActivity extends RoboActionBarActivity {
     }
 
 
-    public void contactUs(MenuItem item) {
+    public void contactUs() {
         String[] TO = {"sketch@getscriba.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
