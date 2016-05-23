@@ -9,7 +9,7 @@
         android:onClick="connectBle" />
 
     <item
-        android:id="@+id/action_about_info"
+        android:id="@+id/action_about"
         NotepadApp:showAsAction="never"
         android:title="@string/action_about_notice" />
 
@@ -18,5 +18,12 @@
         NotepadApp:showAsAction="never"
         android:title="@string/contact"
         android:onClick="contactUs"
+        />
+
+    <item
+        android:id="@+id/info"
+        NotepadApp:showAsAction="never"
+        android:title="@string/info"
+
         />
 </menu>

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/layout-v15/dialog_info.xml",
+        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/layout-v15/dialog_info.xml"
+    },
+    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/layout-v15/notes_row.xml",
         "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/layout-v15/notes_row.xml"
     }

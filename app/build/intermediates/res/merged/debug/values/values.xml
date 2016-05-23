@@ -518,6 +518,9 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="contact">Contact Us</string>
     <string name="content_required">The note must have content</string>
+    <string name="dds">Dublin Design Studio</string>
+    <string name="ddsaddress">Docklands Innovation Park, East Wall Road</string>
+    <string name="ddsphone">+ 353 1 902 3944</string>
     <string name="delete_notes_alert">Delete %s note(s)?</string>
     <string name="dfu_action_abort">Abort</string>
     <string name="dfu_status_aborted">Aborted</string>
@@ -589,6 +592,7 @@
     <string name="hrs_location_other">Reserved</string>
     <string name="hrs_position_label">sensor position</string>
     <string name="hrs_value_unit">bpm</string>
+    <string name="info">Info</string>
     <string name="label_created_at">Created at:</string>
     <string name="label_updated_at">Updated at:</string>
     <string formatted="false" name="log">%1$tR:%1$tS.%1$tL</string>

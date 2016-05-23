@@ -19,6 +19,7 @@ import com.materialnotes.data.Note;
 import com.materialnotes.data.dao.NoteDAO;
 import com.materialnotes.view.ShowHideOnScroll;
 import com.materialnotes.widget.AboutNoticeDialog;
+import com.materialnotes.widget.InfoDialog;
 import com.materialnotes.widget.NotesAdapter;
 import com.shamanland.fab.FloatingActionButton;
 
@@ -92,9 +93,13 @@ public class MainActivity extends RoboActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_about_info:
+            case R.id.action_about:
                 new AboutNoticeDialog()
                         .show(getSupportFragmentManager(), "dialog_about_notice");
+                return true;
+            case R.id.info:
+                new InfoDialog()
+                        .show(getSupportFragmentManager(), "dialog_info");
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -114,9 +119,6 @@ public class MainActivity extends RoboActionBarActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /**
-     * Make the call to the contextual mode.
-     */
     private void setupActionModeCallback() {
         actionModeCallback = new ActionMode.Callback() {
 
@@ -172,9 +174,7 @@ public class MainActivity extends RoboActionBarActivity {
         };
     }
 
-    /**
-     * Starts notes adaptor.
-     */
+
     private void setupNotesAdapter() {
         notesData = new ArrayList<>();
         for (Note note : noteDAO.fetchAll()) { // Convert to wrapper
@@ -253,9 +253,7 @@ public class MainActivity extends RoboActionBarActivity {
         listAdapter.notifyDataSetChanged();
     }
 
-    /**
-     * Starts the actions in the list when clicking on its items while the contextual mode is not active
-     */
+
     private void setListOnItemClickListenersWhenNoActionMode() {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -280,9 +278,7 @@ public class MainActivity extends RoboActionBarActivity {
         });
     }
 
-    /**
-     * Starts the list' actions when we click on its items while the contextual menu is on
-     */
+
     private void setListOnItemClickListenersWhenActionMode() {
         listView.setOnItemLongClickListener(null);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -331,6 +327,5 @@ public class MainActivity extends RoboActionBarActivity {
         catch (android.content.ActivityNotFoundException ex) {
         }
     }
-
 
 }
