@@ -34,6 +34,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @InjectView(R.id.note_content)
     private EditText noteContentText;
     private Note note;
+    private Thread values,formatting;
+    private boolean isLocked;
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
     private String mode;
@@ -55,6 +57,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mode = "select";
+        isLocked=false;
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -67,7 +70,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note.setCreatedAt(new Date());
         }
 
-        Thread t = new Thread() {
+        values = new Thread() {
 
             @Override
             public void run() {
@@ -77,7 +80,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                formatText();
+
+                               // formatText();
                             }
                         });
                     }
@@ -85,7 +89,44 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 }
             }
         };
-        t.start();
+
+        formatting = new Thread() {
+
+            @Override
+            public void run() {
+                try {
+                    while (!isInterrupted()) {
+                        Thread.sleep(500);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                               // formatText();
+                            }
+                        });
+                    }
+                } catch (InterruptedException e) {
+                }
+            }
+        };
+
+        values.start();
+        formatting.start();
+
+    }
+
+    @Override
+    public void onUserInteraction() {
+
+        try {
+            lock(formatting);
+            formatText();
+            if (HRSActivity.mHrmValue<50){
+                unlock(formatting);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        super.onUserInteraction();
     }
 
     @Override
@@ -313,40 +354,30 @@ public class EditNoteActivity extends RoboActionBarActivity {
      * Shows or hides the copy/paste tags when text is selected, onActionItemClicked must be always false if you want the
      * copy/paste functions to work even if they don't show. If it's true then the app won't be able to copy/paste and you'll
      * have to implement it manually to the app yourself.
-     */
+     **/
     public void tags(final boolean tag) {
 
         noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
-
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
                 return tag;
             }
-
             public void onDestroyActionMode(ActionMode mode) {}
-
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 return tag;
             }
-
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
                 return false;
             }
-
         });
 
-
         noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
-
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
                 return tag;
             }
-
             public void onDestroyActionMode(ActionMode mode) {}
-
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 return tag;
             }
-
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
                 return false;
             }
@@ -354,6 +385,20 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         noteContentText.setLongClickable(tag);
         noteTitleText.setLongClickable(tag);
+    }
+
+    public synchronized void lock(Thread thread) throws InterruptedException {
+
+        while(isLocked){
+            thread.wait();
+        }
+        isLocked = true;
+    }
+
+    public synchronized void unlock(Thread thread){
+
+        isLocked = false;
+        thread.notify();
     }
 
 }

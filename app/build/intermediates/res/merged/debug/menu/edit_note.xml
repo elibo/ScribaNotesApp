@@ -6,7 +6,7 @@
         android:id="@+id/clearAll"
         NotepadApp:showAsAction="always"
         android:title="CLEAR" />
-    
+
     <item
         android:id="@+id/clear"
         NotepadApp:showAsAction="always"
