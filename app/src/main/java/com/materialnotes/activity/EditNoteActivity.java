@@ -89,7 +89,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 }
             }
         };
-        v.start();
     }
 
     @Override
