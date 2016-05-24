@@ -13,12 +13,16 @@ import android.text.style.UnderlineSpan;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.util.Strings;
 import java.util.Date;
+import java.util.Objects;
+
 import no.nordicsemi.android.scriba.hrs.HRSActivity;
 import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
@@ -34,8 +38,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @InjectView(R.id.note_content)
     private EditText noteContentText;
     private Note note;
-    private Thread values,formatting;
-    private boolean isLocked;
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
     private String mode;
@@ -57,7 +59,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mode = "select";
-        isLocked=false;
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -70,7 +71,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note.setCreatedAt(new Date());
         }
 
-        values = new Thread() {
+        Thread v = new Thread() {
 
             @Override
             public void run() {
@@ -80,8 +81,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-
-                               // formatText();
+                                formatText();
                             }
                         });
                     }
@@ -89,44 +89,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 }
             }
         };
-
-        formatting = new Thread() {
-
-            @Override
-            public void run() {
-                try {
-                    while (!isInterrupted()) {
-                        Thread.sleep(500);
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                               // formatText();
-                            }
-                        });
-                    }
-                } catch (InterruptedException e) {
-                }
-            }
-        };
-
-        values.start();
-        formatting.start();
-
-    }
-
-    @Override
-    public void onUserInteraction() {
-
-        try {
-            lock(formatting);
-            formatText();
-            if (HRSActivity.mHrmValue<50){
-                unlock(formatting);
-            }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        super.onUserInteraction();
+        v.start();
     }
 
     @Override
@@ -385,20 +348,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         noteContentText.setLongClickable(tag);
         noteTitleText.setLongClickable(tag);
-    }
-
-    public synchronized void lock(Thread thread) throws InterruptedException {
-
-        while(isLocked){
-            thread.wait();
-        }
-        isLocked = true;
-    }
-
-    public synchronized void unlock(Thread thread){
-
-        isLocked = false;
-        thread.notify();
     }
 
 }
