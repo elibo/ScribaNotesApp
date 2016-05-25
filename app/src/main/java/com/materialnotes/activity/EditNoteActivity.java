@@ -20,6 +20,9 @@ import android.widget.Toast;
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.util.Strings;
+
+import org.w3c.dom.Text;
+
 import java.util.Date;
 import java.util.Objects;
 
@@ -38,6 +41,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @InjectView(R.id.note_content)
     private EditText noteContentText;
     private Note note;
+    private TextView tv,tv2;
+    private Thread t,t2;
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
     private String mode;
@@ -59,6 +64,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mode = "select";
+        tv=(TextView)findViewById(R.id.tv);
+        tv2=(TextView)findViewById(R.id.tv2);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -71,24 +78,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note.setCreatedAt(new Date());
         }
 
-        Thread v = new Thread() {
+        firstThread();
 
-            @Override
-            public void run() {
-                try {
-                    while (!isInterrupted()) {
-                        Thread.sleep(500);
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                formatText();
-                            }
-                        });
-                    }
-                } catch (InterruptedException e) {
-                }
-            }
-        };
     }
 
     @Override
@@ -224,34 +215,43 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void formatText() {
 
-        if (HRSActivity.mHrmValue > 800) {
+        if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("delete")) {
+            deleteText();
+        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("bi")) {
+            boldItalicText();
+        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("hl")) {
+            highlightText();
+        } else if (mode.equals("select")) {
             selectText();
-        } else if (HRSActivity.mHrmValue >= 500 && HRSActivity.mHrmValue < 800) {
+        }
+       /* if (HRSActivity.mHrmValue > 900) {
+            selectText();
+        } else if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue <= 900) {
             tags(false);
             highlightText();
-        } else if (HRSActivity.mHrmValue < 500 && HRSActivity.mHrmValue >= 250) {
+        } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
             tags(false);
             boldItalicText();
-        } else if (HRSActivity.mHrmValue > 0 && HRSActivity.mHrmValue < 250) {
+        } else if (HRSActivity.mHrmValue > 50 && HRSActivity.mHrmValue < 300) {
             tags(false);
             deleteText();
-        }
+        }*/
     }
 
     public void selectText(){
         tags(true);
-        if (!mode.equals("select")) {
+        /*if (!mode.equals("select")) {
             Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "select";
-        }
+        }*/
     }
 
     public void boldItalicText() {
-
-        if (!mode.equals("bi")) {
+        tags(false);
+       /* if (!mode.equals("bi")) {
             Snackbar.make(getCurrentFocus(), "BOLD_ITALIC MODE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "bi";
-        }
+        }*/
 
         if (noteContentText.hasSelection()) {
 
@@ -270,10 +270,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void highlightText() {
 
-        if (!mode.equals("hl")) {
+        tags(false);
+        /*if (!mode.equals("hl")) {
             Snackbar.make(getCurrentFocus(), "HIGHLIGHT MODE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "hl";
-        }
+        }*/
 
         if (noteContentText.hasSelection()) {
 
@@ -289,11 +290,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void deleteText() {
-
-        if (!mode.equals("delete")) {
+        tags(false);
+        /*if (!mode.equals("delete")) {
             Snackbar.make(getCurrentFocus(), "DELETE MODE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "delete";
-        }
+        }*/
 
         if (noteContentText.hasSelection()) {
 
@@ -347,6 +348,89 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         noteContentText.setLongClickable(tag);
         noteTitleText.setLongClickable(tag);
+    }
+
+    public void secondThread(){
+
+        t2 = new Thread() {
+
+            @Override
+            public void run() {
+                try {
+                    while (!isInterrupted()) {
+                        Thread.sleep(1000);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                tv2.setText(String.valueOf(HRSActivity.mHrmValue));
+                                formatText();
+                                deselectText();
+                            }
+                        });
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+        };
+        t2.start();
+    }
+
+    public void firstThread(){
+        t = new Thread() {
+
+            @Override
+            public void run() {
+                try {
+                    while (!isInterrupted()) {
+                        Thread.sleep(500);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                tv.setText(String.valueOf(HRSActivity.mHrmValue));
+                                mode();
+                            }
+                        });
+                    }
+                } catch (InterruptedException e) {
+                }
+            }
+        };
+        t.start();
+    }
+
+    public void deselectText(){
+        if(Float.valueOf(tv2.getText().toString()) < 30){
+            t2.interrupt();
+            firstThread();
+            if(noteTitleText.hasSelection()){
+                noteTitleText.clearFocus();
+            } else if(noteContentText.hasSelection()){
+                noteContentText.clearFocus();
+            }
+        }
+    }
+
+    public void mode(){
+        if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 901) {
+            mode="hl";
+            Snackbar.make(getCurrentFocus(), "HIGHLIGHT MODE", Snackbar.LENGTH_INDEFINITE).show();
+            secondThread();
+            t.interrupt();
+        } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 601) {
+            mode="bi";
+            Snackbar.make(getCurrentFocus(), "BOLD_ITALIC MODE", Snackbar.LENGTH_INDEFINITE).show();
+            secondThread();
+            t.interrupt();
+        } else if (HRSActivity.mHrmValue < 301 && HRSActivity.mHrmValue > 50) {
+            mode="delete";
+            Snackbar.make(getCurrentFocus(), "DELETE MODE", Snackbar.LENGTH_INDEFINITE).show();
+            secondThread();
+            t.interrupt();
+        }else if(HRSActivity.mHrmValue > 900){
+            mode="select";
+            Snackbar.make(getCurrentFocus(), "SELECT MODE", Snackbar.LENGTH_INDEFINITE).show();
+        }
     }
 
 }
