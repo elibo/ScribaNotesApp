@@ -36,7 +36,8 @@ import roboguice.inject.InjectView;
 public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
-    private static final String TAG = "Mode";
+   // private static final String TAG = "Mode";
+    private String mode;
 
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
@@ -87,6 +88,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         valTv2 = (TextView)findViewById(R.id.valTv2);
         valTv2.setText(String.valueOf(100.0));
         tv = new TextView(this);
+        mode="";
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -94,11 +96,10 @@ public class EditNoteActivity extends RoboActionBarActivity {
         if (note != null) {
             noteTitleText.setText(com.materialnotes.activity.Html.fromHtml(note.getTitle()));
             noteContentText.setText(com.materialnotes.activity.Html.fromHtml(note.getContent()));
-        } else { // New note
+        } else {
             note = new Note();
             note.setCreatedAt(new Date());
         }
-
         exitMode();
     }
 
@@ -323,7 +324,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(1000);
+                        Thread.sleep(500);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -359,7 +360,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(1000);
+                        Thread.sleep(500);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -377,15 +378,22 @@ public class EditNoteActivity extends RoboActionBarActivity {
         t2.start();
     }
 
+    public void select(){
+        tags(true);
+        mode="sl";
+
+    }
+
     public void formattingText(){
-        if ((noteTitleText.hasSelection() || noteContentText.hasSelection())&& valTv.getText().equals("Mode: Delete")) {
+
+        if ((noteTitleText.hasSelection() || noteContentText.hasSelection())&& mode.equals("dl")){ //valTv.getText().equals("Mode: Delete")) {
             deleteText();
-        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && valTv.getText().equals("Mode: Underline")) {
+        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("ul")){ //valTv.getText().equals("Mode: Underline")) {
             boldItalicText();
-        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && valTv.getText().equals("Mode: Highlight")) {
+        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("hl")){ //valTv.getText().equals("Mode: Highlight")) {
             highlightText();
-        } else {
-            tags(true);
+        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("sl")){
+            select();
         }
 
     }
@@ -393,22 +401,23 @@ public class EditNoteActivity extends RoboActionBarActivity {
     public void modeFormat() {
 
         if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 901) {
-            valTv.setText("Mode: Highlight");
-            //Snackbar.make(findViewById(android.R.id.content), "Highlight Mode", Snackbar.LENGTH_INDEFINITE).show();
+            valTv.setText("Highlight");
+            mode="hl";
             startMode();
             t.interrupt();
         } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 601) {
-            valTv.setText("Mode: Underline");
-            //Snackbar.make(findViewById(android.R.id.content), "Underline Mode", Snackbar.LENGTH_INDEFINITE).show();
+            valTv.setText("Underline");
+            mode="ul";
             startMode();
             t.interrupt();
         } else if (HRSActivity.mHrmValue < 301 && HRSActivity.mHrmValue > 50) {
-            valTv.setText("Mode: Delete");
-           // Snackbar.make(findViewById(android.R.id.content), "Delete Mode", Snackbar.LENGTH_INDEFINITE).show();
+            valTv.setText("Delete");
+            mode="dl";
             startMode();
             t.interrupt();
         }else if(HRSActivity.mHrmValue > 900){
-            valTv.setText("Mode: Select");
+            valTv.setText("Select");
+            mode="sl";
         }
     }
 
