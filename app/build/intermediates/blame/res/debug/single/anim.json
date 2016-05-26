@@ -16,12 +16,12 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_slide_in_top.xml"
     },
     {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_slide_out_top.xml"
-    },
-    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/anim/floating_action_button_hide.xml",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.shamanland/fab/0.0.5/res/anim/floating_action_button_hide.xml"
+    },
+    {
+        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/anim/abc_slide_out_top.xml"
     },
     {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",

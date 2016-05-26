@@ -101,6 +101,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         exitMode();
     }
+    
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
