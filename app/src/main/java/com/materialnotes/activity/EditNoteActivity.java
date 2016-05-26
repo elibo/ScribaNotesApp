@@ -67,8 +67,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
     public void onActionModeStarted(final ActionMode mode) {
         if (mActionMode == null) {
             mActionMode = mode;
-            Menu menu = mode.getMenu();
-            mode.getMenuInflater().inflate(R.menu.my_custom_menu, menu);
+            //Menu menu = mode.getMenu();
+           // mode.getMenuInflater().inflate(R.menu.my_custom_menu, menu);
         }
         super.onActionModeStarted(mode);
 
@@ -101,8 +101,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
         exitMode();
     }
-    
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -119,9 +117,9 @@ public class EditNoteActivity extends RoboActionBarActivity {
             case R.id.clear:
                 clearFormat();
                 return true;
-            case R.id.clearAll:
+           /* case R.id.clearAll:
                 clearAllFormats();
-                return true;
+                return true;*/
             case R.id.action_save:
                 if (isNoteFormOk()) {
                     setNoteResult();
@@ -228,15 +226,15 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setText(ssbContent);
     }
 
-    public void clearAllFormats(){
+/*    public void clearAllFormats(){
         String nfTitle=noteTitleText.getText().toString();
         String nfContent=noteContentText.getText().toString();
         noteTitleText.setText(nfTitle);
         noteContentText.setText(nfContent);
-    }
+    }*/
 
     public void boldItalicText() {
-
+        tags(false);
         if (noteContentText.hasSelection()) {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
@@ -253,7 +251,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void highlightText() {
-
+        tags(false);
         if (noteContentText.hasSelection()) {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
@@ -268,7 +266,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void deleteText() {
-
+        tags(false);
         if (noteContentText.hasSelection()) {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
@@ -381,13 +379,10 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void formattingText(){
         if ((noteTitleText.hasSelection() || noteContentText.hasSelection())&& valTv.getText().equals("Mode: Delete")) {
-            tags(false);
             deleteText();
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && valTv.getText().equals("Mode: Underline")) {
-            tags(false);
             boldItalicText();
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && valTv.getText().equals("Mode: Highlight")) {
-            tags(false);
             highlightText();
         } else {
             tags(true);
