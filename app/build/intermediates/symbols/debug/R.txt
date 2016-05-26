@@ -901,7 +901,7 @@ int id action_mode_bar 0x7f0f0063
 int id action_mode_bar_stub 0x7f0f0062
 int id action_mode_close_button 0x7f0f0048
 int id action_save 0x7f0f00c9
-int id action_settings 0x7f0f00cc
+int id action_settings 0x7f0f00cd
 int id actionbar 0x7f0f0077
 int id actionbar_contents 0x7f0f0078
 int id activity_chooser_view_content 0x7f0f0049
@@ -926,6 +926,7 @@ int id center_vertical 0x7f0f001f
 int id checkbox 0x7f0f005e
 int id chronometer 0x7f0f00b3
 int id clear 0x7f0f007d
+int id clear1 0x7f0f00cc
 int id clearAll 0x7f0f00c8
 int id clip_horizontal 0x7f0f002b
 int id clip_vertical 0x7f0f002c
@@ -1074,11 +1075,11 @@ int id toolbar_spinner 0x7f0f00bd
 int id tools 0x7f0f00a9
 int id top 0x7f0f0025
 int id topPanel 0x7f0f0053
-int id tv 0x7f0f0084
-int id tv2 0x7f0f0085
 int id undo 0x7f0f007b
 int id up 0x7f0f0009
 int id useLogo 0x7f0f0014
+int id valTv 0x7f0f0084
+int id valTv2 0x7f0f0085
 int id view_offset_helper 0x7f0f000a
 int id whiteboard 0x7f0f003c
 int id whiteboard_marker 0x7f0f00c3
@@ -1172,7 +1173,8 @@ int menu context_note 0x7f100000
 int menu edit_note 0x7f100001
 int menu help 0x7f100002
 int menu main 0x7f100003
-int menu settings_and_about 0x7f100004
+int menu my_custom_menu 0x7f100004
+int menu settings_and_about 0x7f100005
 int mipmap ic_launcher 0x7f030000
 int mipmap scriba_launcher 0x7f030001
 int raw ble_app_hrs_dfu_all_in_one_sdk_v9_0 0x7f070000

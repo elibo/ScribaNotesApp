@@ -131,7 +131,7 @@
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="b091db9584c6c8ab7dc90cc9ed898085143f12c3">
+        sha1="3c9362d63b390ae5637d9b7c8bbc71d4bafc354d">
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_36a07399a33081b3686651209c9182e346788a8b/classes.dex" />
     </item>
     <item
@@ -145,7 +145,7 @@
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="030bca4ed4d0b9d1804dafc5ad3d183057951665">
+        sha1="36a5f24f12aae4dbd8609b954800f6c2a1e3593e">
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cb8cb799693ede8eb8ee0f8209cadfd3b6d6205b/classes.dex" />
     </item>
     <item

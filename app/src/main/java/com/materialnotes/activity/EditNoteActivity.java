@@ -36,17 +36,19 @@ import roboguice.inject.InjectView;
 public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
+    private static final String TAG = "Mode";
+
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
     @InjectView(R.id.note_content)
     private EditText noteContentText;
     private Note note;
-    private TextView valTv,valTv2;
+    public TextView valTv,valTv2;
     TextView tv;
-    private Thread t,t2;
+    public Thread t,t2;
     private SpannableStringBuilder ssbContent;
     private SpannableStringBuilder ssbTitle;
-    //private String mode;
+    private ActionMode mActionMode = null;
 
 
     public static Intent buildIntent(Context context, Note note) {
@@ -62,16 +64,29 @@ public class EditNoteActivity extends RoboActionBarActivity {
     public static Note getExtraNote(Intent intent) {return (Note) intent.getExtras().get(EXTRA_NOTE);}
 
     @Override
+    public void onActionModeStarted(final ActionMode mode) {
+        if (mActionMode == null) {
+            mActionMode = mode;
+            Menu menu = mode.getMenu();
+            mode.getMenuInflater().inflate(R.menu.my_custom_menu, menu);
+        }
+        super.onActionModeStarted(mode);
+
+    }
+
+    @Override
+    public void onActionModeFinished(ActionMode mode) {
+        mActionMode = null;
+        super.onActionModeFinished(mode);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //mode = "select";
-
-        valTv = (TextView)findViewById(R.id.tv);
-        valTv2 = (TextView)findViewById(R.id.tv2);
+        valTv = (TextView)findViewById(R.id.valTv);
+        valTv2 = (TextView)findViewById(R.id.valTv2);
         valTv2.setText(String.valueOf(100.0));
-
         tv = new TextView(this);
-
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -83,8 +98,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note = new Note();
             note.setCreatedAt(new Date());
         }
-
-        tv = new TextView(this);
 
         exitMode();
     }
@@ -220,33 +233,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setText(nfContent);
     }
 
-/*    public void formatText() {
-        if (HRSActivity.mHrmValue > 900) {
-            selectText();
-        } else if (HRSActivity.mHrmValue >= 600 && HRSActivity.mHrmValue <= 900) {
-            highlightText();
-        } else if (HRSActivity.mHrmValue < 600 && HRSActivity.mHrmValue >= 300) {
-            boldItalicText();
-        } else if (HRSActivity.mHrmValue > 50 && HRSActivity.mHrmValue < 300) {
-            deleteText();
-        }
-    }*/
-
-
-    public void selectText(){
-        tags(true);
-       /* if (!mode.equals("select")) {
-            Snackbar.make(getCurrentFocus(), "SELECTION MODE", Snackbar.LENGTH_INDEFINITE).show();
-            mode = "select";
-        }*/
-    }
-
     public void boldItalicText() {
-        tags(false);
-        /*if (!mode.equals("bi")) {
-            Snackbar.make(getCurrentFocus(), "BOLD_ITALIC MODE", Snackbar.LENGTH_INDEFINITE).show();
-            mode = "bi";
-        }*/
 
         if (noteContentText.hasSelection()) {
 
@@ -265,12 +252,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void highlightText() {
 
-        tags(false);
-        /*if (!mode.equals("hl")) {
-            Snackbar.make(getCurrentFocus(), "HIGHLIGHT MODE", Snackbar.LENGTH_INDEFINITE).show();
-            mode = "hl";
-        }*/
-
         if (noteContentText.hasSelection()) {
 
             ssbContent = (SpannableStringBuilder) noteContentText.getText();
@@ -285,11 +266,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void deleteText() {
-        tags(false);
-        /*if (!mode.equals("delete")) {
-            Snackbar.make(getCurrentFocus(), "DELETE MODE", Snackbar.LENGTH_INDEFINITE).show();
-            mode = "delete";
-        }*/
 
         if (noteContentText.hasSelection()) {
 
@@ -403,13 +379,18 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void formattingText(){
         if ((noteTitleText.hasSelection() || noteContentText.hasSelection())&& valTv.getText().equals("Mode: Delete")) {
+            tags(false);
             deleteText();
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && valTv.getText().equals("Mode: Underline")) {
+            tags(false);
             boldItalicText();
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && valTv.getText().equals("Mode: Highlight")) {
+            tags(false);
             highlightText();
-        } else
-            selectText();
+        } else {
+            tags(true);
+        }
+
     }
 
     public void modeFormat() {
