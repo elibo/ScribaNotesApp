@@ -34,7 +34,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_margin="16dp"
-            android:text="Mode:"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView

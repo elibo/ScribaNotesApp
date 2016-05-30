@@ -68,8 +68,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
     public void onActionModeStarted(final ActionMode mode) {
         if (mActionMode == null) {
             mActionMode = mode;
-            //Menu menu = mode.getMenu();
-           // mode.getMenuInflater().inflate(R.menu.my_custom_menu, menu);
         }
         super.onActionModeStarted(mode);
 
@@ -85,6 +83,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         valTv = (TextView)findViewById(R.id.valTv);
+        valTv.setText(String.valueOf(100.0));
         valTv2 = (TextView)findViewById(R.id.valTv2);
         valTv2.setText(String.valueOf(100.0));
         tv = new TextView(this);
@@ -324,12 +323,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(500);
+                        Thread.sleep(1000);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 // update TextView here!
-                                tv.setText(String.valueOf(HRSActivity.mHrmValue));
+                                valTv.setText(String.valueOf(HRSActivity.mHrmValue));
                                 modeFormat();
                             }
                         });
@@ -360,7 +359,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(500);
+                        Thread.sleep(1000);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -401,22 +400,26 @@ public class EditNoteActivity extends RoboActionBarActivity {
     public void modeFormat() {
 
         if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 901) {
-            valTv.setText("Highlight");
+            //valTv.setText("Highlight");
+            Snackbar.make(getCurrentFocus(),"HIGHLIGHT",Snackbar.LENGTH_INDEFINITE).show();
             mode="hl";
             startMode();
             t.interrupt();
         } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 601) {
-            valTv.setText("Underline");
+            //valTv.setText("Underline");
+            Snackbar.make(getCurrentFocus(),"UNDERLINE",Snackbar.LENGTH_INDEFINITE).show();
             mode="ul";
             startMode();
             t.interrupt();
         } else if (HRSActivity.mHrmValue < 301 && HRSActivity.mHrmValue > 50) {
-            valTv.setText("Delete");
+            //valTv.setText("Delete");
+            Snackbar.make(getCurrentFocus(),"DELETE",Snackbar.LENGTH_INDEFINITE).show();
             mode="dl";
             startMode();
             t.interrupt();
         }else if(HRSActivity.mHrmValue > 900){
-            valTv.setText("Select");
+            //valTv.setText("Select");
+            Snackbar.make(getCurrentFocus(),"SELECT",Snackbar.LENGTH_INDEFINITE).show();
             mode="sl";
         }
     }

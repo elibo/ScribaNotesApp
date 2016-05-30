@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/menu/my_custom_menu.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/menu/my_custom_menu.xml"
-    },
-    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/menu/edit_note.xml",
         "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/menu/edit_note.xml"
     },

@@ -2764,7 +2764,7 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0f0062;
         public static final int action_mode_close_button=0x7f0f0048;
         public static final int action_save=0x7f0f00c8;
-        public static final int action_settings=0x7f0f00cc;
+        public static final int action_settings=0x7f0f00cb;
         public static final int actionbar=0x7f0f0077;
         public static final int actionbar_contents=0x7f0f0078;
         public static final int activity_chooser_view_content=0x7f0f0049;
@@ -2789,7 +2789,6 @@ containing a value of this type.
         public static final int checkbox=0x7f0f005e;
         public static final int chronometer=0x7f0f00b3;
         public static final int clear=0x7f0f007d;
-        public static final int clear1=0x7f0f00cb;
         public static final int clip_horizontal=0x7f0f002b;
         public static final int clip_vertical=0x7f0f002c;
         public static final int closeButton=0x7f0f0086;
@@ -3041,8 +3040,7 @@ containing a value of this type.
         public static final int edit_note=0x7f100001;
         public static final int help=0x7f100002;
         public static final int main=0x7f100003;
-        public static final int my_custom_menu=0x7f100004;
-        public static final int settings_and_about=0x7f100005;
+        public static final int settings_and_about=0x7f100004;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
