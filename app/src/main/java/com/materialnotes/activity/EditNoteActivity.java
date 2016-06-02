@@ -36,7 +36,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
     public TextView valTv, valTv2;
-    public Thread t, t2;
+    public Thread first, second;
     private String mode;
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
@@ -76,8 +76,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
         mActionMode = null;
         super.onActionModeFinished(mode);
     }
-
-
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -343,7 +341,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
      **/
 
     public void firstThread() {
-        t = new Thread() {
+        first = new Thread() {
 
             @Override
             public void run() {
@@ -363,39 +361,37 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 }
             }
         };
-        t.start();
+        first.start();
     }
 
     public void stopThread1() {
         if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 901) {
             Snackbar.make(getCurrentFocus(), "HIGHLIGHT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "hl";
-            // secondThread();
-            // t.interrupt();
+            //secondThread();
+            //first.interrupt();
         } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 601) {
             Snackbar.make(getCurrentFocus(), "UNDERLINE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "ul";
-            // secondThread();
-            // t.interrupt();
+            //secondThread();
+            //first.interrupt();
         } else if (HRSActivity.mHrmValue < 301 && HRSActivity.mHrmValue >50) {
             Snackbar.make(getCurrentFocus(), "DELETE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "dl";
             //secondThread();
-            //t.interrupt();
+            //first.interrupt();
         } else if (HRSActivity.mHrmValue > 900) {
             Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
-            // valTv.setText("SELECT");
             mode = "sl";
             //secondThread();
-            //t.interrupt();
+            //first.interrupt();
         }
         secondThread();
-        t.interrupt();
-
+        first.interrupt();
     }
 
     public void secondThread() {
-        t2 = new Thread() {
+        second = new Thread() {
             @Override
             public void run() {
                 try {
@@ -415,12 +411,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
                 }
             }
         };
-        t2.start();
+        second.start();
     }
 
     public void stopThread2() {
         if (Float.valueOf(valTv2.getText().toString()) < 50) {
-            t2.interrupt();
+            second.interrupt();
             firstThread();
         }
     }
