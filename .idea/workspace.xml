@@ -3,7 +3,7 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <target>android-23</target>
+        <target>android-22</target>
       </config>
     </shared>
     <layouts>
@@ -19,9 +19,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d51b3a7b-2e02-4879-9301-601ceb385da6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$3$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$4$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/no/nordicsemi/android/scriba/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/no/nordicsemi/android/scriba/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$4$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/no/nordicsemi/android/scriba/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/no/nordicsemi/android/scriba/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/classes.zip" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/classes.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/resources.zip" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/resources.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$4$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/no/nordicsemi/android/scriba/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/no/nordicsemi/android/scriba/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$4$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/materialnotes/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/materialnotes/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/no/nordicsemi/android/scriba/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/no/nordicsemi/android/scriba/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/materialnotes/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/materialnotes/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/no/nordicsemi/android/scriba/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/no/nordicsemi/android/scriba/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/edit_note.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/edit_note.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="material-notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,20 +105,21 @@
       <file leaf-file-name="EditNoteActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1445783">
-              <caret line="416" column="30" selection-start-line="416" selection-start-column="30" selection-end-line="416" selection-end-column="30" />
+            <state vertical-scroll-proportion="-1.0240964">
+              <caret line="118" column="34" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
               <folding>
                 <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="method#onCreateOptionsMenu#0;class#EditNoteActivity#0" expanded="false" />
+                <element signature="e#3533#4037#0" expanded="true" />
+                <element signature="e#4036#4037#0" expanded="true" />
                 <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#4964#4998#0" expanded="true" />
-                <element signature="e#5172#5208#0" expanded="true" />
-                <element signature="e#5256#5292#0" expanded="true" />
+                <element signature="e#5726#5760#0" expanded="true" />
+                <element signature="e#5934#5970#0" expanded="true" />
+                <element signature="e#6018#6054#0" expanded="true" />
                 <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
@@ -68,28 +129,29 @@
                 <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#10407#10408#0" expanded="true" />
-                <element signature="e#10449#10450#0" expanded="true" />
-                <element signature="e#10527#10528#0" expanded="true" />
-                <element signature="e#10569#10570#0" expanded="true" />
-                <element signature="e#10652#10653#0" expanded="true" />
-                <element signature="e#10696#10697#0" expanded="true" />
-                <element signature="e#10956#10957#0" expanded="true" />
-                <element signature="e#10998#10999#0" expanded="true" />
-                <element signature="e#11076#11077#0" expanded="true" />
-                <element signature="e#11118#11119#0" expanded="true" />
-                <element signature="e#11201#11202#0" expanded="true" />
-                <element signature="e#11245#11246#0" expanded="true" />
+                <element signature="e#11169#11170#0" expanded="true" />
+                <element signature="e#11211#11212#0" expanded="true" />
+                <element signature="e#11289#11290#0" expanded="true" />
+                <element signature="e#11331#11332#0" expanded="true" />
+                <element signature="e#11414#11415#0" expanded="true" />
+                <element signature="e#11458#11459#0" expanded="true" />
+                <element signature="e#11718#11719#0" expanded="true" />
+                <element signature="e#11760#11761#0" expanded="true" />
+                <element signature="e#11838#11839#0" expanded="true" />
+                <element signature="e#11880#11881#0" expanded="true" />
+                <element signature="e#11963#11964#0" expanded="true" />
+                <element signature="e#12007#12008#0" expanded="true" />
                 <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#11550#12235#0" expanded="true" />
-                <element signature="e#11771#12062#0" expanded="true" />
-                <element signature="e#12061#12062#0" expanded="true" />
-                <element signature="e#12234#12235#0" expanded="true" />
+                <element signature="e#12312#12997#0" expanded="true" />
+                <element signature="e#12533#12824#0" expanded="true" />
+                <element signature="e#12823#12824#0" expanded="true" />
+                <element signature="e#12996#12997#0" expanded="true" />
+                <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#13423#14154#0" expanded="true" />
-                <element signature="e#13643#13981#0" expanded="true" />
-                <element signature="e#13980#13981#0" expanded="true" />
-                <element signature="e#14153#14154#0" expanded="true" />
+                <element signature="e#14185#14916#0" expanded="true" />
+                <element signature="e#14405#14743#0" expanded="true" />
+                <element signature="e#14742#14743#0" expanded="true" />
+                <element signature="e#14915#14916#0" expanded="true" />
                 <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
               </folding>
@@ -100,7 +162,7 @@
       <file leaf-file-name="activity_edit_note.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_note.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.018868">
+            <state vertical-scroll-proportion="-3.1509433">
               <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding />
             </state>
@@ -4397,7 +4459,7 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="850ABM52XTW5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ScribaNotes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AppScribaNotes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -4719,7 +4781,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464879270422</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="git android test">
+      <created>1464880343034</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464880343034</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -4732,16 +4800,16 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325723" sideWeight="0.404685" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325723" sideWeight="0.39256865" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325723" sideWeight="0.59531504" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325723" sideWeight="0.60743135" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.34087238" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.32875606" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -4769,7 +4837,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="git android test" />
+    <option name="LAST_COMMIT_MESSAGE" value="git android test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4786,14 +4855,15 @@
             <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#EditNoteActivity#0" expanded="false" />
+            <element signature="e#3533#4037#0" expanded="true" />
+            <element signature="e#4036#4037#0" expanded="true" />
             <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#4964#4998#0" expanded="true" />
-            <element signature="e#5172#5208#0" expanded="true" />
-            <element signature="e#5256#5292#0" expanded="true" />
+            <element signature="e#5726#5760#0" expanded="true" />
+            <element signature="e#5934#5970#0" expanded="true" />
+            <element signature="e#6018#6054#0" expanded="true" />
             <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
@@ -4803,28 +4873,29 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#10407#10408#0" expanded="true" />
-            <element signature="e#10449#10450#0" expanded="true" />
-            <element signature="e#10527#10528#0" expanded="true" />
-            <element signature="e#10569#10570#0" expanded="true" />
-            <element signature="e#10652#10653#0" expanded="true" />
-            <element signature="e#10696#10697#0" expanded="true" />
-            <element signature="e#10956#10957#0" expanded="true" />
-            <element signature="e#10998#10999#0" expanded="true" />
-            <element signature="e#11076#11077#0" expanded="true" />
-            <element signature="e#11118#11119#0" expanded="true" />
-            <element signature="e#11201#11202#0" expanded="true" />
-            <element signature="e#11245#11246#0" expanded="true" />
+            <element signature="e#11169#11170#0" expanded="true" />
+            <element signature="e#11211#11212#0" expanded="true" />
+            <element signature="e#11289#11290#0" expanded="true" />
+            <element signature="e#11331#11332#0" expanded="true" />
+            <element signature="e#11414#11415#0" expanded="true" />
+            <element signature="e#11458#11459#0" expanded="true" />
+            <element signature="e#11718#11719#0" expanded="true" />
+            <element signature="e#11760#11761#0" expanded="true" />
+            <element signature="e#11838#11839#0" expanded="true" />
+            <element signature="e#11880#11881#0" expanded="true" />
+            <element signature="e#11963#11964#0" expanded="true" />
+            <element signature="e#12007#12008#0" expanded="true" />
             <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#11550#12235#0" expanded="true" />
-            <element signature="e#11771#12062#0" expanded="true" />
-            <element signature="e#12061#12062#0" expanded="true" />
-            <element signature="e#12234#12235#0" expanded="true" />
+            <element signature="e#12312#12997#0" expanded="true" />
+            <element signature="e#12533#12824#0" expanded="true" />
+            <element signature="e#12823#12824#0" expanded="true" />
+            <element signature="e#12996#12997#0" expanded="true" />
+            <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#13423#14154#0" expanded="true" />
-            <element signature="e#13643#13981#0" expanded="true" />
-            <element signature="e#13980#13981#0" expanded="true" />
-            <element signature="e#14153#14154#0" expanded="true" />
+            <element signature="e#14185#14916#0" expanded="true" />
+            <element signature="e#14405#14743#0" expanded="true" />
+            <element signature="e#14742#14743#0" expanded="true" />
+            <element signature="e#14915#14916#0" expanded="true" />
             <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>
@@ -4839,14 +4910,15 @@
             <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#EditNoteActivity#0" expanded="false" />
+            <element signature="e#3533#4037#0" expanded="true" />
+            <element signature="e#4036#4037#0" expanded="true" />
             <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#4964#4998#0" expanded="true" />
-            <element signature="e#5172#5208#0" expanded="true" />
-            <element signature="e#5256#5292#0" expanded="true" />
+            <element signature="e#5726#5760#0" expanded="true" />
+            <element signature="e#5934#5970#0" expanded="true" />
+            <element signature="e#6018#6054#0" expanded="true" />
             <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
@@ -4856,28 +4928,29 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#10407#10408#0" expanded="true" />
-            <element signature="e#10449#10450#0" expanded="true" />
-            <element signature="e#10527#10528#0" expanded="true" />
-            <element signature="e#10569#10570#0" expanded="true" />
-            <element signature="e#10652#10653#0" expanded="true" />
-            <element signature="e#10696#10697#0" expanded="true" />
-            <element signature="e#10956#10957#0" expanded="true" />
-            <element signature="e#10998#10999#0" expanded="true" />
-            <element signature="e#11076#11077#0" expanded="true" />
-            <element signature="e#11118#11119#0" expanded="true" />
-            <element signature="e#11201#11202#0" expanded="true" />
-            <element signature="e#11245#11246#0" expanded="true" />
+            <element signature="e#11169#11170#0" expanded="true" />
+            <element signature="e#11211#11212#0" expanded="true" />
+            <element signature="e#11289#11290#0" expanded="true" />
+            <element signature="e#11331#11332#0" expanded="true" />
+            <element signature="e#11414#11415#0" expanded="true" />
+            <element signature="e#11458#11459#0" expanded="true" />
+            <element signature="e#11718#11719#0" expanded="true" />
+            <element signature="e#11760#11761#0" expanded="true" />
+            <element signature="e#11838#11839#0" expanded="true" />
+            <element signature="e#11880#11881#0" expanded="true" />
+            <element signature="e#11963#11964#0" expanded="true" />
+            <element signature="e#12007#12008#0" expanded="true" />
             <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#11550#12235#0" expanded="true" />
-            <element signature="e#11771#12062#0" expanded="true" />
-            <element signature="e#12061#12062#0" expanded="true" />
-            <element signature="e#12234#12235#0" expanded="true" />
+            <element signature="e#12312#12997#0" expanded="true" />
+            <element signature="e#12533#12824#0" expanded="true" />
+            <element signature="e#12823#12824#0" expanded="true" />
+            <element signature="e#12996#12997#0" expanded="true" />
+            <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#13423#14154#0" expanded="true" />
-            <element signature="e#13643#13981#0" expanded="true" />
-            <element signature="e#13980#13981#0" expanded="true" />
-            <element signature="e#14153#14154#0" expanded="true" />
+            <element signature="e#14185#14916#0" expanded="true" />
+            <element signature="e#14405#14743#0" expanded="true" />
+            <element signature="e#14742#14743#0" expanded="true" />
+            <element signature="e#14915#14916#0" expanded="true" />
             <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>
@@ -4903,14 +4976,15 @@
             <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#EditNoteActivity#0" expanded="false" />
+            <element signature="e#3533#4037#0" expanded="true" />
+            <element signature="e#4036#4037#0" expanded="true" />
             <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#4964#4998#0" expanded="true" />
-            <element signature="e#5172#5208#0" expanded="true" />
-            <element signature="e#5256#5292#0" expanded="true" />
+            <element signature="e#5726#5760#0" expanded="true" />
+            <element signature="e#5934#5970#0" expanded="true" />
+            <element signature="e#6018#6054#0" expanded="true" />
             <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
@@ -4920,28 +4994,29 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#10407#10408#0" expanded="true" />
-            <element signature="e#10449#10450#0" expanded="true" />
-            <element signature="e#10527#10528#0" expanded="true" />
-            <element signature="e#10569#10570#0" expanded="true" />
-            <element signature="e#10652#10653#0" expanded="true" />
-            <element signature="e#10696#10697#0" expanded="true" />
-            <element signature="e#10956#10957#0" expanded="true" />
-            <element signature="e#10998#10999#0" expanded="true" />
-            <element signature="e#11076#11077#0" expanded="true" />
-            <element signature="e#11118#11119#0" expanded="true" />
-            <element signature="e#11201#11202#0" expanded="true" />
-            <element signature="e#11245#11246#0" expanded="true" />
+            <element signature="e#11169#11170#0" expanded="true" />
+            <element signature="e#11211#11212#0" expanded="true" />
+            <element signature="e#11289#11290#0" expanded="true" />
+            <element signature="e#11331#11332#0" expanded="true" />
+            <element signature="e#11414#11415#0" expanded="true" />
+            <element signature="e#11458#11459#0" expanded="true" />
+            <element signature="e#11718#11719#0" expanded="true" />
+            <element signature="e#11760#11761#0" expanded="true" />
+            <element signature="e#11838#11839#0" expanded="true" />
+            <element signature="e#11880#11881#0" expanded="true" />
+            <element signature="e#11963#11964#0" expanded="true" />
+            <element signature="e#12007#12008#0" expanded="true" />
             <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#11550#12235#0" expanded="true" />
-            <element signature="e#11771#12062#0" expanded="true" />
-            <element signature="e#12061#12062#0" expanded="true" />
-            <element signature="e#12234#12235#0" expanded="true" />
+            <element signature="e#12312#12997#0" expanded="true" />
+            <element signature="e#12533#12824#0" expanded="true" />
+            <element signature="e#12823#12824#0" expanded="true" />
+            <element signature="e#12996#12997#0" expanded="true" />
+            <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#13423#14154#0" expanded="true" />
-            <element signature="e#13643#13981#0" expanded="true" />
-            <element signature="e#13980#13981#0" expanded="true" />
-            <element signature="e#14153#14154#0" expanded="true" />
+            <element signature="e#14185#14916#0" expanded="true" />
+            <element signature="e#14405#14743#0" expanded="true" />
+            <element signature="e#14742#14743#0" expanded="true" />
+            <element signature="e#14915#14916#0" expanded="true" />
             <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>
@@ -5047,7 +5122,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_note.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.018868">
+        <state vertical-scroll-proportion="-3.1509433">
           <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding />
         </state>
@@ -5058,20 +5133,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1445783">
-          <caret line="416" column="30" selection-start-line="416" selection-start-column="30" selection-end-line="416" selection-end-column="30" />
+        <state vertical-scroll-proportion="-1.0240964">
+          <caret line="118" column="34" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
           <folding>
             <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#EditNoteActivity#0" expanded="false" />
+            <element signature="e#3533#4037#0" expanded="true" />
+            <element signature="e#4036#4037#0" expanded="true" />
             <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#4964#4998#0" expanded="true" />
-            <element signature="e#5172#5208#0" expanded="true" />
-            <element signature="e#5256#5292#0" expanded="true" />
+            <element signature="e#5726#5760#0" expanded="true" />
+            <element signature="e#5934#5970#0" expanded="true" />
+            <element signature="e#6018#6054#0" expanded="true" />
             <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
@@ -5081,28 +5157,29 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#10407#10408#0" expanded="true" />
-            <element signature="e#10449#10450#0" expanded="true" />
-            <element signature="e#10527#10528#0" expanded="true" />
-            <element signature="e#10569#10570#0" expanded="true" />
-            <element signature="e#10652#10653#0" expanded="true" />
-            <element signature="e#10696#10697#0" expanded="true" />
-            <element signature="e#10956#10957#0" expanded="true" />
-            <element signature="e#10998#10999#0" expanded="true" />
-            <element signature="e#11076#11077#0" expanded="true" />
-            <element signature="e#11118#11119#0" expanded="true" />
-            <element signature="e#11201#11202#0" expanded="true" />
-            <element signature="e#11245#11246#0" expanded="true" />
+            <element signature="e#11169#11170#0" expanded="true" />
+            <element signature="e#11211#11212#0" expanded="true" />
+            <element signature="e#11289#11290#0" expanded="true" />
+            <element signature="e#11331#11332#0" expanded="true" />
+            <element signature="e#11414#11415#0" expanded="true" />
+            <element signature="e#11458#11459#0" expanded="true" />
+            <element signature="e#11718#11719#0" expanded="true" />
+            <element signature="e#11760#11761#0" expanded="true" />
+            <element signature="e#11838#11839#0" expanded="true" />
+            <element signature="e#11880#11881#0" expanded="true" />
+            <element signature="e#11963#11964#0" expanded="true" />
+            <element signature="e#12007#12008#0" expanded="true" />
             <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#11550#12235#0" expanded="true" />
-            <element signature="e#11771#12062#0" expanded="true" />
-            <element signature="e#12061#12062#0" expanded="true" />
-            <element signature="e#12234#12235#0" expanded="true" />
+            <element signature="e#12312#12997#0" expanded="true" />
+            <element signature="e#12533#12824#0" expanded="true" />
+            <element signature="e#12823#12824#0" expanded="true" />
+            <element signature="e#12996#12997#0" expanded="true" />
+            <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#13423#14154#0" expanded="true" />
-            <element signature="e#13643#13981#0" expanded="true" />
-            <element signature="e#13980#13981#0" expanded="true" />
-            <element signature="e#14153#14154#0" expanded="true" />
+            <element signature="e#14185#14916#0" expanded="true" />
+            <element signature="e#14405#14743#0" expanded="true" />
+            <element signature="e#14742#14743#0" expanded="true" />
+            <element signature="e#14915#14916#0" expanded="true" />
             <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>

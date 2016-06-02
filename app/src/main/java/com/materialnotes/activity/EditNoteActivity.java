@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,6 +37,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
     public TextView valTv, valTv2;
+    private View.OnTouchListener listener;
     public Thread first, second;
     private String mode;
     @InjectView(R.id.note_title)
@@ -77,11 +79,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
         super.onActionModeFinished(mode);
     }
 
-    @Override
+ /*   @Override
     public boolean onTouchEvent(MotionEvent event) {
-        stopThread1();
+        //stopThread1();
+        valTv.setText("you just touched the screen!");
         return super.onTouchEvent(event);
-    }
+    }*/
 
 
     @Override
@@ -104,6 +107,24 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note.setCreatedAt(new Date());
         }
         firstThread();
+
+        listener=new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (noteTitleText.hasSelection()){
+                    //valTv.setText("You just touched the title!");
+                    stopThread1();
+                }else if (noteContentText.hasSelection()){
+                    //valTv.setText("You just touched the content!");
+                    stopThread1();
+                }
+                return false;
+            }
+        };
+
+        noteContentText.setOnTouchListener(listener);
+        noteTitleText.setOnTouchListener(listener);
+
     }
 
 

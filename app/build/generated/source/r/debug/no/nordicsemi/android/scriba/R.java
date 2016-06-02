@@ -864,7 +864,7 @@ public final class R {
 	public static final class id {
 		public static final int about = 0x7f0f00b9;
 		public static final int action0 = 0x7f0f00ad;
-		public static final int action_about = 0x7f0f00ca;
+		public static final int action_about = 0x7f0f00c9;
 		public static final int action_bar = 0x7f0f0066;
 		public static final int action_bar_activity_content = 0x7f0f0000;
 		public static final int action_bar_container = 0x7f0f0065;
