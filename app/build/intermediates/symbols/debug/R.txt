@@ -882,7 +882,7 @@ int drawable zoom 0x7f020112
 int drawable zoomin 0x7f020113
 int id about 0x7f0f00b9
 int id action0 0x7f0f00ad
-int id action_about 0x7f0f00c9
+int id action_about 0x7f0f00ca
 int id action_bar 0x7f0f0066
 int id action_bar_activity_content 0x7f0f0000
 int id action_bar_container 0x7f0f0065
@@ -890,9 +890,7 @@ int id action_bar_root 0x7f0f0061
 int id action_bar_spinner 0x7f0f0001
 int id action_bar_subtitle 0x7f0f0047
 int id action_bar_title 0x7f0f0046
-int id action_camera 0x7f0f00cb
 int id action_cancel 0x7f0f00a4
-int id action_compass 0x7f0f00cc
 int id action_connect 0x7f0f008d
 int id action_context_bar 0x7f0f0067
 int id action_delete 0x7f0f00c7
@@ -902,8 +900,8 @@ int id action_menu_presenter 0x7f0f0003
 int id action_mode_bar 0x7f0f0063
 int id action_mode_bar_stub 0x7f0f0062
 int id action_mode_close_button 0x7f0f0048
-int id action_save 0x7f0f00c8
-int id action_settings 0x7f0f00cd
+int id action_save 0x7f0f00c9
+int id action_settings 0x7f0f00cb
 int id actionbar 0x7f0f0077
 int id actionbar_contents 0x7f0f0078
 int id activity_chooser_view_content 0x7f0f0049
@@ -933,7 +931,7 @@ int id clip_vertical 0x7f0f002c
 int id closeButton 0x7f0f0086
 int id collapseActionView 0x7f0f0035
 int id colors 0x7f0f0095
-int id connect_ble 0x7f0f00ca
+int id connect_ble 0x7f0f00c8
 int id content 0x7f0f0090
 int id contentPanel 0x7f0f0056
 int id custom 0x7f0f005c
@@ -1173,8 +1171,7 @@ int menu context_note 0x7f100000
 int menu edit_note 0x7f100001
 int menu help 0x7f100002
 int menu main 0x7f100003
-int menu menu2 0x7f100004
-int menu settings_and_about 0x7f100005
+int menu settings_and_about 0x7f100004
 int mipmap ic_launcher 0x7f030000
 int mipmap scriba_launcher 0x7f030001
 int raw ble_app_hrs_dfu_all_in_one_sdk_v9_0 0x7f070000

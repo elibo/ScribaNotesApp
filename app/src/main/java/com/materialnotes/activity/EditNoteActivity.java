@@ -77,13 +77,39 @@ public class EditNoteActivity extends RoboActionBarActivity {
         super.onActionModeFinished(mode);
     }
 
+
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        stopThread1();
+        return super.onTouchEvent(event);
+    }
+
+  /*  @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
+        stopThread1();
+    }
+
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
+        stopThread1();
+    }
+
+    @Override
+    protected void onUserLeaveHint() {
+        super.onUserLeaveHint();
+        stopThread1();
+    }*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         valTv = (TextView) findViewById(R.id.valTv);
-       // valTv.setText(String.valueOf(0));
+        valTv.setText(String.valueOf(0));
         valTv2 = (TextView) findViewById(R.id.valTv2);
-        //valTv2.setText(String.valueOf(0));
+        valTv2.setText(String.valueOf(0));
         mode = "";
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
@@ -96,15 +122,13 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note = new Note();
             note.setCreatedAt(new Date());
         }
-        exitMode();
-
+        firstThread();
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.edit_note, menu);
-       // menu.add(0, FILTER_ID, 1, String.valueOf(HRSActivity.mHrmValue)).setActionView(tv).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         return true;
     }
 
@@ -117,9 +141,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
             case R.id.clear:
                 clearFormat();
                 return true;
-           /* case R.id.clearAll:
-                clearAllFormats();
-                return true;*/
             case R.id.action_save:
                 if (isNoteFormOk()) {
                     setNoteResult();
@@ -169,6 +190,10 @@ public class EditNoteActivity extends RoboActionBarActivity {
         setResult(RESULT_CANCELED, new Intent());
         finish();
     }
+
+    /**
+     * This is the start of the text modifications section
+     **/
 
     public void clearFormat() {
 
@@ -278,10 +303,14 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     }
 
-    public void select() {
+    public void selectText() {
         tags(true);
         mode = "sl";
     }
+
+    /**
+     * End of the text modifications section
+     **/
 
     public void tags(final boolean tag) {
 
@@ -326,7 +355,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteTitleText.setLongClickable(tag);
     }
 
-    public void exitMode() {
+    /**
+     * This is the star of the threads section
+     **/
+
+    public void firstThread() {
         t = new Thread() {
 
             @Override
@@ -338,7 +371,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                             @Override
                             public void run() {
                                 valTv.setText(String.valueOf(HRSActivity.mHrmValue));
-                                modeFormat();
+                                stopThread1();
                             }
                         });
                     }
@@ -350,19 +383,35 @@ public class EditNoteActivity extends RoboActionBarActivity {
         t.start();
     }
 
-    public void deselectText() {
-        if (Float.valueOf(valTv2.getText().toString()) < 50) {
-            t2.interrupt();
-            exitMode();
-           /* if (noteTitleText.hasSelection()) {
-                noteTitleText.clearFocus();
-            } else if (noteContentText.hasSelection()) {
-                noteContentText.clearFocus();
-            }*/
+    public void stopThread1() {
+        if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 901) {
+            Snackbar.make(getCurrentFocus(), "HIGHLIGHT", Snackbar.LENGTH_INDEFINITE).show();
+            mode = "hl";
+            // secondThread();
+            // t.interrupt();
+        } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 601) {
+            Snackbar.make(getCurrentFocus(), "UNDERLINE", Snackbar.LENGTH_INDEFINITE).show();
+            mode = "ul";
+            // secondThread();
+            // t.interrupt();
+        } else if (HRSActivity.mHrmValue < 301 && HRSActivity.mHrmValue >50) {
+            Snackbar.make(getCurrentFocus(), "DELETE", Snackbar.LENGTH_INDEFINITE).show();
+            mode = "dl";
+            //secondThread();
+            //t.interrupt();
+        } else if (HRSActivity.mHrmValue > 900) {
+            Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
+            // valTv.setText("SELECT");
+            mode = "sl";
+            //secondThread();
+            //t.interrupt();
         }
+        secondThread();
+        t.interrupt();
+
     }
 
-    public void startMode() {
+    public void secondThread() {
         t2 = new Thread() {
             @Override
             public void run() {
@@ -373,8 +422,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
                             @Override
                             public void run() {
                                 valTv2.setText(String.valueOf(HRSActivity.mHrmValue));
-                                formattingText();
-                                deselectText();
+                                formatText();
+                                stopThread2();
                             }
                         });
                     }
@@ -386,7 +435,14 @@ public class EditNoteActivity extends RoboActionBarActivity {
         t2.start();
     }
 
-    public void formattingText() {
+    public void stopThread2() {
+        if (Float.valueOf(valTv2.getText().toString()) < 50) {
+            t2.interrupt();
+            firstThread();
+        }
+    }
+
+    public void formatText() {
         if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("dl")) {
             deleteText();
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("ul")) {
@@ -394,34 +450,13 @@ public class EditNoteActivity extends RoboActionBarActivity {
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("hl")) {
             highlightText();
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("sl")) {
-            select();
+            selectText();
         }
     }
 
-    public void modeFormat() {
-        if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 901) {
-            Snackbar.make(getCurrentFocus(), "HIGHLIGHT", Snackbar.LENGTH_INDEFINITE).show();
-            mode = "hl";
-            startMode();
-            t.interrupt();
-        } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 601) {
-            Snackbar.make(getCurrentFocus(), "UNDERLINE", Snackbar.LENGTH_INDEFINITE).show();
-            mode = "ul";
-            startMode();
-            t.interrupt();
-        } else if (HRSActivity.mHrmValue < 301 && HRSActivity.mHrmValue >50) {
-            Snackbar.make(getCurrentFocus(), "DELETE", Snackbar.LENGTH_INDEFINITE).show();
-            mode = "dl";
-            startMode();
-            t.interrupt();
-        } else if (HRSActivity.mHrmValue > 900) {
-            Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
-           // valTv.setText("SELECT");
-            mode = "sl";
-            startMode();
-            t.interrupt();
-        }
-    }
-
+    /**
+     * End of the threads section
+     **/
+    
 }
 

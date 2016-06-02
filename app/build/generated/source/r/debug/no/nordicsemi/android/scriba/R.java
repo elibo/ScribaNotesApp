@@ -864,7 +864,7 @@ public final class R {
 	public static final class id {
 		public static final int about = 0x7f0f00b9;
 		public static final int action0 = 0x7f0f00ad;
-		public static final int action_about = 0x7f0f00c9;
+		public static final int action_about = 0x7f0f00ca;
 		public static final int action_bar = 0x7f0f0066;
 		public static final int action_bar_activity_content = 0x7f0f0000;
 		public static final int action_bar_container = 0x7f0f0065;
@@ -881,7 +881,7 @@ public final class R {
 		public static final int action_mode_bar = 0x7f0f0063;
 		public static final int action_mode_bar_stub = 0x7f0f0062;
 		public static final int action_mode_close_button = 0x7f0f0048;
-		public static final int action_settings = 0x7f0f00cd;
+		public static final int action_settings = 0x7f0f00cb;
 		public static final int actionbar = 0x7f0f0077;
 		public static final int actionbar_contents = 0x7f0f0078;
 		public static final int activity_chooser_view_content = 0x7f0f0049;
@@ -1135,7 +1135,7 @@ public final class R {
 	}
 	public static final class menu {
 		public static final int help = 0x7f100002;
-		public static final int settings_and_about = 0x7f100005;
+		public static final int settings_and_about = 0x7f100004;
 	}
 	public static final class mipmap {
 		public static final int ic_launcher = 0x7f030000;

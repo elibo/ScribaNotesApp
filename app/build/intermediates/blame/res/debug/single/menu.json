@@ -16,10 +16,6 @@
         "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/menu/main.xml"
     },
     {
-        "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/menu/menu2.xml",
-        "source": "/Users/Elibo/Desktop/material-notes/app/src/main/res/menu/menu2.xml"
-    },
-    {
         "merged": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/res/merged/debug/menu/settings_and_about.xml",
         "source": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/res/menu/settings_and_about.xml"
     }

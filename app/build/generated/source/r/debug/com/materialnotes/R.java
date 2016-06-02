@@ -2745,7 +2745,7 @@ containing a value of this type.
     public static final class id {
         public static final int about=0x7f0f00b9;
         public static final int action0=0x7f0f00ad;
-        public static final int action_about=0x7f0f00c9;
+        public static final int action_about=0x7f0f00ca;
         public static final int action_bar=0x7f0f0066;
         public static final int action_bar_activity_content=0x7f0f0000;
         public static final int action_bar_container=0x7f0f0065;
@@ -2753,9 +2753,7 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f0f0001;
         public static final int action_bar_subtitle=0x7f0f0047;
         public static final int action_bar_title=0x7f0f0046;
-        public static final int action_camera=0x7f0f00cb;
         public static final int action_cancel=0x7f0f00a4;
-        public static final int action_compass=0x7f0f00cc;
         public static final int action_connect=0x7f0f008d;
         public static final int action_context_bar=0x7f0f0067;
         public static final int action_delete=0x7f0f00c7;
@@ -2765,8 +2763,8 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0f0063;
         public static final int action_mode_bar_stub=0x7f0f0062;
         public static final int action_mode_close_button=0x7f0f0048;
-        public static final int action_save=0x7f0f00c8;
-        public static final int action_settings=0x7f0f00cd;
+        public static final int action_save=0x7f0f00c9;
+        public static final int action_settings=0x7f0f00cb;
         public static final int actionbar=0x7f0f0077;
         public static final int actionbar_contents=0x7f0f0078;
         public static final int activity_chooser_view_content=0x7f0f0049;
@@ -2796,7 +2794,7 @@ containing a value of this type.
         public static final int closeButton=0x7f0f0086;
         public static final int collapseActionView=0x7f0f0035;
         public static final int colors=0x7f0f0095;
-        public static final int connect_ble=0x7f0f00ca;
+        public static final int connect_ble=0x7f0f00c8;
         public static final int content=0x7f0f0090;
         public static final int contentPanel=0x7f0f0056;
         public static final int custom=0x7f0f005c;
@@ -3042,8 +3040,7 @@ containing a value of this type.
         public static final int edit_note=0x7f100001;
         public static final int help=0x7f100002;
         public static final int main=0x7f100003;
-        public static final int menu2=0x7f100004;
-        public static final int settings_and_about=0x7f100005;
+        public static final int settings_and_about=0x7f100004;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

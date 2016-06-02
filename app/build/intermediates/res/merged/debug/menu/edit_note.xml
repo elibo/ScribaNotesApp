@@ -6,6 +6,12 @@
         android:id="@+id/clearAll"
         NotepadApp:showAsAction="always"
         android:title="CLEAR" />-->
+    <item
+        android:id="@+id/connect_ble"
+        android:icon="@drawable/ic_bluetooth_white_24dp"
+        NotepadApp:showAsAction="always"
+        android:title="@string/bluetooth"
+        android:onClick="connectBle" />
 
     <item
         android:id="@+id/clear"
