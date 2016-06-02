@@ -79,14 +79,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
         super.onActionModeFinished(mode);
     }
 
- /*   @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        //stopThread1();
-        valTv.setText("you just touched the screen!");
-        return super.onTouchEvent(event);
-    }*/
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,19 +104,17 @@ public class EditNoteActivity extends RoboActionBarActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (noteTitleText.hasSelection()){
-                    //valTv.setText("You just touched the title!");
+                   // valTv.setText("You just touched the title!");
                     stopThread1();
                 }else if (noteContentText.hasSelection()){
-                    //valTv.setText("You just touched the content!");
+                   // valTv.setText("You just touched the content!");
                     stopThread1();
                 }
                 return false;
             }
         };
-
         noteContentText.setOnTouchListener(listener);
         noteTitleText.setOnTouchListener(listener);
-
     }
 
 
@@ -193,8 +183,51 @@ public class EditNoteActivity extends RoboActionBarActivity {
         finish();
     }
 
+    public void tags(final boolean tag) {
+
+        noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
+
+            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                return tag;
+            }
+
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                return tag;
+            }
+
+
+            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                return false;
+            }
+
+            public void onDestroyActionMode(ActionMode mode) {
+            }
+        });
+
+        noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
+            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                return tag;
+            }
+
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                return tag;
+            }
+
+
+            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                return false;
+            }
+
+            public void onDestroyActionMode(ActionMode mode) {
+            }
+        });
+
+        noteContentText.setLongClickable(tag);
+        noteTitleText.setLongClickable(tag);
+    }
+
     /**
-     * This is the start of the text modifications section
+     * Start of the text modifications section
      **/
 
     public void clearFormat() {
@@ -311,54 +344,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     /**
-     * End of the text modifications section
-     **/
-
-    public void tags(final boolean tag) {
-
-        noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
-
-            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-                return tag;
-            }
-
-            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return tag;
-            }
-
-
-            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-                return false;
-            }
-
-            public void onDestroyActionMode(ActionMode mode) {
-            }
-            });
-
-        noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
-            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-                return tag;
-            }
-
-            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return tag;
-            }
-
-
-            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-                return false;
-            }
-
-            public void onDestroyActionMode(ActionMode mode) {
-            }
-        });
-
-        noteContentText.setLongClickable(tag);
-        noteTitleText.setLongClickable(tag);
-    }
-
-    /**
-     * This is the star of the threads section
+     * Start of the threads section
      **/
 
     public void firstThread() {
@@ -389,26 +375,26 @@ public class EditNoteActivity extends RoboActionBarActivity {
         if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 901) {
             Snackbar.make(getCurrentFocus(), "HIGHLIGHT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "hl";
-            //secondThread();
-            //first.interrupt();
+            secondThread();
+            first.interrupt();
         } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 601) {
             Snackbar.make(getCurrentFocus(), "UNDERLINE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "ul";
-            //secondThread();
-            //first.interrupt();
+            secondThread();
+            first.interrupt();
         } else if (HRSActivity.mHrmValue < 301 && HRSActivity.mHrmValue >50) {
             Snackbar.make(getCurrentFocus(), "DELETE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "dl";
-            //secondThread();
-            //first.interrupt();
+            secondThread();
+            first.interrupt();
         } else if (HRSActivity.mHrmValue > 900) {
             Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "sl";
-            //secondThread();
-            //first.interrupt();
+            secondThread();
+            first.interrupt();
         }
-        secondThread();
-        first.interrupt();
+        //secondThread();
+        //first.interrupt();
     }
 
     public void secondThread() {
@@ -453,10 +439,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
             selectText();
         }
     }
-
-    /**
-     * End of the threads section
-     **/
 
 }
 
