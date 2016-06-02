@@ -12,6 +12,7 @@ import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
 import android.view.ActionMode;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.widget.EditText;
@@ -96,6 +97,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note.setCreatedAt(new Date());
         }
         exitMode();
+
     }
 
 
@@ -284,36 +286,39 @@ public class EditNoteActivity extends RoboActionBarActivity {
     public void tags(final boolean tag) {
 
         noteTitleText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
-            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return tag;
-            }
-
-            public void onDestroyActionMode(ActionMode mode) {
-            }
 
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 return tag;
             }
 
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                return tag;
+            }
+
+
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
                 return false;
             }
-        });
+
+            public void onDestroyActionMode(ActionMode mode) {
+            }
+            });
 
         noteContentText.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
-            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                return tag;
-            }
-
-            public void onDestroyActionMode(ActionMode mode) {
-            }
-
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 return tag;
             }
 
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                return tag;
+            }
+
+
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
                 return false;
+            }
+
+            public void onDestroyActionMode(ActionMode mode) {
             }
         });
 

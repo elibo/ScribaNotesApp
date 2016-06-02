@@ -890,7 +890,9 @@ int id action_bar_root 0x7f0f0061
 int id action_bar_spinner 0x7f0f0001
 int id action_bar_subtitle 0x7f0f0047
 int id action_bar_title 0x7f0f0046
+int id action_camera 0x7f0f00cb
 int id action_cancel 0x7f0f00a4
+int id action_compass 0x7f0f00cc
 int id action_connect 0x7f0f008d
 int id action_context_bar 0x7f0f0067
 int id action_delete 0x7f0f00c7
@@ -901,7 +903,7 @@ int id action_mode_bar 0x7f0f0063
 int id action_mode_bar_stub 0x7f0f0062
 int id action_mode_close_button 0x7f0f0048
 int id action_save 0x7f0f00c8
-int id action_settings 0x7f0f00cb
+int id action_settings 0x7f0f00cd
 int id actionbar 0x7f0f0077
 int id actionbar_contents 0x7f0f0078
 int id activity_chooser_view_content 0x7f0f0049
@@ -1171,7 +1173,8 @@ int menu context_note 0x7f100000
 int menu edit_note 0x7f100001
 int menu help 0x7f100002
 int menu main 0x7f100003
-int menu settings_and_about 0x7f100004
+int menu menu2 0x7f100004
+int menu settings_and_about 0x7f100005
 int mipmap ic_launcher 0x7f030000
 int mipmap scriba_launcher 0x7f030001
 int raw ble_app_hrs_dfu_all_in_one_sdk_v9_0 0x7f070000

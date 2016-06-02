@@ -958,13 +958,13 @@
                     "endOffset": 6365
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 271,
+                        "startOffset": 224,
                         "endColumn": 60,
-                        "endOffset": 327
+                        "endOffset": 280
                     }
                 }
             },
@@ -977,13 +977,13 @@
                     "endOffset": 6427
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 332,
+                        "startOffset": 285,
                         "endColumn": 61,
-                        "endOffset": 389
+                        "endOffset": 342
                     }
                 }
             },
@@ -996,13 +996,13 @@
                     "endOffset": 6489
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 394,
+                        "startOffset": 347,
                         "endColumn": 61,
-                        "endOffset": 451
+                        "endOffset": 404
                     }
                 }
             },
@@ -1015,13 +1015,13 @@
                     "endOffset": 6553
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 456,
+                        "startOffset": 409,
                         "endColumn": 63,
-                        "endOffset": 515
+                        "endOffset": 468
                     }
                 }
             },
@@ -3941,13 +3941,13 @@
                     "endOffset": 41723
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1358,
+                        "startOffset": 1264,
                         "endColumn": 58,
-                        "endOffset": 1412
+                        "endOffset": 1318
                     }
                 }
             },
@@ -3960,13 +3960,13 @@
                     "endOffset": 41780
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1417,
+                        "startOffset": 1323,
                         "endColumn": 56,
-                        "endOffset": 1469
+                        "endOffset": 1375
                     }
                 }
             },
@@ -3979,13 +3979,13 @@
                     "endOffset": 41834
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1474,
+                        "startOffset": 1380,
                         "endColumn": 53,
-                        "endOffset": 1523
+                        "endOffset": 1429
                     }
                 }
             },
@@ -12133,14 +12133,14 @@
                     "endOffset": 127203
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1744,
+                        "startOffset": 1603,
                         "endLine": 23,
                         "endColumn": 12,
-                        "endOffset": 2205
+                        "endOffset": 2064
                     }
                 }
             },
@@ -12154,14 +12154,14 @@
                     "endOffset": 127329
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 2210,
+                        "startOffset": 2069,
                         "endLine": 26,
                         "endColumn": 12,
-                        "endOffset": 2331
+                        "endOffset": 2190
                     }
                 }
             },
@@ -12175,14 +12175,14 @@
                     "endOffset": 127457
                 },
                 "from": {
-                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 2336,
+                        "startOffset": 2195,
                         "endLine": 29,
                         "endColumn": 12,
-                        "endOffset": 2459
+                        "endOffset": 2318
                     }
                 }
             },
