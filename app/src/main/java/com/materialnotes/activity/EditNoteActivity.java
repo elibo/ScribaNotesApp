@@ -85,23 +85,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
         return super.onTouchEvent(event);
     }
 
-  /*  @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        return super.dispatchTouchEvent(ev);
-        stopThread1();
-    }
-
-    @Override
-    public void onUserInteraction() {
-        super.onUserInteraction();
-        stopThread1();
-    }
-
-    @Override
-    protected void onUserLeaveHint() {
-        super.onUserLeaveHint();
-        stopThread1();
-    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -457,6 +440,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
     /**
      * End of the threads section
      **/
-    
+
 }
 
