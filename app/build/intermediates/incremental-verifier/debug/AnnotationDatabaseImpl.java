@@ -42,7 +42,9 @@ public class AnnotationDatabaseImpl extends AnnotationDatabase {
 
         fieldNameSet = new HashSet<String>();
         fieldNameSet.add("noteTitleText");
+        fieldNameSet.add("firstThreadVal");
         fieldNameSet.add("noteContentText");
+        fieldNameSet.add("secondThreadVal");
         mapClassWithInjectionNameToFieldSet.put("com.materialnotes.activity.EditNoteActivity", fieldNameSet);
 
         fieldNameSet = new HashSet<String>();

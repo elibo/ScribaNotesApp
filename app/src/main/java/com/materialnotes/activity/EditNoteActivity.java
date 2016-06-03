@@ -35,7 +35,10 @@ import roboguice.inject.InjectView;
 public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
-    public TextView leftVal, rightVal;
+    @InjectView(R.id.leftVal)
+    public TextView firstThreadVal;
+    @InjectView(R.id.rightVal)
+    public TextView secondThreadVal;
     public Thread first, second;
     int cont;
     private View.OnTouchListener listener;
@@ -82,13 +85,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        leftVal = (TextView) findViewById(R.id.leftVal);
-        leftVal.setText(String.valueOf(0));
-        rightVal = (TextView) findViewById(R.id.rightVal);
-        rightVal.setText(String.valueOf(0));
         mode = "";
         cont = 0;
-        getDelegate().setHandleNativeActionModesEnabled(false);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -367,7 +365,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                leftVal.setText(String.valueOf(HRSActivity.mHrmValue));
+                                firstThreadVal.setText(String.valueOf(HRSActivity.mHrmValue));
                                 //stopThread1();
                             }
                         });
@@ -399,7 +397,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
         } else if (HRSActivity.mHrmValue > 900) {
             Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "sl";
-            //cont=0;
         }
     }
 
@@ -409,11 +406,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(250);
+                        Thread.sleep(500);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                rightVal.setText(String.valueOf(HRSActivity.mHrmValue));
+                                secondThreadVal.setText(String.valueOf(HRSActivity.mHrmValue));
                                 formatText();
                                 stopThread2();
                             }
@@ -428,7 +425,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void stopThread2() {
-        if (Float.valueOf(rightVal.getText().toString()) < 50) {
+        if (Float.valueOf(secondThreadVal.getText().toString()) < 50) {
             cont = 0;
             firstThread();
             second.interrupt();
