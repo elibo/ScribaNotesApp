@@ -980,6 +980,7 @@ int id info 0x7f0f00b7
 int id item_touch_helper_previous_elevation 0x7f0f0005
 int id label 0x7f0f00a3
 int id left 0x7f0f0022
+int id leftVal 0x7f0f0084
 int id light 0x7f0f0042
 int id line1 0x7f0f00b2
 int id line3 0x7f0f00b5
@@ -1018,6 +1019,7 @@ int id progress_circular 0x7f0f0006
 int id progress_horizontal 0x7f0f0007
 int id radio 0x7f0f0060
 int id right 0x7f0f0023
+int id rightVal 0x7f0f0085
 int id root 0x7f0f00a8
 int id rssi 0x7f0f009d
 int id save 0x7f0f007f
@@ -1076,8 +1078,6 @@ int id topPanel 0x7f0f0053
 int id undo 0x7f0f007b
 int id up 0x7f0f0009
 int id useLogo 0x7f0f0014
-int id valTv 0x7f0f0084
-int id valTv2 0x7f0f0085
 int id view_offset_helper 0x7f0f000a
 int id whiteboard 0x7f0f003c
 int id whiteboard_marker 0x7f0f00c3

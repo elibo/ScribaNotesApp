@@ -2843,6 +2843,7 @@ containing a value of this type.
         public static final int item_touch_helper_previous_elevation=0x7f0f0005;
         public static final int label=0x7f0f00a3;
         public static final int left=0x7f0f0022;
+        public static final int leftVal=0x7f0f0084;
         public static final int light=0x7f0f0042;
         public static final int line1=0x7f0f00b2;
         public static final int line3=0x7f0f00b5;
@@ -2881,6 +2882,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0f0007;
         public static final int radio=0x7f0f0060;
         public static final int right=0x7f0f0023;
+        public static final int rightVal=0x7f0f0085;
         public static final int root=0x7f0f00a8;
         public static final int rssi=0x7f0f009d;
         public static final int save=0x7f0f007f;
@@ -2939,8 +2941,6 @@ containing a value of this type.
         public static final int undo=0x7f0f007b;
         public static final int up=0x7f0f0009;
         public static final int useLogo=0x7f0f0014;
-        public static final int valTv=0x7f0f0084;
-        public static final int valTv2=0x7f0f0085;
         public static final int view_offset_helper=0x7f0f000a;
         public static final int whiteboard=0x7f0f003c;
         public static final int whiteboard_marker=0x7f0f00c3;

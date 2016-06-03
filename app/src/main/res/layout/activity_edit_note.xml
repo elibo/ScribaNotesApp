@@ -29,20 +29,20 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/valTv"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_margin="16dp"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <TextView
-            android:id="@+id/valTv2"
+            android:id="@+id/leftVal"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_margin="16dp"
             android:text="Val:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/rightVal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
 

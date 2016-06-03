@@ -15,7 +15,7 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d51b3a7b-2e02-4879-9301-601ceb385da6" name="Default" comment="">
@@ -24,8 +24,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity$3.class" />
@@ -36,6 +38,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/materialnotes/activity/EditNoteActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/materialnotes/activity/EditNoteActivity$3.class" />
@@ -49,6 +52,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/materialnotes/activity/EditNoteActivity$3.class" />
@@ -65,11 +70,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$5$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$5$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/materialnotes/activity/EditNoteActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/materialnotes/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/materialnotes/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/materialnotes/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/materialnotes/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_edit_note.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_edit_note.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_note.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_note.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="material-notes.iws" />
@@ -94,35 +106,18 @@
       <file leaf-file-name="EditNoteActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6385542">
-              <caret line="440" column="5" selection-start-line="440" selection-start-column="5" selection-end-line="440" selection-end-column="5" />
+            <state vertical-scroll-proportion="3.29976">
+              <caret line="355" column="30" selection-start-line="355" selection-start-column="30" selection-end-line="355" selection-end-column="30" />
               <folding>
                 <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#3332#3836#0" expanded="true" />
-                <element signature="e#3835#3836#0" expanded="true" />
                 <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#5523#5557#0" expanded="true" />
-                <element signature="e#5731#5767#0" expanded="true" />
-                <element signature="e#5815#5851#0" expanded="true" />
                 <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#6382#6383#0" expanded="true" />
-                <element signature="e#6424#6425#0" expanded="true" />
-                <element signature="e#6502#6503#0" expanded="true" />
-                <element signature="e#6544#6545#0" expanded="true" />
-                <element signature="e#6627#6628#0" expanded="true" />
-                <element signature="e#6671#6672#0" expanded="true" />
-                <element signature="e#6927#6928#0" expanded="true" />
-                <element signature="e#6969#6970#0" expanded="true" />
-                <element signature="e#7047#7048#0" expanded="true" />
-                <element signature="e#7089#7090#0" expanded="true" />
-                <element signature="e#7172#7173#0" expanded="true" />
-                <element signature="e#7216#7217#0" expanded="true" />
                 <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#clearContent#0;class#EditNoteActivity#0" expanded="false" />
@@ -131,16 +126,8 @@
                 <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#12019#12704#0" expanded="true" />
-                <element signature="e#12240#12531#0" expanded="true" />
-                <element signature="e#12530#12531#0" expanded="true" />
-                <element signature="e#12703#12704#0" expanded="true" />
                 <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-                <element signature="e#13880#14611#0" expanded="true" />
-                <element signature="e#14100#14438#0" expanded="true" />
-                <element signature="e#14437#14438#0" expanded="true" />
-                <element signature="e#14610#14611#0" expanded="true" />
                 <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
                 <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
               </folding>
@@ -151,9 +138,12 @@
       <file leaf-file-name="activity_edit_note.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_note.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1509433">
-              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-              <folding />
+            <state vertical-scroll-proportion="-5.735849">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#396#421#0" expanded="true" />
+                <element signature="e#762#789#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -4335,22 +4325,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="material-notes" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="material-notes" />
@@ -4369,6 +4346,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="material-notes" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -4441,6 +4436,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4789,16 +4787,16 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325723" sideWeight="0.38529888" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32267883" sideWeight="0.4022617" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325723" sideWeight="0.61470115" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32267883" sideWeight="0.59773827" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.32148626" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.27705976" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -4831,7 +4829,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -4844,29 +4842,12 @@
             <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#3332#3836#0" expanded="true" />
-            <element signature="e#3835#3836#0" expanded="true" />
             <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#5523#5557#0" expanded="true" />
-            <element signature="e#5731#5767#0" expanded="true" />
-            <element signature="e#5815#5851#0" expanded="true" />
             <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#6382#6383#0" expanded="true" />
-            <element signature="e#6424#6425#0" expanded="true" />
-            <element signature="e#6502#6503#0" expanded="true" />
-            <element signature="e#6544#6545#0" expanded="true" />
-            <element signature="e#6627#6628#0" expanded="true" />
-            <element signature="e#6671#6672#0" expanded="true" />
-            <element signature="e#6927#6928#0" expanded="true" />
-            <element signature="e#6969#6970#0" expanded="true" />
-            <element signature="e#7047#7048#0" expanded="true" />
-            <element signature="e#7089#7090#0" expanded="true" />
-            <element signature="e#7172#7173#0" expanded="true" />
-            <element signature="e#7216#7217#0" expanded="true" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearContent#0;class#EditNoteActivity#0" expanded="false" />
@@ -4875,16 +4856,8 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#12019#12704#0" expanded="true" />
-            <element signature="e#12240#12531#0" expanded="true" />
-            <element signature="e#12530#12531#0" expanded="true" />
-            <element signature="e#12703#12704#0" expanded="true" />
             <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#13880#14611#0" expanded="true" />
-            <element signature="e#14100#14438#0" expanded="true" />
-            <element signature="e#14437#14438#0" expanded="true" />
-            <element signature="e#14610#14611#0" expanded="true" />
             <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>
@@ -4899,29 +4872,12 @@
             <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#3332#3836#0" expanded="true" />
-            <element signature="e#3835#3836#0" expanded="true" />
             <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#5523#5557#0" expanded="true" />
-            <element signature="e#5731#5767#0" expanded="true" />
-            <element signature="e#5815#5851#0" expanded="true" />
             <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#6382#6383#0" expanded="true" />
-            <element signature="e#6424#6425#0" expanded="true" />
-            <element signature="e#6502#6503#0" expanded="true" />
-            <element signature="e#6544#6545#0" expanded="true" />
-            <element signature="e#6627#6628#0" expanded="true" />
-            <element signature="e#6671#6672#0" expanded="true" />
-            <element signature="e#6927#6928#0" expanded="true" />
-            <element signature="e#6969#6970#0" expanded="true" />
-            <element signature="e#7047#7048#0" expanded="true" />
-            <element signature="e#7089#7090#0" expanded="true" />
-            <element signature="e#7172#7173#0" expanded="true" />
-            <element signature="e#7216#7217#0" expanded="true" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearContent#0;class#EditNoteActivity#0" expanded="false" />
@@ -4930,16 +4886,8 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#12019#12704#0" expanded="true" />
-            <element signature="e#12240#12531#0" expanded="true" />
-            <element signature="e#12530#12531#0" expanded="true" />
-            <element signature="e#12703#12704#0" expanded="true" />
             <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#13880#14611#0" expanded="true" />
-            <element signature="e#14100#14438#0" expanded="true" />
-            <element signature="e#14437#14438#0" expanded="true" />
-            <element signature="e#14610#14611#0" expanded="true" />
             <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>
@@ -4950,7 +4898,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#396#421#0" expanded="true" />
+            <element signature="e#762#789#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -4965,29 +4916,12 @@
             <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#3332#3836#0" expanded="true" />
-            <element signature="e#3835#3836#0" expanded="true" />
             <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#5523#5557#0" expanded="true" />
-            <element signature="e#5731#5767#0" expanded="true" />
-            <element signature="e#5815#5851#0" expanded="true" />
             <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#6382#6383#0" expanded="true" />
-            <element signature="e#6424#6425#0" expanded="true" />
-            <element signature="e#6502#6503#0" expanded="true" />
-            <element signature="e#6544#6545#0" expanded="true" />
-            <element signature="e#6627#6628#0" expanded="true" />
-            <element signature="e#6671#6672#0" expanded="true" />
-            <element signature="e#6927#6928#0" expanded="true" />
-            <element signature="e#6969#6970#0" expanded="true" />
-            <element signature="e#7047#7048#0" expanded="true" />
-            <element signature="e#7089#7090#0" expanded="true" />
-            <element signature="e#7172#7173#0" expanded="true" />
-            <element signature="e#7216#7217#0" expanded="true" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearContent#0;class#EditNoteActivity#0" expanded="false" />
@@ -4996,16 +4930,8 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#12019#12704#0" expanded="true" />
-            <element signature="e#12240#12531#0" expanded="true" />
-            <element signature="e#12530#12531#0" expanded="true" />
-            <element signature="e#12703#12704#0" expanded="true" />
             <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#13880#14611#0" expanded="true" />
-            <element signature="e#14100#14438#0" expanded="true" />
-            <element signature="e#14437#14438#0" expanded="true" />
-            <element signature="e#14610#14611#0" expanded="true" />
             <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>
@@ -5039,7 +4965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5055,7 +4980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5063,7 +4987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5111,9 +5034,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_note.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1509433">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding />
+        <state vertical-scroll-proportion="-5.735849">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#396#421#0" expanded="true" />
+            <element signature="e#762#789#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -5122,35 +5048,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/materialnotes/activity/EditNoteActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6385542">
-          <caret line="440" column="5" selection-start-line="440" selection-start-column="5" selection-end-line="440" selection-end-column="5" />
+        <state vertical-scroll-proportion="3.29976">
+          <caret line="355" column="30" selection-start-line="355" selection-start-column="30" selection-end-line="355" selection-end-column="30" />
           <folding>
             <element signature="method#buildIntent#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeStarted#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#onActionModeFinished#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#3332#3836#0" expanded="true" />
-            <element signature="e#3835#3836#0" expanded="true" />
             <element signature="method#onOptionsItemSelected#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#isNoteFormOk#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#setNoteResult#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#validateNoteForm#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#5523#5557#0" expanded="true" />
-            <element signature="e#5731#5767#0" expanded="true" />
-            <element signature="e#5815#5851#0" expanded="true" />
             <element signature="method#onBackPressed#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#tags#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#6382#6383#0" expanded="true" />
-            <element signature="e#6424#6425#0" expanded="true" />
-            <element signature="e#6502#6503#0" expanded="true" />
-            <element signature="e#6544#6545#0" expanded="true" />
-            <element signature="e#6627#6628#0" expanded="true" />
-            <element signature="e#6671#6672#0" expanded="true" />
-            <element signature="e#6927#6928#0" expanded="true" />
-            <element signature="e#6969#6970#0" expanded="true" />
-            <element signature="e#7047#7048#0" expanded="true" />
-            <element signature="e#7089#7090#0" expanded="true" />
-            <element signature="e#7172#7173#0" expanded="true" />
-            <element signature="e#7216#7217#0" expanded="true" />
             <element signature="method#clearFormat#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearTitle#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#clearContent#0;class#EditNoteActivity#0" expanded="false" />
@@ -5159,16 +5068,8 @@
             <element signature="method#deleteText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#selectText#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#firstThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#12019#12704#0" expanded="true" />
-            <element signature="e#12240#12531#0" expanded="true" />
-            <element signature="e#12530#12531#0" expanded="true" />
-            <element signature="e#12703#12704#0" expanded="true" />
             <element signature="method#stopThread1#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#secondThread#0;class#EditNoteActivity#0" expanded="false" />
-            <element signature="e#13880#14611#0" expanded="true" />
-            <element signature="e#14100#14438#0" expanded="true" />
-            <element signature="e#14437#14438#0" expanded="true" />
-            <element signature="e#14610#14611#0" expanded="true" />
             <element signature="method#stopThread2#0;class#EditNoteActivity#0" expanded="false" />
             <element signature="method#formatText#0;class#EditNoteActivity#0" expanded="false" />
           </folding>

@@ -12,7 +12,6 @@ import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
 import android.view.ActionMode;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -36,9 +35,10 @@ import roboguice.inject.InjectView;
 public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
-    public TextView valTv, valTv2;
-    private View.OnTouchListener listener;
+    public TextView leftVal, rightVal;
     public Thread first, second;
+    int cont;
+    private View.OnTouchListener listener;
     private String mode;
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
@@ -82,11 +82,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        valTv = (TextView) findViewById(R.id.valTv);
-        valTv.setText(String.valueOf(0));
-        valTv2 = (TextView) findViewById(R.id.valTv2);
-        valTv2.setText(String.valueOf(0));
+        leftVal = (TextView) findViewById(R.id.leftVal);
+        leftVal.setText(String.valueOf(0));
+        rightVal = (TextView) findViewById(R.id.rightVal);
+        rightVal.setText(String.valueOf(0));
         mode = "";
+        cont = 0;
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -100,15 +101,20 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
         firstThread();
 
-        listener=new View.OnTouchListener() {
+        listener = new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                if (noteTitleText.hasSelection()){
-                   // valTv.setText("You just touched the title!");
-                    stopThread1();
-                }else if (noteContentText.hasSelection()){
-                   // valTv.setText("You just touched the content!");
-                    stopThread1();
+                if (noteTitleText.hasSelection()) {
+                    cont++;
+                    if (cont == 1)
+                        stopThread1();
+                    else
+                        formatText();
+                } else if (noteContentText.hasSelection()) {
+                    cont++;
+                    if (cont == 1)
+                        stopThread1();
+                    else formatText();
                 }
                 return false;
             }
@@ -354,12 +360,12 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(1500);
+                        Thread.sleep(500);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                valTv.setText(String.valueOf(HRSActivity.mHrmValue));
-                                stopThread1();
+                                leftVal.setText(String.valueOf(HRSActivity.mHrmValue));
+                                //stopThread1();
                             }
                         });
                     }
@@ -372,29 +378,21 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void stopThread1() {
-        if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 901) {
+        if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 900) {
             Snackbar.make(getCurrentFocus(), "HIGHLIGHT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "hl";
-            secondThread();
-            first.interrupt();
-        } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 601) {
+        } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 600) {
             Snackbar.make(getCurrentFocus(), "UNDERLINE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "ul";
-            secondThread();
-            first.interrupt();
-        } else if (HRSActivity.mHrmValue < 301 && HRSActivity.mHrmValue >50) {
+        } else if (HRSActivity.mHrmValue < 300 && HRSActivity.mHrmValue > 50) {
             Snackbar.make(getCurrentFocus(), "DELETE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "dl";
-            secondThread();
-            first.interrupt();
         } else if (HRSActivity.mHrmValue > 900) {
             Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "sl";
+        }
             secondThread();
             first.interrupt();
-        }
-        //secondThread();
-        //first.interrupt();
     }
 
     public void secondThread() {
@@ -403,11 +401,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(1500);
+                        Thread.sleep(500);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                valTv2.setText(String.valueOf(HRSActivity.mHrmValue));
+                                rightVal.setText(String.valueOf(HRSActivity.mHrmValue));
                                 formatText();
                                 stopThread2();
                             }
@@ -422,9 +420,10 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void stopThread2() {
-        if (Float.valueOf(valTv2.getText().toString()) < 50) {
-            second.interrupt();
+        if (Float.valueOf(rightVal.getText().toString()) < 50) {
+            cont = 0;
             firstThread();
+            second.interrupt();
         }
     }
 
