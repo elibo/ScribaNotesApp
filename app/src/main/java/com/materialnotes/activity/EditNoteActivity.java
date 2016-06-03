@@ -99,6 +99,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             note = new Note();
             note.setCreatedAt(new Date());
         }
+
         firstThread();
 
         listener = new View.OnTouchListener() {
@@ -360,7 +361,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(500);
+                        Thread.sleep(100);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -401,7 +402,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(500);
+                        Thread.sleep(100);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -428,14 +429,14 @@ public class EditNoteActivity extends RoboActionBarActivity {
     }
 
     public void formatText() {
-        if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("dl")) {
-            deleteText();
+        if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("sl")) {
+            selectText();
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("ul")) {
             boldItalicText();
         } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("hl")) {
             highlightText();
-        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("sl")) {
-            selectText();
+        } else if ((noteTitleText.hasSelection() || noteContentText.hasSelection()) && mode.equals("dl")) {
+            deleteText();
         }
     }
 

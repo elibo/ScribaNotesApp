@@ -11,13 +11,10 @@ import android.widget.TextView;
 
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
-import com.materialnotes.view.ShowHideOnScroll;
 import com.shamanland.fab.FloatingActionButton;
 
 import java.text.DateFormat;
 
-import no.nordicsemi.android.scriba.hrs.HRSActivity;
-import no.nordicsemi.android.scriba.profile.BleProfileActivity;
 import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
@@ -66,19 +63,15 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         buttonColor = Color.parseColor("#00cc66");
         editNoteButton.setColor(buttonColor);
         editNoteButton.initBackground();
-        // Starts the components //////////////////////////////////////////////////////////////
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Shows the arrow to go back
-        scrollView.setOnTouchListener(new ShowHideOnScroll(editNoteButton, getSupportActionBar())); // Hides or shows the FAB and the Action Bar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         editNoteButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                // Go to edit note activity
                 startActivityForResult(EditNoteActivity.buildIntent(ViewNoteActivity.this, note), EDIT_NOTE_RESULT_CODE);
             }
         });
-        note = (Note) getIntent().getSerializableExtra(EXTRA_NOTE); // Gets the note from the intent
-        // Shows the note info in the layout
+        note = (Note) getIntent().getSerializableExtra(EXTRA_NOTE);
         noteTitleText.setText(com.materialnotes.activity.Html.fromHtml(note.getTitle()));
         noteContentText.setText(com.materialnotes.activity.Html.fromHtml(note.getContent()));
         noteCreatedAtDateText.setText(DATETIME_FORMAT.format(note.getCreatedAt()));
@@ -91,7 +84,7 @@ public class ViewNoteActivity extends RoboActionBarActivity {
         switch (item.getItemId()) {
 
             case android.R.id.home:
-                onBackPressed(); // Closes the activity
+                onBackPressed();
                 return true;
 
             default:
@@ -104,7 +97,6 @@ public class ViewNoteActivity extends RoboActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == EDIT_NOTE_RESULT_CODE) {
             if (resultCode == RESULT_OK) {
-                //The note was successfully edited and the activity finish with a result
                 Intent resultIntent = new Intent();
                 Note note = EditNoteActivity.getExtraNote(data);
                 resultIntent.putExtra(EXTRA_UPDATED_NOTE, note);
@@ -119,7 +111,6 @@ public class ViewNoteActivity extends RoboActionBarActivity {
 
     @Override
     public void onBackPressed() {
-        // The note wasn't edited
         setResult(RESULT_CANCELED, new Intent());
         finish();
     }

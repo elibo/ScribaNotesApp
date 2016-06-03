@@ -13,7 +13,8 @@
         android:inputType="textNoSuggestions"
         android:maxLength="50"
         android:paddingBottom="20dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textIsSelectable="false"/>
 
     <EditText
         android:id="@+id/note_content"
@@ -21,8 +22,9 @@
         android:layout_height="150dp"
         android:gravity="start"
         android:hint="@string/hint_note_content"
-        android:inputType="textNoSuggestions|textMultiLine"
-        android:longClickable="true" />
+        android:textIsSelectable="true"
+        android:longClickable="false"
+        android:inputType="textNoSuggestions|textMultiLine"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

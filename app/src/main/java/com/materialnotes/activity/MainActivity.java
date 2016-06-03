@@ -16,7 +16,6 @@ import android.widget.TextView;
 import com.materialnotes.R;
 import com.materialnotes.data.Note;
 import com.materialnotes.data.dao.NoteDAO;
-import com.materialnotes.view.ShowHideOnScroll;
 import com.materialnotes.widget.NotesAdapter;
 import com.shamanland.fab.FloatingActionButton;
 
@@ -57,7 +56,6 @@ public class MainActivity extends RoboActionBarActivity {
         buttonColor = Color.parseColor("#00cc66");
         addNoteButton.setColor(buttonColor);
         addNoteButton.initBackground();
-        listView.setOnTouchListener(new ShowHideOnScroll(addNoteButton, getSupportActionBar()));
         addNoteButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
