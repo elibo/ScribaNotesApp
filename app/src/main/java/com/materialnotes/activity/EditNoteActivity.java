@@ -88,6 +88,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         rightVal.setText(String.valueOf(0));
         mode = "";
         cont = 0;
+        getDelegate().setHandleNativeActionModesEnabled(false);
         ssbTitle = (SpannableStringBuilder) noteTitleText.getText();
         ssbContent = (SpannableStringBuilder) noteContentText.getText();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -115,7 +116,8 @@ public class EditNoteActivity extends RoboActionBarActivity {
                     cont++;
                     if (cont == 1)
                         stopThread1();
-                    else formatText();
+                    else
+                        formatText();
                 }
                 return false;
             }
@@ -347,7 +349,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void selectText() {
         tags(true);
-        mode = "sl";
+        cont=0;
     }
 
     /**
@@ -361,7 +363,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(100);
+                        Thread.sleep(250);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -382,18 +384,23 @@ public class EditNoteActivity extends RoboActionBarActivity {
         if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 900) {
             Snackbar.make(getCurrentFocus(), "HIGHLIGHT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "hl";
+            secondThread();
+            first.interrupt();
         } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 600) {
             Snackbar.make(getCurrentFocus(), "UNDERLINE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "ul";
+            secondThread();
+            first.interrupt();
         } else if (HRSActivity.mHrmValue < 300 && HRSActivity.mHrmValue > 50) {
             Snackbar.make(getCurrentFocus(), "DELETE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "dl";
+            secondThread();
+            first.interrupt();
         } else if (HRSActivity.mHrmValue > 900) {
             Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "sl";
+            //cont=0;
         }
-            secondThread();
-            first.interrupt();
     }
 
     public void secondThread() {
@@ -402,7 +409,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(100);
+                        Thread.sleep(250);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {

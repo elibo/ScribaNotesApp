@@ -14,16 +14,14 @@
         android:maxLength="50"
         android:paddingBottom="20dp"
         android:singleLine="true"
-        android:textIsSelectable="false"/>
+        />
 
     <EditText
         android:id="@+id/note_content"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:gravity="start"
         android:hint="@string/hint_note_content"
-        android:textIsSelectable="true"
-        android:longClickable="false"
         android:inputType="textNoSuggestions|textMultiLine"/>
 
     <RelativeLayout
