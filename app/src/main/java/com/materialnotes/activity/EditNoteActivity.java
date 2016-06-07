@@ -70,7 +70,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
         }
 
         firstThread();
+        listener();
+    }
 
+
+    public void listener(){
         listener = new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -93,7 +97,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteContentText.setOnTouchListener(listener);
         noteTitleText.setOnTouchListener(listener);
     }
-
+    
     @Override
     public void onActionModeStarted(final ActionMode mode) {
         if (mActionMode == null) {
@@ -379,25 +383,21 @@ public class EditNoteActivity extends RoboActionBarActivity {
     public void stopThread1() {
         if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 900) {
             Toast.makeText(getBaseContext(),"HIGHLIGHT",Toast.LENGTH_LONG).show();
-           // Snackbar.make(getCurrentFocus(), "HIGHLIGHT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "hl";
             secondThread();
             first.interrupt();
         } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 600) {
             Toast.makeText(getBaseContext(),"UNDERLINE",Toast.LENGTH_LONG).show();
-            //Snackbar.make(getCurrentFocus(), "UNDERLINE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "ul";
             secondThread();
             first.interrupt();
         } else if (HRSActivity.mHrmValue < 300 && HRSActivity.mHrmValue > 50) {
             Toast.makeText(getBaseContext(),"DELETE",Toast.LENGTH_LONG).show();
-            //Snackbar.make(getCurrentFocus(), "DELETE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "dl";
             secondThread();
             first.interrupt();
         } else if (HRSActivity.mHrmValue > 900) {
             Toast.makeText(getBaseContext(),"SELECT",Toast.LENGTH_LONG).show();
-            //Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "sl";
         }
     }
