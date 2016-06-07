@@ -131,7 +131,7 @@
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="a17497ea0e804305a4264c07f5479c744f727935">
+        sha1="bca1c5b5921640de8e631a20847703b28ee6ad51">
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_36a07399a33081b3686651209c9182e346788a8b/classes.dex" />
     </item>
     <item
@@ -145,14 +145,14 @@
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="d3689a29eb6588b5c5e05e2636b258a3f5161af1">
+        sha1="58116758899b09297ef338313ca86e7ace0efb73">
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cb8cb799693ede8eb8ee0f8209cadfd3b6d6205b/classes.dex" />
     </item>
     <item
         jar="/Users/Elibo/Desktop/material-notes/app/build/intermediates/exploded-aar/material-notes/applib/unspecified/jars/libs/achartengine-1.1.0.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="102ebcb531943dbecf0d29a76244c2037ada46ed">
+        sha1="994d78ecde9c75c1f0f8235129081d866a7f9c48">
         <dex dex="/Users/Elibo/Desktop/material-notes/app/build/intermediates/transforms/dex/debug/folders/1000/8/achartengine-1.1.0_3be60798566ae992c303b34c8d2b989c30101f03/classes.dex" />
     </item>
 

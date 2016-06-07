@@ -36,11 +36,11 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     private static final String EXTRA_NOTE = "EXTRA_NOTE";
     @InjectView(R.id.leftVal)
-    public TextView firstThreadVal;
+    private TextView firstThreadVal;
     @InjectView(R.id.rightVal)
-    public TextView secondThreadVal;
-    public Thread first, second;
-    int cont;
+    private TextView secondThreadVal;
+    private Thread first, second;
+    private int cont;
     private View.OnTouchListener listener;
     private String mode;
     @InjectView(R.id.note_title)
@@ -52,35 +52,6 @@ public class EditNoteActivity extends RoboActionBarActivity {
     private SpannableStringBuilder ssbTitle;
     private ActionMode mActionMode = null;
 
-
-    public static Intent buildIntent(Context context, Note note) {
-        Intent intent = new Intent(context, EditNoteActivity.class);
-        intent.putExtra(EXTRA_NOTE, note);
-        return intent;
-    }
-
-    public static Intent buildIntent(Context context) {
-        return buildIntent(context, null);
-    }
-
-    public static Note getExtraNote(Intent intent) {
-        return (Note) intent.getExtras().get(EXTRA_NOTE);
-    }
-
-    @Override
-    public void onActionModeStarted(final ActionMode mode) {
-        if (mActionMode == null) {
-            mActionMode = mode;
-        }
-        super.onActionModeStarted(mode);
-
-    }
-
-    @Override
-    public void onActionModeFinished(ActionMode mode) {
-        mActionMode = null;
-        super.onActionModeFinished(mode);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,6 +95,20 @@ public class EditNoteActivity extends RoboActionBarActivity {
         noteTitleText.setOnTouchListener(listener);
     }
 
+    @Override
+    public void onActionModeStarted(final ActionMode mode) {
+        if (mActionMode == null) {
+            mActionMode = mode;
+        }
+        super.onActionModeStarted(mode);
+
+    }
+
+    @Override
+    public void onActionModeFinished(ActionMode mode) {
+        mActionMode = null;
+        super.onActionModeFinished(mode);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -150,6 +135,20 @@ public class EditNoteActivity extends RoboActionBarActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public static Intent buildIntent(Context context, Note note) {
+        Intent intent = new Intent(context, EditNoteActivity.class);
+        intent.putExtra(EXTRA_NOTE, note);
+        return intent;
+    }
+
+    public static Intent buildIntent(Context context) {
+        return buildIntent(context, null);
+    }
+
+    public static Note getExtraNote(Intent intent) {
+        return (Note) intent.getExtras().get(EXTRA_NOTE);
     }
 
     private boolean isNoteFormOk() {
