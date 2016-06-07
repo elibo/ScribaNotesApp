@@ -378,25 +378,25 @@ public class EditNoteActivity extends RoboActionBarActivity {
 
     public void stopThread1() {
         if (HRSActivity.mHrmValue > 600 && HRSActivity.mHrmValue < 900) {
-            Toast.makeText(getBaseContext(),"HIGHLIGHT",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(),"HIGHLIGHT",Toast.LENGTH_LONG).show();
            // Snackbar.make(getCurrentFocus(), "HIGHLIGHT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "hl";
             secondThread();
             first.interrupt();
         } else if (HRSActivity.mHrmValue > 300 && HRSActivity.mHrmValue < 600) {
-            Toast.makeText(getBaseContext(),"UNDERLINE",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(),"UNDERLINE",Toast.LENGTH_LONG).show();
             //Snackbar.make(getCurrentFocus(), "UNDERLINE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "ul";
             secondThread();
             first.interrupt();
         } else if (HRSActivity.mHrmValue < 300 && HRSActivity.mHrmValue > 50) {
-            Toast.makeText(getBaseContext(),"DELETE",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(),"DELETE",Toast.LENGTH_LONG).show();
             //Snackbar.make(getCurrentFocus(), "DELETE", Snackbar.LENGTH_INDEFINITE).show();
             mode = "dl";
             secondThread();
             first.interrupt();
         } else if (HRSActivity.mHrmValue > 900) {
-            Toast.makeText(getBaseContext(),"SELECT",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(),"SELECT",Toast.LENGTH_LONG).show();
             //Snackbar.make(getCurrentFocus(), "SELECT", Snackbar.LENGTH_INDEFINITE).show();
             mode = "sl";
         }
