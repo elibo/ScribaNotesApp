@@ -11,15 +11,10 @@
 
     <string name="delete_notes_alert">Delete %s note(s)?</string>
     <string name="bluetooth">Connect Scriba</string>
-    <string name="contact">Contact Us</string>
-    <string name="info">Info</string>
-    <string name="dds">Dublin Design Studio</string>
-    <string name="ddsphone">+ 353 1 902 3944</string>
-    <string name="ddsaddress">Docklands Innovation Park, East Wall Road</string>
+    <string name="content_test">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet ante eget lacus convallis, sollicitudin hendrerit velit mattis. Quisque orci magna, tempor a orci quis, viverra rutrum enim. Aenean sit amet est quam. Etiam sed tincidunt est, euismod placerat mauris. Praesent leo odio, sodales nec euismod eu, luctus vel enim. Nulla eget orci ligula. Fusce et dolor eu metus faucibus laoreet id non lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc pulvinar vulputate elit a egestas. Aenean venenatis accumsan eros, in sagittis arcu. Curabitur egestas gravida lectus a commodo. Pellentesque posuere purus at risus suscipit facilisis. Maecenas at dolor sed augue dignissim accumsan ac quis magna. Nam mauris sem, bibendum et condimentum a, auctor ut elit. Morbi suscipit tellus a erat mattis, quis porta dolor dictum.</string>
 
     <!-- About dialog -->
     <string name="version_format">Version %s</string>
-    <string name="weblink"><u>getscriba.com</u></string>
 
     <!-- EditNoteActivity strings -->
     <string name="title_activity_edit_note">Edit note</string>
