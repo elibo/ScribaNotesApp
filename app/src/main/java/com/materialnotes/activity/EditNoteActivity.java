@@ -39,17 +39,16 @@ public class EditNoteActivity extends RoboActionBarActivity {
     private TextView firstThreadVal;
     @InjectView(R.id.rightVal)
     private TextView secondThreadVal;
-    private Thread first, second;
-    private int cont;
-    private View.OnTouchListener listener;
-    private String mode;
     @InjectView(R.id.note_title)
     private EditText noteTitleText;
     @InjectView(R.id.note_content)
     private EditText noteContentText;
+    private Thread first, second;
+    private int cont;
+    private View.OnTouchListener listener;
+    private String mode;
     private Note note;
-    private SpannableStringBuilder ssbContent;
-    private SpannableStringBuilder ssbTitle;
+    private SpannableStringBuilder ssbContent,ssbTitle;
     private ActionMode mActionMode = null;
 
 
@@ -409,7 +408,7 @@ public class EditNoteActivity extends RoboActionBarActivity {
             public void run() {
                 try {
                     while (!isInterrupted()) {
-                        Thread.sleep(500);
+                        Thread.sleep(250);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
